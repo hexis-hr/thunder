@@ -453,10 +453,11 @@ a:visited, a:active {
 }
 
 /* line 125, ../sass/screen.scss */
-.collection-as-table td:last-child {
-  font-weight: bold;
+.collection-as-table td:last-child > a {
   text-transform: lowercase;
   letter-spacing: -1px;
+  text-shadow: 0px 1px 1px #272727;
+  text-decoration: none;
 }
 
 /* line 128, ../sass/screen.scss */
@@ -506,51 +507,3 @@ a:visited, a:active {
 #bpscredits {
   text-align: center;
 }
-
-/*
-.titlebox td:nth-child(1) {margin-right:15px;}
-
-
-.titlebox-title {line-height: 18px; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 0.8em; background: green; color: #fff; border: 1px solid black; }
-	.titlebox-title a {color: #fff; padding-right: 0.2em;}
-	.titlebox-title .right {float:right; padding-right: 0.3em;}
-
-
-.ticket-list {font-family: 'Roboto', Helvetica, Arial, sans-serif; border-right: 1px solid black+100; border-left: 1px solid black+100; }
-
-.titlebox-content {font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 0.9em; width: 440px;} 
-
-.collection-as-table {width: 860px; margin: 0px 0px; padding: 0.2em 0.4em; }
-	.collection-as-table th:first-child{width: 3%;}
-	.collection-as-table th:nth-child(2) {width: 45%;}
-	.collection-as-table th {padding-bottom: 0.1em; font-size: 1em; color: black; border-bottom: 1px solid black; }
-	.collection-as-table tr {width: 990px;}
-
-.evenline {background: #d3d8e1;}
-.oddline {background: #e3e7ed;}
-	
-
-.reminders {background: green;}
-
-.clear {display:none;}
-
-
-.ticket-overview {}
-	.ticket-overview .queue-summary {font-family: 'Roboto', Helvetica, Arial, sans-serif; border-right: 1px solid black+100; border-left: 1px solid black+100; }
-	.queue-summary th {padding-bottom: 0.1em; font-size: 1em; color: black; border-bottom: 1px solid black;}
-	.ticket-overview th:first-child{width: 65%;}
-
-
-.quick-create {margin-top: 1em;}
-.label {padding: 0.3em 0.3em;}
-	.quick-create input {width: 368px;}
-	.quick-create select {padding-left: -1px;}
-	.quick-create .button {position: relative; left: 83px;}
-
-
-
-#footer {margin: 1em 0; border-top: 1px solid green;}
-#bpscredits {margin-top: 1em;text-align: center; }
-
-#time {display: none;}
-#ui-datepicker-div {display: none;}*/
