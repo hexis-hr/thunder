@@ -385,12 +385,12 @@ a:visited, a:active {
 
 /* line 109, ../sass/screen.scss */
 .oddline {
-  background: #C1C1C1;
+  background: #cbcbcb;
 }
 
 /* line 110, ../sass/screen.scss */
 .evenline {
-  background: #b3b3b3;
+  background: #dbdbdb;
 }
 
 /* line 111, ../sass/screen.scss */
@@ -452,7 +452,14 @@ a:visited, a:active {
   padding-right: 1em;
 }
 
-/* line 127, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
+.collection-as-table td:last-child {
+  font-weight: bold;
+  text-transform: lowercase;
+  letter-spacing: -1px;
+}
+
+/* line 128, ../sass/screen.scss */
 .ticket-overview th {
   font-size: 0.9em;
   text-transform: uppercase;
@@ -460,42 +467,42 @@ a:visited, a:active {
   color: #272727;
 }
 
-/* line 128, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 .ticket-overview tr {
   padding: 0.3em 0.5em;
   font-size: 0.9em;
   color: #272727;
 }
 
-/* line 130, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 .titlebox .queue-summary td {
   width: 100%;
   text-align: center;
   padding: 0.3em 0.5em;
 }
 
-/* line 131, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 .titlebox .queue-summary td:first-child {
   text-align: left;
 }
 
-/* line 139, ../sass/screen.scss */
+/* line 140, ../sass/screen.scss */
 #time {
   display: none;
 }
 
-/* line 140, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 #ui-datepicker-div {
   display: none;
 }
 
-/* line 143, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 #footer {
   line-height: 3em;
   color: #272727;
 }
 
-/* line 144, ../sass/screen.scss */
+/* line 145, ../sass/screen.scss */
 #bpscredits {
   text-align: center;
 }
