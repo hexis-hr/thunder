@@ -114,7 +114,7 @@ a:visited, a:active {
 /* line 36, ../sass/screen.scss */
 #main-navigation {
   background: #272727;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 /* line 37, ../sass/screen.scss */
@@ -208,7 +208,6 @@ a:visited, a:active {
   border-color: #f8bb14;
 }
 
-/*#main-navigation ul li > ul li:active > a {color: $logoy;}*/
 /* SUB SUB MENU */
 /* line 55, ../sass/screen.scss */
 #main-navigation ul li > ul li > ul:before {
@@ -291,41 +290,27 @@ a:visited, a:active {
 /* line 86, ../sass/screen.scss */
 #CreateTicketInQueue {
   float: left;
+  line-height: 40px;
 }
 
 /* line 87, ../sass/screen.scss */
-.button {
-  background: #cb0c19;
-  color: #fff;
-  border: 1px solid #2e2e2e;
-  border-radius: 5px;
-  line-height: 2.5em;
-  padding: 0 0.8em;
-  box-shadow: 1px 1px 2px #272727;
-  letter-spacing: 1px;
-}
-
-/* line 88, ../sass/screen.scss */
-.button:hover {
-  background: #ad0000;
-  color: #fff;
-}
-
-/* line 89, ../sass/screen.scss */
-.select-queue {
+#CreateTicketInQueue .select-queue {
   background: #fff;
   color: #272727;
   outline: none;
-  height: 30px;
   width: 250px;
-  border: 1px solid black;
-  box-shadow: 0px 1px 1px #272727;
+  border: 1px solid #2e2e2e;
+}
+
+/* line 88, ../sass/screen.scss */
+#CreateTicketInQueue .button {
+  padding: 0.6em 0.5em;
 }
 
 /* line 91, ../sass/screen.scss */
 #simple-search {
   float: right;
-  line-height: 2.2em;
+  line-height: 40px;
 }
 
 /* line 92, ../sass/screen.scss */
@@ -367,7 +352,7 @@ a:visited, a:active {
 /* line 105, ../sass/screen.scss */
 .myrt {
   width: 1300px;
-  margin: 2em auto;
+  margin: 1em auto;
 }
 
 /* line 106, ../sass/screen.scss */
@@ -426,14 +411,14 @@ a:visited, a:active {
   text-transform: uppercase;
 }
 
-/* line 121, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
 .collection-as-table {
   padding: 0.3em 0.5em;
   font-size: 1em;
   color: #272727;
 }
 
-/* line 122, ../sass/screen.scss */
+/* line 121, ../sass/screen.scss */
 .collection-as-table th {
   font-size: 0.9em;
   text-transform: uppercase;
@@ -441,18 +426,37 @@ a:visited, a:active {
   color: #272727;
 }
 
-/* line 123, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 .collection-as-table:first-child {
   padding-right: 1em;
 }
 
-/* line 124, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 .collection-as-table:nth-child(2) {
-  width: 35%;
+  width: 50%;
   padding-right: 1em;
 }
 
+/* line 124, ../sass/screen.scss */
+.collection-as-table:nth-child(3) {
+  width: 40%;
+}
+
 /* line 125, ../sass/screen.scss */
+.boxcontainer:first-child .collection-as-table:nth-child(4) {
+  font-size: 0.7em;
+  text-transform: uppercase;
+  text-align: middle;
+}
+
+/* line 126, ../sass/screen.scss */
+.collection-as-table:nth-child(5) {
+  font-size: 0.7em;
+  text-transform: uppercase;
+  text-align: middle;
+}
+
+/* line 128, ../sass/screen.scss */
 .collection-as-table td:last-child > a {
   text-transform: lowercase;
   letter-spacing: -1px;
@@ -460,7 +464,7 @@ a:visited, a:active {
   text-decoration: none;
 }
 
-/* line 128, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
 .ticket-overview th {
   font-size: 0.9em;
   text-transform: uppercase;
@@ -468,42 +472,122 @@ a:visited, a:active {
   color: #272727;
 }
 
-/* line 129, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 .ticket-overview tr {
   padding: 0.3em 0.5em;
   font-size: 0.9em;
   color: #272727;
 }
 
-/* line 131, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 .titlebox .queue-summary td {
   width: 100%;
   text-align: center;
   padding: 0.3em 0.5em;
 }
 
-/* line 132, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 .titlebox .queue-summary td:first-child {
   text-align: left;
 }
 
+/* QUICK TICKET CREATION */
+/* line 138, ../sass/screen.scss */
+.quick-create {
+  width: 530px;
+  background: #dbdbdb;
+}
+
+/* line 139, ../sass/screen.scss */
+.quick-create td {
+  padding: 0.3em 0.3em;
+  width: 530px;
+}
+
 /* line 140, ../sass/screen.scss */
+.quick-create tr {
+  color: #272727;
+}
+
+/* line 142, ../sass/screen.scss */
+.buttons .button {
+  display: block;
+}
+
+/* line 143, ../sass/screen.scss */
+.button {
+  border: none;
+  background: #b70005;
+  color: #fff;
+  border: 1px solid black;
+  border-radius: 3px;
+  -webkit-transition: all 0.25s ease-in;
+  -moz-transition: all 0.25s ease-in;
+  -ms-transition: all 0.25s ease-in;
+  -o-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+}
+
+/* line 144, ../sass/screen.scss */
+.button:hover {
+  background: #454545;
+  color: #fff;
+  -webkit-transition: all 0.35s ease-out;
+  -moz-transition: all 0.35s ease-out;
+  -ms-transition: all 0.35s ease-out;
+  -o-transition: all 0.35s ease-out;
+  transition: all 0.35s ease-out;
+}
+
+/* line 145, ../sass/screen.scss */
+.quick-create .button {
+  width: 150px;
+  height: 40px;
+  margin: 0 auto;
+  margin-bottom: 0.3em;
+}
+
+/* line 146, ../sass/screen.scss */
+.quick-create textarea {
+  max-width: 410px;
+  min-width: 410px;
+  min-height: 100px;
+  background: #fff;
+}
+
+/* REFRESH CONTAINER */
+/* line 151, ../sass/screen.scss */
+.boxcontainer:nth-child(2) .titlebox:nth-child(4) {
+  float: left;
+}
+
+/* line 152, ../sass/screen.scss */
+.boxcontainer:nth-child(2) .titlebox .submit {
+  float: right;
+}
+
+/* line 153, ../sass/screen.scss */
+.boxcontainer:nth-child(2) .titlebox:nth-child(4):after {
+  clear: both;
+}
+
+/* line 158, ../sass/screen.scss */
 #time {
   display: none;
 }
 
-/* line 141, ../sass/screen.scss */
+/* line 159, ../sass/screen.scss */
 #ui-datepicker-div {
   display: none;
 }
 
-/* line 144, ../sass/screen.scss */
+/* line 162, ../sass/screen.scss */
 #footer {
   line-height: 3em;
   color: #272727;
 }
 
-/* line 145, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 #bpscredits {
   text-align: center;
 }
