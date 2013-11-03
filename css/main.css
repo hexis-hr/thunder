@@ -440,27 +440,20 @@ a:visited, a:active {
 
 /* line 128, ../sass/screen.scss */
 .collection-as-table:nth-child(2) {
-  /*width: 50%; */
   padding-right: 0.5em;
-}
-
-/* line 129, ../sass/screen.scss */
-.collection-as-table:nth-child(3) {
-  /*width: 40%;*/
 }
 
 /* line 130, ../sass/screen.scss */
 .boxcontainer:first-child .collection-as-table:nth-child(4) {
   font-size: 0.7em;
   text-transform: uppercase;
-  text-align: middle;
 }
 
 /* line 131, ../sass/screen.scss */
 .collection-as-table:nth-child(5) {
   font-size: 0.7em;
   text-transform: uppercase;
-  text-align: middle;
+  text-align: left;
 }
 
 /* line 133, ../sass/screen.scss */
@@ -488,8 +481,8 @@ a:visited, a:active {
 
 /* line 138, ../sass/screen.scss */
 .titlebox .queue-summary td {
-  text-align: center;
   padding: 0.3em 0.5em;
+  text-align: center;
 }
 
 /* line 139, ../sass/screen.scss */
@@ -497,11 +490,9 @@ a:visited, a:active {
   text-align: left;
 }
 
-/* line 142, ../sass/screen.scss */
-.boxcontainer .collection-as-table tr:first-child {
-  background: orange;
-  color: blue;
-  max-width: 100%;
+/* line 141, ../sass/screen.scss */
+.ticket-list {
+  width: 100%;
 }
 
 /* QUICK TICKET CREATION */
