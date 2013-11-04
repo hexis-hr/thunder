@@ -1,5 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Lato);
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
@@ -77,7 +77,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* tamnija nijansa crvene od loga */
 /* jos svijetlija od tamno sive, ima u navigaciji kao bottom border*/
 /*********** START ************/
-/* line 25, ../sass/screen.scss */
+/* line 23, ../sass/screen.scss */
 body {
   color: #272727;
   margin: 0 auto;
@@ -85,19 +85,19 @@ body {
   font-size: 100%;
 }
 
-/* line 27, ../sass/screen.scss */
+/* line 25, ../sass/screen.scss */
 a {
   color: black;
   text-decoration: none;
 }
 
-/* line 28, ../sass/screen.scss */
+/* line 26, ../sass/screen.scss */
 a:hover {
   text-decoration: underline;
   color: #df202d;
 }
 
-/* line 29, ../sass/screen.scss */
+/* line 27, ../sass/screen.scss */
 a:visited, a:active {
   color: black;
   text-decoration: none;
@@ -105,22 +105,22 @@ a:visited, a:active {
 
 /* START MAIN NAVIGATION */
 /* MAIN MENU */
-/* line 37, ../sass/screen.scss */
+/* line 35, ../sass/screen.scss */
 #app-nav {
   background: #272727;
 }
 
-/* line 38, ../sass/screen.scss */
+/* line 36, ../sass/screen.scss */
 #app-nav:after {
   clear: both;
 }
 
-/* line 40, ../sass/screen.scss */
+/* line 38, ../sass/screen.scss */
 #main-navigation {
   margin: 0 auto;
 }
 
-/* line 42, ../sass/screen.scss */
+/* line 40, ../sass/screen.scss */
 #main-navigation ul li {
   float: left;
   font-size: 1em;
@@ -128,7 +128,7 @@ a:visited, a:active {
   padding: 0.5em 0;
 }
 
-/* line 43, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
 #main-navigation ul li a {
   display: block;
   color: #fff;
@@ -136,18 +136,18 @@ a:visited, a:active {
   text-decoration: none;
 }
 
-/* line 44, ../sass/screen.scss */
+/* line 42, ../sass/screen.scss */
 #main-navigation ul li:hover > a {
   color: #fff;
 }
 
-/* line 45, ../sass/screen.scss */
+/* line 43, ../sass/screen.scss */
 #main-navigation ul li.active > a {
   color: #f8bb14;
 }
 
 /* SUB MENU */
-/* line 48, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 #main-navigation .toplevel > li > ul:before {
   content: "";
   border-style: solid;
@@ -160,7 +160,7 @@ a:visited, a:active {
   top: -6px;
 }
 
-/* line 50, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 #main-navigation ul li > ul {
   position: absolute;
   width: 150px;
@@ -168,12 +168,12 @@ a:visited, a:active {
   padding-left: 1.5px;
 }
 
-/* line 51, ../sass/screen.scss */
+/* line 49, ../sass/screen.scss */
 #main-navigation ul li:hover > ul {
   display: block;
 }
 
-/* line 52, ../sass/screen.scss */
+/* line 50, ../sass/screen.scss */
 #main-navigation ul li > ul li {
   padding: 0px 3px 0px;
   background: #272727;
@@ -181,7 +181,7 @@ a:visited, a:active {
   border-bottom: 1px solid #2e2e2e;
 }
 
-/* line 53, ../sass/screen.scss */
+/* line 51, ../sass/screen.scss */
 #main-navigation ul li > ul li a {
   display: block;
   padding: 0 9px;
@@ -190,7 +190,7 @@ a:visited, a:active {
   border-left: 2px solid #272727;
 }
 
-/* line 54, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 #main-navigation ul li > ul li:hover {
   background: #353535;
   -webkit-transition: all 0.15s ease-in-out;
@@ -200,14 +200,14 @@ a:visited, a:active {
   transition: all 0.15s ease-in-out;
 }
 
-/* line 55, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 #main-navigation ul li > ul li:hover > a {
   color: #fff;
   border-color: #f8bb14;
 }
 
 /* SUB SUB MENU */
-/* line 59, ../sass/screen.scss */
+/* line 57, ../sass/screen.scss */
 #main-navigation ul li > ul li > ul:before {
   content: "";
   border-style: solid;
@@ -220,24 +220,24 @@ a:visited, a:active {
   top: 6px;
 }
 
-/* line 61, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 #main-navigation ul li > ul li > ul {
   top: 0;
   left: 100%;
   padding: 0 1px;
 }
 
-/* line 62, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 #main-navigation ul ul {
   display: none;
 }
 
-/* line 63, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 #main-navigation ul li:hover > ul {
   display: block;
 }
 
-/* line 64, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
 #main-navigation ul:after {
   content: ".";
   clear: both;
@@ -248,18 +248,18 @@ a:visited, a:active {
 
 /* END MAIN NAVIGATION */
 /* START HEADER */
-/* line 73, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 #logo {
   float: left;
   background: #272727;
 }
 
-/* line 74, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 #logo > .rtname {
   display: none;
 }
 
-/* line 75, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 #logo img {
   width: 23px;
   height: 26px;
@@ -267,32 +267,32 @@ a:visited, a:active {
   padding: 0.2em 1em;
 }
 
-/* line 77, ../sass/screen.scss */
+/* line 75, ../sass/screen.scss */
 #quickbar {
   display: none;
 }
 
-/* line 79, ../sass/screen.scss */
+/* line 77, ../sass/screen.scss */
 #header {
   display: none;
 }
 
 /* END HEADER */
 /* NEW TICKET FAST */
-/* line 88, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 #topactions {
   margin: 0 auto;
   max-width: 1300px;
 }
 
-/* line 90, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 #CreateTicketInQueue {
   float: left;
   line-height: 40px;
   padding: 0 1em;
 }
 
-/* line 91, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 #CreateTicketInQueue .select-queue {
   background: #fff;
   color: #272727;
@@ -301,26 +301,26 @@ a:visited, a:active {
   border: 1px solid #2e2e2e;
 }
 
-/* line 92, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 #CreateTicketInQueue .button {
   padding: 0.6em 0.5em;
 }
 
-/* line 95, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 #simple-search {
   float: right;
   line-height: 40px;
   padding-right: 1em;
 }
 
-/* line 96, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 #simple-search input {
   border: 1px solid #2e2e2e;
   width: 200px;
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
 
-/* line 99, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 #topactions:after {
   content: ".";
   clear: both;
@@ -329,14 +329,14 @@ a:visited, a:active {
   height: 0px;
 }
 
-/* line 101, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 #page-navigation {
   max-width: 1300px;
   margin: 0.1em auto;
   padding: 0 1em;
 }
 
-/* line 102, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 #page-menu {
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
   font-size: 0.7em;
@@ -345,7 +345,7 @@ a:visited, a:active {
   float: right;
 }
 
-/* line 103, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 #page-navigation:after {
   content: ".";
   clear: both;
@@ -355,48 +355,48 @@ a:visited, a:active {
 }
 
 /* TICKETI */
-/* line 110, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 .myrt {
   max-width: 1300px;
   margin: 1em auto;
 }
 
-/* line 111, ../sass/screen.scss */
-.boxcontainer:nth-child(1) {
+/* line 109, ../sass/screen.scss */
+#comp-index .boxcontainer:nth-child(1) {
   /*width: 65%;*/
   vertical-align: top;
   padding-left: 1em;
 }
 
-/* line 112, ../sass/screen.scss */
-.boxcontainer:nth-child(2) {
+/* line 110, ../sass/screen.scss */
+#comp-index .boxcontainer:nth-child(2) {
   /*width: 34%;*/
   padding: 0 1em;
   vertical-align: top;
 }
 
-/* line 114, ../sass/screen.scss */
+/* line 112, ../sass/screen.scss */
 .oddline {
   background: #cbcbcb;
 }
 
-/* line 115, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 .evenline {
   background: #dbdbdb;
 }
 
-/* line 116, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 .clear {
   display: none;
 }
 
-/* line 118, ../sass/screen.scss */
+/* line 116, ../sass/screen.scss */
 .boxcontainer .titlebox {
   border: 1px solid black;
   margin-bottom: 1.5em;
 }
 
-/* line 119, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 .titlebox-title {
   background: #454545;
   color: #fff;
@@ -405,12 +405,12 @@ a:visited, a:active {
   padding-left: 0.5em;
 }
 
-/* line 120, ../sass/screen.scss */
+/* line 118, ../sass/screen.scss */
 .titlebox-title a {
   color: #fff;
 }
 
-/* line 121, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 .titlebox-title .right {
   float: right;
   padding-right: 1em;
@@ -418,14 +418,14 @@ a:visited, a:active {
   text-transform: uppercase;
 }
 
-/* line 125, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 .collection-as-table {
   padding: 0.3em 0.5em;
   font-size: 1em;
   color: #272727;
 }
 
-/* line 126, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 .collection-as-table th {
   font-size: 0.9em;
   text-transform: uppercase;
@@ -433,30 +433,30 @@ a:visited, a:active {
   color: #272727;
 }
 
-/* line 127, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
 .collection-as-table:first-child {
   padding-right: 0.5em;
 }
 
-/* line 128, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 .collection-as-table:nth-child(2) {
   padding-right: 0.5em;
 }
 
-/* line 130, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 .boxcontainer:first-child .collection-as-table:nth-child(4) {
   font-size: 0.7em;
   text-transform: uppercase;
 }
 
-/* line 131, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 .collection-as-table:nth-child(5) {
   font-size: 0.7em;
   text-transform: uppercase;
   text-align: left;
 }
 
-/* line 133, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 .collection-as-table td:last-child > a {
   text-transform: lowercase;
   letter-spacing: -1px;
@@ -464,7 +464,7 @@ a:visited, a:active {
   text-decoration: none;
 }
 
-/* line 135, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 .ticket-overview th {
   font-size: 0.9em;
   text-transform: uppercase;
@@ -472,53 +472,53 @@ a:visited, a:active {
   color: #272727;
 }
 
-/* line 136, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 .ticket-overview tr {
   padding: 0.3em 0.5em;
   font-size: 0.9em;
   color: #272727;
 }
 
-/* line 138, ../sass/screen.scss */
+/* line 136, ../sass/screen.scss */
 .titlebox .queue-summary td {
   padding: 0.3em 0.5em;
   text-align: center;
 }
 
-/* line 139, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 .titlebox .queue-summary td:first-child {
   text-align: left;
 }
 
-/* line 141, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 .ticket-list {
   width: 100%;
 }
 
 /* QUICK TICKET CREATION */
-/* line 147, ../sass/screen.scss */
+/* line 145, ../sass/screen.scss */
 .quick-create {
   width: 530px;
   background: #dbdbdb;
 }
 
-/* line 148, ../sass/screen.scss */
+/* line 146, ../sass/screen.scss */
 .quick-create td {
   padding: 0.3em 0.3em;
   width: 530px;
 }
 
-/* line 149, ../sass/screen.scss */
+/* line 147, ../sass/screen.scss */
 .quick-create tr {
   color: #272727;
 }
 
-/* line 151, ../sass/screen.scss */
+/* line 149, ../sass/screen.scss */
 .buttons .button {
   display: block;
 }
 
-/* line 152, ../sass/screen.scss */
+/* line 150, ../sass/screen.scss */
 .button {
   border: none;
   background: #b70005;
@@ -532,7 +532,7 @@ a:visited, a:active {
   transition: all 0.25s ease-in;
 }
 
-/* line 153, ../sass/screen.scss */
+/* line 151, ../sass/screen.scss */
 .button:hover {
   background: #454545;
   color: #fff;
@@ -543,7 +543,7 @@ a:visited, a:active {
   transition: all 0.35s ease-out;
 }
 
-/* line 154, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 .quick-create .button {
   width: 150px;
   height: 40px;
@@ -551,7 +551,7 @@ a:visited, a:active {
   margin-bottom: 0.3em;
 }
 
-/* line 155, ../sass/screen.scss */
+/* line 153, ../sass/screen.scss */
 .quick-create textarea {
   max-width: 410px;
   min-width: 410px;
@@ -560,74 +560,373 @@ a:visited, a:active {
 }
 
 /* REFRESH CONTAINER */
-/* line 160, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
 .boxcontainer:nth-child(2) .titlebox:nth-child(4) {
   float: left;
 }
 
-/* line 161, ../sass/screen.scss */
+/* line 159, ../sass/screen.scss */
 .boxcontainer:nth-child(2) .titlebox .submit {
   float: right;
 }
 
-/* line 162, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 .boxcontainer:nth-child(2) .titlebox:nth-child(4):after {
   clear: both;
 }
 
-/* line 167, ../sass/screen.scss */
+/* line 165, ../sass/screen.scss */
 #time {
   display: none;
 }
 
-/* line 168, ../sass/screen.scss */
+/* line 166, ../sass/screen.scss */
 #ui-datepicker-div {
   display: none;
 }
 
-/* line 171, ../sass/screen.scss */
+/* line 169, ../sass/screen.scss */
 #footer {
   line-height: 3em;
   color: #272727;
 }
 
-/* line 172, ../sass/screen.scss */
+/* line 170, ../sass/screen.scss */
 #bpscredits {
   text-align: center;
 }
 
-/********************************** LOGIN PAGE **********************************/
-/* line 178, ../sass/screen.scss */
+/********************************** START LOGIN PAGE **********************************/
+/* line 176, ../sass/screen.scss */
 #login-box .titlebox {
   width: 400px;
   margin: 0em auto;
   border: 1px solid black;
 }
 
-/* line 179, ../sass/screen.scss */
+/* line 177, ../sass/screen.scss */
 #login-box .input-row {
   margin: 1.3em auto;
   text-align: center;
 }
 
-/* line 180, ../sass/screen.scss */
+/* line 178, ../sass/screen.scss */
 #login-box .input-row .label {
   padding-right: 1em;
 }
 
-/* line 182, ../sass/screen.scss */
+/* line 180, ../sass/screen.scss */
 #login .button-row {
   text-align: center;
 }
 
-/* line 183, ../sass/screen.scss */
+/* line 181, ../sass/screen.scss */
 #login .button {
   height: 35px;
   width: 140px;
   margin: 1em 0;
 }
 
-/* line 185, ../sass/screen.scss */
+/* line 183, ../sass/screen.scss */
 #comp-index #legal {
   display: none;
 }
+
+/********************************** END LOGIN PAGE **********************************/
+/********************************** START SIMPLE SEARCH PAGE **********************************/
+/* line 191, ../sass/screen.scss */
+#SimpleSearchForm {
+  max-width: 50%;
+  margin: 7em auto;
+}
+
+/* line 193, ../sass/screen.scss */
+#SimpleSearchForm input:first-child {
+  display: table;
+  width: 500px;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+/* line 194, ../sass/screen.scss */
+#SimpleSearchForm input:last-child {
+  padding: 0.6em 1em;
+  margin-bottom: 3em;
+}
+
+/* line 196, ../sass/screen.scss */
+#SimpleSearchForm p {
+  clear: both;
+  line-height: 1.7em;
+}
+
+/* line 198, ../sass/screen.scss */
+#comp-Search-Simple #topactions #CreateTicketInQueue {
+  display: none;
+}
+
+/* line 199, ../sass/screen.scss */
+#comp-Search-Simple #topactions #simple-search {
+  display: none;
+}
+
+/********************************** END SIMPLE SEARCH PAGE **********************************/
+/********************************** START QUERY BILDER PAGE - FIXAT **********************************/
+/* line 207, ../sass/screen.scss */
+#comp-Search-Build #body {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* line 209, ../sass/screen.scss */
+#comp-Search-Build #body form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* line 211, ../sass/screen.scss */
+#comp-Search-Build #topactions {
+  display: none;
+}
+
+/* line 213, ../sass/screen.scss */
+#comp-Search-Build #page-navigation {
+  background: orange;
+  font-size: 1.5em;
+}
+
+/********************************** END QUERY BILDER PAGE **********************************/
+/********************************** START comp-Ticket-Display PAGE **********************************/
+/* line 222, ../sass/screen.scss */
+#comp-Ticket-Display #body {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* line 223, ../sass/screen.scss */
+#comp-Ticket-Display #topactions {
+  display: none;
+}
+
+/* PAGE NAVIGATION (2nd) */
+/* line 227, ../sass/screen.scss */
+#comp-Ticket-Display #page-navigation {
+  background: orange;
+}
+
+/* line 229, ../sass/screen.scss */
+ul ol {
+  list-style: none;
+  clear: both;
+  visibility: visible;
+}
+
+/* line 230, ../sass/screen.scss */
+#comp-Ticket-Display #page-navigation ul {
+  list-style: none;
+}
+/* line 231, ../sass/screen.scss */
+#comp-Ticket-Display #page-navigation ul li {
+  float: left;
+  position: relative;
+  line-height: 2em;
+}
+/* line 232, ../sass/screen.scss */
+#comp-Ticket-Display #page-navigation ul li a {
+  display: block;
+  text-transform: none;
+  background: yellow;
+  padding: 0.3em 0.7em 0.3em;
+  font-size: 1.2em;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -ms-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+/* line 233, ../sass/screen.scss */
+#comp-Ticket-Display #page-navigation ul li:hover > a {
+  color: green;
+  text-decoration: none;
+}
+/* line 234, ../sass/screen.scss */
+#comp-Ticket-Display #page-navigation ul li.active > a {
+  color: green;
+}
+/* line 235, ../sass/screen.scss */
+#comp-Ticket-Display #page-navigation ul li > ul {
+  position: absolute;
+  top: 95%;
+  padding-top: 13px;
+  background: none;
+  width: 150px;
+}
+
+/* line 240, ../sass/screen.scss */
+.sf-sub-indicator {
+  display: none;
+}
+
+/**** OD NAVIGACIJE NEKI ****/
+/* line 245, ../sass/screen.scss */
+#comp-Ticket-Display .titlebox-title {
+  padding: 0 0.5em;
+}
+
+/* TICKET TABLES LEFT SIDE */
+/* line 251, ../sass/screen.scss */
+#comp-Ticket-Display .boxcontainer:nth-child(1) {
+  vertical-align: top;
+  padding: 0 1em;
+}
+
+/* line 254, ../sass/screen.scss */
+#comp-Ticket-Display .label {
+  padding: 0.2em 0.3em;
+}
+
+/* line 255, ../sass/screen.scss */
+#comp-Ticket-Display .value {
+  padding-right: 0.3em;
+  padding-bottom: 0.2em;
+}
+
+/* line 257, ../sass/screen.scss */
+#comp-Ticket-Display .ticket-info-basics .label {
+  width: 180px;
+  text-transform: uppercase;
+}
+
+/* line 259, ../sass/screen.scss */
+#comp-Ticket-Display .ticket-info-cfs tr {
+  border-bottom: 2px solid #272727;
+}
+
+/* line 260, ../sass/screen.scss */
+#comp-Ticket-Display .ticket-info-cfs .label {
+  width: 180px;
+  text-transform: uppercase;
+}
+
+/* TICKET TABLES RIGHT SIDE */
+/* line 264, ../sass/screen.scss */
+#comp-Ticket-Display .boxcontainer:nth-child(2) {
+  vertical-align: top;
+  padding-right: 1em;
+  width: 30%;
+}
+
+/* line 265, ../sass/screen.scss */
+#comp-Ticket-Display .ticket-info-dates {
+  margin: 1em 0;
+}
+
+/* HISTORY */
+/* line 274, ../sass/screen.scss */
+#comp-Ticket-Display .history {
+  margin: 0 1em;
+  border: 1px solid black;
+  /* Subject Title */
+  /* Download txt html */
+  /* Message */
+}
+/* line 276, ../sass/screen.scss */
+#comp-Ticket-Display .history .metadata {
+  padding: 0.5em 0.5em;
+  /* REPLY AND COMMENT LINKS */
+}
+/* line 277, ../sass/screen.scss */
+#comp-Ticket-Display .history .metadata .type a {
+  font-weight: bold;
+  color: #df202d;
+  float: left;
+  padding-right: 1em;
+}
+/* line 278, ../sass/screen.scss */
+#comp-Ticket-Display .history .metadata a:hover {
+  color: #272727;
+  text-decoration: none;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -ms-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+/* line 280, ../sass/screen.scss */
+#comp-Ticket-Display .history .metadata .date {
+  padding-right: 1em;
+}
+/* line 281, ../sass/screen.scss */
+#comp-Ticket-Display .history .metadata .description {
+  color: #454545;
+}
+/* line 286, ../sass/screen.scss */
+#comp-Ticket-Display .history .metadata .actions {
+  float: right;
+  text-transform: uppercase;
+  color: white;
+  /*font-family: 'Open Sans', sans-serif;*/
+  letter-spacing: -1px;
+}
+/* line 287, ../sass/screen.scss */
+#comp-Ticket-Display .history .metadata .actions .reply-link {
+  font-weight: bold;
+  color: #df202d;
+  margin-right: 0.5em;
+}
+/* line 288, ../sass/screen.scss */
+#comp-Ticket-Display .history .metadata .actions .comment-link {
+  font-weight: bold;
+  color: #df202d;
+}
+/* line 290, ../sass/screen.scss */
+#comp-Ticket-Display .history .metadata .actions :hover {
+  color: #272727;
+  text-decoration: none;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -ms-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+/* line 299, ../sass/screen.scss */
+#comp-Ticket-Display .history .content {
+  clear: both;
+  font-size: 1em;
+  padding: 0.5em 0.5em;
+}
+/* line 300, ../sass/screen.scss */
+#comp-Ticket-Display .history .content table {
+  line-height: 2.5em;
+  float: left;
+}
+/* line 301, ../sass/screen.scss */
+#comp-Ticket-Display .history .content table .message-header-key {
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-right: 1em;
+}
+/* line 302, ../sass/screen.scss */
+#comp-Ticket-Display .history .content table .message-header-value {
+  font-weight: bold;
+}
+/* line 308, ../sass/screen.scss */
+#comp-Ticket-Display .history .content .downloadattachment {
+  text-align: right;
+}
+/* line 312, ../sass/screen.scss */
+#comp-Ticket-Display .history .content .messagebody {
+  clear: both;
+  font-size: 1em;
+  padding: 0.5em 1em;
+}
+/* line 313, ../sass/screen.scss */
+#comp-Ticket-Display .history .message-stanza {
+  line-height: 0.8em;
+}
+/* line 316, ../sass/screen.scss */
+#comp-Ticket-Display .history .EmailRecord {
+  border-top: 1px dotted #272727;
+}
+
+/********************************** END comp-Ticket-Display PAGE **********************************/
