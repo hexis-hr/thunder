@@ -868,7 +868,6 @@ ul ol {
 /* line 283, ../sass/screen.scss */
 #comp-Ticket-Display .history {
   margin: 0 1em;
-  /*border: 1px solid black;*/
   /* Subject Title */
   /* Download txt html */
   /* Message */
@@ -938,14 +937,12 @@ ul ol {
   clear: both;
   font-size: 1em;
   background: #dbdbdb;
-  line-height: 2em;
   border: 1px solid black;
 }
 /* line 305, ../sass/screen.scss */
 #comp-Ticket-Display .history .content table {
-  line-height: 2.5em;
+  line-height: 1.6em;
   padding: 0.5em 0.5em;
-  width: 80%;
 }
 /* line 306, ../sass/screen.scss */
 #comp-Ticket-Display .history .content table .message-header-key {
