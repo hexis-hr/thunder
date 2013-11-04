@@ -884,7 +884,7 @@ ul ol {
 #comp-Ticket-Display .history .metadata .type a {
   float: left;
   padding-right: 0.5em;
-  color: #df202d;
+  color: #f8bb14;
 }
 /* line 286, ../sass/screen.scss */
 #comp-Ticket-Display .history .metadata a:hover {
@@ -944,7 +944,6 @@ ul ol {
 /* line 305, ../sass/screen.scss */
 #comp-Ticket-Display .history .content table {
   line-height: 2.5em;
-  float: left;
   padding: 0.5em 0.5em;
   width: 80%;
 }
@@ -961,12 +960,13 @@ ul ol {
 }
 /* line 312, ../sass/screen.scss */
 #comp-Ticket-Display .history .content .downloadattachment {
+  padding: 0.2em 0.5em;
+  font-size: 0.8em;
+  float: right;
   text-align: right;
-  padding: 0.5em 0.5em;
 }
 /* line 316, ../sass/screen.scss */
 #comp-Ticket-Display .history .content .messagebody {
-  clear: both;
   font-size: 1em;
   padding: 0.5em 0.5em;
 }
@@ -976,6 +976,7 @@ ul ol {
 }
 /* line 320, ../sass/screen.scss */
 #comp-Ticket-Display .history .EmailRecord {
+  clear: both;
   background: #454545;
   margin-bottom: 1.5em;
 }
