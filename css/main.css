@@ -709,11 +709,6 @@ a:visited, a:active {
 }
 
 /* PAGE NAVIGATION (2nd) */
-/* line 227, ../sass/screen.scss */
-#comp-Ticket-Display #page-navigation {
-  background: orange;
-}
-
 /* line 229, ../sass/screen.scss */
 ul ol {
   list-style: none;
@@ -735,7 +730,6 @@ ul ol {
 #comp-Ticket-Display #page-navigation ul li a {
   display: block;
   text-transform: none;
-  background: yellow;
   padding: 0.3em 0.7em 0.3em;
   font-size: 1.2em;
   -webkit-transition: all 0.25s ease-out;
@@ -746,83 +740,131 @@ ul ol {
 }
 /* line 233, ../sass/screen.scss */
 #comp-Ticket-Display #page-navigation ul li:hover > a {
-  color: green;
+  color: #df202d;
   text-decoration: none;
 }
 /* line 234, ../sass/screen.scss */
 #comp-Ticket-Display #page-navigation ul li.active > a {
-  color: green;
+  color: #df202d;
 }
 /* line 235, ../sass/screen.scss */
 #comp-Ticket-Display #page-navigation ul li > ul {
   position: absolute;
-  top: 95%;
-  padding-top: 13px;
+  top: 100%;
   background: none;
-  width: 150px;
+}
+/* line 236, ../sass/screen.scss */
+#comp-Ticket-Display #page-navigation ul li > ul li:first-child {
+  border-top: none;
+}
+/* line 237, ../sass/screen.scss */
+#comp-Ticket-Display #page-navigation ul li > ul li:last-child {
+  border-radius: 0 0 4px 4px;
+}
+/* line 238, ../sass/screen.scss */
+#comp-Ticket-Display #page-navigation ul li > ul li {
+  padding: 0 3px 3px;
+  background: #fff;
+  /*border: 1px solid $logogray; border-bottom: none;*/
+  color: #df202d;
+  width: 100%;
+}
+/* line 239, ../sass/screen.scss */
+#comp-Ticket-Display #page-navigation ul li > ul li:last-child {
+  /*border-bottom: 1px solid $logogray;*/
+}
+/* line 240, ../sass/screen.scss */
+#comp-Ticket-Display #page-navigation ul li > ul li a {
+  display: block;
+  padding: 3px 3px;
+  line-height: 1.5em;
+  font-size: 1em;
+}
+/* line 241, ../sass/screen.scss */
+#comp-Ticket-Display #page-navigation ul li > ul li:hover a {
+  color: #fff;
+  background: #353535;
+  padding: 3px 3px;
+  line-height: 1.5em;
+}
+/* line 243, ../sass/screen.scss */
+#comp-Ticket-Display #page-navigation ul ul {
+  display: none;
+}
+/* line 244, ../sass/screen.scss */
+#comp-Ticket-Display #page-navigation ul li:hover > ul {
+  display: block;
+}
+/* line 245, ../sass/screen.scss */
+#comp-Ticket-Display #page-navigation ul ul:after {
+  content: ".";
+  clear: both;
+  visibility: hidden;
+  display: block;
+  height: 0px;
 }
 
-/* line 240, ../sass/screen.scss */
+/* line 251, ../sass/screen.scss */
 .sf-sub-indicator {
   display: none;
 }
 
 /**** OD NAVIGACIJE NEKI ****/
-/* line 245, ../sass/screen.scss */
+/* line 256, ../sass/screen.scss */
 #comp-Ticket-Display .titlebox-title {
   padding: 0 0.5em;
 }
 
 /* TICKET TABLES LEFT SIDE */
-/* line 251, ../sass/screen.scss */
+/* line 262, ../sass/screen.scss */
 #comp-Ticket-Display .boxcontainer:nth-child(1) {
   vertical-align: top;
   padding: 0 1em;
 }
 
-/* line 254, ../sass/screen.scss */
+/* line 265, ../sass/screen.scss */
 #comp-Ticket-Display .label {
   padding: 0.2em 0.3em;
 }
 
-/* line 255, ../sass/screen.scss */
+/* line 266, ../sass/screen.scss */
 #comp-Ticket-Display .value {
   padding-right: 0.3em;
   padding-bottom: 0.2em;
 }
 
-/* line 257, ../sass/screen.scss */
+/* line 268, ../sass/screen.scss */
 #comp-Ticket-Display .ticket-info-basics .label {
   width: 180px;
   text-transform: uppercase;
 }
 
-/* line 259, ../sass/screen.scss */
+/* line 270, ../sass/screen.scss */
 #comp-Ticket-Display .ticket-info-cfs tr {
   border-bottom: 2px solid #272727;
 }
 
-/* line 260, ../sass/screen.scss */
+/* line 271, ../sass/screen.scss */
 #comp-Ticket-Display .ticket-info-cfs .label {
   width: 180px;
   text-transform: uppercase;
 }
 
 /* TICKET TABLES RIGHT SIDE */
-/* line 264, ../sass/screen.scss */
+/* line 275, ../sass/screen.scss */
 #comp-Ticket-Display .boxcontainer:nth-child(2) {
   vertical-align: top;
   padding-right: 1em;
   width: 30%;
 }
 
-/* line 265, ../sass/screen.scss */
+/* line 276, ../sass/screen.scss */
 #comp-Ticket-Display .ticket-info-dates {
   margin: 1em 0;
 }
 
 /* HISTORY */
-/* line 274, ../sass/screen.scss */
+/* line 285, ../sass/screen.scss */
 #comp-Ticket-Display .history {
   margin: 0 1em;
   border: 1px solid black;
@@ -830,19 +872,19 @@ ul ol {
   /* Download txt html */
   /* Message */
 }
-/* line 276, ../sass/screen.scss */
+/* line 287, ../sass/screen.scss */
 #comp-Ticket-Display .history .metadata {
   padding: 0.5em 0.5em;
   /* REPLY AND COMMENT LINKS */
 }
-/* line 277, ../sass/screen.scss */
+/* line 288, ../sass/screen.scss */
 #comp-Ticket-Display .history .metadata .type a {
   font-weight: bold;
   color: #df202d;
   float: left;
   padding-right: 1em;
 }
-/* line 278, ../sass/screen.scss */
+/* line 289, ../sass/screen.scss */
 #comp-Ticket-Display .history .metadata a:hover {
   color: #272727;
   text-decoration: none;
@@ -852,15 +894,15 @@ ul ol {
   -o-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
-/* line 280, ../sass/screen.scss */
+/* line 291, ../sass/screen.scss */
 #comp-Ticket-Display .history .metadata .date {
   padding-right: 1em;
 }
-/* line 281, ../sass/screen.scss */
+/* line 292, ../sass/screen.scss */
 #comp-Ticket-Display .history .metadata .description {
   color: #454545;
 }
-/* line 286, ../sass/screen.scss */
+/* line 297, ../sass/screen.scss */
 #comp-Ticket-Display .history .metadata .actions {
   float: right;
   text-transform: uppercase;
@@ -868,18 +910,18 @@ ul ol {
   /*font-family: 'Open Sans', sans-serif;*/
   letter-spacing: -1px;
 }
-/* line 287, ../sass/screen.scss */
+/* line 298, ../sass/screen.scss */
 #comp-Ticket-Display .history .metadata .actions .reply-link {
   font-weight: bold;
   color: #df202d;
   margin-right: 0.5em;
 }
-/* line 288, ../sass/screen.scss */
+/* line 299, ../sass/screen.scss */
 #comp-Ticket-Display .history .metadata .actions .comment-link {
   font-weight: bold;
   color: #df202d;
 }
-/* line 290, ../sass/screen.scss */
+/* line 301, ../sass/screen.scss */
 #comp-Ticket-Display .history .metadata .actions :hover {
   color: #272727;
   text-decoration: none;
@@ -889,42 +931,42 @@ ul ol {
   -o-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
-/* line 299, ../sass/screen.scss */
+/* line 310, ../sass/screen.scss */
 #comp-Ticket-Display .history .content {
   clear: both;
   font-size: 1em;
   padding: 0.5em 0.5em;
 }
-/* line 300, ../sass/screen.scss */
+/* line 311, ../sass/screen.scss */
 #comp-Ticket-Display .history .content table {
   line-height: 2.5em;
   float: left;
 }
-/* line 301, ../sass/screen.scss */
+/* line 312, ../sass/screen.scss */
 #comp-Ticket-Display .history .content table .message-header-key {
   font-weight: bold;
   text-transform: uppercase;
   padding-right: 1em;
 }
-/* line 302, ../sass/screen.scss */
+/* line 313, ../sass/screen.scss */
 #comp-Ticket-Display .history .content table .message-header-value {
   font-weight: bold;
 }
-/* line 308, ../sass/screen.scss */
+/* line 319, ../sass/screen.scss */
 #comp-Ticket-Display .history .content .downloadattachment {
   text-align: right;
 }
-/* line 312, ../sass/screen.scss */
+/* line 323, ../sass/screen.scss */
 #comp-Ticket-Display .history .content .messagebody {
   clear: both;
   font-size: 1em;
   padding: 0.5em 1em;
 }
-/* line 313, ../sass/screen.scss */
+/* line 324, ../sass/screen.scss */
 #comp-Ticket-Display .history .message-stanza {
   line-height: 0.8em;
 }
-/* line 316, ../sass/screen.scss */
+/* line 327, ../sass/screen.scss */
 #comp-Ticket-Display .history .EmailRecord {
   border-top: 1px dotted #272727;
 }
