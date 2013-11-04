@@ -804,89 +804,91 @@ ul ol {
   height: 0px;
 }
 
-/* line 251, ../sass/screen.scss */
+/* line 249, ../sass/screen.scss */
 .sf-sub-indicator {
   display: none;
 }
 
-/**** OD NAVIGACIJE NEKI ****/
-/* line 256, ../sass/screen.scss */
+/**** NAVIGATION INDICATOR (DEFAULT) ****/
+/* TICKET CONTENT */
+/* line 255, ../sass/screen.scss */
 #comp-Ticket-Display .titlebox-title {
   padding: 0 0.5em;
 }
 
 /* TICKET TABLES LEFT SIDE */
-/* line 262, ../sass/screen.scss */
+/* line 261, ../sass/screen.scss */
 #comp-Ticket-Display .boxcontainer:nth-child(1) {
   vertical-align: top;
   padding: 0 1em;
 }
 
-/* line 265, ../sass/screen.scss */
+/* line 264, ../sass/screen.scss */
 #comp-Ticket-Display .label {
   padding: 0.2em 0.3em;
 }
 
-/* line 266, ../sass/screen.scss */
+/* line 265, ../sass/screen.scss */
 #comp-Ticket-Display .value {
   padding-right: 0.3em;
   padding-bottom: 0.2em;
 }
 
-/* line 268, ../sass/screen.scss */
+/* line 267, ../sass/screen.scss */
 #comp-Ticket-Display .ticket-info-basics .label {
   width: 180px;
   text-transform: uppercase;
 }
 
-/* line 270, ../sass/screen.scss */
+/* line 269, ../sass/screen.scss */
 #comp-Ticket-Display .ticket-info-cfs tr {
   border-bottom: 2px solid #272727;
 }
 
-/* line 271, ../sass/screen.scss */
+/* line 270, ../sass/screen.scss */
 #comp-Ticket-Display .ticket-info-cfs .label {
   width: 180px;
   text-transform: uppercase;
 }
 
 /* TICKET TABLES RIGHT SIDE */
-/* line 275, ../sass/screen.scss */
+/* line 274, ../sass/screen.scss */
 #comp-Ticket-Display .boxcontainer:nth-child(2) {
   vertical-align: top;
   padding-right: 1em;
   width: 30%;
 }
 
-/* line 276, ../sass/screen.scss */
+/* line 275, ../sass/screen.scss */
 #comp-Ticket-Display .ticket-info-dates {
   margin: 1em 0;
 }
 
 /* HISTORY */
-/* line 285, ../sass/screen.scss */
+/* line 283, ../sass/screen.scss */
 #comp-Ticket-Display .history {
   margin: 0 1em;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   /* Subject Title */
   /* Download txt html */
   /* Message */
 }
-/* line 287, ../sass/screen.scss */
+/* line 284, ../sass/screen.scss */
 #comp-Ticket-Display .history .metadata {
+  background: #272727;
+  line-height: 2em;
   padding: 0.5em 0.5em;
   /* REPLY AND COMMENT LINKS */
 }
-/* line 288, ../sass/screen.scss */
+/* line 285, ../sass/screen.scss */
 #comp-Ticket-Display .history .metadata .type a {
-  font-weight: bold;
-  color: #df202d;
   float: left;
-  padding-right: 1em;
+  padding-right: 0.5em;
+  color: #df202d;
 }
-/* line 289, ../sass/screen.scss */
+/* line 286, ../sass/screen.scss */
 #comp-Ticket-Display .history .metadata a:hover {
-  color: #272727;
+  color: #fff;
   text-decoration: none;
   -webkit-transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
@@ -894,36 +896,36 @@ ul ol {
   -o-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
-/* line 291, ../sass/screen.scss */
+/* line 288, ../sass/screen.scss */
 #comp-Ticket-Display .history .metadata .date {
-  padding-right: 1em;
+  color: #fff;
 }
-/* line 292, ../sass/screen.scss */
+/* line 289, ../sass/screen.scss */
 #comp-Ticket-Display .history .metadata .description {
-  color: #454545;
+  color: #fff;
+  padding-left: 0.5em;
 }
-/* line 297, ../sass/screen.scss */
+/* line 294, ../sass/screen.scss */
 #comp-Ticket-Display .history .metadata .actions {
   float: right;
   text-transform: uppercase;
-  color: white;
-  /*font-family: 'Open Sans', sans-serif;*/
+  color: #272727;
   letter-spacing: -1px;
 }
-/* line 298, ../sass/screen.scss */
+/* line 295, ../sass/screen.scss */
 #comp-Ticket-Display .history .metadata .actions .reply-link {
   font-weight: bold;
-  color: #df202d;
+  color: #f8bb14;
   margin-right: 0.5em;
 }
-/* line 299, ../sass/screen.scss */
+/* line 296, ../sass/screen.scss */
 #comp-Ticket-Display .history .metadata .actions .comment-link {
   font-weight: bold;
-  color: #df202d;
+  color: #f8bb14;
 }
-/* line 301, ../sass/screen.scss */
+/* line 297, ../sass/screen.scss */
 #comp-Ticket-Display .history .metadata .actions :hover {
-  color: #272727;
+  color: #fff;
   text-decoration: none;
   -webkit-transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
@@ -931,44 +933,51 @@ ul ol {
   -o-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
-/* line 310, ../sass/screen.scss */
+/* line 304, ../sass/screen.scss */
 #comp-Ticket-Display .history .content {
+  clear: both;
+  font-size: 1em;
+  background: #dbdbdb;
+  line-height: 2em;
+  border: 1px solid black;
+}
+/* line 305, ../sass/screen.scss */
+#comp-Ticket-Display .history .content table {
+  line-height: 2.5em;
+  float: left;
+  padding: 0.5em 0.5em;
+  width: 80%;
+}
+/* line 306, ../sass/screen.scss */
+#comp-Ticket-Display .history .content table .message-header-key {
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-left: 1em;
+}
+/* line 307, ../sass/screen.scss */
+#comp-Ticket-Display .history .content table .message-header-value {
+  font-weight: bold;
+  padding-left: 1em;
+}
+/* line 312, ../sass/screen.scss */
+#comp-Ticket-Display .history .content .downloadattachment {
+  text-align: right;
+  padding: 0.5em 0.5em;
+}
+/* line 316, ../sass/screen.scss */
+#comp-Ticket-Display .history .content .messagebody {
   clear: both;
   font-size: 1em;
   padding: 0.5em 0.5em;
 }
-/* line 311, ../sass/screen.scss */
-#comp-Ticket-Display .history .content table {
-  line-height: 2.5em;
-  float: left;
-}
-/* line 312, ../sass/screen.scss */
-#comp-Ticket-Display .history .content table .message-header-key {
-  font-weight: bold;
-  text-transform: uppercase;
-  padding-right: 1em;
-}
-/* line 313, ../sass/screen.scss */
-#comp-Ticket-Display .history .content table .message-header-value {
-  font-weight: bold;
-}
-/* line 319, ../sass/screen.scss */
-#comp-Ticket-Display .history .content .downloadattachment {
-  text-align: right;
-}
-/* line 323, ../sass/screen.scss */
-#comp-Ticket-Display .history .content .messagebody {
-  clear: both;
-  font-size: 1em;
-  padding: 0.5em 1em;
-}
-/* line 324, ../sass/screen.scss */
+/* line 317, ../sass/screen.scss */
 #comp-Ticket-Display .history .message-stanza {
-  line-height: 0.8em;
+  line-height: 1.6em;
 }
-/* line 327, ../sass/screen.scss */
+/* line 320, ../sass/screen.scss */
 #comp-Ticket-Display .history .EmailRecord {
-  border-top: 1px dotted #272727;
+  background: #454545;
+  margin-bottom: 1.5em;
 }
 
 /********************************** END comp-Ticket-Display PAGE **********************************/
