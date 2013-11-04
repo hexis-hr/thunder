@@ -697,36 +697,40 @@ a:visited, a:active {
 
 /********************************** END QUERY BILDER PAGE **********************************/
 /********************************** START comp-Ticket-Display PAGE **********************************/
-/* line 222, ../sass/screen.scss */
+/* line 223, ../sass/screen.scss */
 #comp-Ticket-Display #body {
   max-width: 1300px;
   margin: 0 auto;
 }
+/* line 224, ../sass/screen.scss */
+#comp-Ticket-Display #footer {
+  margin-top: 5em;
+}
 
-/* line 223, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 #comp-Ticket-Display #topactions {
   display: none;
 }
 
 /* PAGE NAVIGATION (2nd) */
-/* line 229, ../sass/screen.scss */
+/* line 230, ../sass/screen.scss */
 ul ol {
   list-style: none;
   clear: both;
   visibility: visible;
 }
 
-/* line 230, ../sass/screen.scss */
+/* line 231, ../sass/screen.scss */
 #comp-Ticket-Display #page-navigation ul {
   list-style: none;
 }
-/* line 231, ../sass/screen.scss */
+/* line 232, ../sass/screen.scss */
 #comp-Ticket-Display #page-navigation ul li {
   float: left;
   position: relative;
   line-height: 2em;
 }
-/* line 232, ../sass/screen.scss */
+/* line 233, ../sass/screen.scss */
 #comp-Ticket-Display #page-navigation ul li a {
   display: block;
   text-transform: none;
@@ -738,64 +742,60 @@ ul ol {
   -o-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
 }
-/* line 233, ../sass/screen.scss */
+/* line 234, ../sass/screen.scss */
 #comp-Ticket-Display #page-navigation ul li:hover > a {
   color: #df202d;
   text-decoration: none;
 }
-/* line 234, ../sass/screen.scss */
+/* line 235, ../sass/screen.scss */
 #comp-Ticket-Display #page-navigation ul li.active > a {
   color: #df202d;
 }
-/* line 235, ../sass/screen.scss */
+/* line 236, ../sass/screen.scss */
 #comp-Ticket-Display #page-navigation ul li > ul {
   position: absolute;
   top: 100%;
   background: none;
+  width: 100px;
 }
-/* line 236, ../sass/screen.scss */
+/* line 237, ../sass/screen.scss */
 #comp-Ticket-Display #page-navigation ul li > ul li:first-child {
   border-top: none;
 }
-/* line 237, ../sass/screen.scss */
+/* line 238, ../sass/screen.scss */
 #comp-Ticket-Display #page-navigation ul li > ul li:last-child {
   border-radius: 0 0 4px 4px;
 }
-/* line 238, ../sass/screen.scss */
+/* line 239, ../sass/screen.scss */
 #comp-Ticket-Display #page-navigation ul li > ul li {
   padding: 0 3px 3px;
   background: #fff;
-  /*border: 1px solid $logogray; border-bottom: none;*/
   color: #df202d;
   width: 100%;
 }
-/* line 239, ../sass/screen.scss */
-#comp-Ticket-Display #page-navigation ul li > ul li:last-child {
-  /*border-bottom: 1px solid $logogray;*/
-}
-/* line 240, ../sass/screen.scss */
+/* line 241, ../sass/screen.scss */
 #comp-Ticket-Display #page-navigation ul li > ul li a {
   display: block;
   padding: 3px 3px;
   line-height: 1.5em;
   font-size: 1em;
 }
-/* line 241, ../sass/screen.scss */
+/* line 242, ../sass/screen.scss */
 #comp-Ticket-Display #page-navigation ul li > ul li:hover a {
   color: #fff;
   background: #353535;
   padding: 3px 3px;
   line-height: 1.5em;
 }
-/* line 243, ../sass/screen.scss */
+/* line 244, ../sass/screen.scss */
 #comp-Ticket-Display #page-navigation ul ul {
   display: none;
 }
-/* line 244, ../sass/screen.scss */
+/* line 245, ../sass/screen.scss */
 #comp-Ticket-Display #page-navigation ul li:hover > ul {
   display: block;
 }
-/* line 245, ../sass/screen.scss */
+/* line 246, ../sass/screen.scss */
 #comp-Ticket-Display #page-navigation ul ul:after {
   content: ".";
   clear: both;
@@ -804,88 +804,108 @@ ul ol {
   height: 0px;
 }
 
-/* line 249, ../sass/screen.scss */
+/* line 250, ../sass/screen.scss */
 .sf-sub-indicator {
   display: none;
 }
 
 /**** NAVIGATION INDICATOR (DEFAULT) ****/
 /* TICKET CONTENT */
-/* line 255, ../sass/screen.scss */
+/* line 256, ../sass/screen.scss */
 #comp-Ticket-Display .titlebox-title {
   padding: 0 0.5em;
 }
-
-/* TICKET TABLES LEFT SIDE */
-/* line 261, ../sass/screen.scss */
-#comp-Ticket-Display .boxcontainer:nth-child(1) {
-  vertical-align: top;
-  padding: 0 1em;
-}
-
-/* line 264, ../sass/screen.scss */
-#comp-Ticket-Display .label {
-  padding: 0.2em 0.3em;
-}
-
-/* line 265, ../sass/screen.scss */
-#comp-Ticket-Display .value {
-  padding-right: 0.3em;
-  padding-bottom: 0.2em;
-}
-
-/* line 267, ../sass/screen.scss */
-#comp-Ticket-Display .ticket-info-basics .label {
-  width: 180px;
-  text-transform: uppercase;
-}
-
-/* line 269, ../sass/screen.scss */
-#comp-Ticket-Display .ticket-info-cfs tr {
-  border-bottom: 2px solid #272727;
-}
-
-/* line 270, ../sass/screen.scss */
+/* line 260, ../sass/screen.scss */
 #comp-Ticket-Display .ticket-info-cfs .label {
   width: 180px;
   text-transform: uppercase;
+  padding-left: 0.5em;
+}
+/* line 261, ../sass/screen.scss */
+#comp-Ticket-Display .ticket-info-cfs table {
+  margin: 0 0;
+  padding: 0.5em 0.5em;
+  line-height: 1.3em;
+}
+/* line 262, ../sass/screen.scss */
+#comp-Ticket-Display .ticket-info-cfs tr {
+  border-bottom: 2px solid #272727;
+}
+/* line 266, ../sass/screen.scss */
+#comp-Ticket-Display .ticket-info-reminders .button {
+  width: 50px;
+  height: 25px;
+}
+/* line 267, ../sass/screen.scss */
+#comp-Ticket-Display .ticket-info-reminders table {
+  margin: 0.5em 0.5em;
+  line-height: 1.3em;
+}
+/* line 271, ../sass/screen.scss */
+#comp-Ticket-Display .ticket-info-basics .label {
+  width: 180px;
+}
+/* line 272, ../sass/screen.scss */
+#comp-Ticket-Display .ticket-info-basics table {
+  margin: 0.5em 0.5em;
+  line-height: 1.3em;
+}
+/* line 276, ../sass/screen.scss */
+#comp-Ticket-Display .ticket-info-people .label {
+  width: 180px;
+}
+/* line 277, ../sass/screen.scss */
+#comp-Ticket-Display .ticket-info-people table {
+  margin: 0.5em 0.5em;
+  line-height: 1.3em;
+}
+/* line 281, ../sass/screen.scss */
+#comp-Ticket-Display .ticket-info-dates table {
+  margin: 0.5em 0.5em;
+  line-height: 1.3em;
+}
+/* line 285, ../sass/screen.scss */
+#comp-Ticket-Display .ticket-info-links table {
+  margin: 0.5em 0.5em;
+  line-height: 1.3em;
+}
+
+/* TICKET TABLES LEFT SIDE */
+/* line 292, ../sass/screen.scss */
+#comp-Ticket-Display .boxcontainer:nth-child(1) {
+  vertical-align: top;
+  padding-right: 1em;
 }
 
 /* TICKET TABLES RIGHT SIDE */
-/* line 274, ../sass/screen.scss */
+/* line 296, ../sass/screen.scss */
 #comp-Ticket-Display .boxcontainer:nth-child(2) {
   vertical-align: top;
-  padding-right: 1em;
   width: 30%;
 }
 
-/* line 275, ../sass/screen.scss */
-#comp-Ticket-Display .ticket-info-dates {
-  margin: 1em 0;
-}
-
 /* HISTORY */
-/* line 283, ../sass/screen.scss */
+/* line 301, ../sass/screen.scss */
 #comp-Ticket-Display .history {
-  margin: 0 1em;
+  padding: 0 0;
   /* Subject Title */
   /* Download txt html */
   /* Message */
 }
-/* line 284, ../sass/screen.scss */
+/* line 302, ../sass/screen.scss */
 #comp-Ticket-Display .history .metadata {
   background: #272727;
   line-height: 2em;
-  padding: 0.5em 0.5em;
+  padding: 0 0.5em;
   /* REPLY AND COMMENT LINKS */
 }
-/* line 285, ../sass/screen.scss */
+/* line 303, ../sass/screen.scss */
 #comp-Ticket-Display .history .metadata .type a {
   float: left;
   padding-right: 0.5em;
   color: #f8bb14;
 }
-/* line 286, ../sass/screen.scss */
+/* line 304, ../sass/screen.scss */
 #comp-Ticket-Display .history .metadata a:hover {
   color: #fff;
   text-decoration: none;
@@ -895,34 +915,34 @@ ul ol {
   -o-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
-/* line 288, ../sass/screen.scss */
+/* line 306, ../sass/screen.scss */
 #comp-Ticket-Display .history .metadata .date {
   color: #fff;
 }
-/* line 289, ../sass/screen.scss */
+/* line 307, ../sass/screen.scss */
 #comp-Ticket-Display .history .metadata .description {
   color: #fff;
   padding-left: 0.5em;
 }
-/* line 294, ../sass/screen.scss */
+/* line 312, ../sass/screen.scss */
 #comp-Ticket-Display .history .metadata .actions {
   float: right;
   text-transform: uppercase;
   color: #272727;
-  letter-spacing: -1px;
+  font-size: 0.8em;
 }
-/* line 295, ../sass/screen.scss */
+/* line 313, ../sass/screen.scss */
 #comp-Ticket-Display .history .metadata .actions .reply-link {
   font-weight: bold;
   color: #f8bb14;
   margin-right: 0.5em;
 }
-/* line 296, ../sass/screen.scss */
+/* line 314, ../sass/screen.scss */
 #comp-Ticket-Display .history .metadata .actions .comment-link {
   font-weight: bold;
   color: #f8bb14;
 }
-/* line 297, ../sass/screen.scss */
+/* line 315, ../sass/screen.scss */
 #comp-Ticket-Display .history .metadata .actions :hover {
   color: #fff;
   text-decoration: none;
@@ -932,50 +952,57 @@ ul ol {
   -o-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
-/* line 304, ../sass/screen.scss */
+/* line 322, ../sass/screen.scss */
 #comp-Ticket-Display .history .content {
   clear: both;
   font-size: 1em;
   background: #dbdbdb;
   border: 1px solid black;
 }
-/* line 305, ../sass/screen.scss */
+/* line 323, ../sass/screen.scss */
 #comp-Ticket-Display .history .content table {
   line-height: 1.6em;
   padding: 0.5em 0.5em;
 }
-/* line 306, ../sass/screen.scss */
+/* line 324, ../sass/screen.scss */
 #comp-Ticket-Display .history .content table .message-header-key {
   font-weight: bold;
   text-transform: uppercase;
   padding-left: 1em;
 }
-/* line 307, ../sass/screen.scss */
+/* line 325, ../sass/screen.scss */
 #comp-Ticket-Display .history .content table .message-header-value {
   font-weight: bold;
   padding-left: 1em;
 }
-/* line 312, ../sass/screen.scss */
+/* line 330, ../sass/screen.scss */
 #comp-Ticket-Display .history .content .downloadattachment {
   padding: 0.2em 0.5em;
   font-size: 0.8em;
   float: right;
   text-align: right;
 }
-/* line 316, ../sass/screen.scss */
+/* line 334, ../sass/screen.scss */
 #comp-Ticket-Display .history .content .messagebody {
   font-size: 1em;
   padding: 0.5em 0.5em;
 }
-/* line 317, ../sass/screen.scss */
+/* line 335, ../sass/screen.scss */
 #comp-Ticket-Display .history .message-stanza {
   line-height: 1.6em;
 }
-/* line 320, ../sass/screen.scss */
+/* line 338, ../sass/screen.scss */
 #comp-Ticket-Display .history .EmailRecord {
   clear: both;
   background: #454545;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
 }
 
 /********************************** END comp-Ticket-Display PAGE **********************************/
+/********************************** START comp-Ticket-ShowEmailRecord PAGE **********************************/
+/* line 354, ../sass/screen.scss */
+#comp-Ticket-ShowEmailRecord #body {
+  max-width: 1300px;
+}
+
+/********************************** END comp-Ticket-ShowEmailRecord PAGE **********************************/
