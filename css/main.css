@@ -103,6 +103,11 @@ a:visited, a:active {
   text-decoration: none;
 }
 
+/* line 29, ../sass/screen.scss */
+#bpscredits {
+  text-align: center;
+}
+
 /* START MAIN NAVIGATION */
 /* MAIN MENU */
 /* line 35, ../sass/screen.scss */
@@ -278,21 +283,21 @@ a:visited, a:active {
 }
 
 /* END HEADER */
+/********************************** START comp-index PAGE **********************************/
 /* NEW TICKET FAST */
-/* line 86, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 #topactions {
   margin: 0 auto;
   max-width: 1300px;
 }
 
-/* line 88, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 #CreateTicketInQueue {
   float: left;
   line-height: 40px;
-  padding: 0 1em;
 }
 
-/* line 89, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 #CreateTicketInQueue .select-queue {
   background: #fff;
   color: #272727;
@@ -301,26 +306,25 @@ a:visited, a:active {
   border: 1px solid #2e2e2e;
 }
 
-/* line 90, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 #CreateTicketInQueue .button {
   padding: 0.6em 0.5em;
 }
 
-/* line 93, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 #simple-search {
   float: right;
   line-height: 40px;
-  padding-right: 1em;
 }
 
-/* line 94, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 #simple-search input {
   border: 1px solid #2e2e2e;
   width: 200px;
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
 
-/* line 97, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
 #topactions:after {
   content: ".";
   clear: both;
@@ -329,14 +333,14 @@ a:visited, a:active {
   height: 0px;
 }
 
-/* line 99, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 #page-navigation {
   max-width: 1300px;
   margin: 0.1em auto;
   padding: 0 1em;
 }
 
-/* line 100, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 #page-menu {
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
   font-size: 0.7em;
@@ -345,7 +349,7 @@ a:visited, a:active {
   float: right;
 }
 
-/* line 101, ../sass/screen.scss */
+/* line 102, ../sass/screen.scss */
 #page-navigation:after {
   content: ".";
   clear: both;
@@ -355,48 +359,45 @@ a:visited, a:active {
 }
 
 /* TICKETI */
-/* line 108, ../sass/screen.scss */
-.myrt {
-  max-width: 1300px;
-  margin: 1em auto;
-}
-
 /* line 109, ../sass/screen.scss */
-#comp-index .boxcontainer:nth-child(1) {
-  /*width: 65%;*/
-  vertical-align: top;
-  padding-left: 1em;
+#comp-index .myrt {
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 /* line 110, ../sass/screen.scss */
-#comp-index .boxcontainer:nth-child(2) {
-  /*width: 34%;*/
-  padding: 0 1em;
+#comp-index .boxcontainer {
   vertical-align: top;
+  padding-top: 1em;
 }
 
-/* line 112, ../sass/screen.scss */
+/* line 111, ../sass/screen.scss */
+#comp-index .boxcontainer:nth-child(1) {
+  padding-right: 1em;
+}
+
+/* line 115, ../sass/screen.scss */
 .oddline {
-  background: #cbcbcb;
+  background: #DEDEDE;
 }
 
-/* line 113, ../sass/screen.scss */
+/* line 116, ../sass/screen.scss */
 .evenline {
-  background: #dbdbdb;
+  background: #D2D2D2;
 }
 
-/* line 114, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 .clear {
   display: none;
 }
 
-/* line 116, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 .boxcontainer .titlebox {
   border: 1px solid black;
   margin-bottom: 1.5em;
 }
 
-/* line 117, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
 .titlebox-title {
   background: #454545;
   color: #fff;
@@ -405,12 +406,12 @@ a:visited, a:active {
   padding-left: 0.5em;
 }
 
-/* line 118, ../sass/screen.scss */
+/* line 121, ../sass/screen.scss */
 .titlebox-title a {
   color: #fff;
 }
 
-/* line 119, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 .titlebox-title .right {
   float: right;
   padding-right: 1em;
@@ -418,14 +419,14 @@ a:visited, a:active {
   text-transform: uppercase;
 }
 
-/* line 123, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 .collection-as-table {
   padding: 0.3em 0.5em;
   font-size: 1em;
   color: #272727;
 }
 
-/* line 124, ../sass/screen.scss */
+/* line 127, ../sass/screen.scss */
 .collection-as-table th {
   font-size: 0.9em;
   text-transform: uppercase;
@@ -433,30 +434,30 @@ a:visited, a:active {
   color: #272727;
 }
 
-/* line 125, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 .collection-as-table:first-child {
   padding-right: 0.5em;
 }
 
-/* line 126, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 .collection-as-table:nth-child(2) {
   padding-right: 0.5em;
 }
 
-/* line 128, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 .boxcontainer:first-child .collection-as-table:nth-child(4) {
-  font-size: 0.7em;
+  font-size: 0.9em;
   text-transform: uppercase;
 }
 
-/* line 129, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 .collection-as-table:nth-child(5) {
-  font-size: 0.7em;
+  font-size: 0.9em;
   text-transform: uppercase;
   text-align: left;
 }
 
-/* line 131, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 .collection-as-table td:last-child > a {
   text-transform: lowercase;
   letter-spacing: -1px;
@@ -464,7 +465,7 @@ a:visited, a:active {
   text-decoration: none;
 }
 
-/* line 133, ../sass/screen.scss */
+/* line 136, ../sass/screen.scss */
 .ticket-overview th {
   font-size: 0.9em;
   text-transform: uppercase;
@@ -472,53 +473,53 @@ a:visited, a:active {
   color: #272727;
 }
 
-/* line 134, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 .ticket-overview tr {
   padding: 0.3em 0.5em;
   font-size: 0.9em;
   color: #272727;
 }
 
-/* line 136, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 .titlebox .queue-summary td {
   padding: 0.3em 0.5em;
   text-align: center;
 }
 
-/* line 137, ../sass/screen.scss */
+/* line 140, ../sass/screen.scss */
 .titlebox .queue-summary td:first-child {
   text-align: left;
 }
 
-/* line 139, ../sass/screen.scss */
+/* line 142, ../sass/screen.scss */
 .ticket-list {
   width: 100%;
 }
 
 /* QUICK TICKET CREATION */
-/* line 145, ../sass/screen.scss */
+/* line 148, ../sass/screen.scss */
 .quick-create {
   width: 530px;
   background: #dbdbdb;
 }
 
-/* line 146, ../sass/screen.scss */
+/* line 149, ../sass/screen.scss */
 .quick-create td {
   padding: 0.3em 0.3em;
   width: 530px;
 }
 
-/* line 147, ../sass/screen.scss */
+/* line 150, ../sass/screen.scss */
 .quick-create tr {
   color: #272727;
 }
 
-/* line 149, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 .buttons .button {
   display: block;
 }
 
-/* line 150, ../sass/screen.scss */
+/* line 153, ../sass/screen.scss */
 .button {
   border: none;
   background: #b70005;
@@ -532,7 +533,7 @@ a:visited, a:active {
   transition: all 0.25s ease-in;
 }
 
-/* line 151, ../sass/screen.scss */
+/* line 154, ../sass/screen.scss */
 .button:hover {
   background: #454545;
   color: #fff;
@@ -543,7 +544,7 @@ a:visited, a:active {
   transition: all 0.35s ease-out;
 }
 
-/* line 152, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 .quick-create .button {
   width: 150px;
   height: 40px;
@@ -551,7 +552,7 @@ a:visited, a:active {
   margin-bottom: 0.3em;
 }
 
-/* line 153, ../sass/screen.scss */
+/* line 156, ../sass/screen.scss */
 .quick-create textarea {
   max-width: 410px;
   min-width: 410px;
@@ -560,87 +561,82 @@ a:visited, a:active {
 }
 
 /* REFRESH CONTAINER */
-/* line 158, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 .boxcontainer:nth-child(2) .titlebox:nth-child(4) {
   float: left;
 }
 
-/* line 159, ../sass/screen.scss */
+/* line 162, ../sass/screen.scss */
 .boxcontainer:nth-child(2) .titlebox .submit {
   float: right;
 }
 
-/* line 160, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 .boxcontainer:nth-child(2) .titlebox:nth-child(4):after {
   clear: both;
 }
 
-/* line 165, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 #time {
   display: none;
 }
 
-/* line 166, ../sass/screen.scss */
+/* line 169, ../sass/screen.scss */
 #ui-datepicker-div {
   display: none;
 }
 
-/* line 169, ../sass/screen.scss */
+/* line 172, ../sass/screen.scss */
 #footer {
-  line-height: 3em;
-  color: #272727;
+  margin-top: 5em;
 }
 
-/* line 170, ../sass/screen.scss */
-#bpscredits {
-  text-align: center;
-}
-
+/********************************** END comp-index PAGE **********************************/
 /********************************** START LOGIN PAGE **********************************/
-/* line 176, ../sass/screen.scss */
+/* line 181, ../sass/screen.scss */
 #login-box .titlebox {
   width: 400px;
   margin: 0em auto;
   border: 1px solid black;
 }
 
-/* line 177, ../sass/screen.scss */
+/* line 182, ../sass/screen.scss */
 #login-box .input-row {
   margin: 1.3em auto;
   text-align: center;
 }
 
-/* line 178, ../sass/screen.scss */
+/* line 183, ../sass/screen.scss */
 #login-box .input-row .label {
   padding-right: 1em;
 }
 
-/* line 180, ../sass/screen.scss */
+/* line 185, ../sass/screen.scss */
 #login .button-row {
   text-align: center;
 }
 
-/* line 181, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 #login .button {
   height: 35px;
   width: 140px;
   margin: 1em 0;
 }
 
-/* line 183, ../sass/screen.scss */
+/* line 188, ../sass/screen.scss */
 #comp-index #legal {
   display: none;
 }
 
 /********************************** END LOGIN PAGE **********************************/
 /********************************** START SIMPLE SEARCH PAGE **********************************/
-/* line 191, ../sass/screen.scss */
+/* line 196, ../sass/screen.scss */
 #SimpleSearchForm {
   max-width: 50%;
   margin: 7em auto;
 }
 
-/* line 193, ../sass/screen.scss */
+/* line 198, ../sass/screen.scss */
 #SimpleSearchForm input:first-child {
   display: table;
   width: 500px;
@@ -648,48 +644,48 @@ a:visited, a:active {
   margin-bottom: 0.5em;
 }
 
-/* line 194, ../sass/screen.scss */
+/* line 199, ../sass/screen.scss */
 #SimpleSearchForm input:last-child {
   padding: 0.6em 1em;
   margin-bottom: 3em;
 }
 
-/* line 196, ../sass/screen.scss */
+/* line 201, ../sass/screen.scss */
 #SimpleSearchForm p {
   clear: both;
   line-height: 1.7em;
 }
 
-/* line 198, ../sass/screen.scss */
+/* line 203, ../sass/screen.scss */
 #comp-Search-Simple #topactions #CreateTicketInQueue {
   display: none;
 }
 
-/* line 199, ../sass/screen.scss */
+/* line 204, ../sass/screen.scss */
 #comp-Search-Simple #topactions #simple-search {
   display: none;
 }
 
 /********************************** END SIMPLE SEARCH PAGE **********************************/
 /********************************** START QUERY BILDER PAGE - FIXAT **********************************/
-/* line 207, ../sass/screen.scss */
+/* line 212, ../sass/screen.scss */
 #comp-Search-Build #body {
   max-width: 1300px;
   margin: 0 auto;
 }
 
-/* line 209, ../sass/screen.scss */
+/* line 214, ../sass/screen.scss */
 #comp-Search-Build #body form {
   width: 50%;
   margin: 0 auto;
 }
 
-/* line 211, ../sass/screen.scss */
+/* line 216, ../sass/screen.scss */
 #comp-Search-Build #topactions {
   display: none;
 }
 
-/* line 213, ../sass/screen.scss */
+/* line 218, ../sass/screen.scss */
 #comp-Search-Build #page-navigation {
   background: orange;
   font-size: 1.5em;
@@ -697,41 +693,42 @@ a:visited, a:active {
 
 /********************************** END QUERY BILDER PAGE **********************************/
 /********************************** START comp-Ticket-Display PAGE **********************************/
-/* line 223, ../sass/screen.scss */
+/* line 228, ../sass/screen.scss */
 #comp-Ticket-Display #body {
   max-width: 1300px;
   margin: 0 auto;
 }
-/* line 224, ../sass/screen.scss */
+/* line 229, ../sass/screen.scss */
 #comp-Ticket-Display #footer {
   margin-top: 5em;
 }
 
-/* line 226, ../sass/screen.scss */
+/* line 231, ../sass/screen.scss */
 #comp-Ticket-Display #topactions {
   display: none;
 }
 
 /* PAGE NAVIGATION (2nd) */
-/* line 230, ../sass/screen.scss */
+/* line 235, ../sass/screen.scss */
 ul ol {
   list-style: none;
   clear: both;
   visibility: visible;
 }
 
-/* line 231, ../sass/screen.scss */
-#comp-Ticket-Display #page-navigation ul {
+/*#comp-Ticket-Display*/
+/* line 236, ../sass/screen.scss */
+#page-navigation ul {
   list-style: none;
 }
-/* line 232, ../sass/screen.scss */
-#comp-Ticket-Display #page-navigation ul li {
+/* line 237, ../sass/screen.scss */
+#page-navigation ul li {
   float: left;
   position: relative;
   line-height: 2em;
 }
-/* line 233, ../sass/screen.scss */
-#comp-Ticket-Display #page-navigation ul li a {
+/* line 238, ../sass/screen.scss */
+#page-navigation ul li a {
   display: block;
   text-transform: none;
   padding: 0.3em 0.7em 0.3em;
@@ -742,61 +739,61 @@ ul ol {
   -o-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
 }
-/* line 234, ../sass/screen.scss */
-#comp-Ticket-Display #page-navigation ul li:hover > a {
+/* line 239, ../sass/screen.scss */
+#page-navigation ul li:hover > a {
   color: #df202d;
   text-decoration: none;
 }
-/* line 235, ../sass/screen.scss */
-#comp-Ticket-Display #page-navigation ul li.active > a {
+/* line 240, ../sass/screen.scss */
+#page-navigation ul li.active > a {
   color: #df202d;
 }
-/* line 236, ../sass/screen.scss */
-#comp-Ticket-Display #page-navigation ul li > ul {
+/* line 241, ../sass/screen.scss */
+#page-navigation ul li > ul {
   position: absolute;
   top: 100%;
   background: none;
   width: 100px;
 }
-/* line 237, ../sass/screen.scss */
-#comp-Ticket-Display #page-navigation ul li > ul li:first-child {
+/* line 242, ../sass/screen.scss */
+#page-navigation ul li > ul li:first-child {
   border-top: none;
 }
-/* line 238, ../sass/screen.scss */
-#comp-Ticket-Display #page-navigation ul li > ul li:last-child {
+/* line 243, ../sass/screen.scss */
+#page-navigation ul li > ul li:last-child {
   border-radius: 0 0 4px 4px;
 }
-/* line 239, ../sass/screen.scss */
-#comp-Ticket-Display #page-navigation ul li > ul li {
+/* line 244, ../sass/screen.scss */
+#page-navigation ul li > ul li {
   padding: 0 3px 3px;
   background: #fff;
   color: #df202d;
   width: 100%;
 }
-/* line 241, ../sass/screen.scss */
-#comp-Ticket-Display #page-navigation ul li > ul li a {
+/* line 246, ../sass/screen.scss */
+#page-navigation ul li > ul li a {
   display: block;
   padding: 3px 3px;
   line-height: 1.5em;
   font-size: 1em;
 }
-/* line 242, ../sass/screen.scss */
-#comp-Ticket-Display #page-navigation ul li > ul li:hover a {
+/* line 247, ../sass/screen.scss */
+#page-navigation ul li > ul li:hover a {
   color: #fff;
   background: #353535;
   padding: 3px 3px;
   line-height: 1.5em;
 }
-/* line 244, ../sass/screen.scss */
-#comp-Ticket-Display #page-navigation ul ul {
+/* line 249, ../sass/screen.scss */
+#page-navigation ul ul {
   display: none;
 }
-/* line 245, ../sass/screen.scss */
-#comp-Ticket-Display #page-navigation ul li:hover > ul {
+/* line 250, ../sass/screen.scss */
+#page-navigation ul li:hover > ul {
   display: block;
 }
-/* line 246, ../sass/screen.scss */
-#comp-Ticket-Display #page-navigation ul ul:after {
+/* line 251, ../sass/screen.scss */
+#page-navigation ul ul:after {
   content: ".";
   clear: both;
   visibility: hidden;
@@ -804,112 +801,109 @@ ul ol {
   height: 0px;
 }
 
-/* line 250, ../sass/screen.scss */
+/* line 255, ../sass/screen.scss */
 .sf-sub-indicator {
   display: none;
 }
 
 /**** NAVIGATION INDICATOR (DEFAULT) ****/
 /* TICKET CONTENT */
-/* line 256, ../sass/screen.scss */
-#comp-Ticket-Display .titlebox-title {
+/* line 262, ../sass/screen.scss */
+#comp-Ticket-Display .titlebox .titlebox-title {
   padding: 0 0.5em;
 }
-/* line 260, ../sass/screen.scss */
+/* line 263, ../sass/screen.scss */
+#comp-Ticket-Display .titlebox .titlebox-content {
+  padding: 1em 1em;
+  line-height: 1.3em;
+}
+/* line 267, ../sass/screen.scss */
 #comp-Ticket-Display .ticket-info-cfs .label {
   width: 180px;
   text-transform: uppercase;
-  padding-left: 0.5em;
 }
-/* line 261, ../sass/screen.scss */
-#comp-Ticket-Display .ticket-info-cfs table {
-  margin: 0 0;
-  padding: 0.5em 0.5em;
-  line-height: 1.3em;
-}
-/* line 262, ../sass/screen.scss */
+/* line 268, ../sass/screen.scss */
 #comp-Ticket-Display .ticket-info-cfs tr {
   border-bottom: 2px solid #272727;
 }
-/* line 266, ../sass/screen.scss */
+/* line 272, ../sass/screen.scss */
+#comp-Ticket-Display .ticket-info-reminders table {
+  margin-top: 0.5em;
+}
+/* line 273, ../sass/screen.scss */
 #comp-Ticket-Display .ticket-info-reminders .button {
   width: 50px;
   height: 25px;
 }
-/* line 267, ../sass/screen.scss */
-#comp-Ticket-Display .ticket-info-reminders table {
-  margin: 0.5em 0.5em;
-  line-height: 1.3em;
+/* line 274, ../sass/screen.scss */
+#comp-Ticket-Display .ticket-info-reminders .label {
+  padding-right: 0.5em;
 }
-/* line 271, ../sass/screen.scss */
+/* line 278, ../sass/screen.scss */
 #comp-Ticket-Display .ticket-info-basics .label {
   width: 180px;
 }
-/* line 272, ../sass/screen.scss */
-#comp-Ticket-Display .ticket-info-basics table {
-  margin: 0.5em 0.5em;
-  line-height: 1.3em;
+/* line 279, ../sass/screen.scss */
+#comp-Ticket-Display .ticket-info-basics tr {
+  border-bottom: 1px dashed #272727;
 }
-/* line 276, ../sass/screen.scss */
+/* line 283, ../sass/screen.scss */
 #comp-Ticket-Display .ticket-info-people .label {
   width: 180px;
 }
-/* line 277, ../sass/screen.scss */
-#comp-Ticket-Display .ticket-info-people table {
-  margin: 0.5em 0.5em;
-  line-height: 1.3em;
-}
-/* line 278, ../sass/screen.scss */
+/* line 284, ../sass/screen.scss */
 #comp-Ticket-Display .ticket-info-people tr {
-  border-bottom: 1px solid #272727;
+  border-bottom: 1px dashed #272727;
 }
-/* line 282, ../sass/screen.scss */
-#comp-Ticket-Display .ticket-info-dates table {
-  margin: 0.5em 0.5em;
-  line-height: 1.3em;
+/* line 288, ../sass/screen.scss */
+#comp-Ticket-Display .ticket-info-dates tr {
+  border-bottom: 1px dashed #272727;
 }
-/* line 286, ../sass/screen.scss */
-#comp-Ticket-Display .ticket-info-links table {
-  margin: 0.5em 0.5em;
-  line-height: 1.3em;
+/* line 289, ../sass/screen.scss */
+#comp-Ticket-Display .ticket-info-dates .label {
+  padding-right: 0.5em;
+}
+/* line 293, ../sass/screen.scss */
+#comp-Ticket-Display .ticket-info-links tr {
+  border-bottom: 1px dashed #272727;
 }
 
 /* TICKET TABLES LEFT SIDE */
-/* line 293, ../sass/screen.scss */
+/* line 299, ../sass/screen.scss */
 #comp-Ticket-Display .boxcontainer:nth-child(1) {
   vertical-align: top;
   padding-right: 1em;
 }
 
 /* TICKET TABLES RIGHT SIDE */
-/* line 297, ../sass/screen.scss */
+/* line 303, ../sass/screen.scss */
 #comp-Ticket-Display .boxcontainer:nth-child(2) {
   vertical-align: top;
   width: 30%;
 }
 
 /* HISTORY */
-/* line 302, ../sass/screen.scss */
+/* line 308, ../sass/screen.scss */
 #comp-Ticket-Display .history {
   padding: 0 0;
   /* Subject Title */
   /* Download txt html */
   /* Message */
 }
-/* line 303, ../sass/screen.scss */
+/* line 309, ../sass/screen.scss */
 #comp-Ticket-Display .history .metadata {
   background: #272727;
   line-height: 2em;
   padding: 0 0.5em;
   /* REPLY AND COMMENT LINKS */
 }
-/* line 304, ../sass/screen.scss */
+/* line 310, ../sass/screen.scss */
 #comp-Ticket-Display .history .metadata .type a {
   float: left;
   padding-right: 0.5em;
   color: #f8bb14;
 }
-/* line 305, ../sass/screen.scss */
+/* line 311, ../sass/screen.scss */
 #comp-Ticket-Display .history .metadata a:hover {
   color: #fff;
   text-decoration: none;
@@ -919,34 +913,34 @@ ul ol {
   -o-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
-/* line 307, ../sass/screen.scss */
+/* line 313, ../sass/screen.scss */
 #comp-Ticket-Display .history .metadata .date {
   color: #fff;
 }
-/* line 308, ../sass/screen.scss */
+/* line 314, ../sass/screen.scss */
 #comp-Ticket-Display .history .metadata .description {
   color: #fff;
   padding-left: 0.5em;
 }
-/* line 313, ../sass/screen.scss */
+/* line 319, ../sass/screen.scss */
 #comp-Ticket-Display .history .metadata .actions {
   float: right;
   text-transform: uppercase;
   color: #272727;
   font-size: 0.8em;
 }
-/* line 314, ../sass/screen.scss */
+/* line 320, ../sass/screen.scss */
 #comp-Ticket-Display .history .metadata .actions .reply-link {
   font-weight: bold;
   color: #f8bb14;
   margin-right: 0.5em;
 }
-/* line 315, ../sass/screen.scss */
+/* line 321, ../sass/screen.scss */
 #comp-Ticket-Display .history .metadata .actions .comment-link {
   font-weight: bold;
   color: #f8bb14;
 }
-/* line 316, ../sass/screen.scss */
+/* line 322, ../sass/screen.scss */
 #comp-Ticket-Display .history .metadata .actions :hover {
   color: #fff;
   text-decoration: none;
@@ -956,58 +950,219 @@ ul ol {
   -o-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
-/* line 323, ../sass/screen.scss */
+/* line 329, ../sass/screen.scss */
 #comp-Ticket-Display .history .content {
   clear: both;
   font-size: 1em;
   background: #dbdbdb;
   border: 1px solid black;
+  margin-bottom: 1em;
 }
-/* line 324, ../sass/screen.scss */
+/* line 330, ../sass/screen.scss */
 #comp-Ticket-Display .history .content table {
   line-height: 1.6em;
   padding: 0.5em 0.5em;
 }
-/* line 325, ../sass/screen.scss */
+/* line 331, ../sass/screen.scss */
 #comp-Ticket-Display .history .content table .message-header-key {
   font-weight: bold;
   text-transform: uppercase;
   padding-left: 1em;
 }
-/* line 326, ../sass/screen.scss */
+/* line 332, ../sass/screen.scss */
 #comp-Ticket-Display .history .content table .message-header-value {
   font-weight: bold;
   padding-left: 1em;
 }
-/* line 331, ../sass/screen.scss */
+/* line 337, ../sass/screen.scss */
 #comp-Ticket-Display .history .content .downloadattachment {
   padding: 0.2em 0.5em;
   font-size: 0.8em;
   float: right;
   text-align: right;
 }
-/* line 335, ../sass/screen.scss */
+/* line 341, ../sass/screen.scss */
 #comp-Ticket-Display .history .content .messagebody {
   font-size: 1em;
   padding: 0.5em 0.5em;
 }
-/* line 336, ../sass/screen.scss */
+/* line 342, ../sass/screen.scss */
 #comp-Ticket-Display .history .message-stanza {
   line-height: 1.6em;
 }
-/* line 339, ../sass/screen.scss */
+/* line 344, ../sass/screen.scss */
 #comp-Ticket-Display .history .EmailRecord {
   clear: both;
-  background: #454545;
-  margin-bottom: 1em;
-  color: red;
 }
 
 /********************************** END comp-Ticket-Display PAGE **********************************/
 /********************************** START comp-Ticket-ShowEmailRecord PAGE **********************************/
-/* line 355, ../sass/screen.scss */
+/* line 359, ../sass/screen.scss */
 #comp-Ticket-ShowEmailRecord #body {
   max-width: 1300px;
 }
 
 /********************************** END comp-Ticket-ShowEmailRecord PAGE **********************************/
+/********************************** START comp-Ticket-Update PAGE **********************************/
+/* line 369, ../sass/screen.scss */
+#comp-Ticket-Update #body {
+  max-width: 1300px;
+  margin: 0 auto;
+  background: #666;
+}
+
+/* line 370, ../sass/screen.scss */
+#comp-Ticket-Update #topactions {
+  display: none;
+}
+
+/* line 374, ../sass/screen.scss */
+#comp-Ticket-Update #page-navigation {
+  margin-bottom: 1em;
+}
+/* line 375, ../sass/screen.scss */
+#comp-Ticket-Update #ticket-update-metadata {
+  float: right;
+  width: 40%;
+  border: 1px solid black;
+}
+/* line 376, ../sass/screen.scss */
+#comp-Ticket-Update #ticket-update-message {
+  float: left;
+  width: 50%;
+  border: 1px solid black;
+}
+/* line 378, ../sass/screen.scss */
+#comp-Ticket-Update #ticket-update-message #previewscrips {
+  margin-top: 1em;
+}
+/* line 381, ../sass/screen.scss */
+#comp-Ticket-Update #ticket-update-message .messagedetails .titlebox-content {
+  width: 100%;
+}
+/* line 383, ../sass/screen.scss */
+#comp-Ticket-Update #ticket-update-message .messagedetails .titlebox-content table input {
+  width: 70%;
+  vertical-align: top;
+}
+/* line 384, ../sass/screen.scss */
+#comp-Ticket-Update #ticket-update-message .messagedetails .titlebox-content table .label {
+  width: 25%;
+  vertical-align: top;
+}
+/* line 387, ../sass/screen.scss */
+#comp-Ticket-Update #ticket-update-message .messagedetails .titlebox-content td {
+  padding: 0.5em 1em;
+}
+/* line 396, ../sass/screen.scss */
+#comp-Ticket-Update #footer {
+  clear: both;
+}
+
+/********************************** END comp-Ticket-Update PAGE **********************************/
+/********************************** START comp-Search-Results PAGE **********************************/
+/* line 410, ../sass/screen.scss */
+#comp-Search-Results #body {
+  max-width: 1300px;
+  margin: 0 auto;
+  margin-top: 1em;
+  border: 1px solid #272727;
+}
+/* line 414, ../sass/screen.scss */
+#comp-Search-Results #body .collection-as-table tr:first-child {
+  text-align: center;
+  background: #272727;
+}
+/* line 415, ../sass/screen.scss */
+#comp-Search-Results #body .collection-as-table tr:first-child a {
+  color: #fff;
+}
+/* line 417, ../sass/screen.scss */
+#comp-Search-Results #body .collection-as-table tr:nth-child(2) {
+  text-align: center;
+  background: #272727;
+}
+/* line 418, ../sass/screen.scss */
+#comp-Search-Results #body .collection-as-table tr:nth-child(2) a {
+  color: #fff;
+}
+/* line 420, ../sass/screen.scss */
+#comp-Search-Results #body .collection-as-table th {
+  font-size: 0.8em;
+  text-align: center;
+}
+/* line 421, ../sass/screen.scss */
+#comp-Search-Results #body .collection-as-table tr.oddline {
+  background: #DEDEDE;
+}
+/* line 422, ../sass/screen.scss */
+#comp-Search-Results #body .collection-as-table tr.oddline td:nth-child(1) {
+  text-align: center;
+}
+/* line 423, ../sass/screen.scss */
+#comp-Search-Results #body .collection-as-table tr.oddline td:nth-child(3) {
+  text-align: center;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+/* line 424, ../sass/screen.scss */
+#comp-Search-Results #body .collection-as-table tr.oddline td:nth-child(4) {
+  text-align: center;
+}
+/* line 425, ../sass/screen.scss */
+#comp-Search-Results #body .collection-as-table tr.oddline td:nth-child(5) {
+  text-align: center;
+}
+/* line 426, ../sass/screen.scss */
+#comp-Search-Results #body .collection-as-table tr.oddline td:nth-child(6) {
+  text-align: center;
+}
+/* line 428, ../sass/screen.scss */
+#comp-Search-Results #body .collection-as-table b {
+  font-size: 1em;
+  padding: 0 0;
+  margin: 0 0;
+}
+/* line 429, ../sass/screen.scss */
+#comp-Search-Results #body .collection-as-table small {
+  font-size: 0.8em;
+  padding: 0 0;
+  margin: 0 0;
+}
+/* line 430, ../sass/screen.scss */
+#comp-Search-Results #body .collection-as-table tr.evenline {
+  background: #D2D2D2;
+}
+/* line 431, ../sass/screen.scss */
+#comp-Search-Results #body .collection-as-table tr.evenline td:nth-child(1) {
+  text-align: center;
+}
+/* line 432, ../sass/screen.scss */
+#comp-Search-Results #body .collection-as-table tr.evenline td:nth-child(3) {
+  text-align: center;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+/* line 433, ../sass/screen.scss */
+#comp-Search-Results #body .collection-as-table tr.evenline td:nth-child(4) {
+  text-align: center;
+}
+/* line 434, ../sass/screen.scss */
+#comp-Search-Results #body .collection-as-table tr.evenline td:nth-child(5) {
+  text-align: center;
+}
+/* line 435, ../sass/screen.scss */
+#comp-Search-Results #body .collection-as-table tr.evenline td:nth-child(6) {
+  text-align: center;
+}
+/* line 441, ../sass/screen.scss */
+#comp-Search-Results #body .refresh {
+  display: none;
+}
+
+/* line 444, ../sass/screen.scss */
+#comp-Search-Results #footer {
+  margin-top: 5em;
+}
+
+/********************************** START comp-Search-Results PAGE **********************************/
