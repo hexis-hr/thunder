@@ -468,10 +468,15 @@ a:hover, a:active {
 
 /* line 140, ../sass/screen.scss */
 .collection-as-table td:last-child > a {
-  text-transform: lowercase;
-  letter-spacing: -1px;
-  color: #df202d;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-weight: bold;
   text-decoration: none;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -ms-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
 }
 
 /* line 142, ../sass/screen.scss */
