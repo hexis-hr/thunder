@@ -1,4 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Archivo+Narrow:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Archivo+Narrow);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
 /* line 17, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -64,950 +65,555 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/***************** COLORS *****************/
-/*********** START ************/
-/* line 17, ../sass/screen.scss */
-body {
-  color: #454545;
-  font-family: 'Archivo Narrow', Helvetica, Arial, sans-serif;
-  font-size: 100%;
-  background: #EBEBEB;
-}
-
-/* line 19, ../sass/screen.scss */
-a {
-  color: black;
-  text-decoration: none;
-}
-
-/* line 20, ../sass/screen.scss */
-a:hover, a:active {
-  text-decoration: none;
-  color: #b70005;
-}
-
-/* line 22, ../sass/screen.scss */
-.buttons .button {
-  display: block;
-}
-
-/* line 23, ../sass/screen.scss */
+/*********************************************************
+Typography
+**********************************************************/
+/*********************************************************
+Colors
+**********************************************************/
+/* main text color */
+/* main link color */
+/* main link hover color */
+/* main background */
+/* titlebox background */
+/* button color */
+/* button bg color */
+/* button hover bg color */
+/* input focus */
+/* main navigation bg color */
+/* main navigation bg of sub menus color */
+/* main navigation border color */
+/* main navigation shadow color */
+/* main navigation color */
+/* main navigation hover color */
+/* take button color */
+/* tale button bg color */
+/*********************************************************
+Buttons
+**********************************************************/
+/* line 36, ../sass/screen.scss */
 .button {
   border: none;
-  background: #b70005;
-  color: #fff;
-  border: 1px solid black;
-  border-radius: 3px;
-  -webkit-transition: all 0.25s ease-in;
-  -moz-transition: all 0.25s ease-in;
-  -ms-transition: all 0.25s ease-in;
-  -o-transition: all 0.25s ease-in;
-  transition: all 0.25s ease-in;
+  border-radius: 2px;
+  background: #a91822;
+  color: #d6d6d6;
+  box-shadow: 0 0 3px #000;
+  -webkit-transition: all 0.45s ease-in-out;
+  -moz-transition: all 0.45s ease-in-out;
+  -ms-transition: all 0.45s ease-in-out;
+  -o-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
 }
 
-/* line 24, ../sass/screen.scss */
+/* line 37, ../sass/screen.scss */
 .button:hover {
-  background: #454545;
-  color: #fff;
-  -webkit-transition: all 0.35s ease-out;
-  -moz-transition: all 0.35s ease-out;
-  -ms-transition: all 0.35s ease-out;
-  -o-transition: all 0.35s ease-out;
-  transition: all 0.35s ease-out;
+  background: #282828;
+  box-shadow: 0 0 3px #fff;
+  -webkit-transition: all 0.45s ease-in-out;
+  -moz-transition: all 0.45s ease-in-out;
+  -ms-transition: all 0.45s ease-in-out;
+  -o-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
 }
 
-/* line 27, ../sass/screen.scss */
-#logo {
-  position: relative;
-  float: left;
-  height: 32px;
-  padding: 0 1em;
-}
-/* line 28, ../sass/screen.scss */
-#logo .rtname {
-  display: none;
-}
-/* line 29, ../sass/screen.scss */
-#logo a img {
-  width: 23px;
-  height: 26px;
-  padding-top: 3px;
-}
-
-/* line 32, ../sass/screen.scss */
-#header {
-  line-height: 32px;
-}
-/* line 33, ../sass/screen.scss */
-#header h1 {
-  font-size: 1.2em;
-}
-
-/* line 36, ../sass/screen.scss */
+/*********************************************************
+Global
+**********************************************************/
+/*********************************************************
+Global - tracker
+**********************************************************/
+/* line 49, ../sass/screen.scss */
 #quickbar {
   display: none;
 }
 
-/* line 38, ../sass/screen.scss */
-.sf-sub-indicator {
+/* line 50, ../sass/screen.scss */
+#logo .rtname {
   display: none;
 }
 
-/* line 42, ../sass/screen.scss */
-#main-navigation #app-nav {
-  float: left;
-  background: #272727;
-  width: 100%;
-  height: 30px;
-  list-style: none;
+/* line 51, ../sass/screen.scss */
+#ui-datepicker-div {
+  display: none;
 }
-/* line 43, ../sass/screen.scss */
-#main-navigation #app-nav li {
+
+/* line 52, ../sass/screen.scss */
+#time {
+  display: none;
+}
+
+/* line 53, ../sass/screen.scss */
+.clear {
+  display: none;
+}
+
+/****************************************/
+/* line 57, ../sass/screen.scss */
+body {
+  font-family: 'Archivo Narrow', Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  margin-top: 10px;
+  background: #3b3f4b;
+  color: #d6d6d6;
+}
+/* line 58, ../sass/screen.scss */
+body a {
+  text-decoration: none;
+  color: #a3a3a3;
+}
+/* line 58, ../sass/screen.scss */
+body a:visited, body a:active {
+  text-decoration: none;
+  color: #a3a3a3;
+}
+/* line 58, ../sass/screen.scss */
+body a:hover {
+  color: #a2ad4b;
+}
+
+/* end body */
+/* START HEADER */
+/* line 64, ../sass/screen.scss */
+#logo {
   position: relative;
   float: left;
-  font-size: 0.9em;
+  padding: 0 20px;
+  height: 50px;
+}
+
+/* line 66, ../sass/screen.scss */
+#header {
+  line-height: 50px;
+  font-size: 1.2em;
   text-transform: uppercase;
-  line-height: 30px;
-  border-right: 1px solid #111;
+}
+
+/* END HEADER */
+/* START MAIN NAVIGATION */
+/* line 73, ../sass/screen.scss */
+#main-navigation {
+  float: left;
+  margin-top: 5px;
+  padding-left: 20px;
+  text-transform: uppercase;
+  /* sub menu */
+  /*sub sub menu */
+}
+/* line 74, ../sass/screen.scss */
+#main-navigation ul {
+  list-style: none;
+}
+/* line 75, ../sass/screen.scss */
+#main-navigation ul li {
+  float: left;
+  position: relative;
   z-index: 20;
 }
-/* line 44, ../sass/screen.scss */
-#main-navigation #app-nav li a {
+/* line 76, ../sass/screen.scss */
+#main-navigation ul li a {
   display: block;
-  color: #fff;
-  padding: 0 1em;
+  padding: 12px 15px 9px 15px;
+  font-size: 14px;
+  color: #d6d6d6;
 }
-/* line 45, ../sass/screen.scss */
-#main-navigation #app-nav li:hover > a {
-  color: #fff;
-}
-/* line 46, ../sass/screen.scss */
-#main-navigation #app-nav li.active > a {
-  color: #f8bb14;
-}
-/* line 48, ../sass/screen.scss */
-#main-navigation #app-nav li > ul:before {
-  content: "";
-  border-style: solid;
-  border-width: 6px 6px 6px 6px;
-  border-color: transparent transparent #fff transparent;
-  width: 0;
-  height: 0;
-  position: absolute;
-  left: 30px;
-  top: -12px;
-}
-/* line 50, ../sass/screen.scss */
-#main-navigation #app-nav li > ul {
-  position: absolute;
-  width: 150px;
-  padding-top: 1px;
-  padding-left: 0px;
-}
-/* line 51, ../sass/screen.scss */
-#main-navigation #app-nav li:hover > ul {
-  display: block;
-}
-/* line 52, ../sass/screen.scss */
-#main-navigation #app-nav li > ul li {
-  padding: 0px 3px 0px;
-  background: #272727;
-  width: 100%;
-  border-bottom: 1px solid #353535;
-}
-/* line 53, ../sass/screen.scss */
-#main-navigation #app-nav li > ul li a {
-  display: block;
-  border-left: 2px solid #272727;
-}
-/* line 54, ../sass/screen.scss */
-#main-navigation #app-nav li > ul li:hover {
-  background: #353535;
+/* line 77, ../sass/screen.scss */
+#main-navigation ul li:hover > a {
+  color: #a2ad4b;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 55, ../sass/screen.scss */
-#main-navigation #app-nav li > ul li:hover > a {
-  color: #fff;
-  border-color: #f8bb14;
-}
-/* line 57, ../sass/screen.scss */
-#main-navigation #app-nav li > ul li > ul:before {
-  content: "";
-  border-style: solid;
-  border-width: 6px 6px 6px 6px;
-  border-color: transparent #fff transparent transparent;
-  width: 0;
-  height: 0;
-  position: absolute;
-  left: -12px;
-  top: 9px;
-}
-/* line 59, ../sass/screen.scss */
-#main-navigation #app-nav li > ul li > ul {
-  top: 0;
-  left: 157px;
-  padding: 0 1px;
-}
-/* line 60, ../sass/screen.scss */
-#main-navigation #app-nav ul {
-  display: none;
-}
-/* line 61, ../sass/screen.scss */
-#main-navigation #app-nav li:hover > ul {
-  display: block;
-}
-/* line 62, ../sass/screen.scss */
-#main-navigation #app-nav li ul:after {
-  content: ".";
-  clear: both;
-  visibility: hidden;
-  display: block;
-  height: 0px;
-}
-
-/* line 71, ../sass/screen.scss */
-#page-navigation ul {
-  position: absolute;
-  right: 5px;
-}
-/* line 72, ../sass/screen.scss */
-#page-navigation ul li {
-  float: left;
-  position: relative;
-}
-/* line 73, ../sass/screen.scss */
-#page-navigation ul li a {
-  display: block;
-  color: #fff;
-  text-transform: none;
-  line-height: 28px;
-  padding-right: 0.5em;
-  font-size: 0.8em;
-  -webkit-transition: all 0.25s ease-out;
-  -moz-transition: all 0.25s ease-out;
-  -ms-transition: all 0.25s ease-out;
-  -o-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
-}
-/* line 74, ../sass/screen.scss */
-#page-navigation ul li:hover > a {
-  color: #b70005;
-  text-decoration: none;
-}
-/* line 75, ../sass/screen.scss */
-#page-navigation ul li.active > a {
-  color: #df202d;
-}
-/* line 76, ../sass/screen.scss */
-#page-navigation ul li > ul {
-  position: absolute;
-  top: 95%;
-  z-index: 100;
-  width: 78px;
-}
-/* line 77, ../sass/screen.scss */
-#page-navigation ul li > ul li {
-  background: #fff;
-  color: #df202d;
-  width: 100%;
-}
-/* line 79, ../sass/screen.scss */
-#page-navigation ul li > ul li a {
-  display: block;
-  font-size: 0.8em;
-  line-height: 18px;
-  padding-left: 3px;
-  background: #272727;
-}
-/* line 80, ../sass/screen.scss */
-#page-navigation ul li > ul li:hover a {
-  color: #b70005;
-  background: #181818;
-}
-/* line 81, ../sass/screen.scss */
-#page-navigation ul ul {
-  display: none;
+/* line 78, ../sass/screen.scss */
+#main-navigation ul li.active > a {
+  color: #a2ad4b;
 }
 /* line 82, ../sass/screen.scss */
-#page-navigation ul li:hover > ul {
-  display: block;
-}
-/* line 83, ../sass/screen.scss */
-#page-navigation ul ul:after {
-  content: ".";
-  clear: both;
-  visibility: hidden;
-  display: block;
-  height: 0px;
-}
-
-/* line 87, ../sass/screen.scss */
-#topactions {
-  clear: both;
-  line-height: 32px;
-  max-width: 1300px;
-  margin: 0 auto;
-}
-/* line 88, ../sass/screen.scss */
-#topactions #simple-search {
+#main-navigation ul li > ul {
   position: absolute;
-  top: 0;
-  right: 5px;
+  left: 0px;
+  top: 100%;
+  padding-top: 0px;
+  width: 140px;
+  background: #232323;
+  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.1);
+}
+/* line 84, ../sass/screen.scss */
+#main-navigation ul li:hover > ul {
+  display: block;
+}
+/* line 85, ../sass/screen.scss */
+#main-navigation ul li > ul li {
+  padding: 3px 3px 3px;
+  width: 95%;
+}
+/* line 87, ../sass/screen.scss */
+#main-navigation ul li > ul li a {
+  display: block;
+  padding: 3px 3px;
+  font-size: 12px;
+  border-left: 2px solid #232323;
 }
 /* line 89, ../sass/screen.scss */
-#topactions #simple-search input {
-  background: #EBEBEB;
-  width: 150px;
-  border: none;
-  border-bottom: 1px solid #272727;
+#main-navigation ul li > ul li:hover {
+  background: rgba(224, 224, 224, 0.1);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-/* line 90, ../sass/screen.scss */
-#topactions #simple-search textarea:focus, #topactions #simple-search input:focus {
-  outline: 0;
+/* line 91, ../sass/screen.scss */
+#main-navigation ul li > ul li:hover > a {
+  color: #a2ad4b;
+  /*border-color: $button-bg;*/
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 /* line 92, ../sass/screen.scss */
-#topactions #CreateTicketInQueue {
-  position: absolute;
-  top: 0;
-  right: 170px;
+#main-navigation ul li > ul li.active > a {
+  color: #a2ad4b;
 }
-/* line 93, ../sass/screen.scss */
-#topactions #CreateTicketInQueue .select-queue {
-  background: #EBEBEB;
-  border: none;
-  border-bottom: 1px solid #272727;
+/* line 96, ../sass/screen.scss */
+#main-navigation ul li > ul li > ul {
+  top: 0px;
+  left: 100%;
 }
-/* line 94, ../sass/screen.scss */
-#topactions #CreateTicketInQueue .select-queue:focus, #topactions #CreateTicketInQueue input:focus {
-  outline: 0;
+/* line 100, ../sass/screen.scss */
+#main-navigation ul li > ul li:hover > ul {
+  display: block;
+  top: 0px;
+  left: 100%;
+}
+/* line 102, ../sass/screen.scss */
+#main-navigation ul ul {
+  display: none;
 }
 
-/* line 101, ../sass/screen.scss */
+/* END MAIN NAVIGATION */
+/* START PAGE NAVIGATION */
+/* line 112, ../sass/screen.scss */
+#page-navigation {
+  margin-top: 5px;
+  padding-right: 20px;
+  font-size: 14px;
+  box-shadow: 0px 1px 1px black;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  background: #282828;
+}
+/* line 113, ../sass/screen.scss */
+#page-navigation ul li a {
+  padding: 10px 15px 10px 15px;
+  line-height: 33px;
+}
+/* line 114, ../sass/screen.scss */
+#page-navigation ul {
+  text-align: right;
+}
+
+/* END PAGE NAVIGATION */
+/* START TOP ACTIONS */
+/* line 123, ../sass/screen.scss */
+#topactions {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  height: 50px;
+}
+/* line 124, ../sass/screen.scss */
+#topactions #simple-search {
+  float: left;
+  padding-right: 20px;
+}
+/* line 125, ../sass/screen.scss */
+#topactions #simple-search input {
+  width: 300px;
+  height: 23px;
+  margin: 1px 5px;
+  border: none;
+  border-bottom: 1px solid #282828;
+  color: #d6d6d6;
+  background: #3b3f4b;
+  font-family: 'Archivo Narrow', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  padding-left: 2px;
+}
+/* line 126, ../sass/screen.scss */
+#topactions #simple-search input:focus {
+  outline: none;
+  border-bottom: 1px solid #fff;
+}
+/* line 129, ../sass/screen.scss */
+#topactions #CreateTicketInQueue {
+  float: right;
+  padding-top: -5px;
+}
+/* line 130, ../sass/screen.scss */
+#topactions #CreateTicketInQueue .button {
+  padding: 5px 6px;
+}
+
+/* end top actions */
+/* END TOP ACTIONS */
+/* line 138, ../sass/screen.scss */
+#footer {
+  clear: both;
+  margin-top: 7em;
+}
+/* line 138, ../sass/screen.scss */
+#footer #bpscredits {
+  text-align: center;
+}
+
+/*********************************************************
+#BODY default settings
+**********************************************************/
+/* line 145, ../sass/screen.scss */
 #body {
   clear: both;
-  max-width: 1200px;
+  max-width: 960px;
   margin: 0 auto;
   margin-top: 2em;
-  padding: 0 0.5em;
+  /*end titlebox */
 }
-/* line 103, ../sass/screen.scss */
+/* line 147, ../sass/screen.scss */
 #body .titlebox .titlebox-title .widget a {
   display: block;
   margin: 0;
   width: 15px;
-  background: url(/NoAuth/images/css/rollup-arrow.gif) no-repeat;
-  background-position: center bottom;
+  background: url(../NoAuth/images/css/rollup-arrow.gif) no-repeat;
+  background-position: top;
   position: absolute;
-  top: 0.5em;
-  left: 0.4em;
+  top: 2px;
+  left: 0px;
   padding: 7px 0 0 0;
   overflow: hidden;
+  opacity: 0.2;
 }
-/* line 115, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 #body .titlebox .titlebox-title .widget a:hover {
-  background-position: center;
+  background-position: bottom;
 }
-/* line 117, ../sass/screen.scss */
+/* line 162, ../sass/screen.scss */
 #body .titlebox.rolled-up .titlebox-content {
   display: none;
 }
-/* line 118, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 #body .titlebox.rolled-up .titlebox-title .widget a {
-  background: url(/NoAuth/images/css/rolldown-arrow.gif) no-repeat;
-  background-position: center bottom;
+  background: url(../NoAuth/images/css/rolldown-arrow.gif) no-repeat;
+  background-position: top;
   color: red;
-  top: 0.6em;
+  top: 2px;
 }
-/* line 119, ../sass/screen.scss */
+/* line 164, ../sass/screen.scss */
 #body .titlebox.rolled-up .titlebox-title .widget a:hover {
-  background-position: center;
+  background-position: bottom;
 }
-/* line 122, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 #body .boxcontainer {
   vertical-align: top;
 }
-/* line 123, ../sass/screen.scss */
-#body .clear {
-  display: none;
+/* line 169, ../sass/screen.scss */
+#body .boxcontainer:first-child {
+  padding-right: 0.5em;
 }
-/* line 124, ../sass/screen.scss */
-#body .titlebox {
-  margin-bottom: 1em;
-}
-/* line 126, ../sass/screen.scss */
-#body .titlebox-title {
-  position: relative;
-  padding: 0.2em 1.7em;
-  background: #353535;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 0.9em;
-  letter-spacing: +1px;
-  z-index: 10;
-}
-/* line 127, ../sass/screen.scss */
-#body .titlebox-title a {
-  color: #fff;
-}
-/* line 128, ../sass/screen.scss */
-#body .titlebox-title .right {
-  float: right;
-}
-/* line 129, ../sass/screen.scss */
-#body .titlebox-title .right a {
-  color: #000;
-  -webkit-transition: all 0.25s ease-in;
-  -moz-transition: all 0.25s ease-in;
-  -ms-transition: all 0.25s ease-in;
-  -o-transition: all 0.25s ease-in;
-  transition: all 0.25s ease-in;
-}
-/* line 130, ../sass/screen.scss */
-#body .titlebox-title .right a:hover {
-  color: #b70005;
-  -webkit-transition: all 0.25s ease-in;
-  -moz-transition: all 0.25s ease-in;
-  -ms-transition: all 0.25s ease-in;
-  -o-transition: all 0.25s ease-in;
-  transition: all 0.25s ease-in;
-}
-/* line 134, ../sass/screen.scss */
-#body .titlebox-content table {
-  width: 100%;
-}
-/* line 135, ../sass/screen.scss */
-#body .titlebox-content th {
-  font-weight: bold;
-}
-/* line 136, ../sass/screen.scss */
-#body .titlebox-content tr {
-  line-height: 1.3em;
-  padding: 0.2em 0.1em;
-}
-/* line 137, ../sass/screen.scss */
-#body .titlebox-content tr a {
-  line-height: 1.3em;
-  padding: 0.2em 0.2em;
-}
-/* line 142, ../sass/screen.scss */
-#body .oddline {
-  background: #DEDEDE;
-  border-top: 1px solid #666;
-  border-bottom: 1px solid #666;
-}
-/* line 143, ../sass/screen.scss */
-#body .evenline {
-  background: #D2D2D2;
-  border-top: 1px solid #666;
-  border-bottom: 1px solid #666;
-}
-/* line 144, ../sass/screen.scss */
-#body .oddline:hover {
-  background: #acacac;
-}
-/* line 145, ../sass/screen.scss */
-#body .evenline:hover {
-  background: #acacac;
-}
-
-/* line 152, ../sass/screen.scss */
-#footer {
-  margin-top: 10em;
-  margin-bottom: 1em;
-  text-align: center;
-}
-/* line 153, ../sass/screen.scss */
-#footer #time {
-  display: none;
-}
-
-/* line 155, ../sass/screen.scss */
-#ui-datepicker-div {
-  display: none;
-}
-
-/****************************** START comp-index ******************************/
 /* line 170, ../sass/screen.scss */
-.myrt {
+#body table {
   width: 100%;
 }
 /* line 171, ../sass/screen.scss */
-.myrt .boxcontainer:first-child {
-  padding-right: 1em;
+#body td, #body th {
+  padding: 4px 2px;
 }
-/* line 173, ../sass/screen.scss */
-.myrt .boxcontainer:first-child .titlebox-content th:first-child {
-  padding-left: 0.6em;
+/* line 172, ../sass/screen.scss */
+#body .titlebox {
+  padding: 3px 3px;
+  margin-bottom: 1em;
+  font-size: 14px;
+  /* end titlebox title */
+  /* end titlebox content */
 }
 /* line 174, ../sass/screen.scss */
-.myrt .boxcontainer:first-child .titlebox-content td:nth-child(4) {
-  font-size: 0.9em;
-  font-style: italic;
-}
-/* line 175, ../sass/screen.scss */
-.myrt .boxcontainer:first-child .titlebox-content td:nth-child(5) {
-  font-size: 0.9em;
-  font-style: italic;
-}
-/* line 176, ../sass/screen.scss */
-.myrt .boxcontainer:first-child .titlebox-content td:nth-child(6) {
-  font-size: 0.7em;
+#body .titlebox .titlebox-title {
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 1px;
+  padding: 2px 0 2px 17px;
+  position: relative;
+  z-index: 10;
+  background: rgba(40, 40, 40, 0.7);
 }
-/* line 177, ../sass/screen.scss */
-.myrt .boxcontainer:first-child .titlebox-content td:nth-child(6) a {
-  color: #b70005;
-  text-shadow: 0px 0px 0px #000;
+/* line 176, ../sass/screen.scss */
+#body .titlebox .titlebox-title .right {
+  float: right;
 }
-/* line 178, ../sass/screen.scss */
-.myrt .boxcontainer:first-child .titlebox-content td:nth-child(6) a:hover {
-  color: #000;
-  text-shadow: 0px 0px 0px #000;
-}
-/* line 182, ../sass/screen.scss */
-.myrt .boxcontainer:first-child .quick-create {
-  max-width: 500px;
-}
-/* line 183, ../sass/screen.scss */
-.myrt .boxcontainer:first-child .quick-create table {
-  width: 100%;
-}
-/* line 184, ../sass/screen.scss */
-.myrt .boxcontainer:first-child .quick-create .label {
-  padding: 0.5em 0.2em;
-}
-/* line 185, ../sass/screen.scss */
-.myrt .boxcontainer:first-child .quick-create .labeltop {
-  padding: 0 0.2em;
-}
-/* line 186, ../sass/screen.scss */
-.myrt .boxcontainer:first-child .quick-create textarea {
-  min-width: 400px;
-  max-width: 400px;
-}
-/* line 187, ../sass/screen.scss */
-.myrt .boxcontainer:first-child .quick-create .button {
-  width: 150px;
-  height: 30px;
-  font-size: 0.9em;
+/* line 176, ../sass/screen.scss */
+#body .titlebox .titlebox-title .right a {
+  font-size: 10px;
   text-transform: uppercase;
-  margin: 1em;
+  color: rgba(163, 163, 163, 0.2);
+}
+/* line 176, ../sass/screen.scss */
+#body .titlebox .titlebox-title .right a:hover {
+  color: #a2ad4b;
+}
+/* line 192, ../sass/screen.scss */
+#body .oddline {
+  background: #434755;
 }
 /* line 193, ../sass/screen.scss */
-.myrt .boxcontainer:last-child th {
-  padding-left: 0.2em;
-  text-transform: capitalize;
-}
-/* line 194, ../sass/screen.scss */
-.myrt .boxcontainer:last-child td:first-child {
-  text-align: left;
+#body .evenline {
+  background: #474c5b;
 }
 /* line 195, ../sass/screen.scss */
-.myrt .boxcontainer:last-child td {
-  text-align: center;
-}
-/* line 198, ../sass/screen.scss */
-.myrt .titlebox:nth-child(4) {
-  float: left;
-}
-/* line 199, ../sass/screen.scss */
-.myrt .titlebox .submit {
-  float: right;
-}
-/* line 200, ../sass/screen.scss */
-.myrt .titlebox:nth-child(4):after {
-  clear: both;
+#body .oddline:hover, #body .evenline:hover {
+  background: #282828;
+  -webkit-transition: all 0.45s ease-in-out;
+  -moz-transition: all 0.45s ease-in-out;
+  -ms-transition: all 0.45s ease-in-out;
+  -o-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
 }
 
-/****************************** END comp-index ******************************/
-/****************************** *START comp-Search-Results* ******************************/
-/* line 215, ../sass/screen.scss */
-#comp-Search-Results #body .oddline {
-  border: none;
+/* end #body */
+/* START comp-index */
+/* line 203, ../sass/screen.scss */
+#comp-index {
+  /* end myrt */
 }
-/* line 216, ../sass/screen.scss */
-#comp-Search-Results #body .evenline {
-  border: none;
-}
-/* line 217, ../sass/screen.scss */
-#comp-Search-Results #body .oddline:hover {
-  background: #DEDEDE;
-}
-/* line 218, ../sass/screen.scss */
-#comp-Search-Results #body .evenline:hover {
-  background: #D2D2D2;
-}
-/* line 220, ../sass/screen.scss */
-#comp-Search-Results #body .refresh {
-  display: none;
-}
-/* line 221, ../sass/screen.scss */
-#comp-Search-Results #body table {
-  margin: 0 auto;
-  width: 75%;
-  border: 1px solid black;
-}
-/* line 222, ../sass/screen.scss */
-#comp-Search-Results #body table tr:nth-child(2n) {
-  border-bottom: 1px solid black;
-}
-/* line 223, ../sass/screen.scss */
-#comp-Search-Results #body table tr:nth-child(4n) {
-  border-bottom: 1px solid black;
-}
-/* line 224, ../sass/screen.scss */
-#comp-Search-Results #body table th {
-  background: #272727;
-}
-/* line 225, ../sass/screen.scss */
-#comp-Search-Results #body table th a {
-  color: #fff;
-}
-/* line 226, ../sass/screen.scss */
-#comp-Search-Results #body table th a:hover {
-  color: #b70005;
-}
-/* line 228, ../sass/screen.scss */
-#comp-Search-Results #body table th:nth-child(1), #comp-Search-Results #body table th:nth-child(3), #comp-Search-Results #body table th:nth-child(4), #comp-Search-Results #body table th:nth-child(5), #comp-Search-Results #body table th:nth-child(6) {
-  text-align: center;
-}
-/* line 229, ../sass/screen.scss */
-#comp-Search-Results #body table td:nth-child(1), #comp-Search-Results #body table td:nth-child(3), #comp-Search-Results #body table td:nth-child(4), #comp-Search-Results #body table td:nth-child(5), #comp-Search-Results #body table td:nth-child(6) {
-  text-align: center;
-}
-/* line 230, ../sass/screen.scss */
-#comp-Search-Results #body table td:nth-child(3), #comp-Search-Results #body table td:nth-child(5) {
-  font-style: italic;
-}
-/* line 232, ../sass/screen.scss */
-#comp-Search-Results #body table td {
-  padding: 0.2em 0.2em;
-}
-/* line 235, ../sass/screen.scss */
-#comp-Search-Results #body table tr:nth-child(2n) {
-  font-size: 0.7em;
-}
-
-/****************************** *END comp-Search-Results* ******************************/
-/****************************** *START comp-Ticket-Display ******************************/
-/* line 253, ../sass/screen.scss */
-#comp-Ticket-Display {
-  /*end body */
-}
-/* line 254, ../sass/screen.scss */
-#comp-Ticket-Display #body {
-  /* end summary */
-  /* end .boxcontainer:nth.-child(1) */
-  /* end .boxcontainer:nth-child(2) */
-  /* end history */
-}
-/* line 256, ../sass/screen.scss */
-#comp-Ticket-Display #body .summary .titlebox {
-  margin: 0.5em;
-}
-/* line 257, ../sass/screen.scss */
-#comp-Ticket-Display #body .summary .titlebox-content {
-  padding: 0.2em;
-}
-/* line 263, ../sass/screen.scss */
-#comp-Ticket-Display #body .boxcontainer:nth-child(1) {
-  padding-right: 0.5em;
-  /* end ticket-info-cfs */
-}
-/* line 267, ../sass/screen.scss */
-#comp-Ticket-Display #body .boxcontainer:nth-child(1) .ticket-info-cfs td {
-  padding: 0.2em;
-}
-/* line 268, ../sass/screen.scss */
-#comp-Ticket-Display #body .boxcontainer:nth-child(1) .ticket-info-cfs tr {
-  border-bottom: 1px solid #666;
-}
-/* line 270, ../sass/screen.scss */
-#comp-Ticket-Display #body .boxcontainer:nth-child(1) .ticket-info-cfs td:first-child {
-  width: 120px;
-}
-/* line 275, ../sass/screen.scss */
-#comp-Ticket-Display #body .boxcontainer:nth-child(1) .ticket-info-basics td:first-child, #comp-Ticket-Display #body .boxcontainer:nth-child(1) .ticket-info-people td:first-child {
-  width: 120px;
-}
-/* line 276, ../sass/screen.scss */
-#comp-Ticket-Display #body .boxcontainer:nth-child(1) .ticket-info-basics tr, #comp-Ticket-Display #body .boxcontainer:nth-child(1) .ticket-info-people tr {
-  border-bottom: 1px solid #666;
-}
-/* line 283, ../sass/screen.scss */
-#comp-Ticket-Display #body .boxcontainer:nth-child(2) {
-  width: 15%;
-}
-/* line 284, ../sass/screen.scss */
-#comp-Ticket-Display #body .boxcontainer:nth-child(2) tr {
-  border-bottom: 1px solid #666;
-}
-/* line 288, ../sass/screen.scss */
-#comp-Ticket-Display #body .boxcontainer:nth-child(2) .ticket-info-reminders tr {
-  border-bottom: none;
-}
-/* line 295, ../sass/screen.scss */
-#comp-Ticket-Display #body .history {
-  clear: both;
-  /* end ticket history */
-}
-/* line 296, ../sass/screen.scss */
-#comp-Ticket-Display #body .history .titlebox-content {
-  padding: 0.2em;
-}
-/* line 297, ../sass/screen.scss */
-#comp-Ticket-Display #body .history .titlebox-title {
-  color: #353535;
-}
-/* line 298, ../sass/screen.scss */
-#comp-Ticket-Display #body .history .titlebox-title a {
-  color: #fff;
-}
-/* line 298, ../sass/screen.scss */
-#comp-Ticket-Display #body .history .titlebox-title a:hover {
-  color: #f8bb14;
-}
-/* line 299, ../sass/screen.scss */
-#comp-Ticket-Display #body .history .titlebox-title .left {
-  color: #fff;
-}
-/* line 302, ../sass/screen.scss */
-#comp-Ticket-Display #body .history .odd, #comp-Ticket-Display #body .history .even {
-  background: #DEDEDE;
-  border-top: 1px solid #666;
-  border-bottom: 1px solid #666;
-  margin-bottom: 0.7em;
-}
-/* line 304, ../sass/screen.scss */
-#comp-Ticket-Display #body .history #ticket-history {
-  /* end message */
-}
-/* line 305, ../sass/screen.scss */
-#comp-Ticket-Display #body .history #ticket-history .message {
-  /*end content */
-}
-/* line 307, ../sass/screen.scss */
-#comp-Ticket-Display #body .history #ticket-history .message .metadata .type {
-  padding: 0.2em;
-}
-/* line 308, ../sass/screen.scss */
-#comp-Ticket-Display #body .history #ticket-history .message .metadata .date {
-  padding: 0.2em 1em;
-  font-style: italic;
-}
-/* line 309, ../sass/screen.scss */
-#comp-Ticket-Display #body .history #ticket-history .message .metadata .description {
-  color: #b70005;
-}
-/* line 310, ../sass/screen.scss */
-#comp-Ticket-Display #body .history #ticket-history .message .metadata .actions {
-  color: #DEDEDE;
-  float: right;
-}
-/* line 312, ../sass/screen.scss */
-#comp-Ticket-Display #body .history #ticket-history .message .content {
-  padding: 0.2em;
-}
-/* line 313, ../sass/screen.scss */
-#comp-Ticket-Display #body .history #ticket-history .message .content td {
-  float: left;
-}
-/* line 314, ../sass/screen.scss */
-#comp-Ticket-Display #body .history #ticket-history .message .content .message-header-key {
-  padding-right: 1em;
-  font-weight: bold;
-}
-/* line 315, ../sass/screen.scss */
-#comp-Ticket-Display #body .history #ticket-history .message .content .message-header-value {
-  font-weight: bold;
-}
-/* line 324, ../sass/screen.scss */
-#comp-Ticket-Display #body .history #ticket-history .Correspond .downloadattachment {
-  float: right;
-  padding-top: 0.5em;
-  font-size: 0.8em;
-  text-align: right;
-  font-style: italic;
-}
-/* line 325, ../sass/screen.scss */
-#comp-Ticket-Display #body .history #ticket-history .Correspond .messagebody {
-  padding: 0.5em 0;
-}
-/* line 328, ../sass/screen.scss */
-#comp-Ticket-Display #body .history #ticket-history .EmailRecord {
-  margin-top: -0.7em;
-}
-/* line 330, ../sass/screen.scss */
-#comp-Ticket-Display #body .history #ticket-history .other, #comp-Ticket-Display #body .history #ticket-history .basics {
-  padding: 0.2em;
-}
-/* line 331, ../sass/screen.scss */
-#comp-Ticket-Display #body .history #ticket-history .other {
-  font-style: italic;
-}
-/* line 332, ../sass/screen.scss */
-#comp-Ticket-Display #body .history #ticket-history .basics {
-  background: #D4D4D4;
-  color: #b70005;
+/* line 205, ../sass/screen.scss */
+#comp-index #page-edit {
+  opacity: 0.2;
   text-transform: uppercase;
 }
-
-/* end comp-Ticket-Display */
-/****************************** *END comp-Ticket-Display ******************************/
-/****************************** *START comp-Search-Simple* ******************************/
-/* line 356, ../sass/screen.scss */
-#SimpleSearchForm {
-  max-width: 800px;
-  margin: 0 auto;
+/* line 209, ../sass/screen.scss */
+#comp-index .myrt {
+  /* end boxcontainer first child */
+  /*end box container last child */
 }
-/* line 358, ../sass/screen.scss */
-#SimpleSearchForm .button {
-  margin: 1em 0;
-  width: 150px;
-  height: 30px;
+/* line 209, ../sass/screen.scss */
+#comp-index .myrt .boxcontainer:first-child {
+  /* end quick create */
 }
-/* line 359, ../sass/screen.scss */
-#SimpleSearchForm input:first-child {
-  height: 30px;
-  font-size: 1.5em;
-  color: #454545;
+/* line 211, ../sass/screen.scss */
+#comp-index .myrt .boxcontainer:first-child .titlebox-content th:first-child {
+  padding-left: 7px;
 }
-/* line 360, ../sass/screen.scss */
-#SimpleSearchForm p {
-  line-height: 1.4em;
-  margin-bottom: 0.5em;
+/* line 212, ../sass/screen.scss */
+#comp-index .myrt .boxcontainer:first-child .titlebox-content th:nth-child(4), #comp-index .myrt .boxcontainer:first-child .titlebox-content th:nth-child(5) {
+  text-align: center;
 }
-
-/****************************** *END comp-Search-Simple* ******************************/
-/****************************** *START comp-Search-Build* ******************************/
-/* line 379, ../sass/screen.scss */
-#comp-Search-Build .titlebox .titlebox-content {
-  padding: 0.2em;
+/* line 214, ../sass/screen.scss */
+#comp-index .myrt .boxcontainer:first-child .titlebox-content td:nth-child(1) {
+  font-size: 10px;
 }
-/* line 382, ../sass/screen.scss */
-#comp-Search-Build #pick-criteria {
-  position: relative;
-  width: 55%;
+/* line 215, ../sass/screen.scss */
+#comp-index .myrt .boxcontainer:first-child .titlebox-content td:nth-child(3) {
+  font-size: 12px;
 }
-/* line 383, ../sass/screen.scss */
-#comp-Search-Build #editquery {
-  width: 30%;
-  position: absolute;
-  top: 93px;
-  right: 7em;
+/* line 216, ../sass/screen.scss */
+#comp-index .myrt .boxcontainer:first-child .titlebox-content td:nth-child(4) {
+  font-size: 10px;
+  text-transform: uppercase;
+  text-align: center;
 }
-/* line 384, ../sass/screen.scss */
-#comp-Search-Build #editsearches {
-  margin-top: 5em;
-  position: absolute;
-  top: 280px;
-  right: 7em;
-  width: 30%;
+/* line 217, ../sass/screen.scss */
+#comp-index .myrt .boxcontainer:first-child .titlebox-content td:nth-child(5) {
+  font-size: 10px;
+  text-align: center;
 }
-/* line 386, ../sass/screen.scss */
-#comp-Search-Build #sorting {
-  margin-top: 4em;
-  width: 40%;
+/* line 218, ../sass/screen.scss */
+#comp-index .myrt .boxcontainer:first-child .titlebox-content td:nth-child(6) {
+  font-size: 10px;
+  text-transform: uppercase;
 }
-/* line 390, ../sass/screen.scss */
-#comp-Search-Build #columns {
-  width: 50%;
-  position: absolute;
-  top: 528px;
-  right: 1em;
+/* line 218, ../sass/screen.scss */
+#comp-index .myrt .boxcontainer:first-child .titlebox-content td:nth-child(6) a {
+  color: #a2ad4b;
 }
-
-/****************************** *END comp-Search-Build *******************************/
-/****************************** START comp-Prefs-Other *******************************/
-/* line 406, ../sass/screen.scss */
-#comp-Prefs-Other #body {
-  margin: 0 auto;
-  max-width: 800px;
-  line-height: 1.5em;
-  padding: 0.2em;
+/* line 218, ../sass/screen.scss */
+#comp-index .myrt .boxcontainer:first-child .titlebox-content td:nth-child(6) a:hover {
+  color: #fff;
 }
-
-/****************************** END comp-Prefs-Other *******************************/
-/****************************** START MODIFY TICKET MULTI PAGE *******************************/
-/* line 423, ../sass/screen.scss */
-#comp-Ticket-Modify #body {
-  max-width: 700px;
-  line-height: 1.4em;
+/* line 223, ../sass/screen.scss */
+#comp-index .myrt .boxcontainer:first-child .quick-create {
+  width: 80%;
+  /* end form .quick-create */
 }
-/* line 424, ../sass/screen.scss */
-#comp-Ticket-Modify #body textarea {
-  max-width: 650px;
-  min-width: 650px;
+/* line 224, ../sass/screen.scss */
+#comp-index .myrt .boxcontainer:first-child .quick-create .titlebox-content {
+  padding: 3px 4px;
 }
-/* line 425, ../sass/screen.scss */
-#comp-Ticket-Modify #body .edit-custom-fields {
-  margin-top: 1em;
+/* line 225, ../sass/screen.scss */
+#comp-index .myrt .boxcontainer:first-child .quick-create form {
+  text-transform: uppercase;
 }
-/* line 426, ../sass/screen.scss */
-#comp-Ticket-Modify #body .buttons .button {
-  margin: 1em auto;
-  width: 100px;
-  height: 30px;
+/* line 226, ../sass/screen.scss */
+#comp-index .myrt .boxcontainer:first-child .quick-create form .label, #comp-index .myrt .boxcontainer:first-child .quick-create form .labeltop {
+  font-size: 15px;
+  text-transform: uppercase;
 }
-
-/* line 431, ../sass/screen.scss */
-#comp-Ticket-ModifyLinks #body {
-  line-height: 1.4em;
+/* line 228, ../sass/screen.scss */
+#comp-index .myrt .boxcontainer:first-child .quick-create form .input-row .value:nth-child(2) {
+  width: 220px;
 }
-/* line 433, ../sass/screen.scss */
-#comp-Ticket-ModifyLinks #body .titlebox-content {
-  padding: 0.5em;
+/* line 229, ../sass/screen.scss */
+#comp-index .myrt .boxcontainer:first-child .quick-create form tr .label:nth-child(3) {
+  text-align: right;
 }
-/* line 433, ../sass/screen.scss */
-#comp-Ticket-ModifyLinks #body table td:first-child {
-  vertical-align: top;
+/* line 231, ../sass/screen.scss */
+#comp-index .myrt .boxcontainer:first-child .quick-create form input {
+  max-width: 210px;
 }
-/* line 435, ../sass/screen.scss */
-#comp-Ticket-ModifyLinks #body .buttons .button {
-  margin: 0 auto;
-  width: 100px;
-  height: 30px;
-  margin-top: 3em;
+/* line 232, ../sass/screen.scss */
+#comp-index .myrt .boxcontainer:first-child .quick-create form textarea {
+  max-width: 390px;
 }
-
-/* line 440, ../sass/screen.scss */
-#comp-Ticket-ModifyDates #body {
-  max-width: 400px;
-  line-height: 1.4em;
+/* line 234, ../sass/screen.scss */
+#comp-index .myrt .boxcontainer:first-child .quick-create form .submit {
+  text-align: center;
 }
-/* line 441, ../sass/screen.scss */
-#comp-Ticket-ModifyDates #body .titlebox-content td {
-  padding-left: 2em;
+/* line 234, ../sass/screen.scss */
+#comp-index .myrt .boxcontainer:first-child .quick-create form .button {
+  margin-top: 5px;
+  padding: 5px 55px;
 }
-/* line 442, ../sass/screen.scss */
-#comp-Ticket-ModifyDates #body .buttons .button {
-  margin: 0 auto;
-  width: 100px;
-  height: 30px;
-  margin-top: 3em;
+/* line 253, ../sass/screen.scss */
+#comp-index .myrt .boxcontainer:last-child {
+  width: 25%;
+}
+/* line 255, ../sass/screen.scss */
+#comp-index .myrt .boxcontainer:last-child .titlebox-content th:nth-child(2), #comp-index .myrt .boxcontainer:last-child .titlebox-content th:nth-child(3), #comp-index .myrt .boxcontainer:last-child .titlebox-content th:nth-child(4) {
+  font-size: 11px;
+  text-align: center;
+  text-transform: lowercase;
+}
+/* line 256, ../sass/screen.scss */
+#comp-index .myrt .boxcontainer:last-child .titlebox-content td:nth-child(2), #comp-index .myrt .boxcontainer:last-child .titlebox-content td:nth-child(3), #comp-index .myrt .boxcontainer:last-child .titlebox-content td:nth-child(4) {
+  font-size: 10px;
+  text-align: center;
+}
+/* line 258, ../sass/screen.scss */
+#comp-index .myrt .boxcontainer:last-child .titlebox-content td:nth-child(1) {
+  font-size: 12px;
+}
+/* line 262, ../sass/screen.scss */
+#comp-index .myrt .boxcontainer:last-child .titlebox form {
+  padding: 2px;
+}
+/* line 262, ../sass/screen.scss */
+#comp-index .myrt .boxcontainer:last-child .titlebox form .submit {
+  text-align: center;
+}
+/* line 262, ../sass/screen.scss */
+#comp-index .myrt .boxcontainer:last-child .titlebox form .button {
+  margin-top: 5px;
+  padding: 1px 20px;
 }
 
-/* line 447, ../sass/screen.scss */
-#comp-Ticket-ModifyPeople #body {
-  padding: 0.2em;
-  line-height: 1.4em;
-  max-width: 800px;
-}
-/* line 448, ../sass/screen.scss */
-#comp-Ticket-ModifyPeople #body .titlebox-content {
-  padding: 0.2em;
-}
-/* line 453, ../sass/screen.scss */
-#comp-Ticket-ModifyPeople #body .buttons .button {
-  margin: 0 auto;
-  width: 100px;
-  height: 30px;
-  margin-top: 3em;
-}
-
-/****************************** END MODIFY TICKET MULTI PAGE *******************************/
+/* end comp-index */
+/* END comp-index */
