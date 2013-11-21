@@ -1,4 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Archivo+Narrow);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
 @import url(http://fonts.googleapis.com/css?family=Oswald);
 /* line 17, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
@@ -66,17 +65,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/*********************************************************
-Typography
-**********************************************************/
-/*********************************************************
-Colors
-**********************************************************/
+/*-------------------------------------------------------------------------------------------------
+	-Transition
+-------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------
+  All inputs
+-------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------
+ -Typography
+-------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------
+ -Colors
+-------------------------------------------------------------------------------------------------*/
 /* body background */
 /* main text color */
 /* main link color */
 /* main link hover color */
 /* main background */
+/* main title color */
 /* titlebox th text */
 /* titlebox th background */
 /* default border color */
@@ -92,10 +98,10 @@ Colors
 /* main navigation bg color */
 /* take button color */
 /* tale button bg color */
-/*********************************************************
-Buttons
-**********************************************************/
-/* line 43, ../sass/screen.scss */
+/*-------------------------------------------------------------------------------------------------
+ -Global
+-------------------------------------------------------------------------------------------------*/
+/* line 54, ../sass/screen.scss */
 .button {
   border: none;
   border-radius: 3px;
@@ -106,10 +112,10 @@ Buttons
   -moz-transition: all 0.55s ease-in-out;
   -ms-transition: all 0.55s ease-in-out;
   -o-transition: all 0.55s ease-in-out;
-  transition: all 0.45s ease-in-out;
+  transition: all 0.55s ease-in-out;
 }
 
-/* line 44, ../sass/screen.scss */
+/* line 55, ../sass/screen.scss */
 .button:hover {
   background: #95450b;
   color: #fff;
@@ -120,93 +126,130 @@ Buttons
   transition: all 0.55s ease-in-out;
 }
 
-/*********************************************************
-Global
-**********************************************************/
-/*********************************************************
-Global - tracker
-**********************************************************/
-/* line 56, ../sass/screen.scss */
+/* line 44, ../sass/_mixins.scss */
+select,
+select[type="select"],
+.select-queue,
+input,
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea {
+  background: #202020;
+  color: #939393;
+  border: none;
+  box-shadow: inset 0 0px 1px rgba(140, 140, 140, 0.3);
+}
+/* line 57, ../sass/screen.scss */
+select:focus,
+select[type="select"]:focus,
+.select-queue:focus,
+input:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 1px #ac6c3d;
+}
+
+/*-------------------------------------------------------------------------------------------------
+ -Hidden
+-------------------------------------------------------------------------------------------------*/
+/* line 63, ../sass/screen.scss */
 #quickbar {
   display: none;
 }
 
-/* line 57, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 #logo .rtname {
   display: none;
 }
 
-/* line 58, ../sass/screen.scss */
+/* line 65, ../sass/screen.scss */
 #ui-datepicker-div {
   display: none;
 }
 
-/* line 59, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 #time {
   display: none;
 }
 
-/* line 60, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 .clear {
   display: none;
 }
 
-/****************************************/
-/* line 64, ../sass/screen.scss */
+/* line 70, ../sass/screen.scss */
 body {
-  font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
-  font-size: 100%;
+  font: 100% "Roboto Condensed", Helvetica, Arial, sans-serif;
   margin-top: 10px;
   background: #1e1e1e;
   color: #939393;
+  line-height: 1.2;
 }
-/* line 65, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 body a {
   text-decoration: none;
   color: #ac6c3d;
 }
-/* line 65, ../sass/screen.scss */
-body a:visited, body a:active {
+/* line 71, ../sass/screen.scss */
+body a:visited {
   text-decoration: none;
   color: #ac6c3d;
 }
-/* line 65, ../sass/screen.scss */
-body a:hover {
+/* line 71, ../sass/screen.scss */
+body a:hover, body a:active, body a:focus {
+  text-decoration: none;
   color: #535144;
 }
 
-/* end body */
-/* line 68, ../sass/screen.scss */
-select {
-  background: #282828;
-  color: #939393;
-}
-
-/* line 69, ../sass/screen.scss */
-select:focus {
-  outline: none;
-}
-
-/* START HEADER */
-/* line 74, ../sass/screen.scss */
+/*-------------------------------------------------------------------------------------------------
+ -Header + Main Navigation + page Navigation + Top Actions
+-------------------------------------------------------------------------------------------------*/
+/* line 78, ../sass/screen.scss */
 #logo {
   position: relative;
   float: left;
   padding: 0 20px;
-  height: 50px;
+  line-height: 33px;
+}
+/* line 79, ../sass/screen.scss */
+#logo img {
+  width: 30px;
+  height: 33px;
 }
 
-/* line 76, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 #header {
-  line-height: 50px;
-  font-family: 'Oswald', Helvetica, Arial, sans-serif;
-  font-size: 1.2em;
+  line-height: 33px;
+  font: 100% "Oswald", Helvetica, Arial, sans-serif;
+  font-size: 20px;
   text-transform: uppercase;
 }
 
-/* END HEADER */
-/* START MAIN NAVIGATION */
-/* line 83, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
 #main-navigation {
   float: left;
   width: 100%;
@@ -214,27 +257,25 @@ select:focus {
   background: #121212;
   border-top: 1px solid rgba(140, 140, 140, 0.2);
   border-bottom: 1px solid rgba(140, 140, 140, 0.2);
-  /* sub menu */
-  /*sub sub menu */
 }
-/* line 84, ../sass/screen.scss */
+/* line 85, ../sass/screen.scss */
 #main-navigation ul {
   list-style: none;
 }
-/* line 85, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 #main-navigation ul li {
   float: left;
   position: relative;
   z-index: 20;
 }
-/* line 86, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 #main-navigation ul li a {
   display: block;
   padding: 5px 15px 5px 15px;
   font-size: 14px;
   color: #95450b;
 }
-/* line 87, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 #main-navigation ul li:hover > a {
   color: #ac6c3d;
   -webkit-transition: all 0.3s ease-in-out;
@@ -243,11 +284,11 @@ select:focus {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 88, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 #main-navigation ul li.active > a {
   color: #ac6c3d;
 }
-/* line 92, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 #main-navigation li > ul:before {
   content: "";
   border-style: solid;
@@ -259,34 +300,34 @@ select:focus {
   left: 30px;
   top: 0px;
 }
-/* line 95, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 #main-navigation ul li > ul {
   position: absolute;
   left: 0px;
   top: 100%;
   padding-top: 5px;
   width: 140px;
-  background: #282828;
+  background: #121212;
   box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.1);
 }
-/* line 97, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 #main-navigation ul li:hover > ul {
   display: block;
 }
-/* line 98, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 #main-navigation ul li > ul li {
   padding: 3px 3px 3px;
   width: 95%;
   border-bottom: 1px solid rgba(173, 173, 173, 0.2);
 }
-/* line 100, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 #main-navigation ul li > ul li a {
   display: block;
   padding: 3px 3px;
   font-size: 12px;
-  border-left: 2px solid #282828;
+  border-left: 2px solid #121212;
 }
-/* line 102, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 #main-navigation ul li > ul li:hover {
   background: rgba(224, 224, 224, 0.1);
   -webkit-transition: all 0.3s ease-in-out;
@@ -295,7 +336,7 @@ select:focus {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 104, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
 #main-navigation ul li > ul li:hover > a {
   color: #ac6c3d;
   border-color: #ac6c3d;
@@ -305,108 +346,110 @@ select:focus {
   -o-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
-/* line 105, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 #main-navigation ul li > ul li.active > a {
   color: #ac6c3d;
 }
-/* line 108, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 #main-navigation li > ul li > ul:before {
   content: "";
   border-style: solid;
   border-width: 6px 6px 6px 6px;
-  border-color: transparent #282828 transparent transparent;
+  border-color: transparent #121212 transparent transparent;
   width: 0;
   height: 0;
   position: absolute;
   left: -12px;
   top: 7px;
 }
-/* line 110, ../sass/screen.scss */
+/* line 102, ../sass/screen.scss */
 #main-navigation ul li > ul li > ul {
   top: 0px;
   left: 105%;
   padding-top: 0px;
 }
-/* line 114, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 #main-navigation ul li > ul li:hover > ul {
   display: block;
   top: 0px;
   left: 100%;
 }
-/* line 116, ../sass/screen.scss */
+/* line 106, ../sass/screen.scss */
 #main-navigation ul ul {
   display: none;
 }
 
-/* END MAIN NAVIGATION */
-/* line 121, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 .sf-sub-indicator {
   display: none;
 }
 
-/* START PAGE NAVIGATION */
-/* line 126, ../sass/screen.scss */
+/* line 112, ../sass/screen.scss */
 #page-navigation {
   position: absolute;
   right: 15px;
-  font-size: 12px;
+  top: 50px;
 }
-/* line 127, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 #page-navigation ul {
   list-style: none;
 }
-/* line 128, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 #page-navigation ul li {
   float: left;
   position: relative;
   z-index: 20;
 }
-/* line 129, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
 #page-navigation ul li a {
   display: block;
-  float: left;
-  padding: 12px 5px 11px 5px;
+  padding: 0px 15px 0px 15px;
+  font-size: 11px;
+  line-height: 33px;
+  color: #95450b;
+  text-transform: uppercase;
 }
-/* line 130, ../sass/screen.scss */
+/* line 116, ../sass/screen.scss */
 #page-navigation ul li:hover > a {
-  color: #a2ad4b;
+  color: #ac6c3d;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 131, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 #page-navigation ul li.active > a {
-  color: #a2ad4b;
+  color: #ac6c3d;
 }
-/* line 134, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 #page-navigation ul li > ul {
   position: absolute;
   left: 0px;
   top: 100%;
-  padding-top: 0px;
+  padding-top: 7px;
   width: 100px;
-  background: #232323;
+  background: #121212;
   box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.1);
 }
-/* line 136, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
 #page-navigation ul li:hover > ul {
   display: block;
 }
-/* line 137, ../sass/screen.scss */
+/* line 121, ../sass/screen.scss */
 #page-navigation ul li > ul li {
   padding: 3px 3px 3px;
   width: 95%;
+  border-bottom: 1px solid rgba(173, 173, 173, 0.2);
 }
-/* line 139, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 #page-navigation ul li > ul li a {
   display: block;
   padding: 3px 3px;
-  font-size: 12px;
-  border-left: 2px solid #232323;
+  font-size: 10px;
+  border-left: 2px solid #121212;
 }
-/* line 141, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 #page-navigation ul li > ul li:hover {
   background: rgba(224, 224, 224, 0.1);
   -webkit-transition: all 0.3s ease-in-out;
@@ -415,39 +458,26 @@ select:focus {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 143, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 #page-navigation ul li > ul li:hover > a {
-  color: #a2ad4b;
-  /*border-color: $button-bg;*/
+  color: #ac6c3d;
+  border-color: #ac6c3d;
   -webkit-transition: all 0.1s ease-in-out;
   -moz-transition: all 0.1s ease-in-out;
   -ms-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
-/* line 144, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
 #page-navigation ul li > ul li.active > a {
-  color: #a2ad4b;
+  color: #ac6c3d;
 }
-/* line 146, ../sass/screen.scss */
-#page-navigation ul li > ul li > ul {
-  top: 0px;
-  left: 100%;
-}
-/* line 150, ../sass/screen.scss */
-#page-navigation ul li > ul li:hover > ul {
-  display: block;
-  top: 0px;
-  left: 100%;
-}
-/* line 152, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 #page-navigation ul ul {
   display: none;
 }
 
-/* END PAGE NAVIGATION */
-/* START TOP ACTIONS */
-/* line 161, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
 #topactions {
   clear: both;
   position: absolute;
@@ -455,127 +485,122 @@ select:focus {
   right: 20px;
   height: 50px;
 }
-/* line 162, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 #topactions #simple-search {
   float: left;
   padding-right: 20px;
 }
-/* line 163, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 #topactions #simple-search input {
   width: 300px;
   height: 23px;
   margin: 1px 5px;
   border: none;
-  border-bottom: 1px solid rgba(140, 140, 140, 0.2);
-  color: #939393;
-  background: #1e1e1e;
-  font-family: 'Oswald', Helvetica, Arial, sans-serif;
-  font-size: 18px;
+  font: 100% "Oswald", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 23px;
   padding-left: 2px;
 }
-/* line 164, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 #topactions #simple-search input:focus {
   outline: none;
+  border: none;
   border-bottom: 1px solid #ac6c3d;
 }
-/* line 167, ../sass/screen.scss */
+/* line 135, ../sass/screen.scss */
 #topactions #CreateTicketInQueue {
   float: right;
   padding-top: -5px;
 }
-/* line 168, ../sass/screen.scss */
+/* line 136, ../sass/screen.scss */
 #topactions #CreateTicketInQueue .button {
   padding: 5px 10px;
 }
 
-/* end top actions */
-/* END TOP ACTIONS */
-/* line 176, ../sass/screen.scss */
+/* line 140, ../sass/screen.scss */
 #footer {
   clear: both;
   margin-top: 7em;
+  margin-bottom: 1em;
 }
-/* line 176, ../sass/screen.scss */
+/* line 140, ../sass/screen.scss */
 #footer #bpscredits {
   text-align: center;
 }
 
-/*********************************************************
-#BODY default settings
-**********************************************************/
-/* line 183, ../sass/screen.scss */
+/*-------------------------------------------------------------------------------------------------
+ -#body general settings
+-------------------------------------------------------------------------------------------------*/
+/* line 146, ../sass/screen.scss */
 #body {
   clear: both;
   max-width: 960px;
   margin: 0 auto;
-  margin-top: 3em;
-  /*end titlebox */
+  padding: 1%;
 }
-/* line 185, ../sass/screen.scss */
+/* line 149, ../sass/screen.scss */
 #body .titlebox .titlebox-title .widget a {
   display: block;
   margin: 0;
   width: 15px;
-  background: url(../NoAuth/images/css/rollup-arrow.gif) no-repeat;
+  background: url(/NoAuth/images/css/rollup-arrow.gif) no-repeat;
   background-position: center;
   position: absolute;
-  top: 2px;
+  top: 6px;
   left: 0px;
   padding: 7px 0 0 0;
   overflow: hidden;
 }
-/* line 198, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 #body .titlebox .titlebox-title .widget a:hover {
   background-position: top;
 }
-/* line 200, ../sass/screen.scss */
+/* line 162, ../sass/screen.scss */
 #body .titlebox.rolled-up .titlebox-content {
   display: none;
 }
-/* line 201, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 #body .titlebox.rolled-up .titlebox-title .widget a {
-  background: url(../NoAuth/images/css/rolldown-arrow.gif) no-repeat;
+  background: url(/NoAuth/images/css/rolldown-arrow.gif) no-repeat;
   background-position: center;
   color: red;
-  top: 2px;
+  top: 6px;
 }
-/* line 202, ../sass/screen.scss */
+/* line 164, ../sass/screen.scss */
 #body .titlebox.rolled-up .titlebox-title .widget a:hover {
   background-position: top;
 }
-/* line 206, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 #body .boxcontainer {
   vertical-align: top;
 }
-/* line 207, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 #body .boxcontainer:first-child {
-  padding-right: 0.5em;
+  padding-right: 10px;
 }
-/* line 208, ../sass/screen.scss */
+/* line 169, ../sass/screen.scss */
 #body table {
   width: 100%;
 }
-/* line 209, ../sass/screen.scss */
+/* line 170, ../sass/screen.scss */
 #body td, #body th {
-  padding: 4px 2px;
+  padding: 2px 2px;
 }
-/* line 210, ../sass/screen.scss */
+/* line 171, ../sass/screen.scss */
 #body th {
   color: #95450b;
   background: rgba(51, 51, 51, 0.2);
   border-radius: 0 0 3px 3px;
 }
-/* line 211, ../sass/screen.scss */
+/* line 173, ../sass/screen.scss */
 #body .titlebox {
   padding: 3px 3px;
-  margin-bottom: 1em;
+  margin-bottom: 10px;
   font-size: 14px;
-  /* end titlebox title */
-  /* end titlebox content */
 }
-/* line 213, ../sass/screen.scss */
+/* line 174, ../sass/screen.scss */
 #body .titlebox .titlebox-title {
-  font-family: 'Oswald', Helvetica, Arial, sans-serif;
+  font: 100% "Oswald", Helvetica, Arial, sans-serif;
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -584,384 +609,610 @@ select:focus {
   z-index: 10;
   border-bottom: 1px solid rgba(140, 140, 140, 0.2);
 }
-/* line 214, ../sass/screen.scss */
+/* line 175, ../sass/screen.scss */
 #body .titlebox .titlebox-title .left a {
-  color: #8B91A5;
+  color: #8b91a5;
 }
-/* line 214, ../sass/screen.scss */
+/* line 175, ../sass/screen.scss */
 #body .titlebox .titlebox-title .left a:hover {
   color: #535144;
 }
-/* line 215, ../sass/screen.scss */
+/* line 176, ../sass/screen.scss */
 #body .titlebox .titlebox-title .right {
   float: right;
 }
-/* line 215, ../sass/screen.scss */
+/* line 177, ../sass/screen.scss */
 #body .titlebox .titlebox-title .right a {
   font-size: 10px;
   text-transform: uppercase;
   color: rgba(163, 163, 163, 0.5);
 }
-/* line 215, ../sass/screen.scss */
+/* line 178, ../sass/screen.scss */
 #body .titlebox .titlebox-title .right a:hover {
   color: #535144;
 }
-/* line 231, ../sass/screen.scss */
-#body .oddline {
-  /*background: ; */
-}
-/* line 232, ../sass/screen.scss */
+/* line 183, ../sass/screen.scss */
 #body .evenline {
   background: #202020;
 }
-/* line 234, ../sass/screen.scss */
-#body .oddline:hover, #body .evenline:hover {
-  /*background: #A73C44;*/
-  -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  -ms-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
-}
 
-/* end #body */
-/* START comp-index */
-/* line 242, ../sass/screen.scss */
+/*-------------------------------------------------------------------------------------------------
+ -start comp-index // home page
+-------------------------------------------------------------------------------------------------*/
+/* line 196, ../sass/screen.scss */
 #comp-index {
   /* end myrt */
 }
-/* line 244, ../sass/screen.scss */
+/* line 197, ../sass/screen.scss */
 #comp-index #page-edit {
-  opacity: 0.2;
+  opacity: .2;
   text-transform: uppercase;
 }
-/* line 248, ../sass/screen.scss */
+/* line 199, ../sass/screen.scss */
 #comp-index .myrt {
   /* end boxcontainer first child */
   /*end box container last child */
 }
-/* line 248, ../sass/screen.scss */
+/* line 199, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:first-child {
   /* end quick create */
 }
-/* line 250, ../sass/screen.scss */
+/* line 201, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:first-child .titlebox-content th:first-child {
   padding-left: 7px;
 }
-/* line 251, ../sass/screen.scss */
+/* line 202, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:first-child .titlebox-content th:nth-child(4), #comp-index .myrt .boxcontainer:first-child .titlebox-content th:nth-child(5) {
   text-align: center;
 }
-/* line 254, ../sass/screen.scss */
+/* line 204, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:first-child .titlebox-content td:nth-child(2) {
   font-size: 14px;
   white-space: nowrap;
   overflow: hidden;
 }
-/* line 258, ../sass/screen.scss */
+/* line 205, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:first-child .titlebox-content td:nth-child(3) {
   font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
 }
-/* line 259, ../sass/screen.scss */
+/* line 206, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:first-child .titlebox-content td:nth-child(4) {
   font-size: 11px;
   text-transform: uppercase;
   text-align: center;
 }
-/* line 260, ../sass/screen.scss */
+/* line 207, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:first-child .titlebox-content td:nth-child(5) {
   font-size: 11px;
   text-align: center;
 }
-/* line 261, ../sass/screen.scss */
+/* line 208, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:first-child .titlebox-content td:nth-child(6) {
   font-size: 11px;
-  font-family: 'Oswald', sans-serif;
+  font: 75% "Oswald", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
 }
-/* line 261, ../sass/screen.scss */
+/* line 209, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:first-child .titlebox-content td:nth-child(6) a {
   color: #187b09;
 }
-/* line 261, ../sass/screen.scss */
+/* line 209, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:first-child .titlebox-content td:nth-child(6) a:hover {
   color: #3f8e33;
 }
-/* line 266, ../sass/screen.scss */
+/* line 214, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:first-child .quick-create {
   width: 80%;
   /* end form .quick-create */
 }
-/* line 267, ../sass/screen.scss */
+/* line 215, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:first-child .quick-create .titlebox-content {
   padding: 3px 4px;
 }
-/* line 268, ../sass/screen.scss */
+/* line 216, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:first-child .quick-create form {
   text-transform: uppercase;
 }
-/* line 269, ../sass/screen.scss */
+/* line 217, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:first-child .quick-create form .label, #comp-index .myrt .boxcontainer:first-child .quick-create form .labeltop {
   font-size: 15px;
   text-transform: uppercase;
 }
-/* line 271, ../sass/screen.scss */
+/* line 219, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:first-child .quick-create form .input-row .value:nth-child(2) {
   width: 220px;
 }
-/* line 272, ../sass/screen.scss */
+/* line 220, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:first-child .quick-create form tr .label:nth-child(3) {
   text-align: right;
 }
-/* line 274, ../sass/screen.scss */
+/* line 222, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:first-child .quick-create form input {
   max-width: 210px;
 }
-/* line 275, ../sass/screen.scss */
-#comp-index .myrt .boxcontainer:first-child .quick-create form .input-row input {
-  background: #282828;
-  color: #939393;
-  border: none;
-}
-/* line 276, ../sass/screen.scss */
-#comp-index .myrt .boxcontainer:first-child .quick-create form input:focus {
-  outline: none;
-  box-shadow: 0 0 3px #ac6c3d;
-}
-/* line 280, ../sass/screen.scss */
-#comp-index .myrt .boxcontainer:first-child .quick-create form select {
-  background: #282828;
-  color: #939393;
-}
-/* line 281, ../sass/screen.scss */
-#comp-index .myrt .boxcontainer:first-child .quick-create form select:focus {
-  outline: none;
-}
-/* line 283, ../sass/screen.scss */
+/* line 224, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:first-child .quick-create form textarea {
   max-width: 390px;
-  background: #282828;
-  color: #939393;
-  border: none;
 }
-/* line 284, ../sass/screen.scss */
-#comp-index .myrt .boxcontainer:first-child .quick-create form textarea:focus {
-  outline: none;
-  box-shadow: 0 0 3px #ac6c3d;
-}
-/* line 286, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:first-child .quick-create form .submit {
   text-align: center;
 }
-/* line 286, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:first-child .quick-create form .button {
   margin-top: 5px;
   padding: 5px 55px;
 }
-/* line 304, ../sass/screen.scss */
+/* line 244, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:last-child {
   width: 25%;
 }
-/* line 306, ../sass/screen.scss */
+/* line 246, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:last-child .titlebox-content th:nth-child(2), #comp-index .myrt .boxcontainer:last-child .titlebox-content th:nth-child(3), #comp-index .myrt .boxcontainer:last-child .titlebox-content th:nth-child(4) {
   font-size: 11px;
   text-align: center;
   text-transform: lowercase;
 }
-/* line 307, ../sass/screen.scss */
+/* line 247, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:last-child .titlebox-content td:nth-child(2), #comp-index .myrt .boxcontainer:last-child .titlebox-content td:nth-child(3), #comp-index .myrt .boxcontainer:last-child .titlebox-content td:nth-child(4) {
   font-size: 10px;
   text-align: center;
 }
-/* line 309, ../sass/screen.scss */
+/* line 249, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:last-child .titlebox-content td:nth-child(1) {
   font-size: 13px;
 }
-/* line 313, ../sass/screen.scss */
+/* line 253, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:last-child .titlebox form {
   padding: 2px;
 }
-/* line 313, ../sass/screen.scss */
+/* line 253, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:last-child .titlebox form .submit {
   text-align: center;
 }
-/* line 313, ../sass/screen.scss */
+/* line 253, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:last-child .titlebox form .button {
   margin-top: 5px;
-  padding: 5px 20px;
+  padding: 2px 20px;
 }
 
 /* end comp-index */
-/* END comp-index */
+/*-------------------------------------------------------------------------------------------------
+ -end comp-index // home page
+-------------------------------------------------------------------------------------------------*/
 /* START comp-Ticket-Display */
-/* line 333, ../sass/screen.scss */
+/* line 275, ../sass/screen.scss */
 #comp-Ticket-Display {
   /*end body */
 }
-/* line 334, ../sass/screen.scss */
+/* line 276, ../sass/screen.scss */
 #comp-Ticket-Display #body {
   /* end summary */
   /* end .boxcontainer:nth.-child(1) */
   /* end .boxcontainer:nth-child(2) */
   /* end history */
 }
-/* line 337, ../sass/screen.scss */
+/* line 279, ../sass/screen.scss */
 #comp-Ticket-Display #body .summary .titlebox-content {
   padding: 0.2em;
 }
-/* line 343, ../sass/screen.scss */
+/* line 285, ../sass/screen.scss */
 #comp-Ticket-Display #body .boxcontainer:nth-child(1) {
   padding-right: 0.5em;
   width: 65%;
   /* end ticket-info-cfs */
 }
-/* line 347, ../sass/screen.scss */
+/* line 289, ../sass/screen.scss */
 #comp-Ticket-Display #body .boxcontainer:nth-child(1) .ticket-info-cfs td {
   padding: 0.2em;
 }
-/* line 348, ../sass/screen.scss */
+/* line 290, ../sass/screen.scss */
 #comp-Ticket-Display #body .boxcontainer:nth-child(1) .ticket-info-cfs tr {
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid rgba(140, 140, 140, 0.2);
 }
-/* line 350, ../sass/screen.scss */
+/* line 292, ../sass/screen.scss */
 #comp-Ticket-Display #body .boxcontainer:nth-child(1) .ticket-info-cfs td:first-child {
   width: 120px;
 }
-/* line 355, ../sass/screen.scss */
+/* line 297, ../sass/screen.scss */
 #comp-Ticket-Display #body .boxcontainer:nth-child(1) .ticket-info-basics td:first-child, #comp-Ticket-Display #body .boxcontainer:nth-child(1) .ticket-info-people td:first-child {
   width: 120px;
 }
-/* line 356, ../sass/screen.scss */
+/* line 298, ../sass/screen.scss */
 #comp-Ticket-Display #body .boxcontainer:nth-child(1) .ticket-info-basics tr, #comp-Ticket-Display #body .boxcontainer:nth-child(1) .ticket-info-people tr {
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid rgba(140, 140, 140, 0.2);
 }
-/* line 364, ../sass/screen.scss */
+/* line 306, ../sass/screen.scss */
 #comp-Ticket-Display #body .boxcontainer:nth-child(2) tr {
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid rgba(140, 140, 140, 0.2);
 }
-/* line 368, ../sass/screen.scss */
+/* line 310, ../sass/screen.scss */
 #comp-Ticket-Display #body .boxcontainer:nth-child(2) .ticket-info-reminders table {
   position: relative;
   margin-left: 10px;
 }
-/* line 369, ../sass/screen.scss */
+/* line 311, ../sass/screen.scss */
 #comp-Ticket-Display #body .boxcontainer:nth-child(2) .ticket-info-reminders tr {
   border-bottom: none;
 }
-/* line 370, ../sass/screen.scss */
+/* line 312, ../sass/screen.scss */
 #comp-Ticket-Display #body .boxcontainer:nth-child(2) .ticket-info-reminders input {
   max-width: 200px;
 }
-/* line 371, ../sass/screen.scss */
+/* line 313, ../sass/screen.scss */
+#comp-Ticket-Display #body .boxcontainer:nth-child(2) .ticket-info-reminders .entry input {
+  background: #282828;
+  color: #939393;
+  border: none;
+}
+/* line 314, ../sass/screen.scss */
+#comp-Ticket-Display #body .boxcontainer:nth-child(2) .ticket-info-reminders .entry input:focus {
+  outline: none;
+  box-shadow: 0 0 3px #ac6c3d;
+}
+/* line 316, ../sass/screen.scss */
 #comp-Ticket-Display #body .boxcontainer:nth-child(2) .ticket-info-reminders .button {
   position: absolute;
   top: 95%;
   right: 15%;
 }
-/* line 378, ../sass/screen.scss */
+/* line 323, ../sass/screen.scss */
 #comp-Ticket-Display #body .history {
   clear: both;
   /* end ticket history */
 }
-/* line 379, ../sass/screen.scss */
+/* line 324, ../sass/screen.scss */
 #comp-Ticket-Display #body .history .titlebox-content {
   padding: 3px;
 }
-/* line 380, ../sass/screen.scss */
+/* line 325, ../sass/screen.scss */
 #comp-Ticket-Display #body .history .titlebox-title {
   color: #f9f9f9;
 }
-/* line 382, ../sass/screen.scss */
+/* line 327, ../sass/screen.scss */
 #comp-Ticket-Display #body .history .titlebox-title .left {
   color: #939393;
 }
-/* line 383, ../sass/screen.scss */
+/* line 328, ../sass/screen.scss */
 #comp-Ticket-Display #body .history .titlebox-title .right a {
   color: #ac6c3d;
 }
-/* line 383, ../sass/screen.scss */
+/* line 328, ../sass/screen.scss */
 #comp-Ticket-Display #body .history .titlebox-title .right a:hover {
   color: #535144;
 }
-/* line 386, ../sass/screen.scss */
+/* line 331, ../sass/screen.scss */
 #comp-Ticket-Display #body .history .odd, #comp-Ticket-Display #body .history .even {
-  /*background: #DEDEDE;*/
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
+  border-top: 1px solid rgba(140, 140, 140, 0.2);
+  border-bottom: 1px solid rgba(140, 140, 140, 0.2);
   margin-bottom: 0.7em;
 }
-/* line 388, ../sass/screen.scss */
+/* line 333, ../sass/screen.scss */
 #comp-Ticket-Display #body .history .odd {
-  background: #f4f4f4;
+  background: #282828;
 }
-/* line 389, ../sass/screen.scss */
+/* line 334, ../sass/screen.scss */
 #comp-Ticket-Display #body .history .even {
-  background: #eaeaea;
+  background: #181818;
 }
-/* line 393, ../sass/screen.scss */
+/* line 338, ../sass/screen.scss */
 #comp-Ticket-Display #body .history #ticket-history {
   /* end message */
 }
-/* line 394, ../sass/screen.scss */
+/* line 339, ../sass/screen.scss */
 #comp-Ticket-Display #body .history #ticket-history .message {
+  background: purple;
   /*end content */
 }
-/* line 396, ../sass/screen.scss */
+/* line 341, ../sass/screen.scss */
 #comp-Ticket-Display #body .history #ticket-history .message .metadata .type {
   padding: 0.2em;
 }
-/* line 397, ../sass/screen.scss */
+/* line 342, ../sass/screen.scss */
 #comp-Ticket-Display #body .history #ticket-history .message .metadata .date {
   padding: 0.2em 1em;
   font-style: italic;
 }
-/* line 399, ../sass/screen.scss */
+/* line 344, ../sass/screen.scss */
 #comp-Ticket-Display #body .history #ticket-history .message .metadata .actions {
-  color: #f9f9f9;
-  float: right;
+  color: #282828;
 }
-/* line 403, ../sass/screen.scss */
+/* line 349, ../sass/screen.scss */
 #comp-Ticket-Display #body .history #ticket-history .message .content {
   padding: 0.2em;
+  position: relative;
 }
-/* line 404, ../sass/screen.scss */
+/* line 350, ../sass/screen.scss */
 #comp-Ticket-Display #body .history #ticket-history .message .content td {
   float: left;
 }
-/* line 405, ../sass/screen.scss */
+/* line 351, ../sass/screen.scss */
 #comp-Ticket-Display #body .history #ticket-history .message .content .message-header-key {
   padding-right: 1em;
 }
-/* line 415, ../sass/screen.scss */
-#comp-Ticket-Display #body .history #ticket-history .Correspond .downloadattachment {
+/* line 353, ../sass/screen.scss */
+#comp-Ticket-Display #body .history #ticket-history .message .content .downloadattachment {
   float: right;
-  padding-top: 0.5em;
-  font-size: 0.8em;
-  text-align: right;
-  font-style: italic;
+  clear: both;
 }
-/* line 416, ../sass/screen.scss */
-#comp-Ticket-Display #body .history #ticket-history .Correspond .messagebody {
-  padding: 0.5em 0;
-}
-/* line 419, ../sass/screen.scss */
-#comp-Ticket-Display #body .history #ticket-history .EmailRecord {
-  margin-top: -0.7em;
-}
-/* line 421, ../sass/screen.scss */
+/* line 369, ../sass/screen.scss */
 #comp-Ticket-Display #body .history #ticket-history .other, #comp-Ticket-Display #body .history #ticket-history .basics {
   padding: 0.2em;
 }
-/* line 422, ../sass/screen.scss */
+/* line 370, ../sass/screen.scss */
 #comp-Ticket-Display #body .history #ticket-history .other {
   font-style: italic;
 }
-/* line 423, ../sass/screen.scss */
+/* line 371, ../sass/screen.scss */
 #comp-Ticket-Display #body .history #ticket-history .basics {
-  background: #F8BB14;
-  color: #282828;
+  background: #181818;
   text-transform: uppercase;
 }
 
 /* end comp-Ticket-Display */
 /* END comp-Ticket-Display */
+/****************************** *START comp-Search-Results* ******************************/
+/* line 393, ../sass/screen.scss */
+#comp-Search-Results #body .refresh {
+  display: none;
+}
+/* line 394, ../sass/screen.scss */
+#comp-Search-Results #body table {
+  margin: 0 auto;
+  width: 80%;
+}
+/* line 395, ../sass/screen.scss */
+#comp-Search-Results #body table tr:nth-child(2n) {
+  border-bottom: 1px solid rgba(140, 140, 140, 0.2);
+}
+/* line 396, ../sass/screen.scss */
+#comp-Search-Results #body table tr:nth-child(4n) {
+  border-bottom: 1px solid rgba(140, 140, 140, 0.2);
+}
+/* line 398, ../sass/screen.scss */
+#comp-Search-Results #body table th:nth-child(1), #comp-Search-Results #body table th:nth-child(3), #comp-Search-Results #body table th:nth-child(4), #comp-Search-Results #body table th:nth-child(5), #comp-Search-Results #body table th:nth-child(6) {
+  text-align: center;
+}
+/* line 399, ../sass/screen.scss */
+#comp-Search-Results #body table td:nth-child(1), #comp-Search-Results #body table td:nth-child(3), #comp-Search-Results #body table td:nth-child(4), #comp-Search-Results #body table td:nth-child(5), #comp-Search-Results #body table td:nth-child(6) {
+  text-align: center;
+}
+/* line 400, ../sass/screen.scss */
+#comp-Search-Results #body table td:nth-child(3), #comp-Search-Results #body table td:nth-child(5) {
+  font-style: italic;
+}
+/* line 402, ../sass/screen.scss */
+#comp-Search-Results #body table td {
+  padding: 2px;
+}
+/* line 404, ../sass/screen.scss */
+#comp-Search-Results #body table td > b > a {
+  font-size: 13px;
+}
+/* line 405, ../sass/screen.scss */
+#comp-Search-Results #body table td:nth-child(1n) {
+  font-size: 11px;
+}
+
+/****************************** *END comp-Search-Results* ******************************/
+/****************************** *START comp-Ticket-ModifyDates* ******************************/
+/* line 422, ../sass/screen.scss */
+#comp-Ticket-ModifyDates #body .titlebox-content {
+  margin-top: 10px;
+}
+/* line 423, ../sass/screen.scss */
+#comp-Ticket-ModifyDates #body .titlebox-content table {
+  width: 50%;
+  margin-left: 32%;
+  margin-right: 18%;
+}
+/* line 426, ../sass/screen.scss */
+#comp-Ticket-ModifyDates #body form .submit {
+  text-align: center;
+}
+/* line 426, ../sass/screen.scss */
+#comp-Ticket-ModifyDates #body .button {
+  margin-top: 5px;
+  padding: 5px 10px;
+}
+
+/****************************** *END comp-Ticket-ModifyDates* ******************************/
+/****************************** *START comp-Ticket-ModifyLinks* ******************************/
+/* line 442, ../sass/screen.scss */
+#comp-Ticket-ModifyLinks #body .titlebox-content {
+  margin-top: 10px;
+}
+/* line 444, ../sass/screen.scss */
+#comp-Ticket-ModifyLinks #body .titlebox-content table h3 {
+  font-size: 18px;
+  padding-bottom: 10px;
+  color: #8b91a5;
+  text-transform: uppercase;
+}
+/* line 446, ../sass/screen.scss */
+#comp-Ticket-ModifyLinks #body .titlebox-content table td:first-child {
+  vertical-align: top;
+  width: 40%;
+}
+/* line 447, ../sass/screen.scss */
+#comp-Ticket-ModifyLinks #body .titlebox-content table td:first-child table {
+  margin-top: 60px;
+}
+/* line 451, ../sass/screen.scss */
+#comp-Ticket-ModifyLinks #body .titlebox-content table td:last-child {
+  vertical-align: top;
+}
+/* line 452, ../sass/screen.scss */
+#comp-Ticket-ModifyLinks #body .titlebox-content table td:last-child > i {
+  line-height: 1.3em;
+}
+/* line 453, ../sass/screen.scss */
+#comp-Ticket-ModifyLinks #body .titlebox-content table td:last-child table {
+  margin-top: 10px;
+}
+/* line 454, ../sass/screen.scss */
+#comp-Ticket-ModifyLinks #body .titlebox-content table td:last-child .label {
+  width: 20%;
+}
+/* line 455, ../sass/screen.scss */
+#comp-Ticket-ModifyLinks #body .titlebox-content table td:last-child .entry {
+  padding: 1px 2px;
+}
+/* line 461, ../sass/screen.scss */
+#comp-Ticket-ModifyLinks #body form .submit {
+  text-align: center;
+}
+/* line 461, ../sass/screen.scss */
+#comp-Ticket-ModifyLinks #body .button {
+  margin-top: 5px;
+  padding: 5px 10px;
+}
+
+/****************************** *END comp-Ticket-ModifyLinks* ******************************/
+/****************************** *START comp-Ticket-Modify* ******************************/
+/* line 474, ../sass/screen.scss */
+#comp-Ticket-Modify {
+  /* end #body */
+}
+/* line 475, ../sass/screen.scss */
+#comp-Ticket-Modify #body {
+  /* end titlebox content */
+}
+/* line 477, ../sass/screen.scss */
+#comp-Ticket-Modify #body .titlebox-content table {
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 10px;
+}
+/* line 478, ../sass/screen.scss */
+#comp-Ticket-Modify #body .titlebox-content table .label {
+  padding-right: 50px;
+}
+/* line 479, ../sass/screen.scss */
+#comp-Ticket-Modify #body .titlebox-content table .value input {
+  background: #282828;
+  color: #939393;
+  border: none;
+  border-bottom: 1px solid rgba(140, 140, 140, 0.2);
+}
+/* line 480, ../sass/screen.scss */
+#comp-Ticket-Modify #body .titlebox-content table .value input:focus {
+  outline: none;
+  box-shadow: 0 0 3px #ac6c3d;
+}
+/* line 483, ../sass/screen.scss */
+#comp-Ticket-Modify #body .titlebox-content .edit-custom-fields {
+  text-align: center;
+  margin-top: 20px;
+}
+/* line 484, ../sass/screen.scss */
+#comp-Ticket-Modify #body .titlebox-content .cflabel {
+  line-height: 1.3em;
+  margin-bottom: 10px;
+}
+/* line 485, ../sass/screen.scss */
+#comp-Ticket-Modify #body .titlebox-content .edit-custom-fields .edit-custom-field textarea {
+  min-width: 500px;
+  max-width: 500px;
+}
+/* line 492, ../sass/screen.scss */
+#comp-Ticket-Modify #body form .submit {
+  text-align: center;
+}
+/* line 492, ../sass/screen.scss */
+#comp-Ticket-Modify #body .button {
+  display: table;
+  margin: 15px auto;
+  padding: 5px 10px;
+}
+
+/* end compt-ticket-modify */
+/****************************** *END comp-Ticket-Modify* ******************************/
+/****************************** *START comp-Ticket-ModifyPeople* ******************************/
+/* line 508, ../sass/screen.scss */
+#comp-Ticket-ModifyPeople {
+  /*end #body */
+}
+/* line 509, ../sass/screen.scss */
+#comp-Ticket-ModifyPeople #body {
+  /* end ticket info people */
+  /* end ticket info squelch */
+}
+/* line 510, ../sass/screen.scss */
+#comp-Ticket-ModifyPeople #body .ticket-info-people {
+  /* end table */
+}
+/* line 511, ../sass/screen.scss */
+#comp-Ticket-ModifyPeople #body .ticket-info-people h3 {
+  font-size: 18px;
+  padding: 20px 0;
+  color: #8b91a5;
+  text-transform: uppercase;
+}
+/* line 512, ../sass/screen.scss */
+#comp-Ticket-ModifyPeople #body .ticket-info-people table {
+  width: 100%;
+  margin-top: 10px;
+  margin-left: 5%;
+}
+/* line 512, ../sass/screen.scss */
+#comp-Ticket-ModifyPeople #body .ticket-info-people table td {
+  vertical-align: top;
+}
+/* line 514, ../sass/screen.scss */
+#comp-Ticket-ModifyPeople #body .ticket-info-people table select {
+  margin: 5px;
+}
+/* line 521, ../sass/screen.scss */
+#comp-Ticket-ModifyPeople #body .ticket-info-squelch {
+  margin-top: 50px;
+  line-height: 1.3em;
+}
+/* line 523, ../sass/screen.scss */
+#comp-Ticket-ModifyPeople #body .ticket-info-squelch .titlebox-content {
+  margin: 5px 0;
+}
+/* line 527, ../sass/screen.scss */
+#comp-Ticket-ModifyPeople #body .submit {
+  text-align: center;
+}
+/* line 527, ../sass/screen.scss */
+#comp-Ticket-ModifyPeople #body .submit .button {
+  display: table;
+  margin: 10px auto;
+  padding: 5px 10px;
+}
+
+/* end titcket modify people */
+/****************************** *END comp-Ticket-ModifyPeople* ******************************/
+/****************************** *START comp-Prefs-Other* ******************************/
+/* line 544, ../sass/screen.scss */
+#comp-Prefs-Other #body {
+  line-height: 1.4em;
+}
+/* line 547, ../sass/screen.scss */
+#comp-Prefs-Other #body form .value input {
+  background: #282828;
+  color: #939393;
+  border: none;
+  border-bottom: 1px solid rgba(140, 140, 140, 0.2);
+}
+/* line 548, ../sass/screen.scss */
+#comp-Prefs-Other #body form .value input:focus {
+  outline: none;
+  box-shadow: 0 0 3px #ac6c3d;
+}
+/* line 551, ../sass/screen.scss */
+#comp-Prefs-Other form .submit {
+  text-align: center;
+}
+/* line 551, ../sass/screen.scss */
+#comp-Prefs-Other .button {
+  margin-top: 5px;
+  padding: 5px 10px;
+}
+
+/****************************** *START comp-Prefs-Other* ******************************/
