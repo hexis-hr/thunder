@@ -677,7 +677,7 @@ body a:hover, body a:active, body a:focus {
 }
 /* line 202, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:first-child .titlebox-content td:nth-child(3) {
-  font-size: 13px;
+  font-size: 12px;
   white-space: nowrap;
   overflow: hidden;
 }
