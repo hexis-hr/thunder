@@ -455,7 +455,7 @@ body a:hover, body a:active, body a:focus {
 /* line 114, ../sass/screen.scss */
 #page-navigation ul li > ul {
   position: absolute;
-  left: 0px;
+  right: 0px;
   top: 100%;
   padding-top: 7px;
   width: 100px;
