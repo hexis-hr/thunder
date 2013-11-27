@@ -1307,25 +1307,29 @@ body a:hover, body a:active, body a:focus {
   width: 55%;
 }
 /* line 499, ../sass/screen.scss */
+#comp-Search-Build #body #BuildQuery #pick-criteria .radio {
+  width: 20px !important;
+}
+/* line 500, ../sass/screen.scss */
 #comp-Search-Build #body #BuildQuery #pick-criteria .label select {
   width: 160px;
   margin-right: 10px;
 }
-/* line 500, ../sass/screen.scss */
+/* line 501, ../sass/screen.scss */
 #comp-Search-Build #body #BuildQuery #pick-criteria .operator select {
   width: 100px;
   margin-right: 10px;
 }
-/* line 501, ../sass/screen.scss */
+/* line 502, ../sass/screen.scss */
 #comp-Search-Build #body #BuildQuery #pick-criteria .value select, #comp-Search-Build #body #BuildQuery #pick-criteria input {
   width: 180px;
 }
-/* line 503, ../sass/screen.scss */
+/* line 504, ../sass/screen.scss */
 #comp-Search-Build #body #BuildQuery .submit {
   float: left;
   margin-left: 10%;
 }
-/* line 505, ../sass/screen.scss */
+/* line 506, ../sass/screen.scss */
 #comp-Search-Build #body #BuildQuery #editquery {
   clear: both;
   position: absolute;
@@ -1333,17 +1337,17 @@ body a:hover, body a:active, body a:focus {
   right: 0;
   width: 45%;
 }
-/* line 506, ../sass/screen.scss */
+/* line 507, ../sass/screen.scss */
 #comp-Search-Build #body #BuildQuery #editquery b {
   text-transform: uppercase;
   font: 100% "Oswald", Helvetica, Arial, sans-serif;
   margin-left: 4px;
 }
-/* line 507, ../sass/screen.scss */
+/* line 508, ../sass/screen.scss */
 #comp-Search-Build #body #BuildQuery #editquery p {
   padding-top: 10px;
 }
-/* line 510, ../sass/screen.scss */
+/* line 511, ../sass/screen.scss */
 #comp-Search-Build #body #BuildQuery #editsearches {
   position: absolute;
   top: 330px;
@@ -1351,50 +1355,50 @@ body a:hover, body a:active, body a:focus {
   width: 45%;
   width: 45%;
 }
-/* line 511, ../sass/screen.scss */
+/* line 512, ../sass/screen.scss */
 #comp-Search-Build #body #BuildQuery #editsearches .titlebox-content {
   padding: 2px;
 }
-/* line 512, ../sass/screen.scss */
+/* line 513, ../sass/screen.scss */
 #comp-Search-Build #body #BuildQuery #editsearches .titlebox-content select, #comp-Search-Build #body #BuildQuery #editsearches .titlebox-content input text {
   width: 180px;
 }
-/* line 513, ../sass/screen.scss */
+/* line 514, ../sass/screen.scss */
 #comp-Search-Build #body #BuildQuery #editsearches .titlebox-content .button {
   display: table;
   float: left;
   margin: 10px 10px 10px 0;
 }
-/* line 515, ../sass/screen.scss */
+/* line 516, ../sass/screen.scss */
 #comp-Search-Build #body #BuildQuery #editsearches .titlebox-content .label {
   padding-right: 10px;
 }
-/* line 516, ../sass/screen.scss */
+/* line 517, ../sass/screen.scss */
 #comp-Search-Build #body #BuildQuery #editsearches .titlebox-content hr {
   clear: both;
 }
-/* line 517, ../sass/screen.scss */
+/* line 518, ../sass/screen.scss */
 #comp-Search-Build #body #BuildQuery #editsearches .titlebox-content #SavedSearchOwner {
   margin-bottom: 10px;
 }
-/* line 520, ../sass/screen.scss */
+/* line 521, ../sass/screen.scss */
 #comp-Search-Build #body #BuildQuery #editsearches #SavedSearchLoadSubmit {
   margin: 10px 50%;
 }
-/* line 524, ../sass/screen.scss */
+/* line 525, ../sass/screen.scss */
 #comp-Search-Build #body #BuildQuery #display-options {
   position: relative;
-  top: 50px;
+  top: 65px;
 }
-/* line 526, ../sass/screen.scss */
+/* line 527, ../sass/screen.scss */
 #comp-Search-Build #body #BuildQuery #display-options #sorting {
   width: 55%;
 }
-/* line 527, ../sass/screen.scss */
+/* line 528, ../sass/screen.scss */
 #comp-Search-Build #body #BuildQuery #display-options #columns center {
   margin-top: 10px;
 }
-/* line 529, ../sass/screen.scss */
+/* line 530, ../sass/screen.scss */
 #comp-Search-Build #body #BuildQuery #formatbuttons {
   display: none;
 }
