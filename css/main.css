@@ -467,7 +467,7 @@ body a:hover, body a:active, body a:focus {
 }
 /* line 116, ../sass/screen.scss */
 #page-navigation ul li > ul li {
-  padding: 0px 0px 3px;
+  padding: 3px 3px 3px;
   width: 95%;
   border-bottom: 1px solid rgba(173, 173, 173, 0.2);
 }
@@ -1289,9 +1289,14 @@ body a:hover, body a:active, body a:focus {
 /*-------------------------------------------------------------------------------------------------
  -start comp-Search-Build
 -------------------------------------------------------------------------------------------------*/
+/* line 495, ../sass/screen.scss */
+#comp-Search-Build #body hr {
+  border: 1px solid rgba(140, 140, 140, 0.2);
+}
 /* line 496, ../sass/screen.scss */
 #comp-Search-Build #body #BuildQuery {
   position: relative;
+  width: 900px;
 }
 /* line 497, ../sass/screen.scss */
 #comp-Search-Build #body #BuildQuery table {
@@ -1302,11 +1307,25 @@ body a:hover, body a:active, body a:focus {
   width: 55%;
 }
 /* line 499, ../sass/screen.scss */
+#comp-Search-Build #body #BuildQuery #pick-criteria .label select {
+  width: 160px;
+  margin-right: 10px;
+}
+/* line 500, ../sass/screen.scss */
+#comp-Search-Build #body #BuildQuery #pick-criteria .operator select {
+  width: 100px;
+  margin-right: 10px;
+}
+/* line 501, ../sass/screen.scss */
+#comp-Search-Build #body #BuildQuery #pick-criteria .value select {
+  width: 180px;
+}
+/* line 503, ../sass/screen.scss */
 #comp-Search-Build #body #BuildQuery .submit {
   float: left;
   margin-left: 10%;
 }
-/* line 500, ../sass/screen.scss */
+/* line 504, ../sass/screen.scss */
 #comp-Search-Build #body #BuildQuery #editquery {
   clear: both;
   position: absolute;
@@ -1314,24 +1333,52 @@ body a:hover, body a:active, body a:focus {
   right: 0;
   width: 45%;
 }
-/* line 500, ../sass/screen.scss */
+/* line 504, ../sass/screen.scss */
 #comp-Search-Build #body #BuildQuery #editquery p {
   padding-top: 10px;
 }
-/* line 501, ../sass/screen.scss */
+/* line 505, ../sass/screen.scss */
 #comp-Search-Build #body #BuildQuery #editsearches {
   position: absolute;
-  top: 250px;
+  top: 260px;
   right: 0;
   width: 45%;
   width: 45%;
 }
-/* line 504, ../sass/screen.scss */
+/* line 506, ../sass/screen.scss */
+#comp-Search-Build #body #BuildQuery #editsearches .titlebox-content {
+  padding: 2px;
+}
+/* line 507, ../sass/screen.scss */
+#comp-Search-Build #body #BuildQuery #editsearches .titlebox-content .label {
+  padding-right: 10px;
+}
+/* line 508, ../sass/screen.scss */
+#comp-Search-Build #body #BuildQuery #editsearches .titlebox-content #SavedSearchOwner {
+  margin-bottom: 10px;
+}
+/* line 510, ../sass/screen.scss */
+#comp-Search-Build #body #BuildQuery #editsearches .button {
+  margin-left: 10px;
+}
+/* line 511, ../sass/screen.scss */
+#comp-Search-Build #body #BuildQuery #editsearches #SavedSearchLoadSubmit {
+  margin: 10px 50%;
+}
+/* line 515, ../sass/screen.scss */
 #comp-Search-Build #body #BuildQuery #display-options {
   position: relative;
   top: 50px;
 }
-/* line 508, ../sass/screen.scss */
+/* line 517, ../sass/screen.scss */
+#comp-Search-Build #body #BuildQuery #display-options #sorting {
+  width: 55%;
+}
+/* line 518, ../sass/screen.scss */
+#comp-Search-Build #body #BuildQuery #display-options #columns center {
+  margin-top: 10px;
+}
+/* line 520, ../sass/screen.scss */
 #comp-Search-Build #body #BuildQuery #formatbuttons {
   display: none;
 }
