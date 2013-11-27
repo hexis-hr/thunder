@@ -122,11 +122,13 @@ box-shadow: $top $left $blur $color;
   transition: all, 0.25s, ease-in-out;
 }
 
-/* line 56, ../sass/_mixins.scss */
+/* line 58, ../sass/_mixins.scss */
 select,
 select[type="select"],
 .select-queue,
+option,
 input,
+optgroup,
 input[type="text"],
 input[type="password"],
 input[type="date"],
@@ -153,7 +155,9 @@ textarea {
 select:focus,
 select[type="select"]:focus,
 .select-queue:focus,
+option:focus,
 input:focus,
+optgroup:focus,
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="date"]:focus,
@@ -572,7 +576,7 @@ body a:hover, body a:active, body a:focus {
   display: block;
   margin: 0;
   width: 15px;
-  background: url(/NoAuth/images/css/rollup-arrow.gif) no-repeat;
+  background: url(../NoAuth/images/css/rollup-arrow.gif) no-repeat;
   background-position: center;
   position: absolute;
   top: 6px;
@@ -594,7 +598,7 @@ body a:hover, body a:active, body a:focus {
 }
 /* line 157, ../sass/screen.scss */
 #body .titlebox.rolled-up .titlebox-title .widget a {
-  background: url(/NoAuth/images/css/rolldown-arrow.gif) no-repeat;
+  background: url(../NoAuth/images/css/rolldown-arrow.gif) no-repeat;
   background-position: center;
   color: red;
   top: 6px;
@@ -1287,7 +1291,7 @@ body a:hover, body a:active, body a:focus {
  -end comp-Search-Simple
 -------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------------------
- -start comp-Search-Build
+ -start comp-Search-Build	[FINISHED]
 -------------------------------------------------------------------------------------------------*/
 /* line 495, ../sass/screen.scss */
 #comp-Search-Build #body hr {
@@ -1372,6 +1376,7 @@ body a:hover, body a:active, body a:focus {
 /* line 516, ../sass/screen.scss */
 #comp-Search-Build #body #BuildQuery #editsearches .titlebox-content .label {
   padding-right: 10px;
+  clear: both;
 }
 /* line 517, ../sass/screen.scss */
 #comp-Search-Build #body #BuildQuery #editsearches .titlebox-content hr {
@@ -1381,28 +1386,69 @@ body a:hover, body a:active, body a:focus {
 #comp-Search-Build #body #BuildQuery #editsearches .titlebox-content #SavedSearchOwner {
   margin-bottom: 10px;
 }
-/* line 521, ../sass/screen.scss */
+/* line 519, ../sass/screen.scss */
+#comp-Search-Build #body #BuildQuery #editsearches .titlebox-content #SavedSearchSave {
+  float: right;
+}
+/* line 522, ../sass/screen.scss */
 #comp-Search-Build #body #BuildQuery #editsearches #SavedSearchLoadSubmit {
-  margin: 10px 50%;
+  float: right;
+  margin: 0 10px;
+}
+/* line 523, ../sass/screen.scss */
+#comp-Search-Build #body #BuildQuery #editsearches optgroup {
+  font-style: normal;
+  font-weight: normal;
+  color: #ac6c3d;
 }
 /* line 525, ../sass/screen.scss */
 #comp-Search-Build #body #BuildQuery #display-options {
   position: relative;
-  top: 65px;
+  top: 135px;
 }
-/* line 527, ../sass/screen.scss */
-#comp-Search-Build #body #BuildQuery #display-options #sorting {
-  width: 55%;
+/* line 526, ../sass/screen.scss */
+#comp-Search-Build #body #BuildQuery #display-options #columns center {
+  margin-top: 14px;
 }
 /* line 528, ../sass/screen.scss */
-#comp-Search-Build #body #BuildQuery #display-options #columns center {
-  margin-top: 10px;
-}
-/* line 530, ../sass/screen.scss */
 #comp-Search-Build #body #BuildQuery #formatbuttons {
-  display: none;
+  margin: 150px 50%;
 }
 
 /*-------------------------------------------------------------------------------------------------
  -end comp-Search-Build
+-------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------
+ -start comp-Prefs-Other	[FINISHED]
+-------------------------------------------------------------------------------------------------*/
+/* line 544, ../sass/screen.scss */
+#comp-Prefs-Other #body form {
+  line-height: 2;
+}
+/* line 545, ../sass/screen.scss */
+#comp-Prefs-Other #body form .left {
+  color: #95450b;
+}
+/* line 547, ../sass/screen.scss */
+#comp-Prefs-Other #body form .label {
+  display: inline-block;
+  width: 310px;
+}
+/* line 548, ../sass/screen.scss */
+#comp-Prefs-Other #body form .hints {
+  white-space: nowrap;
+  font-style: italic;
+  color: rgba(140, 140, 140, 0.2);
+}
+/* line 549, ../sass/screen.scss */
+#comp-Prefs-Other #body form .hints:hover {
+  color: #939393;
+}
+/* line 551, ../sass/screen.scss */
+#comp-Prefs-Other #body form .button {
+  margin-top: 10px;
+}
+
+/*-------------------------------------------------------------------------------------------------
+ -end comp-Prefs-Other
 -------------------------------------------------------------------------------------------------*/
