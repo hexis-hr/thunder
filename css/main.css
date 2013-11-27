@@ -98,7 +98,7 @@ box-shadow: $top $left $blur $color;
 /*-------------------------------------------------------------------------------------------------
  -Global
 -------------------------------------------------------------------------------------------------*/
-/* line 40, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
 .button {
   border: none;
   border-radius: 3px;
@@ -110,7 +110,7 @@ box-shadow: $top $left $blur $color;
   -o-transition: all, 0.5s, ease-in-out;
   transition: all, 0.5s, ease-in-out;
 }
-/* line 41, ../sass/screen.scss */
+/* line 42, ../sass/screen.scss */
 .button:hover {
   -webkit-box-shadow: inset #49050a 0px 0px 25px;
   -moz-box-shadow: inset #49050a 0px 0px 25px;
@@ -147,8 +147,9 @@ textarea {
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 -1px 0px;
   -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 -1px 0px;
   box-shadow: rgba(0, 0, 0, 0.3) 0 -1px 0px;
+  font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
 }
-/* line 43, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 select:focus,
 select[type="select"]:focus,
 .select-queue:focus,
@@ -171,44 +172,70 @@ textarea:focus {
   -webkit-box-shadow: #939393 0 0 2px;
   -moz-box-shadow: #939393 0 0 2px;
   box-shadow: #939393 0 0 2px;
+  font: "Roboto Condensed", Helvetica, Arial, sans-serif;
 }
 
-/* line 45, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 select, .select-queue {
   text-transform: capitalize;
 }
 
-/* line 47, ../sass/screen.scss */
+/* line 49, ../sass/screen.scss */
 a[href], input[type='submit'], input[type='image'], label[for], select, button, .pointer {
   cursor: pointer;
 }
 
-/* line 50, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 #quickbar {
   display: none;
 }
 
-/* line 51, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 #logo .rtname {
   display: none;
 }
 
-/* line 52, ../sass/screen.scss */
+/* line 54, ../sass/screen.scss */
 #ui-datepicker-div {
   display: none;
 }
 
-/* line 53, ../sass/screen.scss */
+/* line 55, ../sass/screen.scss */
 #time {
   display: none;
 }
 
-/* line 54, ../sass/screen.scss */
+/* line 56, ../sass/screen.scss */
 .clear {
   display: none;
 }
 
-/* line 57, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
+::selection {
+  background: #515151;
+}
+
+/* line 59, ../sass/screen.scss */
+::-moz-selection {
+  background: #515151;
+}
+
+/* line 60, ../sass/screen.scss */
+::-webkit-selection {
+  background: #515151;
+}
+
+/* line 61, ../sass/screen.scss */
+::-ms-selection {
+  background: #515151;
+}
+
+/* line 62, ../sass/screen.scss */
+::-o-selection {
+  background: #515151;
+}
+
+/* line 65, ../sass/screen.scss */
 body {
   font: 100% "Roboto Condensed", Helvetica, Arial, sans-serif;
   margin-top: 10px;
@@ -216,17 +243,17 @@ body {
   color: #939393;
   line-height: 1.2;
 }
-/* line 58, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 body a {
   text-decoration: none;
   color: #ac6c3d;
 }
-/* line 59, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 body a:visited {
   text-decoration: none;
   color: #ac6c3d;
 }
-/* line 60, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 body a:hover, body a:active, body a:focus {
   text-decoration: none;
   color: #535144;
@@ -235,20 +262,20 @@ body a:hover, body a:active, body a:focus {
 /*-------------------------------------------------------------------------------------------------
  -Header + Main Navigation + page Navigation + Top Actions + Footer
 -------------------------------------------------------------------------------------------------*/
-/* line 67, ../sass/screen.scss */
+/* line 75, ../sass/screen.scss */
 #logo {
   position: relative;
   float: left;
   padding: 0 20px;
   line-height: 33px;
 }
-/* line 68, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 #logo img {
   width: 30px;
   height: 33px;
 }
 
-/* line 70, ../sass/screen.scss */
+/* line 78, ../sass/screen.scss */
 #header {
   line-height: 33px;
   font: "Oswald", Helvetica, Arial, sans-serif;
@@ -256,7 +283,7 @@ body a:hover, body a:active, body a:focus {
   text-transform: uppercase;
 }
 
-/* line 73, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 #main-navigation {
   float: left;
   width: 100%;
@@ -266,24 +293,24 @@ body a:hover, body a:active, body a:focus {
   border-top: 1px solid rgba(140, 140, 140, 0.2);
   border-bottom: 1px solid rgba(140, 140, 140, 0.2);
 }
-/* line 74, ../sass/screen.scss */
+/* line 82, ../sass/screen.scss */
 #main-navigation ul {
   list-style: none;
 }
-/* line 75, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
 #main-navigation ul li {
   float: left;
   position: relative;
   z-index: 20;
 }
-/* line 76, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
 #main-navigation ul li a {
   display: block;
   padding: 5px 15px 5px 15px;
   font-size: 14px;
   color: #95450b;
 }
-/* line 77, ../sass/screen.scss */
+/* line 85, ../sass/screen.scss */
 #main-navigation ul li:hover > a {
   color: #ac6c3d;
   -webkit-transition: all, 0.3s, ease-in-out;
@@ -291,11 +318,11 @@ body a:hover, body a:active, body a:focus {
   -o-transition: all, 0.3s, ease-in-out;
   transition: all, 0.3s, ease-in-out;
 }
-/* line 78, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 #main-navigation ul li.active > a {
   color: #ac6c3d;
 }
-/* line 80, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 #main-navigation li > ul:before {
   content: "";
   border-style: solid;
@@ -307,7 +334,7 @@ body a:hover, body a:active, body a:focus {
   left: 30px;
   top: 0px;
 }
-/* line 82, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 #main-navigation ul li > ul {
   position: absolute;
   left: 0px;
@@ -316,24 +343,24 @@ body a:hover, body a:active, body a:focus {
   width: 140px;
   background: #121212;
 }
-/* line 83, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 #main-navigation ul li:hover > ul {
   display: block;
 }
-/* line 84, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 #main-navigation ul li > ul li {
   padding: 3px 3px 3px;
   width: 95%;
   border-bottom: 1px solid rgba(173, 173, 173, 0.2);
 }
-/* line 85, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 #main-navigation ul li > ul li a {
   display: block;
   padding: 3px 3px;
   font-size: 12px;
   border-left: 2px solid #121212;
 }
-/* line 86, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 #main-navigation ul li > ul li:hover {
   background: rgba(224, 224, 224, 0.1);
   -webkit-transition: all, 0.3s ease-in-out;
@@ -341,7 +368,7 @@ body a:hover, body a:active, body a:focus {
   -o-transition: all, 0.3s ease-in-out;
   transition: all, 0.3s ease-in-out;
 }
-/* line 87, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 #main-navigation ul li > ul li:hover > a {
   color: #ac6c3d;
   border-color: #ac6c3d;
@@ -350,11 +377,11 @@ body a:hover, body a:active, body a:focus {
   -o-transition: all, 0.1s ease-in-out;
   transition: all, 0.1s ease-in-out;
 }
-/* line 88, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 #main-navigation ul li > ul li.active > a {
   color: #ac6c3d;
 }
-/* line 90, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
 #main-navigation li > ul li > ul:before {
   content: "";
   border-style: solid;
@@ -366,45 +393,45 @@ body a:hover, body a:active, body a:focus {
   left: -12px;
   top: 7px;
 }
-/* line 91, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 #main-navigation ul li > ul li > ul {
   top: 0px;
   left: 105%;
   padding-top: 0px;
 }
-/* line 92, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 #main-navigation ul li > ul li:hover > ul {
   display: block;
   top: 0px;
   left: 100%;
 }
-/* line 93, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 #main-navigation ul ul {
   display: none;
 }
 
-/* line 96, ../sass/screen.scss */
+/* line 104, ../sass/screen.scss */
 .sf-sub-indicator {
   display: none;
 }
 
-/* line 99, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 #page-navigation {
   position: absolute;
   right: 15px;
   top: 50px;
 }
-/* line 100, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 #page-navigation ul {
   list-style: none;
 }
-/* line 101, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 #page-navigation ul li {
   float: left;
   position: relative;
   z-index: 20;
 }
-/* line 102, ../sass/screen.scss */
+/* line 110, ../sass/screen.scss */
 #page-navigation ul li a {
   display: block;
   padding: 0px 15px 0px 15px;
@@ -413,7 +440,7 @@ body a:hover, body a:active, body a:focus {
   color: #95450b;
   text-transform: uppercase;
 }
-/* line 103, ../sass/screen.scss */
+/* line 111, ../sass/screen.scss */
 #page-navigation ul li:hover > a {
   color: #ac6c3d;
   -webkit-transition: all, 0.3s, ease-in-out;
@@ -421,11 +448,11 @@ body a:hover, body a:active, body a:focus {
   -o-transition: all, 0.3s, ease-in-out;
   transition: all, 0.3s, ease-in-out;
 }
-/* line 104, ../sass/screen.scss */
+/* line 112, ../sass/screen.scss */
 #page-navigation ul li.active > a {
   color: #ac6c3d;
 }
-/* line 106, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 #page-navigation ul li > ul {
   position: absolute;
   left: 0px;
@@ -434,24 +461,24 @@ body a:hover, body a:active, body a:focus {
   width: 100px;
   background: #121212;
 }
-/* line 107, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
 #page-navigation ul li:hover > ul {
   display: block;
 }
-/* line 108, ../sass/screen.scss */
+/* line 116, ../sass/screen.scss */
 #page-navigation ul li > ul li {
   padding: 3px 3px 3px;
   width: 95%;
   border-bottom: 1px solid rgba(173, 173, 173, 0.2);
 }
-/* line 109, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 #page-navigation ul li > ul li a {
   display: block;
   padding: 3px 3px;
   font-size: 10px;
   border-left: 2px solid #121212;
 }
-/* line 110, ../sass/screen.scss */
+/* line 118, ../sass/screen.scss */
 #page-navigation ul li > ul li:hover {
   background: rgba(224, 224, 224, 0.1);
   -webkit-transition: all, 0.3s, ease-in-out;
@@ -459,7 +486,7 @@ body a:hover, body a:active, body a:focus {
   -o-transition: all, 0.3s, ease-in-out;
   transition: all, 0.3s, ease-in-out;
 }
-/* line 111, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 #page-navigation ul li > ul li:hover > a {
   color: #ac6c3d;
   border-color: #ac6c3d;
@@ -468,16 +495,16 @@ body a:hover, body a:active, body a:focus {
   -o-transition: all, 0.1s, ease-in-out;
   transition: all, 0.1s, ease-in-out;
 }
-/* line 112, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
 #page-navigation ul li > ul li.active > a {
   color: #ac6c3d;
 }
-/* line 113, ../sass/screen.scss */
+/* line 121, ../sass/screen.scss */
 #page-navigation ul ul {
   display: none;
 }
 
-/* line 117, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
 #topactions {
   clear: both;
   position: absolute;
@@ -485,12 +512,12 @@ body a:hover, body a:active, body a:focus {
   right: 20px;
   height: 50px;
 }
-/* line 118, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 #topactions #simple-search {
   float: left;
   padding-right: 20px;
 }
-/* line 119, ../sass/screen.scss */
+/* line 127, ../sass/screen.scss */
 #topactions #simple-search input {
   width: 300px;
   height: 23px;
@@ -502,30 +529,30 @@ body a:hover, body a:active, body a:focus {
   color: #95450b;
   padding-left: 2px;
 }
-/* line 120, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 #topactions #simple-search input:focus {
   outline: none;
   border: none;
   box-shadow: none;
   border-bottom: 1px solid #ac6c3d;
 }
-/* line 122, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
 #topactions #CreateTicketInQueue {
   float: right;
   padding-top: -5px;
 }
-/* line 123, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 #topactions #CreateTicketInQueue .button {
   padding: 2px 10px;
 }
 
-/* line 126, ../sass/screen.scss */
+/* line 135, ../sass/screen.scss */
 #footer {
   clear: both;
   margin-top: 7em;
   margin-bottom: 1em;
 }
-/* line 126, ../sass/screen.scss */
+/* line 135, ../sass/screen.scss */
 #footer #bpscredits {
   text-align: center;
 }
@@ -533,14 +560,14 @@ body a:hover, body a:active, body a:focus {
 /*-------------------------------------------------------------------------------------------------
  -#body general settings
 -------------------------------------------------------------------------------------------------*/
-/* line 131, ../sass/screen.scss */
+/* line 140, ../sass/screen.scss */
 #body {
   clear: both;
   max-width: 960px;
   margin: 0 auto;
   padding: 1%;
 }
-/* line 134, ../sass/screen.scss */
+/* line 143, ../sass/screen.scss */
 #body .titlebox .titlebox-title .widget a {
   display: block;
   margin: 0;
@@ -553,7 +580,7 @@ body a:hover, body a:active, body a:focus {
   padding: 7px 0 0 0;
   overflow: hidden;
 }
-/* line 146, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 #body .titlebox .titlebox-title .widget a:hover {
   background-position: top;
   -webkit-transition: all, 0.3s, Ease-In;
@@ -561,18 +588,18 @@ body a:hover, body a:active, body a:focus {
   -o-transition: all, 0.3s, Ease-In;
   transition: all, 0.3s, Ease-In;
 }
-/* line 147, ../sass/screen.scss */
+/* line 156, ../sass/screen.scss */
 #body .titlebox.rolled-up .titlebox-content {
   display: none;
 }
-/* line 148, ../sass/screen.scss */
+/* line 157, ../sass/screen.scss */
 #body .titlebox.rolled-up .titlebox-title .widget a {
   background: url(/NoAuth/images/css/rolldown-arrow.gif) no-repeat;
   background-position: center;
   color: red;
   top: 6px;
 }
-/* line 149, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
 #body .titlebox.rolled-up .titlebox-title .widget a:hover {
   background-position: top;
   -webkit-transition: all, 0.3s, Ease-Out;
@@ -580,35 +607,35 @@ body a:hover, body a:active, body a:focus {
   -o-transition: all, 0.3s, Ease-Out;
   transition: all, 0.3s, Ease-Out;
 }
-/* line 152, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 #body .boxcontainer {
   vertical-align: top;
 }
-/* line 153, ../sass/screen.scss */
+/* line 162, ../sass/screen.scss */
 #body .boxcontainer:first-child {
   padding-right: 10px;
 }
-/* line 154, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 #body table {
   width: 100%;
 }
-/* line 155, ../sass/screen.scss */
+/* line 164, ../sass/screen.scss */
 #body td, #body th {
   padding: 2px 2px;
 }
-/* line 156, ../sass/screen.scss */
+/* line 165, ../sass/screen.scss */
 #body th {
   color: #95450b;
   background: rgba(51, 51, 51, 0.3);
   border-radius: 0 0 3px 3px;
 }
-/* line 158, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 #body .titlebox {
   padding: 3px 3px;
   margin-bottom: 10px;
   font-size: 14px;
 }
-/* line 159, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 #body .titlebox .titlebox-title {
   font: 100% "Oswald", Helvetica, Arial, sans-serif;
   font-size: 13px;
@@ -619,33 +646,33 @@ body a:hover, body a:active, body a:focus {
   z-index: 10;
   border-bottom: 1px solid rgba(140, 140, 140, 0.2);
 }
-/* line 160, ../sass/screen.scss */
+/* line 169, ../sass/screen.scss */
 #body .titlebox .titlebox-title .left a {
   color: #acacac;
 }
-/* line 160, ../sass/screen.scss */
+/* line 169, ../sass/screen.scss */
 #body .titlebox .titlebox-title .left a:hover {
   color: #535144;
 }
-/* line 161, ../sass/screen.scss */
+/* line 170, ../sass/screen.scss */
 #body .titlebox .titlebox-title .right {
   float: right;
 }
-/* line 162, ../sass/screen.scss */
+/* line 171, ../sass/screen.scss */
 #body .titlebox .titlebox-title .right a {
   font-size: 10px;
   text-transform: uppercase;
   color: rgba(163, 163, 163, 0.5);
 }
-/* line 163, ../sass/screen.scss */
+/* line 172, ../sass/screen.scss */
 #body .titlebox .titlebox-title .right a:hover {
   color: #535144;
 }
-/* line 168, ../sass/screen.scss */
+/* line 177, ../sass/screen.scss */
 #body .evenline {
   background: #202020;
 }
-/* line 169, ../sass/screen.scss */
+/* line 178, ../sass/screen.scss */
 #body .oddline:hover, #body .evenline:hover {
   -webkit-box-shadow: #111111 0 0 5px inset;
   -moz-box-shadow: #111111 0 0 5px inset;
@@ -655,24 +682,24 @@ body a:hover, body a:active, body a:focus {
 /*-------------------------------------------------------------------------------------------------
  -start comp-index // home page
 -------------------------------------------------------------------------------------------------*/
-/* line 175, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
 #comp-index {
   /* end myrt */
 }
-/* line 176, ../sass/screen.scss */
+/* line 185, ../sass/screen.scss */
 #comp-index #page-edit {
   opacity: .2;
   text-transform: uppercase;
 }
-/* line 178, ../sass/screen.scss */
+/* line 187, ../sass/screen.scss */
 #comp-index .myrt {
   /*end box container last child */
 }
-/* line 180, ../sass/screen.scss */
+/* line 189, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:first-child .titlebox-content th:first-child {
   padding-left: 7px;
 }
-/* line 183, ../sass/screen.scss */
+/* line 192, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:first-child .titlebox-content td:nth-child(2) {
   font-size: 14px;
   width: 100px;
@@ -680,103 +707,103 @@ body a:hover, body a:active, body a:focus {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-/* line 184, ../sass/screen.scss */
+/* line 193, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:first-child .titlebox-content td:nth-child(3) {
   font-size: 12px;
   white-space: nowrap;
   overflow: hidden;
 }
-/* line 186, ../sass/screen.scss */
+/* line 195, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:first-child .titlebox-content td:nth-child(4), #comp-index .myrt .boxcontainer:first-child .titlebox-content td:nth-child(5) {
   font-size: 11px;
   white-space: nowrap;
   overflow: hidden;
 }
-/* line 187, ../sass/screen.scss */
+/* line 196, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:first-child .titlebox-content td:nth-child(6) {
   font-size: 11px;
   font: 75% "Oswald", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
 }
-/* line 188, ../sass/screen.scss */
+/* line 197, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:first-child .titlebox-content td:nth-child(6) a {
   color: #187b09;
 }
-/* line 188, ../sass/screen.scss */
+/* line 197, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:first-child .titlebox-content td:nth-child(6) a:hover {
   color: #3f8e33;
 }
-/* line 191, ../sass/screen.scss */
+/* line 200, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:first-child .quick-create {
   width: 550px;
 }
-/* line 191, ../sass/screen.scss */
+/* line 200, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:first-child .quick-create .titlebox-content {
   padding: 2px 2px;
 }
-/* line 192, ../sass/screen.scss */
+/* line 201, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:first-child .quick-create form .label, #comp-index .myrt .boxcontainer:first-child .quick-create form .labeltop {
   font-size: 14px;
 }
-/* line 193, ../sass/screen.scss */
+/* line 202, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:first-child .quick-create form .input-row .value:nth-child(2) {
   width: 220px;
 }
-/* line 194, ../sass/screen.scss */
+/* line 203, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:first-child .quick-create form tr .label:nth-child(3) {
   text-align: right;
   padding-left: 15px;
 }
-/* line 195, ../sass/screen.scss */
+/* line 204, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:first-child .quick-create form input {
   max-width: 215px;
 }
-/* line 196, ../sass/screen.scss */
+/* line 205, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:first-child .quick-create form .select-queue {
   max-width: 215px;
 }
-/* line 197, ../sass/screen.scss */
+/* line 206, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:first-child .quick-create form textarea {
   min-width: 390px;
   max-width: 390px;
 }
-/* line 198, ../sass/screen.scss */
+/* line 207, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:first-child .quick-create form .submit {
   text-align: center;
 }
-/* line 198, ../sass/screen.scss */
+/* line 207, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:first-child .quick-create form .button {
   margin-top: 5px;
   padding: 5px 55px;
 }
-/* line 206, ../sass/screen.scss */
+/* line 215, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:last-child {
   width: 25%;
 }
-/* line 208, ../sass/screen.scss */
+/* line 217, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:last-child .titlebox-content th:nth-child(2), #comp-index .myrt .boxcontainer:last-child .titlebox-content th:nth-child(3), #comp-index .myrt .boxcontainer:last-child .titlebox-content th:nth-child(4) {
   font-size: 11px;
   text-align: center;
   text-transform: lowercase;
 }
-/* line 209, ../sass/screen.scss */
+/* line 218, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:last-child .titlebox-content td:nth-child(2), #comp-index .myrt .boxcontainer:last-child .titlebox-content td:nth-child(3), #comp-index .myrt .boxcontainer:last-child .titlebox-content td:nth-child(4) {
   font-size: 10px;
   text-align: center;
 }
-/* line 211, ../sass/screen.scss */
+/* line 220, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:last-child .titlebox-content td:nth-child(1) {
   font-size: 13px;
 }
-/* line 215, ../sass/screen.scss */
+/* line 224, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:last-child .titlebox form {
   padding: 2px;
 }
-/* line 215, ../sass/screen.scss */
+/* line 224, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:last-child .titlebox form .submit {
   text-align: center;
 }
-/* line 215, ../sass/screen.scss */
+/* line 224, ../sass/screen.scss */
 #comp-index .myrt .boxcontainer:last-child .titlebox form .button {
   margin-top: 5px;
   padding: 2px 10px;
@@ -789,178 +816,181 @@ body a:hover, body a:active, body a:focus {
 /*-------------------------------------------------------------------------------------------------
  -start comp-Ticket-Display 
 -------------------------------------------------------------------------------------------------*/
-/* line 233, ../sass/screen.scss */
+/* line 242, ../sass/screen.scss */
 #comp-Ticket-Display {
   /*end body */
 }
-/* line 234, ../sass/screen.scss */
+/* line 243, ../sass/screen.scss */
 #comp-Ticket-Display #body {
   /* end .boxcontainer:nth-child(2) */
   /* end history */
 }
-/* line 234, ../sass/screen.scss */
+/* line 243, ../sass/screen.scss */
 #comp-Ticket-Display #body .label, #comp-Ticket-Display #body .labeltop {
   color: #606060;
   text-transform: uppercase;
   font-size: 13px;
 }
-/* line 236, ../sass/screen.scss */
+/* line 245, ../sass/screen.scss */
 #comp-Ticket-Display #body .boxcontainer:nth-child(1) {
   padding-right: 0.5em;
   width: 65%;
 }
-/* line 237, ../sass/screen.scss */
+/* line 246, ../sass/screen.scss */
 #comp-Ticket-Display #body .boxcontainer:nth-child(1) td:first-child {
   width: 125px;
 }
-/* line 238, ../sass/screen.scss */
+/* line 247, ../sass/screen.scss */
 #comp-Ticket-Display #body .boxcontainer:nth-child(1) tr {
   border-bottom: 1px solid rgba(140, 140, 140, 0.2);
 }
-/* line 239, ../sass/screen.scss */
+/* line 248, ../sass/screen.scss */
 #comp-Ticket-Display #body .boxcontainer:nth-child(1) .ticket-info-cfs td {
   padding: 0.2em;
 }
-/* line 243, ../sass/screen.scss */
+/* line 252, ../sass/screen.scss */
 #comp-Ticket-Display #body .boxcontainer:nth-child(2) tr {
   border-bottom: 1px solid rgba(140, 140, 140, 0.2);
 }
-/* line 245, ../sass/screen.scss */
+/* line 254, ../sass/screen.scss */
 #comp-Ticket-Display #body .boxcontainer:nth-child(2) .ticket-info-reminders table {
   position: relative;
   margin-left: 10px;
 }
-/* line 246, ../sass/screen.scss */
+/* line 255, ../sass/screen.scss */
 #comp-Ticket-Display #body .boxcontainer:nth-child(2) .ticket-info-reminders tr {
   border-bottom: none;
 }
-/* line 247, ../sass/screen.scss */
+/* line 256, ../sass/screen.scss */
 #comp-Ticket-Display #body .boxcontainer:nth-child(2) .ticket-info-reminders input {
   max-width: 200px;
 }
-/* line 248, ../sass/screen.scss */
+/* line 257, ../sass/screen.scss */
 #comp-Ticket-Display #body .boxcontainer:nth-child(2) .ticket-info-reminders .button {
   margin-right: 10px;
 }
-/* line 251, ../sass/screen.scss */
+/* line 260, ../sass/screen.scss */
 #comp-Ticket-Display #body .boxcontainer:nth-child(2) .ticket-info-links .label, #comp-Ticket-Display #body .boxcontainer:nth-child(2) .ticket-info-links .labeltop {
   color: #ac6c3d;
 }
-/* line 255, ../sass/screen.scss */
+/* line 264, ../sass/screen.scss */
 #comp-Ticket-Display #body .history {
   /* end ticket history */
 }
-/* line 256, ../sass/screen.scss */
+/* line 265, ../sass/screen.scss */
 #comp-Ticket-Display #body .history .titlebox-content {
   padding: 3px;
 }
-/* line 257, ../sass/screen.scss */
+/* line 266, ../sass/screen.scss */
 #comp-Ticket-Display #body .history .titlebox-title {
   color: #1e1e1e;
 }
-/* line 259, ../sass/screen.scss */
+/* line 268, ../sass/screen.scss */
 #comp-Ticket-Display #body .history .titlebox-title .left {
   color: #939393;
 }
-/* line 260, ../sass/screen.scss */
+/* line 269, ../sass/screen.scss */
 #comp-Ticket-Display #body .history .titlebox-title .right a {
   color: #ac6c3d;
 }
-/* line 260, ../sass/screen.scss */
+/* line 269, ../sass/screen.scss */
 #comp-Ticket-Display #body .history .titlebox-title .right a:hover {
   color: #535144;
 }
-/* line 263, ../sass/screen.scss */
+/* line 272, ../sass/screen.scss */
 #comp-Ticket-Display #body .history .odd, #comp-Ticket-Display #body .history .even {
   border-top: 1px solid rgba(140, 140, 140, 0.2);
   border-bottom: 1px solid rgba(140, 140, 140, 0.2);
   margin-bottom: 5px;
 }
-/* line 265, ../sass/screen.scss */
+/* line 274, ../sass/screen.scss */
 #comp-Ticket-Display #body .history .odd, #comp-Ticket-Display #body .history .even {
   background: #212121;
 }
-/* line 266, ../sass/screen.scss */
+/* line 275, ../sass/screen.scss */
 #comp-Ticket-Display #body .history .actions {
   color: #212121;
   float: right;
   font-style: normal !important;
   text-transform: uppercase;
 }
-/* line 271, ../sass/screen.scss */
+/* line 280, ../sass/screen.scss */
 #comp-Ticket-Display #body .history #ticket-history {
   /* end message */
 }
-/* line 273, ../sass/screen.scss */
+/* line 282, ../sass/screen.scss */
 #comp-Ticket-Display #body .history #ticket-history .message {
   /*end content */
 }
-/* line 274, ../sass/screen.scss */
+/* line 283, ../sass/screen.scss */
 #comp-Ticket-Display #body .history #ticket-history .message .metadata {
   padding: 2px;
 }
-/* line 275, ../sass/screen.scss */
+/* line 284, ../sass/screen.scss */
 #comp-Ticket-Display #body .history #ticket-history .message .metadata .type, #comp-Ticket-Display #body .history #ticket-history .message .metadata .date {
   padding-right: 10px;
   color: #606060;
 }
-/* line 278, ../sass/screen.scss */
+/* line 287, ../sass/screen.scss */
 #comp-Ticket-Display #body .history #ticket-history .message .message-stanza {
   padding: 2px;
   margin-bottom: 10px;
 }
-/* line 280, ../sass/screen.scss */
+/* line 289, ../sass/screen.scss */
 #comp-Ticket-Display #body .history #ticket-history .message .content {
   padding: 0.2em;
   position: relative;
 }
-/* line 281, ../sass/screen.scss */
+/* line 290, ../sass/screen.scss */
 #comp-Ticket-Display #body .history #ticket-history .message .content td {
   float: left;
 }
-/* line 282, ../sass/screen.scss */
+/* line 291, ../sass/screen.scss */
 #comp-Ticket-Display #body .history #ticket-history .message .content .message-header-key {
   width: 50px;
   color: #606060;
 }
-/* line 284, ../sass/screen.scss */
+/* line 293, ../sass/screen.scss */
 #comp-Ticket-Display #body .history #ticket-history .message .content table {
   margin-bottom: 10px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: #111111 0px 1px 0px;
+  -moz-box-shadow: #111111 0px 1px 0px;
+  box-shadow: #111111 0px 1px 0px;
+  border-bottom: 1px solid #2b2b2b;
 }
-/* line 286, ../sass/screen.scss */
+/* line 295, ../sass/screen.scss */
 #comp-Ticket-Display #body .history #ticket-history .message .content .message-stanza-folder {
   color: #95450b;
   text-transform: uppercase;
   font-size: 12px;
 }
-/* line 287, ../sass/screen.scss */
+/* line 296, ../sass/screen.scss */
 #comp-Ticket-Display #body .history #ticket-history .message .content .closed {
   background: #262626;
   margin-bottom: 10px;
 }
-/* line 291, ../sass/screen.scss */
+/* line 300, ../sass/screen.scss */
 #comp-Ticket-Display #body .history #ticket-history .message .content .downloadattachment {
   display: none;
   /*clear:both; position:absolute; top: 50%; right:0; */
 }
-/* line 305, ../sass/screen.scss */
+/* line 314, ../sass/screen.scss */
 #comp-Ticket-Display #body .history #ticket-history .EmailRecord {
   text-align: right;
   font-size: 10px;
   background: #1e1e1e !important;
 }
-/* line 307, ../sass/screen.scss */
+/* line 316, ../sass/screen.scss */
 #comp-Ticket-Display #body .history #ticket-history .other, #comp-Ticket-Display #body .history #ticket-history .basics {
   padding: 0.2em;
   text-transform: uppercase;
 }
-/* line 308, ../sass/screen.scss */
+/* line 317, ../sass/screen.scss */
 #comp-Ticket-Display #body .history #ticket-history .other {
   background: #141414;
   color: #95450b;
 }
-/* line 309, ../sass/screen.scss */
+/* line 318, ../sass/screen.scss */
 #comp-Ticket-Display #body .history #ticket-history .basics {
   background: #191919;
   color: #95450b;
@@ -968,176 +998,176 @@ body a:hover, body a:active, body a:focus {
 
 /* end comp-Ticket-Display */
 /* END comp-Ticket-Display */
-/****************************** *START comp-Search-Results* ******************************/
-/* line 331, ../sass/screen.scss */
+/****************************** //\START comp-Search-Results* ******************************/
+/* line 337, ../sass/screen.scss */
 #comp-Search-Results #body .refresh {
   display: none;
 }
-/* line 332, ../sass/screen.scss */
+/* line 338, ../sass/screen.scss */
 #comp-Search-Results #body table {
   margin: 0 auto;
   width: 80%;
 }
-/* line 333, ../sass/screen.scss */
+/* line 339, ../sass/screen.scss */
 #comp-Search-Results #body table tr:nth-child(2n) {
   border-bottom: 1px solid rgba(140, 140, 140, 0.2);
 }
-/* line 334, ../sass/screen.scss */
+/* line 340, ../sass/screen.scss */
 #comp-Search-Results #body table tr:nth-child(4n) {
   border-bottom: 1px solid rgba(140, 140, 140, 0.2);
 }
-/* line 336, ../sass/screen.scss */
+/* line 342, ../sass/screen.scss */
 #comp-Search-Results #body table th:nth-child(1), #comp-Search-Results #body table th:nth-child(3), #comp-Search-Results #body table th:nth-child(4), #comp-Search-Results #body table th:nth-child(5), #comp-Search-Results #body table th:nth-child(6) {
   text-align: center;
 }
-/* line 337, ../sass/screen.scss */
+/* line 343, ../sass/screen.scss */
 #comp-Search-Results #body table td:nth-child(1), #comp-Search-Results #body table td:nth-child(3), #comp-Search-Results #body table td:nth-child(4), #comp-Search-Results #body table td:nth-child(5), #comp-Search-Results #body table td:nth-child(6) {
   text-align: center;
 }
-/* line 338, ../sass/screen.scss */
+/* line 344, ../sass/screen.scss */
 #comp-Search-Results #body table td:nth-child(3), #comp-Search-Results #body table td:nth-child(5) {
   font-style: italic;
 }
-/* line 340, ../sass/screen.scss */
+/* line 346, ../sass/screen.scss */
 #comp-Search-Results #body table td {
   padding: 2px;
 }
-/* line 342, ../sass/screen.scss */
+/* line 348, ../sass/screen.scss */
 #comp-Search-Results #body table td > b > a {
   font-size: 13px;
 }
-/* line 343, ../sass/screen.scss */
+/* line 349, ../sass/screen.scss */
 #comp-Search-Results #body table td:nth-child(1n) {
   font-size: 11px;
 }
 
-/****************************** *END comp-Search-Results* ******************************/
-/****************************** *START comp-Ticket-ModifyDates* ******************************/
-/* line 360, ../sass/screen.scss */
+/****************************** //\END comp-Search-Results* ******************************/
+/****************************** //\START comp-Ticket-ModifyDates* ******************************/
+/* line 363, ../sass/screen.scss */
 #comp-Ticket-ModifyDates #body .titlebox-content {
   margin-top: 10px;
 }
-/* line 361, ../sass/screen.scss */
+/* line 364, ../sass/screen.scss */
 #comp-Ticket-ModifyDates #body .titlebox-content table {
   width: 50%;
   margin-left: 32%;
   margin-right: 18%;
 }
-/* line 364, ../sass/screen.scss */
+/* line 367, ../sass/screen.scss */
 #comp-Ticket-ModifyDates #body form .submit {
   text-align: center;
 }
-/* line 364, ../sass/screen.scss */
+/* line 367, ../sass/screen.scss */
 #comp-Ticket-ModifyDates #body .button {
   margin-top: 5px;
   padding: 5px 10px;
 }
 
-/****************************** *END comp-Ticket-ModifyDates* ******************************/
-/****************************** *START comp-Ticket-ModifyLinks* ******************************/
-/* line 380, ../sass/screen.scss */
+/****************************** //\END comp-Ticket-ModifyDates* ******************************/
+/****************************** //\START comp-Ticket-ModifyLinks* ******************************/
+/* line 379, ../sass/screen.scss */
 #comp-Ticket-ModifyLinks #body .titlebox-content {
   margin-top: 10px;
 }
-/* line 382, ../sass/screen.scss */
+/* line 381, ../sass/screen.scss */
 #comp-Ticket-ModifyLinks #body .titlebox-content table h3 {
   font-size: 18px;
   padding-bottom: 10px;
   color: #acacac;
   text-transform: uppercase;
 }
-/* line 384, ../sass/screen.scss */
+/* line 383, ../sass/screen.scss */
 #comp-Ticket-ModifyLinks #body .titlebox-content table td:first-child {
   vertical-align: top;
   width: 40%;
 }
-/* line 385, ../sass/screen.scss */
+/* line 384, ../sass/screen.scss */
 #comp-Ticket-ModifyLinks #body .titlebox-content table td:first-child table {
   margin-top: 60px;
 }
-/* line 389, ../sass/screen.scss */
+/* line 388, ../sass/screen.scss */
 #comp-Ticket-ModifyLinks #body .titlebox-content table td:last-child {
   vertical-align: top;
 }
-/* line 390, ../sass/screen.scss */
+/* line 389, ../sass/screen.scss */
 #comp-Ticket-ModifyLinks #body .titlebox-content table td:last-child > i {
   line-height: 1.3em;
 }
-/* line 391, ../sass/screen.scss */
+/* line 390, ../sass/screen.scss */
 #comp-Ticket-ModifyLinks #body .titlebox-content table td:last-child table {
   margin-top: 10px;
 }
-/* line 392, ../sass/screen.scss */
+/* line 391, ../sass/screen.scss */
 #comp-Ticket-ModifyLinks #body .titlebox-content table td:last-child .label {
   width: 20%;
 }
-/* line 393, ../sass/screen.scss */
+/* line 392, ../sass/screen.scss */
 #comp-Ticket-ModifyLinks #body .titlebox-content table td:last-child .entry {
   padding: 1px 2px;
 }
-/* line 399, ../sass/screen.scss */
+/* line 398, ../sass/screen.scss */
 #comp-Ticket-ModifyLinks #body form .submit {
   text-align: center;
 }
-/* line 399, ../sass/screen.scss */
+/* line 398, ../sass/screen.scss */
 #comp-Ticket-ModifyLinks #body .button {
   margin-top: 5px;
   padding: 5px 10px;
 }
 
-/****************************** *END comp-Ticket-ModifyLinks* ******************************/
-/****************************** *START comp-Ticket-Modify* ******************************/
-/* line 412, ../sass/screen.scss */
+/****************************** //\END comp-Ticket-ModifyLinks* ******************************/
+/****************************** //\START comp-Ticket-Modify* ******************************/
+/* line 406, ../sass/screen.scss */
 #comp-Ticket-Modify {
   /* end #body */
 }
-/* line 413, ../sass/screen.scss */
+/* line 407, ../sass/screen.scss */
 #comp-Ticket-Modify #body {
   /* end titlebox content */
 }
-/* line 415, ../sass/screen.scss */
+/* line 409, ../sass/screen.scss */
 #comp-Ticket-Modify #body .titlebox-content table {
   width: 40%;
   margin-left: 30%;
   margin-right: 30%;
   margin-top: 10px;
 }
-/* line 416, ../sass/screen.scss */
+/* line 410, ../sass/screen.scss */
 #comp-Ticket-Modify #body .titlebox-content table .label {
   padding-right: 50px;
 }
-/* line 417, ../sass/screen.scss */
+/* line 411, ../sass/screen.scss */
 #comp-Ticket-Modify #body .titlebox-content table .value input {
   background: #282828;
   color: #939393;
   border: none;
   border-bottom: 1px solid rgba(140, 140, 140, 0.2);
 }
-/* line 418, ../sass/screen.scss */
+/* line 412, ../sass/screen.scss */
 #comp-Ticket-Modify #body .titlebox-content table .value input:focus {
   outline: none;
   box-shadow: 0 0 3px #ac6c3d;
 }
-/* line 421, ../sass/screen.scss */
+/* line 415, ../sass/screen.scss */
 #comp-Ticket-Modify #body .titlebox-content .edit-custom-fields {
   text-align: center;
   margin-top: 20px;
 }
-/* line 422, ../sass/screen.scss */
+/* line 416, ../sass/screen.scss */
 #comp-Ticket-Modify #body .titlebox-content .cflabel {
   line-height: 1.3em;
   margin-bottom: 10px;
 }
-/* line 423, ../sass/screen.scss */
+/* line 417, ../sass/screen.scss */
 #comp-Ticket-Modify #body .titlebox-content .edit-custom-fields .edit-custom-field textarea {
   min-width: 500px;
   max-width: 500px;
 }
-/* line 430, ../sass/screen.scss */
+/* line 424, ../sass/screen.scss */
 #comp-Ticket-Modify #body form .submit {
   text-align: center;
 }
-/* line 430, ../sass/screen.scss */
+/* line 424, ../sass/screen.scss */
 #comp-Ticket-Modify #body .button {
   display: table;
   margin: 15px auto;
@@ -1145,56 +1175,56 @@ body a:hover, body a:active, body a:focus {
 }
 
 /* end compt-ticket-modify */
-/****************************** *END comp-Ticket-Modify* ******************************/
-/****************************** *START comp-Ticket-ModifyPeople* ******************************/
-/* line 446, ../sass/screen.scss */
+/****************************** //\END comp-Ticket-Modify* ******************************/
+/****************************** //\START comp-Ticket-ModifyPeople* ******************************/
+/* line 432, ../sass/screen.scss */
 #comp-Ticket-ModifyPeople {
   /*end #body */
 }
-/* line 447, ../sass/screen.scss */
+/* line 433, ../sass/screen.scss */
 #comp-Ticket-ModifyPeople #body {
   /* end ticket info people */
   /* end ticket info squelch */
 }
-/* line 448, ../sass/screen.scss */
+/* line 434, ../sass/screen.scss */
 #comp-Ticket-ModifyPeople #body .ticket-info-people {
   /* end table */
 }
-/* line 449, ../sass/screen.scss */
+/* line 435, ../sass/screen.scss */
 #comp-Ticket-ModifyPeople #body .ticket-info-people h3 {
   font-size: 18px;
   padding: 20px 0;
   color: #acacac;
   text-transform: uppercase;
 }
-/* line 450, ../sass/screen.scss */
+/* line 436, ../sass/screen.scss */
 #comp-Ticket-ModifyPeople #body .ticket-info-people table {
   width: 100%;
   margin-top: 10px;
   margin-left: 5%;
 }
-/* line 450, ../sass/screen.scss */
+/* line 436, ../sass/screen.scss */
 #comp-Ticket-ModifyPeople #body .ticket-info-people table td {
   vertical-align: top;
 }
-/* line 452, ../sass/screen.scss */
+/* line 438, ../sass/screen.scss */
 #comp-Ticket-ModifyPeople #body .ticket-info-people table select {
   margin: 5px;
 }
-/* line 459, ../sass/screen.scss */
+/* line 445, ../sass/screen.scss */
 #comp-Ticket-ModifyPeople #body .ticket-info-squelch {
   margin-top: 50px;
   line-height: 1.3em;
 }
-/* line 461, ../sass/screen.scss */
+/* line 447, ../sass/screen.scss */
 #comp-Ticket-ModifyPeople #body .ticket-info-squelch .titlebox-content {
   margin: 5px 0;
 }
-/* line 465, ../sass/screen.scss */
+/* line 451, ../sass/screen.scss */
 #comp-Ticket-ModifyPeople #body .submit {
   text-align: center;
 }
-/* line 465, ../sass/screen.scss */
+/* line 451, ../sass/screen.scss */
 #comp-Ticket-ModifyPeople #body .submit .button {
   display: table;
   margin: 10px auto;
@@ -1202,32 +1232,110 @@ body a:hover, body a:active, body a:focus {
 }
 
 /* end titcket modify people */
-/****************************** *END comp-Ticket-ModifyPeople* ******************************/
-/****************************** *START comp-Prefs-Other* ******************************/
-/* line 482, ../sass/screen.scss */
+/****************************** //\END comp-Ticket-ModifyPeople* ******************************/
+/****************************** //\START comp-Prefs-Other* ******************************/
+/* line 460, ../sass/screen.scss */
 #comp-Prefs-Other #body {
   line-height: 1.4em;
 }
-/* line 485, ../sass/screen.scss */
+/* line 463, ../sass/screen.scss */
 #comp-Prefs-Other #body form .value input {
   background: #282828;
   color: #939393;
   border: none;
   border-bottom: 1px solid rgba(140, 140, 140, 0.2);
 }
-/* line 486, ../sass/screen.scss */
+/* line 464, ../sass/screen.scss */
 #comp-Prefs-Other #body form .value input:focus {
   outline: none;
   box-shadow: 0 0 3px #ac6c3d;
 }
-/* line 489, ../sass/screen.scss */
+/* line 467, ../sass/screen.scss */
 #comp-Prefs-Other form .submit {
   text-align: center;
 }
-/* line 489, ../sass/screen.scss */
+/* line 467, ../sass/screen.scss */
 #comp-Prefs-Other .button {
   margin-top: 5px;
   padding: 5px 10px;
 }
 
-/****************************** *START comp-Prefs-Other* ******************************/
+/****************************** //\START comp-Prefs-Other* ******************************/
+/*-------------------------------------------------------------------------------------------------
+ -start comp-Search-Simple	[FINISHED]
+-------------------------------------------------------------------------------------------------*/
+/* line 479, ../sass/screen.scss */
+#comp-Search-Simple #body #SimpleSearchForm div {
+  margin: 40px 0;
+  padding-bottom: 50px;
+}
+/* line 480, ../sass/screen.scss */
+#comp-Search-Simple #body #SimpleSearchForm input:first-child {
+  width: 400px;
+  height: 30px;
+  font-size: 25px;
+  line-height: 30px;
+}
+/* line 481, ../sass/screen.scss */
+#comp-Search-Simple #body #SimpleSearchForm .button {
+  display: table;
+  margin-top: 10px;
+  padding: 5px 55px;
+}
+
+/*-------------------------------------------------------------------------------------------------
+ -end comp-Search-Simple
+-------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------
+ -start comp-Search-Build
+-------------------------------------------------------------------------------------------------*/
+/* line 496, ../sass/screen.scss */
+#comp-Search-Build #body #BuildQuery {
+  position: relative;
+}
+/* line 497, ../sass/screen.scss */
+#comp-Search-Build #body #BuildQuery table {
+  width: 100%;
+}
+/* line 498, ../sass/screen.scss */
+#comp-Search-Build #body #BuildQuery #pick-criteria {
+  width: 55%;
+}
+/* line 499, ../sass/screen.scss */
+#comp-Search-Build #body #BuildQuery .submit {
+  float: left;
+  margin-left: 10%;
+}
+/* line 500, ../sass/screen.scss */
+#comp-Search-Build #body #BuildQuery #editquery {
+  clear: both;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45%;
+}
+/* line 500, ../sass/screen.scss */
+#comp-Search-Build #body #BuildQuery #editquery p {
+  padding-top: 10px;
+}
+/* line 501, ../sass/screen.scss */
+#comp-Search-Build #body #BuildQuery #editsearches {
+  position: absolute;
+  top: 250px;
+  right: 0;
+  width: 45%;
+  width: 45%;
+}
+/* line 504, ../sass/screen.scss */
+#comp-Search-Build #body #BuildQuery #display-options {
+  position: relative;
+  top: 50px;
+}
+/* line 508, ../sass/screen.scss */
+#comp-Search-Build #body #BuildQuery #formatbuttons {
+  display: none;
+}
+
+/*-------------------------------------------------------------------------------------------------
+ -end comp-Search-Build
+-------------------------------------------------------------------------------------------------*/
