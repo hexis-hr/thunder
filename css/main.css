@@ -467,7 +467,7 @@ body a:hover, body a:active, body a:focus {
 }
 /* line 116, ../sass/screen.scss */
 #page-navigation ul li > ul li {
-  padding: 3px 3px 3px;
+  padding: 0px 0px 3px;
   width: 95%;
   border-bottom: 1px solid rgba(173, 173, 173, 0.2);
 }
