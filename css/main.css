@@ -1320,15 +1320,13 @@ body a:hover, body a:active, body a:focus {
   min-width: 500px;
   background: #1e1e1e;
   color: #939393;
-}
-/* line 471, ../sass/screen.scss */
-#comp-Ticket-Update #body #ticket-update-message .messagedetails .messagebox-container #cke_UpdateContent .cke_skin_kama .cke_contents iframe {
-  background: #1e1e1e;
-  color: #939393;
+  border: none;
 }
 /* line 472, ../sass/screen.scss */
-#comp-Ticket-Update #body #ticket-update-message .messagedetails .messagebox-container #cke_UpdateContent .cke_contents {
+#comp-Ticket-Update #body #ticket-update-message .messagedetails .messagebox-container #cke_UpdateContent .cke_editor {
   width: 500px;
+  background: #1e1e1e;
+  color: #939393;
 }
 /* line 477, ../sass/screen.scss */
 #comp-Ticket-Update #body #ticket-update-message .messagedetails input[type="submit"] {
