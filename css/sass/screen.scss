@@ -466,10 +466,10 @@ $content-gap: 10px;
 						&:hover { @include box-shadow(inset darken($button-bg,15%) 0px 0px 25px); color:#fff; @include transition(all, 0.25s, ease-in-out); } 
 						}
 
-						#cke_UpdateContent {max-width:500px; min-width:500px; background:$body-bg; color:$text-normal;
+						#cke_UpdateContent {max-width:600px; min-width:600px; background:$body-bg; color:$text-normal; border:none;
 
-							.cke_skin_kama .cke_contents iframe { background:$body-bg; color:$text-normal; }
-							.cke_contents { width:500px; }
+							td { width:100%; }
+							
 						}
 
 					}	// end messagebox container

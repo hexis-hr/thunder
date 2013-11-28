@@ -1316,8 +1316,8 @@ body a:hover, body a:active, body a:focus {
 }
 /* line 469, ../sass/screen.scss */
 #comp-Ticket-Update #body #ticket-update-message .messagedetails .messagebox-container #cke_UpdateContent {
-  max-width: 500px;
-  min-width: 500px;
+  max-width: 600px;
+  min-width: 600px;
   background: #1e1e1e;
   color: #939393;
   border: none;
