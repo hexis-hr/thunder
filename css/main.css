@@ -185,7 +185,7 @@ select, .select-queue {
 }
 
 /* line 49, ../sass/screen.scss */
-a[href], input[type='submit'], input[type='image'], label[for], select, button, .pointer {
+a[href], input[type='submit'], input[type='image'], label[for], select, button, .checkbox, .pointer {
   cursor: pointer;
 }
 
@@ -1250,4 +1250,88 @@ body a:hover, body a:active, body a:focus {
 
 /*-------------------------------------------------------------------------------------------------
  -end comp-Search-Results
+-------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------
+ -start comp-Ticket-Update
+-------------------------------------------------------------------------------------------------*/
+/* line 450, ../sass/screen.scss */
+#comp-Ticket-Update #body #ticket-update-metadata {
+  width: 50%;
+}
+/* line 452, ../sass/screen.scss */
+#comp-Ticket-Update #body #ticket-update-metadata .label {
+  width: 130px;
+}
+/* line 453, ../sass/screen.scss */
+#comp-Ticket-Update #body #ticket-update-metadata select {
+  width: 220px;
+}
+/* line 454, ../sass/screen.scss */
+#comp-Ticket-Update #body #ticket-update-metadata input {
+  width: 57px;
+}
+/* line 455, ../sass/screen.scss */
+#comp-Ticket-Update #body #ticket-update-metadata tr:last-child select {
+  width: 160px;
+}
+/* line 460, ../sass/screen.scss */
+#comp-Ticket-Update #body #ticket-update-message .messagedetails .label {
+  width: 130px;
+}
+/* line 461, ../sass/screen.scss */
+#comp-Ticket-Update #body #ticket-update-message .messagedetails input {
+  width: 400px;
+}
+/* line 463, ../sass/screen.scss */
+#comp-Ticket-Update #body #ticket-update-message .messagedetails .messagebox-container td {
+  width: 160px;
+  float: left;
+  overflow: hidden;
+  whitespace: nowrap;
+}
+/* line 464, ../sass/screen.scss */
+#comp-Ticket-Update #body #ticket-update-message .messagedetails .messagebox-container input[type="submit"] {
+  margin-left: 20px;
+  width: 50px;
+  border: none;
+  border-radius: 3px;
+  background: #910a14;
+  color: #fff;
+  box-shadow: none;
+  -webkit-transition: all, 0.5s, ease-in-out;
+  -moz-transition: all, 0.5s, ease-in-out;
+  -o-transition: all, 0.5s, ease-in-out;
+  transition: all, 0.5s, ease-in-out;
+}
+/* line 466, ../sass/screen.scss */
+#comp-Ticket-Update #body #ticket-update-message .messagedetails .messagebox-container input[type="submit"]:hover {
+  -webkit-box-shadow: inset #49050a 0px 0px 25px;
+  -moz-box-shadow: inset #49050a 0px 0px 25px;
+  box-shadow: inset #49050a 0px 0px 25px;
+  color: #fff;
+  -webkit-transition: all, 0.25s, ease-in-out;
+  -moz-transition: all, 0.25s, ease-in-out;
+  -o-transition: all, 0.25s, ease-in-out;
+  transition: all, 0.25s, ease-in-out;
+}
+/* line 470, ../sass/screen.scss */
+#comp-Ticket-Update #body #ticket-update-message .messagedetails input[type="submit"] {
+  margin-left: 10px;
+  width: 100px;
+}
+/* line 473, ../sass/screen.scss */
+#comp-Ticket-Update #body #ticket-update-message #previewscrips {
+  margin-top: 50px;
+}
+/* line 475, ../sass/screen.scss */
+#comp-Ticket-Update #body #ticket-update-message #previewscrips li {
+  margin-top: 10px;
+}
+/* line 478, ../sass/screen.scss */
+#comp-Ticket-Update #body #ticket-update-message #SubmitTicket {
+  margin: 30px 35%;
+}
+
+/*-------------------------------------------------------------------------------------------------
+ -end comp-Ticket-Update
 -------------------------------------------------------------------------------------------------*/
