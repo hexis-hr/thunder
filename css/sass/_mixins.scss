@@ -1,0 +1,61 @@
+/*-------------------------------------------------------------------------------------------------
+	-Transition
+-------------------------------------------------------------------------------------------------*/
+
+/*@mixin transition($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}*/
+
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
+
+/*@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+@if $inset {
+-webkit-box-shadow:inset $top $left $blur $color;
+-moz-box-shadow:inset $top $left $blur $color;
+box-shadow:inset $top $left $blur $color;
+} @else {
+-webkit-box-shadow: $top $left $blur $color;
+-moz-box-shadow: $top $left $blur $color;
+box-shadow: $top $left $blur $color;
+}
+}*/
+
+
+/*-------------------------------------------------------------------------------------------------
+  All inputs
+-------------------------------------------------------------------------------------------------*/
+@mixin inputs{
+	select,
+	select[type="select"],
+	.select-queue,
+	option,
+	input,
+	optgroup,
+	input[type="text"],
+	input[type="password"],
+	input[type="date"],
+	input[type="datetime"],
+	input[type="datetime-local"],
+	input[type="month"],
+	input[type="week"],
+	input[type="email"],
+	input[type="number"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="time"],
+	input[type="url"],
+		textarea{
+		    @content;
+		  }
+}
