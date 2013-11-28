@@ -1322,24 +1322,38 @@ body a:hover, body a:active, body a:focus {
   color: #939393;
   border: none;
 }
-/* line 471, ../sass/screen.scss */
+/* line 470, ../sass/screen.scss */
 #comp-Ticket-Update #body #ticket-update-message .messagedetails .messagebox-container #cke_UpdateContent td {
   width: 100%;
 }
-/* line 477, ../sass/screen.scss */
+/* line 471, ../sass/screen.scss */
+#comp-Ticket-Update #body #ticket-update-message .messagedetails .messagebox-container #cke_UpdateContent .cke_skin_kama .cke_wrapper {
+  background: #1e1e1e;
+  border: none;
+}
+/* line 474, ../sass/screen.scss */
+#comp-Ticket-Update #body #ticket-update-message .messagedetails .messagebox-container #cke_UpdateContent element.style {
+  height: 100%;
+  width: 98%;
+}
+/* line 478, ../sass/screen.scss */
+#comp-Ticket-Update #body #ticket-update-message .messagedetails .messagebox-container #cke_UpdateContent .cke_skin_kama .cke_contents iframe {
+  background-color: #444444;
+}
+/* line 486, ../sass/screen.scss */
 #comp-Ticket-Update #body #ticket-update-message .messagedetails input[type="submit"] {
   margin-left: 10px;
   width: 100px;
 }
-/* line 480, ../sass/screen.scss */
+/* line 489, ../sass/screen.scss */
 #comp-Ticket-Update #body #ticket-update-message #previewscrips {
   margin-top: 50px;
 }
-/* line 482, ../sass/screen.scss */
+/* line 491, ../sass/screen.scss */
 #comp-Ticket-Update #body #ticket-update-message #previewscrips li {
   margin-top: 10px;
 }
-/* line 485, ../sass/screen.scss */
+/* line 494, ../sass/screen.scss */
 #comp-Ticket-Update #body #ticket-update-message #SubmitTicket {
   margin: 30px 35%;
 }
