@@ -1315,23 +1315,29 @@ body a:hover, body a:active, body a:focus {
   transition: all, 0.25s, ease-in-out;
 }
 /* line 470, ../sass/screen.scss */
+#comp-Ticket-Update #body #ticket-update-message .messagedetails .messagebox-container #cke_UpdateContent {
+  max-width: 600px;
+  min-width: 600px;
+  border: none;
+}
+/* line 471, ../sass/screen.scss */
 #comp-Ticket-Update #body #ticket-update-message .messagedetails .messagebox-container #cke_UpdateContent td {
   width: 100%;
 }
-/* line 475, ../sass/screen.scss */
+/* line 476, ../sass/screen.scss */
 #comp-Ticket-Update #body #ticket-update-message .messagedetails input[type="submit"] {
-  margin-left: 10px;
+  margin-left: 50px;
   width: 100px;
 }
-/* line 478, ../sass/screen.scss */
+/* line 479, ../sass/screen.scss */
 #comp-Ticket-Update #body #ticket-update-message #previewscrips {
   margin-top: 50px;
 }
-/* line 480, ../sass/screen.scss */
+/* line 481, ../sass/screen.scss */
 #comp-Ticket-Update #body #ticket-update-message #previewscrips li {
   margin-top: 10px;
 }
-/* line 483, ../sass/screen.scss */
+/* line 484, ../sass/screen.scss */
 #comp-Ticket-Update #body #ticket-update-message #SubmitTicket {
   margin: 30px 35%;
 }
