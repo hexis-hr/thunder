@@ -1327,23 +1327,24 @@ body a:hover, body a:active, body a:focus {
   width: 100%;
 }
 /* line 472, ../sass/screen.scss */
-#comp-Ticket-Update #body #ticket-update-message .messagedetails .messagebox-container #cke_UpdateContent .cke_skin_kama .cke_contents iframe {
+#comp-Ticket-Update #body #ticket-update-message .messagedetails .messagebox-container #cke_UpdateContent .cke_show_borders {
   background: #383838 !important;
+  color: #939393;
 }
-/* line 481, ../sass/screen.scss */
+/* line 482, ../sass/screen.scss */
 #comp-Ticket-Update #body #ticket-update-message .messagedetails input[type="submit"] {
   margin-left: 10px;
   width: 100px;
 }
-/* line 484, ../sass/screen.scss */
+/* line 485, ../sass/screen.scss */
 #comp-Ticket-Update #body #ticket-update-message #previewscrips {
   margin-top: 50px;
 }
-/* line 486, ../sass/screen.scss */
+/* line 487, ../sass/screen.scss */
 #comp-Ticket-Update #body #ticket-update-message #previewscrips li {
   margin-top: 10px;
 }
-/* line 489, ../sass/screen.scss */
+/* line 490, ../sass/screen.scss */
 #comp-Ticket-Update #body #ticket-update-message #SubmitTicket {
   margin: 30px 35%;
 }
