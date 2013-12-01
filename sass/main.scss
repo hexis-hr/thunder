@@ -466,24 +466,23 @@ $content-gap: 10px;
 						&:hover { @include box-shadow(inset darken($button-bg,15%) 0px 0px 25px); color:#fff; @include transition(all, 0.25s, ease-in-out); } 
 						}
 
-						#cke_UpdateContent {max-width:600px; min-width:600px; background:$body-bg; color:$text-normal; border:none;
-
-							td { width:100%; }
-							
-						}
+						// EDITOR
+							#cke_UpdateContent {max-width:600px; min-width:600px; border:none;
+								td { width:98%; }
+							}							
 
 					}	// end messagebox container
 
-					input[type="submit"] { margin-left:$content-gap; width:100px; }
+					input[type="submit"] { margin-left:$content-gap+40; width:100px; }
 				}
 
 				#previewscrips {
-					margin-top:$content-gap+40;
+					margin-top:$content-gap+10;
 						li { margin-top:$content-gap; }
 				}	// end previeew scripts
 
 				#SubmitTicket {
-					margin:$content-gap+20 35%;
+					margin:$content-gap+20 45%;
 				}
 
 			}	// end ticket update message
