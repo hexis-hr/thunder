@@ -7,7 +7,7 @@
 @charset "UTF-8";
 
 
-$content-gap: 10px;
+$content-gap:10px;
 
 /*-------------------------------------------------------------------------------------------------
  -Typography
@@ -34,19 +34,20 @@ $content-gap: 10px;
 	$extra-link: #187B09; //take button color
 	$extra-link-hover: #3F8E33; //tale button bg color
 
-
 /*-------------------------------------------------------------------------------------------------
  -Global
 -------------------------------------------------------------------------------------------------*/
-	.button {border:none; border-radius:3px; background:$button-bg;  color:#fff; box-shadow: none; @include transition(all, 0.50s, ease-in-out);
-		&:hover { @include box-shadow(inset darken($button-bg,15%) 0px 0px 25px); color:#fff; @include transition(all, 0.25s, ease-in-out); } }
-	@include inputs { background:lighten($body-bg,1%); color:$text-normal; border:none; @include box-shadow( (rgba(#000,.3)) 0 -1px 0px ); font-family:'Roboto Condensed', Helvetica, Arial, sans-serif; 
+	.button {border:none; border-radius:3px; background:$button-bg;  color:#fff; box-shadow: none;
+		@include transition(all, 0.50s, ease-in-out);
+		&:hover { @include box-shadow(inset darken($button-bg,15%) 0px 0px 25px); color:#fff;
+			@include transition(all, 0.25s, ease-in-out); } }
+	@include inputs { background:lighten($body-bg,2%); color:$text-normal; border:none; 
+		@include box-shadow( (rgba(#000,.3)) 0 -1px 0px ); font-family:'Roboto Condensed', Helvetica, Arial, sans-serif; 
 		&:focus {outline:none; @include box-shadow($text-normal 0 0 2px); font:$font-alpha; } }
+	select, .select-queue { text-transform:capitalize; }
 
-		select, .select-queue { text-transform:capitalize; }
-
-
-	a[href], input[type='submit'], input[type='image'], label[for], select, button, .checkbox, .pointer { cursor:pointer; }
+	a[href], input[type='submit'], input[type='image'], label[for], select, button, .checkbox, .pointer 
+		{ cursor:pointer; }
 
 	// hidden
 		#quickbar { display: none; }
@@ -78,24 +79,30 @@ $content-gap: 10px;
 	#header { line-height:33px; font:$font-beta; font-size:20px; text-transform:uppercase; }
 
 	//START MAIN NAVIGATION 
-	#main-navigation { float:left; width:100%; text-transform:uppercase; background:$nav-bg-main; border-color:$def-border; border-top: 1px solid $def-border; border-bottom: 1px solid $def-border;
+	#main-navigation { float:left; width:100%; text-transform:uppercase; background:$nav-bg-main; 
+		border-color:$def-border; border-top: 1px solid $def-border; border-bottom: 1px solid $def-border;
 		ul { list-style:none; }
 		ul li { float:left; position:relative; z-index:20; }
 		ul li a { display:block; padding:5px 15px 5px 15px; font-size:14px; color:$titlebox-th; }
 		ul li:hover > a { color:$link-normal; @include transition(all, 0.3s, ease-in-out); }
 		ul li.active > a { color:$link-normal; }
 
-		li > ul:before { content: ""; border-style:solid; border-width:6px 6px 6px 6px; border-color:$nav-bg-main transparent transparent transparent; width:0; height:0; position:absolute; left:30px; top:0px;}	
+		li > ul:before { content: ""; border-style:solid; border-width:6px 6px 6px 6px; 
+		border-color:$nav-bg-main transparent transparent transparent; width:0; height:0; 
+		position:absolute; left:30px; top:0px;}	
 	//sub menu
 		ul li > ul { position:absolute; left:0px; top:100%; padding-top:5px; width:140px; background:$nav-bg-main; }
 		ul li:hover > ul { display:block; }
 		ul li > ul li { padding:3px 3px 3px; width: 95%; border-bottom:1px solid rgba(173,173,173,.2); }
 		ul li > ul li a { display:block; padding: 3px 3px; font-size:12px; border-left:2px solid $nav-bg-main; }
 		ul li > ul li:hover { background:rgba(224,224,224, 0.1); @include transition(all, 0.3s ease-in-out); } 
-		ul li > ul li:hover > a { color:$link-normal; border-color:$link-normal; @include transition(all, 0.1s ease-in-out); }
+		ul li > ul li:hover > a { color:$link-normal; border-color:$link-normal; 
+			@include transition(all, 0.1s ease-in-out); }
 		ul li > ul li.active > a { color:$link-normal;}
 	//sub sub menu
-		li > ul li > ul:before {content: ""; border-style: solid; border-width: 6px 6px 6px 6px; border-color: transparent $nav-bg-main transparent transparent; width: 0; height: 0; position: absolute; left: -12px; top: 7px;}
+		li > ul li > ul:before {content: ""; border-style: solid; border-width: 6px 6px 6px 6px; 
+		border-color: transparent $nav-bg-main transparent transparent; width: 0; height: 0; 
+		position: absolute; left: -12px; top: 7px;}
 		ul li > ul li > ul {top: 0px; left: 105%; padding-top: 0px; }
 		ul li > ul li:hover > ul {display:block; top: 0px; left: 100%;}
 		ul ul {display: none;}
@@ -107,7 +114,8 @@ $content-gap: 10px;
 	#page-navigation { position: absolute; right: 15px; top: 50px; 
 		ul { list-style: none; }
 		ul li { float:left; position: relative; z-index: 20; }
-		ul li a {display: block; padding: 0px 15px 0px 15px; font-size: 11px; line-height:33px; color: $titlebox-th; text-transform: uppercase; }
+		ul li a {display: block; padding: 0px 15px 0px 15px; font-size: 11px; line-height:33px; color: $titlebox-th; 
+			text-transform: uppercase; }
 		ul li:hover > a { color: $link-normal; @include transition(all, 0.3s, ease-in-out); }
 		ul li.active > a { color: $link-normal; }
 	//sub menu
@@ -116,7 +124,8 @@ $content-gap: 10px;
 		ul li > ul li {padding: 3px 3px 3px; width: 95%; border-bottom: 1px solid rgba(173,173,173,.2); }
 		ul li > ul li a {display: block; padding: 3px 3px; font-size: 10px; border-left: 2px solid $nav-bg-main; }
 		ul li > ul li:hover {background: rgba(224,224,224, 0.1); @include transition(all, 0.3s, ease-in-out); } 
-		ul li > ul li:hover > a {color: $link-normal; border-color: $link-normal; @include transition(all, 0.1s, ease-in-out); }
+		ul li > ul li:hover > a {color: $link-normal; border-color: $link-normal; 
+			@include transition(all, 0.1s, ease-in-out); }
 		ul li > ul li.active > a {color: $link-normal;}
 		ul ul {display: none;}
 	}
@@ -124,7 +133,8 @@ $content-gap: 10px;
 	// TOP ACTIONS
 	#topactions { clear: both; position: absolute; top: 17px; right: 20px; height: 50px;
 		#simple-search { float:left; padding-right: 20px;}
-		#simple-search input { width: 300px; height: 23px; margin: 1px 5px; border: none; font: 100% $font-beta; font-size: 15px; line-height: 23px; color:$titlebox-th; padding-left: 2px;
+		#simple-search input { width: 300px; height: 23px; margin: 1px 5px; border: none; font: 100% $font-beta; 
+			font-size: 15px; line-height: 23px; color:$titlebox-th; padding-left: 2px;
 			&:focus { outline:none; border:none; box-shadow: none; border-bottom:1px solid $link-normal; } }
 
 		#CreateTicketInQueue { float:right; padding-top:-5px;
@@ -154,8 +164,10 @@ $content-gap: 10px;
 			}
 				.titlebox .titlebox-title .widget a:hover { background-position:top; @include transition(all, 0.3s, Ease-In); }
 				.titlebox.rolled-up .titlebox-content { display:none; }
-				.titlebox.rolled-up .titlebox-title .widget a { background:url(../NoAuth/images/css/rolldown-arrow.gif) no-repeat; background-position:center; color: red; top: 6px;}
-				.titlebox.rolled-up .titlebox-title .widget a:hover { background-position: top; @include transition(all, 0.3s, Ease-Out); }
+				.titlebox.rolled-up .titlebox-title .widget a 
+					{ background:url(../NoAuth/images/css/rolldown-arrow.gif) no-repeat; background-position:center; color: red; top: 6px;}
+				.titlebox.rolled-up .titlebox-title .widget a:hover 
+					{ background-position: top; @include transition(all, 0.3s, Ease-Out); }
 		//END Widget
 
 		.boxcontainer { vertical-align:top; }
@@ -165,7 +177,8 @@ $content-gap: 10px;
 			th { color:$titlebox-th; background:$titlebox-th-bg; border-radius:0 0 3px 3px; }
 			
 		.titlebox { padding:3px 3px; margin-bottom:$content-gap; font-size:14px;
-			.titlebox-title { font:100% $font-beta; font-size:13px; text-transform:uppercase; letter-spacing:1px; padding:2px 0 2px 17px; position: relative; z-index: 10; border-bottom: 1px solid $def-border;  
+			.titlebox-title { font:100% $font-beta; font-size:13px; text-transform:uppercase; letter-spacing:1px; 
+				padding:2px 0 2px 17px; position: relative; z-index: 10; border-bottom: 1px solid $def-border;  
 				.left { a { color:$titlebox-title; } a:hover { color:$link-normal-hover; } }
 				.right { float:right;
 					a { font-size:10px; text-transform:uppercase; color:rgba(163,163,163,.5); 
@@ -189,7 +202,8 @@ $content-gap: 10px;
 								th:first-child { padding-left:7px;}
 								
 
-								td:nth-child(2) { font-size:14px; width:100px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; } // ??
+								td:nth-child(2) { font-size:14px; width:100px; white-space:nowrap; overflow:hidden; 
+								text-overflow:ellipsis; } // ??
 								td:nth-child(3) { font-size:12px; white-space:nowrap; overflow:hidden; }
 
 								td:nth-child(4), td:nth-child(5) { font-size:11px; white-space:nowrap; overflow:hidden; }
@@ -214,21 +228,21 @@ $content-gap: 10px;
 
 				 .boxcontainer:last-child { width: 25%;
 				 		.titlebox-content {
-								th:nth-child(2), th:nth-child(3), th:nth-child(4)  { font-size: 11px; text-align: center; text-transform: lowercase; }
+								th:nth-child(2), th:nth-child(3), th:nth-child(4)  { font-size: 11px; text-align: center; 
+									text-transform: lowercase; }
 								td:nth-child(2), td:nth-child(3), td:nth-child(4)  { font-size: 10px; text-align: center; }
 
 								td:nth-child(1) { font-size: 13px; white-space:nowrap; overflow:hidden; }
 
 						}
 
-						.titlebox form { padding: 2px; .submit { text-align:center; } .button { margin-top: 5px; padding: 2px 10px; } }
+						.titlebox form { padding: 2px; .submit { text-align:center; } 
+							.button { margin-top: 5px; padding: 2px 10px; } }
 
 
 				  } /*end box container last child */
 
-
 		} /* end myrt */
-
 
 	} /* end comp-index */
 
@@ -303,7 +317,7 @@ $content-gap: 10px;
 
 
 /*-------------------------------------------------------------------------------------------------
- -start comp-Prefs-Other	[FOCUS INPUT NIJE DOBAR]
+ -start comp-Prefs-Other // settings page 	[FINISHED]
 -------------------------------------------------------------------------------------------------*/
 	#comp-Prefs-Other {
 		#body {
@@ -312,9 +326,9 @@ $content-gap: 10px;
 			line-height: 2;
 			.label { display:inline-block; width:310px; }
 			.hints { white-space:nowrap; font-style:italic; color:$def-border; 
-				&:hover { color:$text-normal; }
+				&:hover { color:$text-normal; cursor:default; }
 			}
-			.button { margin-top:$content-gap; }
+			.button { margin:$content-gap 48% 0 47%; }
 			}	//end form
 		}	//end #body
 	}	//end comp prefs other
@@ -379,7 +393,8 @@ $content-gap: 10px;
 						td {float:left;}
 						.message-header-key { width:50px; color:darken($text-normal,20%); }
 						.message-header-value {  }
-						table { margin-bottom:$content-gap; @include box-shadow(darken($body-bg,5%) 0px 1px 0px); border-bottom:1px solid lighten($body-bg,5%); }
+						table { margin-bottom:$content-gap; @include box-shadow(darken($body-bg,5%) 0px 1px 0px); 
+							border-bottom:1px solid lighten($body-bg,5%); }
 						
 						.message-stanza-folder { color:$titlebox-th; text-transform:uppercase; font-size:12px; }
 						.closed {background:lighten($body-bg,3%); margin-bottom:$content-gap;  }
@@ -462,8 +477,10 @@ $content-gap: 10px;
 					.messagebox-container {
 						td { width: 160px; float:left; overflow:hidden; whitespace:nowrap; }
 						input[type="submit"] { margin-left:$content-gap+10; width:50px;
-							border:none; border-radius:3px; background:$button-bg;  color:#fff; box-shadow: none; @include transition(all, 0.50s, ease-in-out);
-						&:hover { @include box-shadow(inset darken($button-bg,15%) 0px 0px 25px); color:#fff; @include transition(all, 0.25s, ease-in-out); } 
+							border:none; border-radius:3px; background:$button-bg;  color:#fff; box-shadow: none; 
+							@include transition(all, 0.50s, ease-in-out);
+						&:hover { @include box-shadow(inset darken($button-bg,15%) 0px 0px 25px); color:#fff; 
+							@include transition(all, 0.25s, ease-in-out); } 
 						}
 
 						// EDITOR
