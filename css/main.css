@@ -826,7 +826,7 @@ body a:hover, body a:active, body a:focus {
  -end comp-index // home page
 -------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------------------
- -start comp-Search-Simple	[FINISHED]
+ -start comp-Search-Simple  [FINISHED]
 -------------------------------------------------------------------------------------------------*/
 /* line 260, ../sass/main.scss */
 #comp-Search-Simple #body #SimpleSearchForm div {
@@ -851,7 +851,7 @@ body a:hover, body a:active, body a:focus {
  -end comp-Search-Simple
 -------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------------------
- -start comp-Search-Build	[FINISHED]
+ -start comp-Search-Build [FINISHED]
 -------------------------------------------------------------------------------------------------*/
 /* line 276, ../sass/main.scss */
 #comp-Search-Build #body hr {
@@ -979,7 +979,7 @@ body a:hover, body a:active, body a:focus {
  -end comp-Search-Build
 -------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------------------
- -start comp-Prefs-Other // settings page 	[FINISHED]
+ -start comp-Prefs-Other // settings page   [FINISHED]
 -------------------------------------------------------------------------------------------------*/
 /* line 324, ../sass/main.scss */
 #comp-Prefs-Other #body form {
@@ -1014,7 +1014,7 @@ body a:hover, body a:active, body a:focus {
  -end comp-Prefs-Other
 -------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------------------
- -start comp-Ticket-Display	[HISTORY PAGE NIJE DOBAR]
+ -start comp-Ticket-Display [HISTORY PAGE NIJE DOBAR]
 -------------------------------------------------------------------------------------------------*/
 /* line 345, ../sass/main.scss */
 #comp-Ticket-Display {
@@ -1198,10 +1198,10 @@ body a:hover, body a:active, body a:focus {
 
 /* end comp-Ticket-Display */
 /*-------------------------------------------------------------------------------------------------
- -end comp-Ticket-Display	[HISTORY PAGE NIJE DOBAR]
+ -end comp-Ticket-Display [HISTORY PAGE NIJE DOBAR]
 -------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------------------
- -start comp-Search-Results	[FINISHED]
+ -start comp-Search-Results [FINISHED]
 -------------------------------------------------------------------------------------------------*/
 /* line 443, ../sass/main.scss */
 #comp-Search-Results #body table {
