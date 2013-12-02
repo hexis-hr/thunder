@@ -154,7 +154,7 @@ $content-gap:10px;
           display: block;
           margin: 0;
           width: 15px;
-          background: url(../NoAuth/images/css/rollup-arrow.gif) no-repeat;
+          background: url(/NoAuth/images/css/rollup-arrow.gif) no-repeat;
           background-position: center;
           position: absolute;
           top: 6px;
@@ -165,7 +165,7 @@ $content-gap:10px;
         .titlebox .titlebox-title .widget a:hover { background-position:top; @include transition(all, 0.3s, Ease-In); }
         .titlebox.rolled-up .titlebox-content { display:none; }
         .titlebox.rolled-up .titlebox-title .widget a 
-          { background:url(../NoAuth/images/css/rolldown-arrow.gif) no-repeat; background-position:center; color: red; top: 6px;}
+          { background:url(/NoAuth/images/css/rolldown-arrow.gif) no-repeat; background-position:center; color: red; top: 6px;}
         .titlebox.rolled-up .titlebox-title .widget a:hover 
           { background-position: top; @include transition(all, 0.3s, Ease-Out); }
     //END Widget

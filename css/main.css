@@ -581,7 +581,7 @@ body a:hover, body a:active, body a:focus {
   display: block;
   margin: 0;
   width: 15px;
-  background: url(../NoAuth/images/css/rollup-arrow.gif) no-repeat;
+  background: url(/NoAuth/images/css/rollup-arrow.gif) no-repeat;
   background-position: center;
   position: absolute;
   top: 6px;
@@ -603,7 +603,7 @@ body a:hover, body a:active, body a:focus {
 }
 /* line 168, ../sass/main.scss */
 #body .titlebox.rolled-up .titlebox-title .widget a {
-  background: url(../NoAuth/images/css/rolldown-arrow.gif) no-repeat;
+  background: url(/NoAuth/images/css/rolldown-arrow.gif) no-repeat;
   background-position: center;
   color: red;
   top: 6px;
