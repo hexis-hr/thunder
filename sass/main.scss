@@ -37,7 +37,7 @@ $content-gap:10px;
 /*-------------------------------------------------------------------------------------------------
  -Global
 -------------------------------------------------------------------------------------------------*/
-  .button {border:none; border-radius:3px; background:$button-bg;  color:#fff; box-shadow: none;
+  .button, input[type="submit"] {border:none; border-radius:3px; background:$button-bg;  color:#fff; box-shadow: none;
     @include transition(all, 0.50s, ease-in-out);
     &:hover { @include box-shadow(inset darken($button-bg,15%) 0px 0px 25px); color:#fff;
       @include transition(all, 0.25s, ease-in-out); } }
@@ -134,7 +134,7 @@ $content-gap:10px;
   #topactions { clear: both; position: absolute; top: 17px; right: 20px; height: 50px;
     #simple-search { float:left; padding-right: 20px;}
     #simple-search input { width: 300px; height: 23px; margin: 1px 5px; border: none; font: 100% $font-beta; 
-      font-size: 15px; line-height: 23px; color:$titlebox-th; padding-left: 2px;
+      font-size: 15px; line-height: 23px; padding-left: 2px;
       &:focus { outline:none; border:none; box-shadow: none; border-bottom:1px solid $link-normal; } }
 
     #CreateTicketInQueue { float:right; padding-top:-5px;
@@ -165,7 +165,8 @@ $content-gap:10px;
         .titlebox .titlebox-title .widget a:hover { background-position:top; @include transition(all, 0.3s, Ease-In); }
         .titlebox.rolled-up .titlebox-content { display:none; }
         .titlebox.rolled-up .titlebox-title .widget a 
-          { background:url(/NoAuth/images/css/rolldown-arrow.gif) no-repeat; background-position:center; color: red; top: 6px;}
+          { background:url(/NoAuth/images/css/rolldown-arrow.gif) no-repeat; background-position:center; 
+            color: red; top: 6px;}
         .titlebox.rolled-up .titlebox-title .widget a:hover 
           { background-position: top; @include transition(all, 0.3s, Ease-Out); }
     //END Widget
@@ -388,6 +389,18 @@ $content-gap:10px;
             .description { }
           }
           .message-stanza { padding: 2px; margin-bottom:$content-gap; }
+          .message-stanza-folder { color: #500050; cursor: pointer; font-style:italic; }
+          .message-stanza-folder.open { color: #CCCCCC; }
+          .message-stanza.closed { display: none; }
+
+.message-stanza-folder:before, .message-stanza-folder:after { content: " * "; }
+          .ticket-transaction .messagebody {
+    font-size: 1em;
+    word-wrap: break-word;
+}
+
+
+          .clickylink a { color:green; }  //linkovi unutar messagea
 
           .content { padding: 0.2em; position: relative;
             td {float:left;}
@@ -400,8 +413,7 @@ $content-gap:10px;
             .closed {background:lighten($body-bg,3%); margin-bottom:$content-gap;  }
 
 
-            //&.messageattachments .downloadattachment {float:right;}
-            .downloadattachment { display:none; /*clear:both; position:absolute; top: 50%; right:0; */}
+            .downloadattachment { display:none; }
 
             
 
@@ -458,7 +470,7 @@ $content-gap:10px;
 
 
 /*-------------------------------------------------------------------------------------------------
- -start comp-Ticket-Update
+ -start comp-Ticket-Update  [FINISHED]
 -------------------------------------------------------------------------------------------------*/
   #comp-Ticket-Update {
     #body {
@@ -475,22 +487,15 @@ $content-gap:10px;
           .label { width:130px; }
           input { width:400px; }
           .messagebox-container {
-            td { width: 160px; float:left; overflow:hidden; whitespace:nowrap; }
-            input[type="submit"] { margin-left:$content-gap+10; width:50px;
-              border:none; border-radius:3px; background:$button-bg;  color:#fff; box-shadow: none; 
-              @include transition(all, 0.50s, ease-in-out);
-            &:hover { @include box-shadow(inset darken($button-bg,15%) 0px 0px 25px); color:#fff; 
-              @include transition(all, 0.25s, ease-in-out); } 
-            }
+            .articles-select-article { td, input { width:160px; float:left; overflow:hidden; whitespace:nowrap; } }
+            input[type="submit"] { margin-left:$content-gap+10; width:50px; }
 
             // EDITOR
               #cke_UpdateContent {max-width:600px; min-width:600px; border:none;
                 td { width:98%; }
               }             
-
           } // end messagebox container
-
-          input[type="submit"] { margin-left:$content-gap+40; width:100px; }
+        input[type="submit"] { margin-left:$content-gap+40; width:100px; }
         }
 
         #previewscrips {
@@ -503,10 +508,8 @@ $content-gap:10px;
         }
 
       } // end ticket update message
-
     } // end #body
   } // end #comp ticket update
-
 
 /*-------------------------------------------------------------------------------------------------
  -end comp-Ticket-Update
