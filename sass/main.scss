@@ -28,7 +28,7 @@ $content-gap:10px;
   $titlebox-title: lighten($text-normal, 10%);  //main title color #8B91A5
   $titlebox-th: #95450B;  //titlebox th text
   $titlebox-th-bg: rgba(51,51,51,.3); //titlebox th background
-  $def-border: rgba(140,140,140,.2);  //default border color
+  $def-border: rgba(140,140,140,.1);  //default border color
   $button-bg: #910A14; //button bg color
   $nav-bg-main: #121212; //main navigation bg color
   $extra-link: #187B09; //take button color
@@ -347,97 +347,49 @@ $content-gap:10px;
 -------------------------------------------------------------------------------------------------*/
   #comp-Ticket-Display {
   #body { .label, .labeltop {color:darken($text-normal,20%); text-transform:uppercase; font-size:13px; }
-      
-        .boxcontainer:nth-child(1) {padding-right: 0.5em; width: 65%; 
-            td:first-child { width: 125px; }
-            tr { border-bottom: 1px solid $def-border; }
-          .ticket-info-cfs { td { padding: 0.2em; } }
-        } 
+    .boxcontainer:nth-child(1) {padding-right: 0.5em; width: 65%; 
+      td:first-child { width: 125px; }
+      tr { border-bottom: 1px solid $def-border; }
+      .ticket-info-cfs { td { padding: 0.2em; } }
+    } 
+    .boxcontainer:nth-child(2) { 
+      tr {border-bottom:1px solid $def-border; }
+      .ticket-info-reminders {
+        table { position:relative; margin-left:$content-gap;}
+        tr { border-bottom:none; }
+        input { max-width:200px; }
+        .button { margin-right:$content-gap; }
+      }
+      .ticket-info-links { .label, .labeltop { color: $link-normal; } }
+    } /* end .boxcontainer:nth-child(2) */
 
-        .boxcontainer:nth-child(2) { 
-          tr {border-bottom:1px solid $def-border; }
-          .ticket-info-reminders {
-            table { position:relative; margin-left:$content-gap;}
-            tr { border-bottom:none; }
-            input { max-width:200px; }
-            .button { margin-right:$content-gap; }
-            
-          }
-          .ticket-info-links { .label, .labeltop { color: $link-normal; } }
-        } /* end .boxcontainer:nth-child(2) */
-
-    // START HISTORY  
-      .history {
-        .titlebox-content {padding: 3px;}
-        .titlebox-title { color: $body-bg;
-          
-          .left { color: $text-normal; }
-          .right { a { color: $link-normal; } a:hover { color: $link-normal-hover; } }
-        }
-
-        .odd, .even {/*border-top: 1px solid $def-border; border-bottom: 1px solid $def-border;*/ margin-bottom:2px;}
-
-        .odd, .even { background:lighten($body-bg,1%); }
-        .actions { color:darken($body-bg,3%); float:right; font-style:normal !important; text-transform:uppercase; }
-        //.even { background: #181818; }
+  // HISTORY
+    #ticket-history {
+      .odd { background:darken($body-bg,3%); margin:4px 0; }
+      .even { background:darken($body-bg,2%); }
+      .message-stanza { float:left; width:80%; min-width:30%; max-width:80%; background:lighten($body-bg,2%);  }
+      .downloadattachment { float:right; whitespace:nowrap; overflow:hidden; }
+      .EmailRecord, .basics, .Set, .other  {clear:both;}
 
 
-
-      #ticket-history {       
-
-        .message { 
-          .metadata { background:darken($body-bg,3%);  
-            .type, .date { padding-right:$content-gap; color:darken($text-normal,20%); }
-            .description { }
-          }
-
-          //quotes
+    //quotes
             .message-stanza { padding: 2px; margin-bottom:$content-gap; }
             .message-stanza-folder { color: #500050; cursor: pointer; font-style:italic; }
-            .message-stanza-folder.open { color:#CCCCCC; }
+            .message-stanza-folder.open { color:#CCCCCC; clear:both;}
             .message-stanza.closed { display:none; }
             .message-stanza-folder:before, .message-stanza-folder:after { content: " * "; }
             .ticket-transaction .messagebody { font-size: 1em; word-wrap: break-word; }
-         
-          
-          .clickylink a { text-decoration:underline; }  //links inside the message
-
-          .content { /*padding: 0.2em;*/ position: relative; background:darken($body-bg,1%);
-            td {float:left;}
-            .message-header-key { width:60px; color:darken($text-normal,20%); }
-            .message-header-value {  }
-            table { margin-bottom:$content-gap; background:darken($body-bg,3%); }
-            
-            .message-stanza-folder { color:$titlebox-th; text-transform:uppercase; font-size:12px; }
-            .closed {background:lighten($body-bg,3%); margin-bottom:$content-gap;  }
-
-
-            .downloadattachment { display:none; }
-
-            
-
-          } /*end content */
-
-        } /* end message */
-
-        
-
-        .Correspond {
-        
-        }
-
-        .EmailRecord { text-align:right; font-size:10px; background:$body-bg !important; 
-          .actions { color: $body-bg !important; } }
-
-        .other, .basics { padding: 0.2em; text-transform: uppercase; }
-        .other { background:darken($body-bg,4%); color:$titlebox-th; }
-        .basics, .AddLink { background:darken($body-bg,4%); color:$titlebox-th; text-transform:capitalize; }
 
 
 
 
-      } /* end ticket history */
-    } /* end history */
+
+      } //end ticket history
+
+
+
+
+   
 
   } /*end body */
   } /* end comp-Ticket-Display */
