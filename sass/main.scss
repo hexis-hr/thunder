@@ -351,7 +351,7 @@ $content-gap:10px;
       td:first-child { width: 125px; }
       tr { border-bottom: 1px solid $def-border; }
       .ticket-info-cfs { td { padding: 0.2em; } }
-      .ticket-info-attachments { font-size:12px; }
+      .ticket-info-attachments { font-size:12px; a { font-size:11px; } }
     } 
     .boxcontainer:nth-child(2) { 
       tr {border-bottom:1px solid $def-border; }
