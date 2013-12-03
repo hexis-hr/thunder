@@ -79,8 +79,9 @@ $content-gap:10px;
   #header { line-height:33px; font:$font-beta; font-size:20px; text-transform:uppercase; }
 
   //START MAIN NAVIGATION 
-  #main-navigation { float:left; width:100%; text-transform:uppercase; background:$nav-bg-main; 
-    border-color:$def-border; border-top: 1px solid $def-border; border-bottom: 1px solid $def-border;
+  #main-navigation { float:left; width:100%; text-transform:uppercase; 
+      background:darken($body-bg,2%); 
+    border-top: 1px solid darken($def-border,5%); border-bottom: 1px solid darken($def-border,5%);
     ul { list-style:none; }
     ul li { float:left; position:relative; z-index:20; }
     ul li a { display:block; padding:5px 15px 5px 15px; font-size:14px; color:$titlebox-th; }
@@ -88,20 +89,20 @@ $content-gap:10px;
     ul li.active > a { color:$link-normal; }
 
     li > ul:before { content: ""; border-style:solid; border-width:6px 6px 6px 6px; 
-    border-color:$nav-bg-main transparent transparent transparent; width:0; height:0; 
+    border-color:darken($body-bg,2%) transparent transparent transparent; width:0; height:0; 
     position:absolute; left:30px; top:0px;} 
   //sub menu
-    ul li > ul { position:absolute; left:0px; top:100%; padding-top:5px; width:140px; background:$nav-bg-main; }
+    ul li > ul { position:absolute; left:0px; top:100%; padding-top:5px; width:140px; background:darken($body-bg,2%); }
     ul li:hover > ul { display:block; }
-    ul li > ul li { padding:3px 3px 3px; width: 95%; border-bottom:1px solid rgba(173,173,173,.2); }
-    ul li > ul li a { display:block; padding: 3px 3px; font-size:12px; border-left:2px solid $nav-bg-main; }
+    ul li > ul li { padding:3px 3px 3px; width: 95%; border-bottom:1px solid rgba(173,173,173,.1); }
+    ul li > ul li a { display:block; padding: 3px 3px; font-size:12px; border-left:2px solid darken($body-bg,2%); }
     ul li > ul li:hover { background:rgba(224,224,224, 0.1); @include transition(all, 0.3s ease-in-out); } 
     ul li > ul li:hover > a { color:$link-normal; border-color:$link-normal; 
       @include transition(all, 0.1s ease-in-out); }
     ul li > ul li.active > a { color:$link-normal;}
   //sub sub menu
     li > ul li > ul:before {content: ""; border-style: solid; border-width: 6px 6px 6px 6px; 
-    border-color: transparent $nav-bg-main transparent transparent; width: 0; height: 0; 
+    border-color: transparent darken($body-bg,2%) transparent transparent; width: 0; height: 0; 
     position: absolute; left: -12px; top: 7px;}
     ul li > ul li > ul {top: 0px; left: 105%; padding-top: 0px; }
     ul li > ul li:hover > ul {display:block; top: 0px; left: 100%;}
@@ -119,10 +120,11 @@ $content-gap:10px;
     ul li:hover > a { color: $link-normal; @include transition(all, 0.3s, ease-in-out); }
     ul li.active > a { color: $link-normal; }
   //sub menu
-    ul li > ul {position: absolute; right: 0px; top: 100%; padding-top: 7px; width: 100px; background:$nav-bg-main; }
+    ul li > ul {position: absolute; right: 0px; top: 100%; padding-top: 7px; width: 100px; background:darken($body-bg,2%); }
     ul li:hover > ul {display: block; }
-    ul li > ul li {padding: 3px 3px 3px; width: 95%; border-bottom: 1px solid rgba(173,173,173,.2); }
-    ul li > ul li a {display: block; padding: 3px 3px; font-size: 10px; border-left: 2px solid $nav-bg-main; }
+    ul li > ul li {padding: 3px 3px 3px; width: 95%; border-bottom: 1px solid rgba(173,173,173,.1); }
+    ul li > ul li a {display: block; padding: 3px 3px; font-size: 10px; border-left: 2px solid darken($body-bg,2%);
+     line-height:13px; }
     ul li > ul li:hover {background: rgba(224,224,224, 0.1); @include transition(all, 0.3s, ease-in-out); } 
     ul li > ul li:hover > a {color: $link-normal; border-color: $link-normal; 
       @include transition(all, 0.1s, ease-in-out); }
@@ -376,7 +378,7 @@ $content-gap:10px;
         .odd, .even {border-top: 1px solid $def-border; border-bottom: 1px solid $def-border; margin-bottom:5px;}
 
         .odd, .even { background:lighten($body-bg,1%); }
-        .actions { color:lighten($body-bg,1%); float:right; font-style:normal !important; text-transform:uppercase; }
+        .actions { color:darken($body-bg,3%); float:right; font-style:normal !important; text-transform:uppercase; }
         //.even { background: #181818; }
 
 
@@ -384,30 +386,27 @@ $content-gap:10px;
       #ticket-history {       
 
         .message { 
-          .metadata { padding:2px;  
+          .metadata { background:darken($body-bg,3%);  
             .type, .date { padding-right:$content-gap; color:darken($text-normal,20%); }
             .description { }
           }
-          .message-stanza { padding: 2px; margin-bottom:$content-gap; }
-          .message-stanza-folder { color: #500050; cursor: pointer; font-style:italic; }
-          .message-stanza-folder.open { color: #CCCCCC; }
-          .message-stanza.closed { display: none; }
 
-.message-stanza-folder:before, .message-stanza-folder:after { content: " * "; }
-          .ticket-transaction .messagebody {
-    font-size: 1em;
-    word-wrap: break-word;
-}
+          //quotes
+            .message-stanza { padding: 2px; margin-bottom:$content-gap; }
+            .message-stanza-folder { color: #500050; cursor: pointer; font-style:italic; }
+            .message-stanza-folder.open { color:#CCCCCC; }
+            .message-stanza.closed { display:none; }
+            .message-stanza-folder:before, .message-stanza-folder:after { content: " * "; }
+            .ticket-transaction .messagebody { font-size: 1em; word-wrap: break-word; }
+         
+          
+          .clickylink a { text-decoration:underline; }  //links inside the message
 
-
-          .clickylink a { color:green; }  //linkovi unutar messagea
-
-          .content { padding: 0.2em; position: relative;
+          .content { /*padding: 0.2em;*/ position: relative; background:darken($body-bg,1%);
             td {float:left;}
-            .message-header-key { width:50px; color:darken($text-normal,20%); }
+            .message-header-key { width:60px; color:darken($text-normal,20%); }
             .message-header-value {  }
-            table { margin-bottom:$content-gap; @include box-shadow(darken($body-bg,5%) 0px 1px 0px); 
-              border-bottom:1px solid lighten($body-bg,5%); }
+            table { margin-bottom:$content-gap; background:darken($body-bg,3%); }
             
             .message-stanza-folder { color:$titlebox-th; text-transform:uppercase; font-size:12px; }
             .closed {background:lighten($body-bg,3%); margin-bottom:$content-gap;  }
