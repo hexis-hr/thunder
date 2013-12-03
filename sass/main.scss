@@ -351,6 +351,7 @@ $content-gap:10px;
       td:first-child { width: 125px; }
       tr { border-bottom: 1px solid $def-border; }
       .ticket-info-cfs { td { padding: 0.2em; } }
+      .ticket-info-attachments { font-size:12px; }
     } 
     .boxcontainer:nth-child(2) { 
       tr {border-bottom:1px solid $def-border; }
@@ -377,7 +378,7 @@ $content-gap:10px;
       .message-header-value {  }
       table { margin:5px 0 $content-gap 0; }
       
-      .Correspond, .Create { .date, .description { color:lighten($titlebox-th,35%); } }
+      .Correspond, .Create, .Comment { .date, .description { color:lighten($titlebox-th,35%); } }
       //border for none message notifications
       .EmailRecord, .CustomField, .Set, .AddLink, .Status, .other { 
         border:1px solid lighten($body-bg,2%); margin-bottom:3px;
@@ -423,7 +424,7 @@ $content-gap:10px;
           
             .message-stanza-folder { color:lighten($titlebox-th,35%); cursor: pointer; font-size:12px; }
             .message-stanza.open  { color:lighten($titlebox-th,35%); }
-            .message-stanza-folder.open { color:#CCCCCC; }
+            .message-stanza-folder.open { color:lighten($titlebox-th,15%); }
             .message-stanza.closed { display:none; }
             .message-stanza-folder:before, .message-stanza-folder:after { content: " * "; }
             .ticket-transaction .messagebody { font-size: 1em; word-wrap: break-word; }
