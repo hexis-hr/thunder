@@ -1098,9 +1098,8 @@ body a:hover, body a:active, body a:focus {
 }
 /* line 378, ../sass/main.scss */
 #comp-Ticket-Display #body .history .odd, #comp-Ticket-Display #body .history .even {
-  border-top: 1px solid rgba(140, 140, 140, 0.2);
-  border-bottom: 1px solid rgba(140, 140, 140, 0.2);
-  margin-bottom: 5px;
+  /*border-top: 1px solid $def-border; border-bottom: 1px solid $def-border;*/
+  margin-bottom: 2px;
 }
 /* line 380, ../sass/main.scss */
 #comp-Ticket-Display #body .history .odd, #comp-Ticket-Display #body .history .even {
@@ -1203,20 +1202,25 @@ body a:hover, body a:active, body a:focus {
   font-size: 10px;
   background: #1e1e1e !important;
 }
-/* line 431, ../sass/main.scss */
+/* line 430, ../sass/main.scss */
+#comp-Ticket-Display #body .history #ticket-history .EmailRecord .actions {
+  color: #1e1e1e !important;
+}
+/* line 432, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .other, #comp-Ticket-Display #body .history #ticket-history .basics {
   padding: 0.2em;
   text-transform: uppercase;
 }
-/* line 432, ../sass/main.scss */
+/* line 433, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .other {
   background: #141414;
   color: #95450b;
 }
-/* line 433, ../sass/main.scss */
-#comp-Ticket-Display #body .history #ticket-history .basics {
-  background: #191919;
+/* line 434, ../sass/main.scss */
+#comp-Ticket-Display #body .history #ticket-history .basics, #comp-Ticket-Display #body .history #ticket-history .AddLink {
+  background: #141414;
   color: #95450b;
+  text-transform: capitalize;
 }
 
 /* end comp-Ticket-Display */
@@ -1226,48 +1230,48 @@ body a:hover, body a:active, body a:focus {
 /*-------------------------------------------------------------------------------------------------
  -start comp-Search-Results [FINISHED]
 -------------------------------------------------------------------------------------------------*/
-/* line 454, ../sass/main.scss */
+/* line 455, ../sass/main.scss */
 #comp-Search-Results #body table {
   width: 100%;
 }
-/* line 455, ../sass/main.scss */
+/* line 456, ../sass/main.scss */
 #comp-Search-Results #body .collection-as-table {
   background: none;
 }
-/* line 456, ../sass/main.scss */
+/* line 457, ../sass/main.scss */
 #comp-Search-Results #body th:nth-child(3), #comp-Search-Results #body th:nth-child(4), #comp-Search-Results #body th:nth-child(5), #comp-Search-Results #body th:nth-child(6) {
   text-align: center;
 }
-/* line 457, ../sass/main.scss */
+/* line 458, ../sass/main.scss */
 #comp-Search-Results #body tr:nth-child(1n) {
   font-size: 12px;
 }
-/* line 457, ../sass/main.scss */
+/* line 458, ../sass/main.scss */
 #comp-Search-Results #body tr:nth-child(1n) a {
   font-size: 14px;
 }
-/* line 458, ../sass/main.scss */
+/* line 459, ../sass/main.scss */
 #comp-Search-Results #body tr:nth-child(2n) {
   font-size: 11px;
   border-bottom: 1px solid rgba(140, 140, 140, 0.2);
   color: #535144;
 }
-/* line 459, ../sass/main.scss */
+/* line 460, ../sass/main.scss */
 #comp-Search-Results #body td:nth-child(2) {
   whitespace: nowrap;
   overflow: hidden;
 }
-/* line 460, ../sass/main.scss */
+/* line 461, ../sass/main.scss */
 #comp-Search-Results #body td:nth-child(3), #comp-Search-Results #body td:nth-child(5), #comp-Search-Results #body td:nth-child(6) {
   text-transform: lowercase;
   text-align: center;
   width: 80px;
 }
-/* line 461, ../sass/main.scss */
+/* line 462, ../sass/main.scss */
 #comp-Search-Results #body td:nth-child(4) {
   text-align: center;
 }
-/* line 463, ../sass/main.scss */
+/* line 464, ../sass/main.scss */
 #comp-Search-Results .refresh {
   display: none;
 }
@@ -1278,70 +1282,70 @@ body a:hover, body a:active, body a:focus {
 /*-------------------------------------------------------------------------------------------------
  -start comp-Ticket-Update  [FINISHED]
 -------------------------------------------------------------------------------------------------*/
-/* line 476, ../sass/main.scss */
+/* line 477, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-metadata {
   width: 50%;
 }
-/* line 478, ../sass/main.scss */
+/* line 479, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-metadata .label {
   width: 130px;
 }
-/* line 479, ../sass/main.scss */
+/* line 480, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-metadata select {
   width: 220px;
 }
-/* line 480, ../sass/main.scss */
+/* line 481, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-metadata input {
   width: 57px;
 }
-/* line 481, ../sass/main.scss */
+/* line 482, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-metadata tr:last-child select {
   width: 160px;
 }
-/* line 486, ../sass/main.scss */
+/* line 487, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-message .messagedetails .label {
   width: 130px;
 }
-/* line 487, ../sass/main.scss */
+/* line 488, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-message .messagedetails input {
   width: 400px;
 }
-/* line 489, ../sass/main.scss */
+/* line 490, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-message .messagedetails .messagebox-container .articles-select-article td, #comp-Ticket-Update #body #ticket-update-message .messagedetails .messagebox-container .articles-select-article input {
   width: 160px;
   float: left;
   overflow: hidden;
   whitespace: nowrap;
 }
-/* line 490, ../sass/main.scss */
+/* line 491, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-message .messagedetails .messagebox-container input[type="submit"] {
   margin-left: 20px;
   width: 50px;
 }
-/* line 493, ../sass/main.scss */
+/* line 494, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-message .messagedetails .messagebox-container #cke_UpdateContent {
   max-width: 600px;
   min-width: 600px;
   border: none;
 }
-/* line 494, ../sass/main.scss */
+/* line 495, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-message .messagedetails .messagebox-container #cke_UpdateContent td {
   width: 98%;
 }
-/* line 497, ../sass/main.scss */
+/* line 498, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-message .messagedetails input[type="submit"] {
   margin-left: 50px;
   width: 100px;
 }
-/* line 500, ../sass/main.scss */
+/* line 501, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-message #previewscrips {
   margin-top: 20px;
 }
-/* line 502, ../sass/main.scss */
+/* line 503, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-message #previewscrips li {
   margin-top: 10px;
 }
-/* line 505, ../sass/main.scss */
+/* line 506, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-message #SubmitTicket {
   margin: 30px 45%;
 }

@@ -375,7 +375,7 @@ $content-gap:10px;
           .right { a { color: $link-normal; } a:hover { color: $link-normal-hover; } }
         }
 
-        .odd, .even {border-top: 1px solid $def-border; border-bottom: 1px solid $def-border; margin-bottom:5px;}
+        .odd, .even {/*border-top: 1px solid $def-border; border-bottom: 1px solid $def-border;*/ margin-bottom:2px;}
 
         .odd, .even { background:lighten($body-bg,1%); }
         .actions { color:darken($body-bg,3%); float:right; font-style:normal !important; text-transform:uppercase; }
@@ -426,11 +426,12 @@ $content-gap:10px;
         
         }
 
-        .EmailRecord { text-align:right; font-size:10px; background:$body-bg !important; }
+        .EmailRecord { text-align:right; font-size:10px; background:$body-bg !important; 
+          .actions { color: $body-bg !important; } }
 
         .other, .basics { padding: 0.2em; text-transform: uppercase; }
         .other { background:darken($body-bg,4%); color:$titlebox-th; }
-        .basics { background:darken($body-bg,2%); color:$titlebox-th; }
+        .basics, .AddLink { background:darken($body-bg,4%); color:$titlebox-th; text-transform:capitalize; }
 
 
 
