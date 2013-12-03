@@ -367,9 +367,9 @@ $content-gap:10px;
   .history { .right { color:$body-bg; }
     #ticket-history { 
       .odd { display:inline-block; width: 100%; background:lighten($body-bg,2%); 
-        .description { color:lighten($titlebox-th,35%); text-transform:uppercase; } }
-      .even { display:inline-block; width: 100%; background:lighten($body-bg,2%); margin:7px 0;
-        .description { color:lighten($titlebox-th,15%); text-transform:uppercase; }
+        .description { text-transform:uppercase; } }
+      .even { display:inline-block; width: 100%; background:lighten($body-bg,2%); //margin:7px 0;
+        .description { text-transform:uppercase; }
         .actions { float:right; }
       }
      
@@ -377,9 +377,13 @@ $content-gap:10px;
       .message-header-value {  }
       table { margin:5px 0 $content-gap 0; }
       
+      .Correspond, .Create { .date, .description { color:lighten($titlebox-th,35%); } }
       //border for none message notifications
       .EmailRecord, .CustomField, .Set, .AddLink, .Status, .other { 
-        border:1px solid lighten($body-bg,2%); }
+        border:1px solid lighten($body-bg,2%); margin-bottom:3px;
+        .metadata { height:13px; line-height:13px; }
+        .description { font-size:12px; color:lighten($titlebox-th,15%); } 
+      }
       //message background and content padding
       .message-stanza { padding:5px; @include box-shadow($body-bg 0px -1px 0px); }
       //downloads settings
@@ -387,14 +391,18 @@ $content-gap:10px;
               background:$body-bg; padding:5px; border-radius:3px 0 0 3px; color:$link-normal;
           .downloadcontenttype { float:right; text-transform:uppercase; font-size:10px; }
       }
-     
-      
+
+      .messagebody > img { width:50%; }
+     //hidden
+    .messageattachments { display:none; }
+    
+
       
       .metadata {
-        padding:2px; background:darken($body-bg,2%);
+        padding:3px; background:darken($body-bg,2%);
         .date { display:inline-block; width:135px; margin-left:$content-gap; font-size:12px; 
                 text-transform:uppercase; }
-        .actions { float:right; text-transform:uppercase; color:darken($body-bg,3%);
+        .actions { float:right; text-transform:uppercase; color:darken($body-bg,2%);
           a { color:$extra-link;
             &:hover { color:$extra-link-hover; } 
           }
@@ -413,7 +421,8 @@ $content-gap:10px;
 */
     //quotes
           
-            .message-stanza-folder { color: orange; cursor: pointer; font-style:italic; }
+            .message-stanza-folder { color:lighten($titlebox-th,35%); cursor: pointer; font-size:12px; }
+            .message-stanza.open  { color:lighten($titlebox-th,35%); }
             .message-stanza-folder.open { color:#CCCCCC; }
             .message-stanza.closed { display:none; }
             .message-stanza-folder:before, .message-stanza-folder:after { content: " * "; }
