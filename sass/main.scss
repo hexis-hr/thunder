@@ -364,18 +364,57 @@ $content-gap:10px;
     } /* end .boxcontainer:nth-child(2) */
 
   // HISTORY
-    #ticket-history {
-      .odd { background:darken($body-bg,3%); margin:4px 0; }
-      .even { background:darken($body-bg,2%); }
-      .message-stanza { float:left; width:80%; min-width:30%; max-width:80%; background:lighten($body-bg,2%);  }
-      .downloadattachment { float:right; whitespace:nowrap; overflow:hidden; }
-      .EmailRecord, .basics, .Set, .other  {clear:both;}
-
-
+  .history { .right { color:$body-bg; }
+    #ticket-history { 
+      .odd { display:inline-block; width: 100%; background:lighten($body-bg,2%); 
+        .description { color:lighten($titlebox-th,35%); text-transform:uppercase; } }
+      .even { display:inline-block; width: 100%; background:lighten($body-bg,2%); margin:7px 0;
+        .description { color:lighten($titlebox-th,15%); text-transform:uppercase; }
+        .actions { float:right; }
+      }
+     
+      .message-header-key { width:80px; padding-left:$content-gap; text-transform:uppercase; }
+      .message-header-value {  }
+      table { margin:5px 0 $content-gap 0; }
+      
+      //border for none message notifications
+      .EmailRecord, .CustomField, .Set, .AddLink, .Status, .other { 
+        border:1px solid lighten($body-bg,2%); }
+      //message background and content padding
+      .message-stanza { padding:5px; @include box-shadow($body-bg 0px -1px 0px); }
+      //downloads settings
+      .downloadattachment { float:right; whitespace:nowrap; overflow:hidden; font-size:12px; 
+              background:$body-bg; padding:5px; border-radius:3px 0 0 3px; color:$link-normal;
+          .downloadcontenttype { float:right; text-transform:uppercase; font-size:10px; }
+      }
+     
+      
+      
+      .metadata {
+        padding:2px; background:darken($body-bg,2%);
+        .date { display:inline-block; width:135px; margin-left:$content-gap; font-size:12px; 
+                text-transform:uppercase; }
+        .actions { float:right; text-transform:uppercase; color:darken($body-bg,3%);
+          a { color:$extra-link;
+            &:hover { color:$extra-link-hover; } 
+          }
+        }
+      }
+      
+      
+/*
+      .Create { .description { color:$extra-link; } }
+      .Correspond { .description { color:$extra-link-hover; } }
+      .Status { .description { color:lighten($button-bg,45%); } }
+      .AddLink { .description { color:lighten($link-normal,20%); } }
+      .Set { .description { color:darken($link-normal,10%); } }
+      .CustomField { .description { color: orange; } }
+      .EmailRecord { .description { color:darken($text-normal,20%); } }
+*/
     //quotes
-            .message-stanza { padding: 2px; margin-bottom:$content-gap; }
-            .message-stanza-folder { color: #500050; cursor: pointer; font-style:italic; }
-            .message-stanza-folder.open { color:#CCCCCC; clear:both;}
+          
+            .message-stanza-folder { color: orange; cursor: pointer; font-style:italic; }
+            .message-stanza-folder.open { color:#CCCCCC; }
             .message-stanza.closed { display:none; }
             .message-stanza-folder:before, .message-stanza-folder:after { content: " * "; }
             .ticket-transaction .messagebody { font-size: 1em; word-wrap: break-word; }
@@ -385,6 +424,7 @@ $content-gap:10px;
 
 
       } //end ticket history
+    } //end history
 
 
 
