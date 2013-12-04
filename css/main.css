@@ -205,6 +205,7 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
   width: 160px;
   background: #191919;
   padding: 0 0 5px 8px;
+  z-index: 40;
 }
 /* line 57, ../sass/main.scss */
 #ui-datepicker-div .ui-datepicker-next, #ui-datepicker-div .ui-datepicker-prev {

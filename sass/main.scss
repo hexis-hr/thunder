@@ -53,7 +53,7 @@ $content-gap:10px;
   // hidden
     #quickbar { display: none; }
     #logo .rtname { display:none; }
-    #ui-datepicker-div { display:none; width:160px; background:darken($body-bg,2%); padding:0 0 5px 8px;
+    #ui-datepicker-div { display:none; width:160px; background:darken($body-bg,2%); padding:0 0 5px 8px; z-index:40;
       .ui-datepicker-next, .ui-datepicker-prev { text-transform:uppercase; font-size:13px; padding:2px 6px; } 
       td { padding:2px 3px; }
       .ui-timepicker-div { .ui_tpicker_hour { padding-left:3px; } }
