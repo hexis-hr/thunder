@@ -377,7 +377,7 @@ $content-gap:10px;
       .message-header-key { width:80px; padding-left:$content-gap; text-transform:uppercase; 
                               color:darken($text-normal,20%);
       }
-      .message-header-value { color:lighten($text-normal,20%); }
+      .message-header-value { color:lighten($text-normal,10%); }
       table { margin:5px 0 $content-gap 0; }
       
       .Correspond, .Create, .Comment { .date, .description { color:lighten($titlebox-th,15%); } }
