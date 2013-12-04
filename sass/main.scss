@@ -394,7 +394,7 @@ $content-gap:10px;
       .EmailRecord, .CustomField, .Set, .AddLink, .Status, .other { 
         border:1px solid lighten($body-bg,2%); //margin-bottom:3px;
         .metadata { height:13px; line-height:13px; }
-        .description { font-size:12px; color:lighten($titlebox-th,35%); } 
+        .description { font-size:12px; color:lighten($titlebox-th,35%); text-transform:capitalize; } 
         .actions { a { opacity:0.5; &:hover { opacity:1; } } }
       }
       //message background and content padding

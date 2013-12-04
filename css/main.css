@@ -1153,6 +1153,7 @@ body a:hover, body a:active, body a:focus {
 #comp-Ticket-Display #body .history #ticket-history .EmailRecord .description, #comp-Ticket-Display #body .history #ticket-history .CustomField .description, #comp-Ticket-Display #body .history #ticket-history .Set .description, #comp-Ticket-Display #body .history #ticket-history .AddLink .description, #comp-Ticket-Display #body .history #ticket-history .Status .description, #comp-Ticket-Display #body .history #ticket-history .other .description {
   font-size: 12px;
   color: #f39d5f;
+  text-transform: capitalize;
 }
 /* line 398, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .EmailRecord .actions a, #comp-Ticket-Display #body .history #ticket-history .CustomField .actions a, #comp-Ticket-Display #body .history #ticket-history .Set .actions a, #comp-Ticket-Display #body .history #ticket-history .AddLink .actions a, #comp-Ticket-Display #body .history #ticket-history .Status .actions a, #comp-Ticket-Display #body .history #ticket-history .other .actions a {
