@@ -1160,6 +1160,10 @@ body a:hover, body a:active, body a:focus {
 #comp-Ticket-Display #body .history #ticket-history .messagebody > img {
   width: 50%;
 }
+/* line 398, ../sass/main.scss */
+#comp-Ticket-Display #body .history #ticket-history .messageattachments table {
+  display: none;
+}
 /* line 400, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .metadata {
   padding: 3px;

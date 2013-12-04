@@ -395,7 +395,7 @@ $content-gap:10px;
       }
 
       .messagebody > img { width:50%; }
-      .messageattachments {  }
+      .messageattachments { table { display:none; } }
     
       .metadata {
       padding:3px; background:darken($body-bg,2%);
