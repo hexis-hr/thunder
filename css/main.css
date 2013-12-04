@@ -202,8 +202,9 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
 /* line 56, ../sass/main.scss */
 #ui-datepicker-div {
   display: none;
-  width: 170px;
-  background: #040404;
+  width: 160px;
+  background: #191919;
+  padding: 0 0 5px 8px;
 }
 /* line 57, ../sass/main.scss */
 #ui-datepicker-div .ui-datepicker-next, #ui-datepicker-div .ui-datepicker-prev {
