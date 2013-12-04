@@ -374,8 +374,10 @@ $content-gap:10px;
         .actions { float:right; }
       }
      
-      .message-header-key { width:80px; padding-left:$content-gap; text-transform:uppercase; }
-      .message-header-value {  }
+      .message-header-key { width:80px; padding-left:$content-gap; text-transform:uppercase; 
+                              color:darken($text-normal,20%);
+      }
+      .message-header-value { color:lighten($text-normal,20%); }
       table { margin:5px 0 $content-gap 0; }
       
       .Correspond, .Create, .Comment { .date, .description { color:lighten($titlebox-th,15%); } }
@@ -411,7 +413,7 @@ $content-gap:10px;
     //quotes
       .message-stanza-folder { color:lighten($titlebox-th,35%); cursor: pointer; font-size:12px; }
       .message-stanza.open  { color:lighten($titlebox-th,35%); }
-      .message-stanza-folder.open { color:lighten($titlebox-th,15%); @include transition(all, 0.25s, ease-in-out); }
+      .message-stanza-folder.open { color:lighten($titlebox-th,15%); }
       .message-stanza.closed { display:none; }
       .message-stanza-folder:before, .message-stanza-folder:after { content: " * "; }
       .ticket-transaction .messagebody { font-size: 1em; word-wrap: break-word; }
