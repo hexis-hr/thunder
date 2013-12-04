@@ -1042,14 +1042,6 @@ body a:hover, body a:active, body a:focus {
 #comp-Ticket-Display #body .boxcontainer:nth-child(1) .ticket-info-cfs td {
   padding: 0.2em;
 }
-/* line 354, ../sass/main.scss */
-#comp-Ticket-Display #body .boxcontainer:nth-child(1) .ticket-info-attachments {
-  font-size: 12px;
-}
-/* line 354, ../sass/main.scss */
-#comp-Ticket-Display #body .boxcontainer:nth-child(1) .ticket-info-attachments a {
-  font-size: 11px;
-}
 /* line 357, ../sass/main.scss */
 #comp-Ticket-Display #body .boxcontainer:nth-child(2) tr {
   border-bottom: 1px solid rgba(140, 140, 140, 0.1);
