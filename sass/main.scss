@@ -37,7 +37,7 @@ $content-gap:10px;
 /*-------------------------------------------------------------------------------------------------
  -Global
 -------------------------------------------------------------------------------------------------*/
-  .button, input[type="submit"], .ui-datepicker-current {border:none; border-radius:3px; 
+  .button, input[type="submit"], .ui-datepicker-current, .ui-datepicker-close {border:none; border-radius:3px; 
             background:$button-bg; color:#fff; box-shadow: none;
     @include transition(all, 0.50s, ease-in-out);
     &:hover { @include box-shadow(inset darken($button-bg,15%) 0px 0px 25px); color:#fff;
@@ -53,7 +53,7 @@ $content-gap:10px;
   // hidden
     #quickbar { display: none; }
     #logo .rtname { display:none; }
-    #ui-datepicker-div { display:none; background:darken($body-bg,30%); .ui-datepicker-next, .ui-datepicker-prev 
+    #ui-datepicker-div { display:none; width:150px; background:darken($body-bg,30%); .ui-datepicker-next, .ui-datepicker-prev 
       { text-transform:uppercase; font-size:13px; padding:2px 6px; } td { padding:2px 3px; }
     }
     #time { display: none;}

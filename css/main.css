@@ -99,7 +99,7 @@ box-shadow: $top $left $blur $color;
  -Global
 -------------------------------------------------------------------------------------------------*/
 /* line 40, ../sass/main.scss */
-.button, input[type="submit"], .ui-datepicker-current {
+.button, input[type="submit"], .ui-datepicker-current, .ui-datepicker-close {
   border: none;
   border-radius: 3px;
   background: #910a14;
@@ -111,7 +111,7 @@ box-shadow: $top $left $blur $color;
   transition: all, 0.5s, ease-in-out;
 }
 /* line 43, ../sass/main.scss */
-.button:hover, input[type="submit"]:hover, .ui-datepicker-current:hover {
+.button:hover, input[type="submit"]:hover, .ui-datepicker-current:hover, .ui-datepicker-close:hover {
   -webkit-box-shadow: inset #49050a 0px 0px 25px;
   -moz-box-shadow: inset #49050a 0px 0px 25px;
   box-shadow: inset #49050a 0px 0px 25px;
@@ -202,6 +202,7 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
 /* line 56, ../sass/main.scss */
 #ui-datepicker-div {
   display: none;
+  width: 150px;
   background: black;
 }
 /* line 57, ../sass/main.scss */
