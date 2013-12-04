@@ -394,8 +394,10 @@ $content-gap:10px;
           .downloadcontenttype { float:right; text-transform:uppercase; font-size:10px; }
       }
 
-      .messagebody > img { width:50%; }
-      .messageattachments {  }
+      .messagebody > img { width:30%; margin:10px; border-radius:5px; 
+                            @include box-shadow(inset darken($button-bg,15%) 0px 0px 25px);
+      }
+      .messageattachments p { font-size: 12px; font-style: italic; padding-left: 20px; }
     
       .metadata {
       padding:3px; background:darken($body-bg,2%);
