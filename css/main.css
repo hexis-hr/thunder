@@ -306,7 +306,7 @@ body a:hover, body a:active, body a:focus {
 }
 
 /* line 85, ../sass/main.scss */
-#header {
+#header h1 {
   display: block;
   line-height: 33px;
   font: "Oswald", Helvetica, Arial, sans-serif;

@@ -82,7 +82,7 @@ $content-gap:10px;
   #logo { position: relative; float:left; padding:0 20px; line-height:33px;
     img { width:30px; height:33px; }
   }
-  #header { display:block; line-height:33px; font:$font-beta; font-size:20px; text-transform:uppercase; 
+  #header h1{ display:block; line-height:33px; font:$font-beta; font-size:20px; text-transform:uppercase; 
             width:400px; overflow:hidden; text-overflow:ellipsis; whitespace:nowrap;
   }
 
