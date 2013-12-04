@@ -1208,6 +1208,10 @@ body a:hover, body a:active, body a:focus {
 /* line 414, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .message-stanza-folder.open {
   color: #dc6610;
+  -webkit-transition: all, 0.25s, ease-in-out;
+  -moz-transition: all, 0.25s, ease-in-out;
+  -o-transition: all, 0.25s, ease-in-out;
+  transition: all, 0.25s, ease-in-out;
 }
 /* line 415, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .message-stanza.closed {

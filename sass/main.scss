@@ -394,7 +394,7 @@ $content-gap:10px;
           .downloadcontenttype { float:right; text-transform:uppercase; font-size:10px; }
       }
 
-      .messagebody > img { width:30%; margin:10px; border-radius:5px; }
+      .messagebody > img { width:30%; margin:$content-gap; border-radius:5px; }
       .messageattachments p { font-size: 12px; font-style: italic; padding-left: 20px; }
     
       .metadata {
@@ -411,7 +411,7 @@ $content-gap:10px;
     //quotes
       .message-stanza-folder { color:lighten($titlebox-th,35%); cursor: pointer; font-size:12px; }
       .message-stanza.open  { color:lighten($titlebox-th,35%); }
-      .message-stanza-folder.open { color:lighten($titlebox-th,15%); }
+      .message-stanza-folder.open { color:lighten($titlebox-th,15%); @include transition(all, 0.25s, ease-in-out); }
       .message-stanza.closed { display:none; }
       .message-stanza-folder:before, .message-stanza-folder:after { content: " * "; }
       .ticket-transaction .messagebody { font-size: 1em; word-wrap: break-word; }
