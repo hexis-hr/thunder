@@ -384,6 +384,7 @@ $content-gap:10px;
         border:1px solid lighten($body-bg,2%); margin-bottom:3px;
         .metadata { height:13px; line-height:13px; }
         .description { font-size:12px; color:lighten($titlebox-th,15%); } 
+        .actions { a { opacity:0.5; &:hover { opacity:1; } } }
       }
       //message background and content padding
       .message-stanza { padding:5px; @include box-shadow($body-bg 0px -1px 0px); }
@@ -394,55 +395,35 @@ $content-gap:10px;
       }
 
       .messagebody > img { width:50%; }
-     //hidden
-    .messageattachments { display:none; }
+      .messageattachments {  }
     
-
-      
       .metadata {
-        padding:3px; background:darken($body-bg,2%);
-        .date { display:inline-block; width:135px; margin-left:$content-gap; font-size:12px; 
-                text-transform:uppercase; }
+      padding:3px; background:darken($body-bg,2%);
+      .date { display:inline-block; width:135px; margin-left:$content-gap; font-size:12px; 
+              text-transform:uppercase; }
         .actions { float:right; text-transform:uppercase; color:darken($body-bg,2%);
-          a { color:$extra-link;
-            &:hover { color:$extra-link-hover; } 
-          }
+            a { color:$extra-link;
+              &:hover { color:$extra-link-hover; } 
+            }
         }
-      }
-      
-      
-/*
-      .Create { .description { color:$extra-link; } }
-      .Correspond { .description { color:$extra-link-hover; } }
-      .Status { .description { color:lighten($button-bg,45%); } }
-      .AddLink { .description { color:lighten($link-normal,20%); } }
-      .Set { .description { color:darken($link-normal,10%); } }
-      .CustomField { .description { color: orange; } }
-      .EmailRecord { .description { color:darken($text-normal,20%); } }
-*/
+      } // end metadata
+
     //quotes
-          
-            .message-stanza-folder { color:lighten($titlebox-th,35%); cursor: pointer; font-size:12px; }
-            .message-stanza.open  { color:lighten($titlebox-th,35%); }
-            .message-stanza-folder.open { color:lighten($titlebox-th,15%); }
-            .message-stanza.closed { display:none; }
-            .message-stanza-folder:before, .message-stanza-folder:after { content: " * "; }
-            .ticket-transaction .messagebody { font-size: 1em; word-wrap: break-word; }
+      .message-stanza-folder { color:lighten($titlebox-th,35%); cursor: pointer; font-size:12px; }
+      .message-stanza.open  { color:lighten($titlebox-th,35%); }
+      .message-stanza-folder.open { color:lighten($titlebox-th,15%); }
+      .message-stanza.closed { display:none; }
+      .message-stanza-folder:before, .message-stanza-folder:after { content: " * "; }
+      .ticket-transaction .messagebody { font-size: 1em; word-wrap: break-word; }
 
 
 
 
 
-      } //end ticket history
-    } //end history
-
-
-
-
-   
-
-  } /*end body */
-  } /* end comp-Ticket-Display */
+    } // end ticket history
+  } // end history
+} // end body 
+} // end comp-Ticket-Display 
 
 /*-------------------------------------------------------------------------------------------------
  -end comp-Ticket-Display [HISTORY PAGE NIJE DOBAR]
