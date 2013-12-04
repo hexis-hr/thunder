@@ -203,7 +203,7 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
 #ui-datepicker-div {
   display: none;
   width: 170px;
-  background: black;
+  background: #040404;
 }
 /* line 57, ../sass/main.scss */
 #ui-datepicker-div .ui-datepicker-next, #ui-datepicker-div .ui-datepicker-prev {
@@ -216,12 +216,12 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
   padding: 2px 3px;
 }
 /* line 59, ../sass/main.scss */
-#ui-datepicker-div .ui-timepicker-div {
-  padding: 3px;
+#ui-datepicker-div .ui-timepicker-div .ui_tpicker_hour {
+  padding-left: 3px;
 }
 /* line 60, ../sass/main.scss */
-#ui-datepicker-div .ui-datepicker-buttonpane {
-  margin-left: 5px;
+#ui-datepicker-div .ui-datepicker-buttonpane, #ui-datepicker-div .ui-datepicker-close {
+  margin-left: 10px;
 }
 
 /* line 62, ../sass/main.scss */
