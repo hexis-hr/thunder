@@ -21,18 +21,17 @@ $content-gap:10px;
 /*-------------------------------------------------------------------------------------------------
  -Colors
 -------------------------------------------------------------------------------------------------*/
-  $body-bg: #1E1E1E;  //body background
-  $text-normal: #939393;  //main text color
-  $link-normal: #AC6C3D;  //main link color
-  $link-normal-hover: #535144;  //main link hover color
+  $body-bg: /*#1E1E1E*/#F5F5F5;  //body background
+  $text-normal: /*#939393*/#2d2d2d;  //main text color
+  $link-normal: /*#AC6C3D*/#0772AC;  //main link color
+  $link-normal-hover: /*#535144*/darken($link-normal,60%);  //main link hover color
+  $button-bg: /*#910A14*/#DF202D; //button bg color
+  $extra-link: /*#187B09*/$button-bg; //take button color
   $titlebox-title: lighten($text-normal, 10%);  //main title color #8B91A5
-  $titlebox-th: #95450B;  //titlebox th text
-  $titlebox-th-bg: rgba(51,51,51,.3); //titlebox th background
-  $def-border: rgba(140,140,140,.1);  //default border color
-  $button-bg: #910A14; //button bg color
-  $nav-bg-main: #121212; //main navigation bg color
-  $extra-link: #187B09; //take button color
-  $extra-link-hover: #3F8E33; //tale button bg color
+  $titlebox-th: /*#95450B*/darken($link-normal,15%);  //titlebox th text
+  $titlebox-th-bg: /*rgba(51,51,51,.3)*/darken($body-bg,5%); //titlebox th background
+  $def-border: rgba(140,140,140,.2);  //default border color
+  $extra-link-hover: /*#3F8E33*/lighten($extra-link,10%); //tale button bg color
 
 /*-------------------------------------------------------------------------------------------------
  -Global
@@ -43,7 +42,8 @@ $content-gap:10px;
     &:hover { @include box-shadow(inset darken($button-bg,15%) 0px 0px 25px); color:#fff;
       @include transition(all, 0.25s, ease-in-out); } }
   @include inputs { background:lighten($body-bg,2%); color:$text-normal; border:none; 
-    @include box-shadow( (rgba(#000,.3)) 0 -1px 0px ); font-family:'Roboto Condensed', Helvetica, Arial, sans-serif; 
+    @include box-shadow( (rgba(#000,.3)) -1px -1px 0px ); 
+          font-family:'Roboto Condensed', Helvetica, Arial, sans-serif; 
     &:focus {outline:none; @include box-shadow($text-normal 0 0 2px); font:$font-alpha; } }
   select, .select-queue { text-transform:capitalize; }
 
@@ -62,11 +62,11 @@ $content-gap:10px;
     #time { display: none;}
     .clear {display:none;}
 
-  ::selection { background: lighten($body-bg,20%); color:#fff; }
-  ::-moz-selection { background: lighten($body-bg,20%); color:#fff; }
-  ::-webkit-selection { background: lighten($body-bg,20%); color:#fff; }
-  ::-ms-selection { background: lighten($body-bg,20%); color:#fff; }
-  ::-o-selection { background: lighten($body-bg,20%); color:#fff; }
+  ::selection { background:$text-normal; color:$body-bg; }
+  ::-moz-selection { background:$text-normal; color:$body-bg; }
+  ::-webkit-selection { background:$text-normal; color:$body-bg; }
+  ::-ms-selection { background:$text-normal; color:$body-bg; }
+  ::-o-selection { background:$text-normal; color:$body-bg; }
 
   // body 
   body { font:100% $font-alpha; margin-top:$content-gap; background:$body-bg; color:$text-normal; line-height:1.2;
@@ -199,8 +199,8 @@ $content-gap:10px;
     } //titlebox
 
     //.oddline {} 
-    .evenline { background:lighten($body-bg,0.7%); }
-    .oddline:hover, .evenline:hover { @include box-shadow(darken($body-bg,5%) 0 0 5px inset); }
+    .evenline { background:darken($body-bg,3%); }
+    //.oddline:hover, .evenline:hover { @include box-shadow(darken($body-bg,10%) 0 0 15px inset); }
   } // #body
 
 /*-------------------------------------------------------------------------------------------------
@@ -394,14 +394,14 @@ $content-gap:10px;
       .EmailRecord, .CustomField, .Set, .AddLink, .Status, .other { 
         border:1px solid lighten($body-bg,2%); //margin-bottom:3px;
         .metadata { height:13px; line-height:13px; }
-        .description { font-size:12px; color:lighten($titlebox-th,35%); text-transform:capitalize; } 
+        .description { font-size:12px; /*color:lighten($titlebox-th,25%);*/ text-transform:capitalize; } 
         .actions { a { opacity:0.5; &:hover { opacity:1; } } }
       }
       //message background and content padding
-      .message-stanza { padding:5px; @include box-shadow($body-bg 0px -1px 0px); }
+      .message-stanza { line-height:1.3; padding:5px; @include box-shadow($def-border 0px -1px 0px); }
       //downloads settings
       .downloadattachment { float:right; whitespace:nowrap; overflow:hidden; font-size:12px; 
-              background:$body-bg; padding:5px; border-radius:3px 0 0 3px; color:$link-normal;
+              padding:5px; border-radius:3px 0 0 3px; color:$link-normal; text-transform:lowercase;
           .downloadcontenttype { float:right; text-transform:uppercase; font-size:10px; }
       }
 

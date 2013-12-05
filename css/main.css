@@ -98,11 +98,11 @@ box-shadow: $top $left $blur $color;
 /*-------------------------------------------------------------------------------------------------
  -Global
 -------------------------------------------------------------------------------------------------*/
-/* line 40, ../sass/main.scss */
+/* line 39, ../sass/main.scss */
 .button, input[type="submit"], .ui-datepicker-current, .ui-datepicker-close {
   border: none;
   border-radius: 3px;
-  background: #910a14;
+  background: #df202d;
   color: #fff;
   box-shadow: none;
   -webkit-transition: all, 0.5s, ease-in-out;
@@ -110,11 +110,11 @@ box-shadow: $top $left $blur $color;
   -o-transition: all, 0.5s, ease-in-out;
   transition: all, 0.5s, ease-in-out;
 }
-/* line 43, ../sass/main.scss */
+/* line 42, ../sass/main.scss */
 .button:hover, input[type="submit"]:hover, .ui-datepicker-current:hover, .ui-datepicker-close:hover {
-  -webkit-box-shadow: inset #49050a 0px 0px 25px;
-  -moz-box-shadow: inset #49050a 0px 0px 25px;
-  box-shadow: inset #49050a 0px 0px 25px;
+  -webkit-box-shadow: inset #9c161f 0px 0px 25px;
+  -moz-box-shadow: inset #9c161f 0px 0px 25px;
+  box-shadow: inset #9c161f 0px 0px 25px;
   color: #fff;
   -webkit-transition: all, 0.25s, ease-in-out;
   -moz-transition: all, 0.25s, ease-in-out;
@@ -143,12 +143,12 @@ input[type="tel"],
 input[type="time"],
 input[type="url"],
 textarea {
-  background: #232323;
-  color: #939393;
+  background: #fafafa;
+  color: #2d2d2d;
   border: none;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 -1px 0px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 -1px 0px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0 -1px 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) -1px -1px 0px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) -1px -1px 0px;
+  box-shadow: rgba(0, 0, 0, 0.3) -1px -1px 0px;
   font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
 }
 /* line 47, ../sass/main.scss */
@@ -173,9 +173,9 @@ input[type="time"]:focus,
 input[type="url"]:focus,
 textarea:focus {
   outline: none;
-  -webkit-box-shadow: #939393 0 0 2px;
-  -moz-box-shadow: #939393 0 0 2px;
-  box-shadow: #939393 0 0 2px;
+  -webkit-box-shadow: #2d2d2d 0 0 2px;
+  -moz-box-shadow: #2d2d2d 0 0 2px;
+  box-shadow: #2d2d2d 0 0 2px;
   font: "Roboto Condensed", Helvetica, Arial, sans-serif;
 }
 
@@ -203,7 +203,7 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
 #ui-datepicker-div {
   display: none;
   width: 160px;
-  background: #191919;
+  background: #f0f0f0;
   padding: 0 0 5px 8px;
 }
 /* line 57, ../sass/main.scss */
@@ -237,56 +237,56 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
 
 /* line 65, ../sass/main.scss */
 ::selection {
-  background: #515151;
-  color: #fff;
+  background: #2d2d2d;
+  color: whitesmoke;
 }
 
 /* line 66, ../sass/main.scss */
 ::-moz-selection {
-  background: #515151;
-  color: #fff;
+  background: #2d2d2d;
+  color: whitesmoke;
 }
 
 /* line 67, ../sass/main.scss */
 ::-webkit-selection {
-  background: #515151;
-  color: #fff;
+  background: #2d2d2d;
+  color: whitesmoke;
 }
 
 /* line 68, ../sass/main.scss */
 ::-ms-selection {
-  background: #515151;
-  color: #fff;
+  background: #2d2d2d;
+  color: whitesmoke;
 }
 
 /* line 69, ../sass/main.scss */
 ::-o-selection {
-  background: #515151;
-  color: #fff;
+  background: #2d2d2d;
+  color: whitesmoke;
 }
 
 /* line 72, ../sass/main.scss */
 body {
   font: 100% "Roboto Condensed", Helvetica, Arial, sans-serif;
   margin-top: 10px;
-  background: #1e1e1e;
-  color: #939393;
+  background: whitesmoke;
+  color: #2d2d2d;
   line-height: 1.2;
 }
 /* line 73, ../sass/main.scss */
 body a {
   text-decoration: none;
-  color: #ac6c3d;
+  color: #0772ac;
 }
 /* line 74, ../sass/main.scss */
 body a:visited {
   text-decoration: none;
-  color: #ac6c3d;
+  color: #0772ac;
 }
 /* line 75, ../sass/main.scss */
 body a:hover, body a:active, body a:focus {
   text-decoration: none;
-  color: #535144;
+  color: black;
 }
 
 /*-------------------------------------------------------------------------------------------------
@@ -322,9 +322,9 @@ body a:hover, body a:active, body a:focus {
   float: left;
   width: 100%;
   text-transform: uppercase;
-  background: #191919;
-  border-top: 1px solid rgba(127, 127, 127, 0.1);
-  border-bottom: 1px solid rgba(127, 127, 127, 0.1);
+  background: #f0f0f0;
+  border-top: 1px solid rgba(127, 127, 127, 0.2);
+  border-bottom: 1px solid rgba(127, 127, 127, 0.2);
 }
 /* line 94, ../sass/main.scss */
 #main-navigation ul {
@@ -341,11 +341,11 @@ body a:hover, body a:active, body a:focus {
   display: block;
   padding: 5px 15px 5px 15px;
   font-size: 14px;
-  color: #95450b;
+  color: #044162;
 }
 /* line 97, ../sass/main.scss */
 #main-navigation ul li:hover > a {
-  color: #ac6c3d;
+  color: #0772ac;
   -webkit-transition: all, 0.3s, ease-in-out;
   -moz-transition: all, 0.3s, ease-in-out;
   -o-transition: all, 0.3s, ease-in-out;
@@ -353,14 +353,14 @@ body a:hover, body a:active, body a:focus {
 }
 /* line 98, ../sass/main.scss */
 #main-navigation ul li.active > a {
-  color: #ac6c3d;
+  color: #0772ac;
 }
 /* line 100, ../sass/main.scss */
 #main-navigation li > ul:before {
   content: "";
   border-style: solid;
   border-width: 6px 6px 6px 6px;
-  border-color: #191919 transparent transparent transparent;
+  border-color: #f0f0f0 transparent transparent transparent;
   width: 0;
   height: 0;
   position: absolute;
@@ -374,7 +374,7 @@ body a:hover, body a:active, body a:focus {
   top: 100%;
   padding-top: 5px;
   width: 140px;
-  background: #191919;
+  background: #f0f0f0;
 }
 /* line 105, ../sass/main.scss */
 #main-navigation ul li:hover > ul {
@@ -391,7 +391,7 @@ body a:hover, body a:active, body a:focus {
   display: block;
   padding: 3px 3px;
   font-size: 12px;
-  border-left: 2px solid #191919;
+  border-left: 2px solid #f0f0f0;
 }
 /* line 108, ../sass/main.scss */
 #main-navigation ul li > ul li:hover {
@@ -403,8 +403,8 @@ body a:hover, body a:active, body a:focus {
 }
 /* line 109, ../sass/main.scss */
 #main-navigation ul li > ul li:hover > a {
-  color: #ac6c3d;
-  border-color: #ac6c3d;
+  color: #0772ac;
+  border-color: #0772ac;
   -webkit-transition: all, 0.1s ease-in-out;
   -moz-transition: all, 0.1s ease-in-out;
   -o-transition: all, 0.1s ease-in-out;
@@ -412,14 +412,14 @@ body a:hover, body a:active, body a:focus {
 }
 /* line 111, ../sass/main.scss */
 #main-navigation ul li > ul li.active > a {
-  color: #ac6c3d;
+  color: #0772ac;
 }
 /* line 113, ../sass/main.scss */
 #main-navigation li > ul li > ul:before {
   content: "";
   border-style: solid;
   border-width: 6px 6px 6px 6px;
-  border-color: transparent #191919 transparent transparent;
+  border-color: transparent #f0f0f0 transparent transparent;
   width: 0;
   height: 0;
   position: absolute;
@@ -470,12 +470,12 @@ body a:hover, body a:active, body a:focus {
   padding: 0px 15px 0px 15px;
   font-size: 11px;
   line-height: 33px;
-  color: #95450b;
+  color: #044162;
   text-transform: uppercase;
 }
 /* line 129, ../sass/main.scss */
 #page-navigation ul li:hover > a {
-  color: #ac6c3d;
+  color: #0772ac;
   -webkit-transition: all, 0.3s, ease-in-out;
   -moz-transition: all, 0.3s, ease-in-out;
   -o-transition: all, 0.3s, ease-in-out;
@@ -483,7 +483,7 @@ body a:hover, body a:active, body a:focus {
 }
 /* line 130, ../sass/main.scss */
 #page-navigation ul li.active > a {
-  color: #ac6c3d;
+  color: #0772ac;
 }
 /* line 132, ../sass/main.scss */
 #page-navigation ul li > ul {
@@ -492,7 +492,7 @@ body a:hover, body a:active, body a:focus {
   top: 100%;
   padding-top: 7px;
   width: 100px;
-  background: #191919;
+  background: #f0f0f0;
 }
 /* line 133, ../sass/main.scss */
 #page-navigation ul li:hover > ul {
@@ -509,7 +509,7 @@ body a:hover, body a:active, body a:focus {
   display: block;
   padding: 3px 3px;
   font-size: 10px;
-  border-left: 2px solid #191919;
+  border-left: 2px solid #f0f0f0;
   line-height: 13px;
 }
 /* line 137, ../sass/main.scss */
@@ -522,8 +522,8 @@ body a:hover, body a:active, body a:focus {
 }
 /* line 138, ../sass/main.scss */
 #page-navigation ul li > ul li:hover > a {
-  color: #ac6c3d;
-  border-color: #ac6c3d;
+  color: #0772ac;
+  border-color: #0772ac;
   -webkit-transition: all, 0.1s, ease-in-out;
   -moz-transition: all, 0.1s, ease-in-out;
   -o-transition: all, 0.1s, ease-in-out;
@@ -531,7 +531,7 @@ body a:hover, body a:active, body a:focus {
 }
 /* line 140, ../sass/main.scss */
 #page-navigation ul li > ul li.active > a {
-  color: #ac6c3d;
+  color: #0772ac;
 }
 /* line 141, ../sass/main.scss */
 #page-navigation ul ul {
@@ -567,7 +567,7 @@ body a:hover, body a:active, body a:focus {
   outline: none;
   border: none;
   box-shadow: none;
-  border-bottom: 1px solid #ac6c3d;
+  border-bottom: 1px solid #0772ac;
 }
 /* line 151, ../sass/main.scss */
 #topactions #CreateTicketInQueue {
@@ -658,8 +658,8 @@ body a:hover, body a:active, body a:focus {
 }
 /* line 189, ../sass/main.scss */
 #body th {
-  color: #95450b;
-  background: rgba(51, 51, 51, 0.3);
+  color: #044162;
+  background: #e8e8e8;
   border-radius: 0 0 3px 3px;
 }
 /* line 191, ../sass/main.scss */
@@ -677,15 +677,15 @@ body a:hover, body a:active, body a:focus {
   padding: 2px 0 2px 17px;
   position: relative;
   z-index: 10;
-  border-bottom: 1px solid rgba(140, 140, 140, 0.1);
+  border-bottom: 1px solid rgba(140, 140, 140, 0.2);
 }
 /* line 194, ../sass/main.scss */
 #body .titlebox .titlebox-title .left a {
-  color: #acacac;
+  color: #474747;
 }
 /* line 194, ../sass/main.scss */
 #body .titlebox .titlebox-title .left a:hover {
-  color: #535144;
+  color: black;
 }
 /* line 195, ../sass/main.scss */
 #body .titlebox .titlebox-title .right {
@@ -699,17 +699,11 @@ body a:hover, body a:active, body a:focus {
 }
 /* line 197, ../sass/main.scss */
 #body .titlebox .titlebox-title .right a:hover {
-  color: #535144;
+  color: black;
 }
 /* line 202, ../sass/main.scss */
 #body .evenline {
-  background: #202020;
-}
-/* line 203, ../sass/main.scss */
-#body .oddline:hover, #body .evenline:hover {
-  -webkit-box-shadow: #111111 0 0 5px inset;
-  -moz-box-shadow: #111111 0 0 5px inset;
-  box-shadow: #111111 0 0 5px inset;
+  background: #ededed;
 }
 
 /*-------------------------------------------------------------------------------------------------
@@ -760,11 +754,11 @@ body a:hover, body a:active, body a:focus {
 }
 /* line 223, ../sass/main.scss */
 #comp-index .myrt .boxcontainer:first-child .titlebox-content td:nth-child(6) a {
-  color: #187b09;
+  color: #df202d;
 }
 /* line 223, ../sass/main.scss */
 #comp-index .myrt .boxcontainer:first-child .titlebox-content td:nth-child(6) a:hover {
-  color: #3f8e33;
+  color: #e54d57;
 }
 /* line 226, ../sass/main.scss */
 #comp-index .myrt .boxcontainer:first-child .quick-create {
@@ -879,7 +873,7 @@ body a:hover, body a:active, body a:focus {
 -------------------------------------------------------------------------------------------------*/
 /* line 288, ../sass/main.scss */
 #comp-Search-Build #body hr {
-  border: 1px solid rgba(140, 140, 140, 0.1);
+  border: 1px solid rgba(140, 140, 140, 0.2);
 }
 /* line 289, ../sass/main.scss */
 #comp-Search-Build #body #BuildQuery {
@@ -983,7 +977,7 @@ body a:hover, body a:active, body a:focus {
 #comp-Search-Build #body #BuildQuery #editsearches optgroup {
   font-style: normal;
   font-weight: normal;
-  color: #ac6c3d;
+  color: #0772ac;
 }
 /* line 318, ../sass/main.scss */
 #comp-Search-Build #body #BuildQuery #display-options {
@@ -1011,7 +1005,7 @@ body a:hover, body a:active, body a:focus {
 }
 /* line 337, ../sass/main.scss */
 #comp-Prefs-Other #body form .left {
-  color: #95450b;
+  color: #044162;
 }
 /* line 339, ../sass/main.scss */
 #comp-Prefs-Other #body form .label {
@@ -1022,11 +1016,11 @@ body a:hover, body a:active, body a:focus {
 #comp-Prefs-Other #body form .hints {
   white-space: nowrap;
   font-style: italic;
-  color: rgba(140, 140, 140, 0.1);
+  color: rgba(140, 140, 140, 0.2);
 }
 /* line 341, ../sass/main.scss */
 #comp-Prefs-Other #body form .hints:hover {
-  color: #939393;
+  color: #2d2d2d;
   cursor: default;
 }
 /* line 343, ../sass/main.scss */
@@ -1046,7 +1040,7 @@ body a:hover, body a:active, body a:focus {
 }
 /* line 358, ../sass/main.scss */
 #comp-Ticket-Display #body .label, #comp-Ticket-Display #body .labeltop {
-  color: #606060;
+  color: black;
   text-transform: uppercase;
   font-size: 13px;
 }
@@ -1061,7 +1055,7 @@ body a:hover, body a:active, body a:focus {
 }
 /* line 361, ../sass/main.scss */
 #comp-Ticket-Display #body .boxcontainer:nth-child(1) tr {
-  border-bottom: 1px solid rgba(140, 140, 140, 0.1);
+  border-bottom: 1px solid rgba(140, 140, 140, 0.2);
 }
 /* line 362, ../sass/main.scss */
 #comp-Ticket-Display #body .boxcontainer:nth-child(1) .ticket-info-cfs td {
@@ -1069,7 +1063,7 @@ body a:hover, body a:active, body a:focus {
 }
 /* line 366, ../sass/main.scss */
 #comp-Ticket-Display #body .boxcontainer:nth-child(2) tr {
-  border-bottom: 1px solid rgba(140, 140, 140, 0.1);
+  border-bottom: 1px solid rgba(140, 140, 140, 0.2);
 }
 /* line 368, ../sass/main.scss */
 #comp-Ticket-Display #body .boxcontainer:nth-child(2) .ticket-info-reminders table {
@@ -1090,17 +1084,17 @@ body a:hover, body a:active, body a:focus {
 }
 /* line 373, ../sass/main.scss */
 #comp-Ticket-Display #body .boxcontainer:nth-child(2) .ticket-info-links .label, #comp-Ticket-Display #body .boxcontainer:nth-child(2) .ticket-info-links .labeltop {
-  color: #ac6c3d;
+  color: #0772ac;
 }
 /* line 377, ../sass/main.scss */
 #comp-Ticket-Display #body .history .right {
-  color: #1e1e1e;
+  color: whitesmoke;
 }
 /* line 379, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .odd {
   display: inline-block;
   width: 100%;
-  background: #232323;
+  background: #fafafa;
 }
 /* line 380, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .odd .description {
@@ -1110,7 +1104,7 @@ body a:hover, body a:active, body a:focus {
 #comp-Ticket-Display #body .history #ticket-history .even {
   display: inline-block;
   width: 100%;
-  background: #232323;
+  background: #fafafa;
   margin-bottom: 3px;
 }
 /* line 382, ../sass/main.scss */
@@ -1126,11 +1120,11 @@ body a:hover, body a:active, body a:focus {
   width: 80px;
   padding-left: 10px;
   text-transform: uppercase;
-  color: #606060;
+  color: black;
 }
 /* line 389, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .message-header-value {
-  color: #acacac;
+  color: #474747;
 }
 /* line 390, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history table {
@@ -1138,11 +1132,11 @@ body a:hover, body a:active, body a:focus {
 }
 /* line 392, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .Correspond .date, #comp-Ticket-Display #body .history #ticket-history .Correspond .description, #comp-Ticket-Display #body .history #ticket-history .Create .date, #comp-Ticket-Display #body .history #ticket-history .Create .description, #comp-Ticket-Display #body .history #ticket-history .Comment .date, #comp-Ticket-Display #body .history #ticket-history .Comment .description {
-  color: #dc6610;
+  color: #0772ac;
 }
 /* line 394, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .EmailRecord, #comp-Ticket-Display #body .history #ticket-history .CustomField, #comp-Ticket-Display #body .history #ticket-history .Set, #comp-Ticket-Display #body .history #ticket-history .AddLink, #comp-Ticket-Display #body .history #ticket-history .Status, #comp-Ticket-Display #body .history #ticket-history .other {
-  border: 1px solid #232323;
+  border: 1px solid #fafafa;
 }
 /* line 396, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .EmailRecord .metadata, #comp-Ticket-Display #body .history #ticket-history .CustomField .metadata, #comp-Ticket-Display #body .history #ticket-history .Set .metadata, #comp-Ticket-Display #body .history #ticket-history .AddLink .metadata, #comp-Ticket-Display #body .history #ticket-history .Status .metadata, #comp-Ticket-Display #body .history #ticket-history .other .metadata {
@@ -1152,7 +1146,7 @@ body a:hover, body a:active, body a:focus {
 /* line 397, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .EmailRecord .description, #comp-Ticket-Display #body .history #ticket-history .CustomField .description, #comp-Ticket-Display #body .history #ticket-history .Set .description, #comp-Ticket-Display #body .history #ticket-history .AddLink .description, #comp-Ticket-Display #body .history #ticket-history .Status .description, #comp-Ticket-Display #body .history #ticket-history .other .description {
   font-size: 12px;
-  color: #f39d5f;
+  /*color:lighten($titlebox-th,25%);*/
   text-transform: capitalize;
 }
 /* line 398, ../sass/main.scss */
@@ -1165,10 +1159,11 @@ body a:hover, body a:active, body a:focus {
 }
 /* line 401, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .message-stanza {
+  line-height: 1.3;
   padding: 5px;
-  -webkit-box-shadow: #1e1e1e 0px -1px 0px;
-  -moz-box-shadow: #1e1e1e 0px -1px 0px;
-  box-shadow: #1e1e1e 0px -1px 0px;
+  -webkit-box-shadow: rgba(140, 140, 140, 0.2) 0px -1px 0px;
+  -moz-box-shadow: rgba(140, 140, 140, 0.2) 0px -1px 0px;
+  box-shadow: rgba(140, 140, 140, 0.2) 0px -1px 0px;
 }
 /* line 403, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .downloadattachment {
@@ -1176,10 +1171,10 @@ body a:hover, body a:active, body a:focus {
   whitespace: nowrap;
   overflow: hidden;
   font-size: 12px;
-  background: #1e1e1e;
   padding: 5px;
   border-radius: 3px 0 0 3px;
-  color: #ac6c3d;
+  color: #0772ac;
+  text-transform: lowercase;
 }
 /* line 405, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .downloadattachment .downloadcontenttype {
@@ -1202,7 +1197,7 @@ body a:hover, body a:active, body a:focus {
 /* line 411, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .metadata {
   padding: 3px;
-  background: #191919;
+  background: #f0f0f0;
 }
 /* line 413, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .metadata .date {
@@ -1216,29 +1211,29 @@ body a:hover, body a:active, body a:focus {
 #comp-Ticket-Display #body .history #ticket-history .metadata .actions {
   float: right;
   text-transform: uppercase;
-  color: #191919;
+  color: #f0f0f0;
 }
 /* line 416, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .metadata .actions a {
-  color: #187b09;
+  color: #df202d;
 }
 /* line 417, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .metadata .actions a:hover {
-  color: #3f8e33;
+  color: #e54d57;
 }
 /* line 423, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .message-stanza-folder {
-  color: #f39d5f;
+  color: #23acf6;
   cursor: pointer;
   font-size: 12px;
 }
 /* line 424, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .message-stanza.open {
-  color: #f39d5f;
+  color: #23acf6;
 }
 /* line 425, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .message-stanza-folder.open {
-  color: #dc6610;
+  color: #0772ac;
 }
 /* line 426, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .message-stanza.closed {
@@ -1283,8 +1278,8 @@ body a:hover, body a:active, body a:focus {
 /* line 453, ../sass/main.scss */
 #comp-Search-Results #body tr:nth-child(2n) {
   font-size: 11px;
-  border-bottom: 1px solid rgba(140, 140, 140, 0.1);
-  color: #535144;
+  border-bottom: 1px solid rgba(140, 140, 140, 0.2);
+  color: black;
 }
 /* line 454, ../sass/main.scss */
 #comp-Search-Results #body td:nth-child(2) {
