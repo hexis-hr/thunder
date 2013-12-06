@@ -102,7 +102,7 @@ box-shadow: $top $left $blur $color;
 .button, input[type="submit"], .ui-datepicker-current, .ui-datepicker-close {
   border: none;
   border-radius: 3px;
-  background: #df202d;
+  background: #df202e;
   color: #fff;
   box-shadow: none;
   -webkit-transition: all, 0.5s, ease-in-out;
@@ -112,9 +112,9 @@ box-shadow: $top $left $blur $color;
 }
 /* line 42, ../sass/main.scss */
 .button:hover, input[type="submit"]:hover, .ui-datepicker-current:hover, .ui-datepicker-close:hover {
-  -webkit-box-shadow: inset #9c161f 0px 0px 25px;
-  -moz-box-shadow: inset #9c161f 0px 0px 25px;
-  box-shadow: inset #9c161f 0px 0px 25px;
+  -webkit-box-shadow: inset #9c1620 0px 0px 25px;
+  -moz-box-shadow: inset #9c1620 0px 0px 25px;
+  box-shadow: inset #9c1620 0px 0px 25px;
   color: #fff;
   -webkit-transition: all, 0.25s, ease-in-out;
   -moz-transition: all, 0.25s, ease-in-out;
@@ -143,8 +143,8 @@ input[type="tel"],
 input[type="time"],
 input[type="url"],
 textarea {
-  background: #fafafa;
-  color: #2d2d2d;
+  background: white;
+  color: #333333;
   border: none;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) -1px -1px 0px;
   -moz-box-shadow: rgba(0, 0, 0, 0.3) -1px -1px 0px;
@@ -173,9 +173,9 @@ input[type="time"]:focus,
 input[type="url"]:focus,
 textarea:focus {
   outline: none;
-  -webkit-box-shadow: #2d2d2d 0 0 2px;
-  -moz-box-shadow: #2d2d2d 0 0 2px;
-  box-shadow: #2d2d2d 0 0 2px;
+  -webkit-box-shadow: #333333 0 0 2px;
+  -moz-box-shadow: #333333 0 0 2px;
+  box-shadow: #333333 0 0 2px;
   font: "Roboto Condensed", Helvetica, Arial, sans-serif;
 }
 
@@ -203,7 +203,7 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
 #ui-datepicker-div {
   display: none;
   width: 160px;
-  background: #f0f0f0;
+  background: #fafafa;
   padding: 0 0 5px 8px;
 }
 /* line 57, ../sass/main.scss */
@@ -237,51 +237,51 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
 
 /* line 65, ../sass/main.scss */
 ::selection {
-  background: #2d2d2d;
-  color: whitesmoke;
+  background: #333333;
+  color: white;
 }
 
 /* line 66, ../sass/main.scss */
 ::-moz-selection {
-  background: #2d2d2d;
-  color: whitesmoke;
+  background: #333333;
+  color: white;
 }
 
 /* line 67, ../sass/main.scss */
 ::-webkit-selection {
-  background: #2d2d2d;
-  color: whitesmoke;
+  background: #333333;
+  color: white;
 }
 
 /* line 68, ../sass/main.scss */
 ::-ms-selection {
-  background: #2d2d2d;
-  color: whitesmoke;
+  background: #333333;
+  color: white;
 }
 
 /* line 69, ../sass/main.scss */
 ::-o-selection {
-  background: #2d2d2d;
-  color: whitesmoke;
+  background: #333333;
+  color: white;
 }
 
 /* line 72, ../sass/main.scss */
 body {
   font: 100% "Roboto Condensed", Helvetica, Arial, sans-serif;
   margin-top: 10px;
-  background: whitesmoke;
-  color: #2d2d2d;
+  background: white;
+  color: #333333;
   line-height: 1.2;
 }
 /* line 73, ../sass/main.scss */
 body a {
   text-decoration: none;
-  color: #0772ac;
+  color: #0b4e71;
 }
 /* line 74, ../sass/main.scss */
 body a:visited {
   text-decoration: none;
-  color: #0772ac;
+  color: #0b4e71;
 }
 /* line 75, ../sass/main.scss */
 body a:hover, body a:active, body a:focus {
@@ -322,7 +322,7 @@ body a:hover, body a:active, body a:focus {
   float: left;
   width: 100%;
   text-transform: uppercase;
-  background: #f0f0f0;
+  background: #fafafa;
   border-top: 1px solid rgba(127, 127, 127, 0.2);
   border-bottom: 1px solid rgba(127, 127, 127, 0.2);
 }
@@ -341,11 +341,11 @@ body a:hover, body a:active, body a:focus {
   display: block;
   padding: 5px 15px 5px 15px;
   font-size: 14px;
-  color: #044162;
+  color: #041e2c;
 }
 /* line 97, ../sass/main.scss */
 #main-navigation ul li:hover > a {
-  color: #0772ac;
+  color: #0b4e71;
   -webkit-transition: all, 0.3s, ease-in-out;
   -moz-transition: all, 0.3s, ease-in-out;
   -o-transition: all, 0.3s, ease-in-out;
@@ -353,14 +353,14 @@ body a:hover, body a:active, body a:focus {
 }
 /* line 98, ../sass/main.scss */
 #main-navigation ul li.active > a {
-  color: #0772ac;
+  color: #0b4e71;
 }
 /* line 100, ../sass/main.scss */
 #main-navigation li > ul:before {
   content: "";
   border-style: solid;
   border-width: 6px 6px 6px 6px;
-  border-color: #f0f0f0 transparent transparent transparent;
+  border-color: #fafafa transparent transparent transparent;
   width: 0;
   height: 0;
   position: absolute;
@@ -374,7 +374,7 @@ body a:hover, body a:active, body a:focus {
   top: 100%;
   padding-top: 5px;
   width: 140px;
-  background: #f0f0f0;
+  background: #fafafa;
 }
 /* line 105, ../sass/main.scss */
 #main-navigation ul li:hover > ul {
@@ -391,7 +391,7 @@ body a:hover, body a:active, body a:focus {
   display: block;
   padding: 3px 3px;
   font-size: 12px;
-  border-left: 2px solid #f0f0f0;
+  border-left: 2px solid #fafafa;
 }
 /* line 108, ../sass/main.scss */
 #main-navigation ul li > ul li:hover {
@@ -403,8 +403,8 @@ body a:hover, body a:active, body a:focus {
 }
 /* line 109, ../sass/main.scss */
 #main-navigation ul li > ul li:hover > a {
-  color: #0772ac;
-  border-color: #0772ac;
+  color: #0b4e71;
+  border-color: #0b4e71;
   -webkit-transition: all, 0.1s ease-in-out;
   -moz-transition: all, 0.1s ease-in-out;
   -o-transition: all, 0.1s ease-in-out;
@@ -412,14 +412,14 @@ body a:hover, body a:active, body a:focus {
 }
 /* line 111, ../sass/main.scss */
 #main-navigation ul li > ul li.active > a {
-  color: #0772ac;
+  color: #0b4e71;
 }
 /* line 113, ../sass/main.scss */
 #main-navigation li > ul li > ul:before {
   content: "";
   border-style: solid;
   border-width: 6px 6px 6px 6px;
-  border-color: transparent #f0f0f0 transparent transparent;
+  border-color: transparent #fafafa transparent transparent;
   width: 0;
   height: 0;
   position: absolute;
@@ -470,12 +470,12 @@ body a:hover, body a:active, body a:focus {
   padding: 0px 15px 0px 15px;
   font-size: 11px;
   line-height: 33px;
-  color: #044162;
+  color: #041e2c;
   text-transform: uppercase;
 }
 /* line 129, ../sass/main.scss */
 #page-navigation ul li:hover > a {
-  color: #0772ac;
+  color: #0b4e71;
   -webkit-transition: all, 0.3s, ease-in-out;
   -moz-transition: all, 0.3s, ease-in-out;
   -o-transition: all, 0.3s, ease-in-out;
@@ -483,7 +483,7 @@ body a:hover, body a:active, body a:focus {
 }
 /* line 130, ../sass/main.scss */
 #page-navigation ul li.active > a {
-  color: #0772ac;
+  color: #0b4e71;
 }
 /* line 132, ../sass/main.scss */
 #page-navigation ul li > ul {
@@ -492,7 +492,7 @@ body a:hover, body a:active, body a:focus {
   top: 100%;
   padding-top: 7px;
   width: 100px;
-  background: #f0f0f0;
+  background: #fafafa;
 }
 /* line 133, ../sass/main.scss */
 #page-navigation ul li:hover > ul {
@@ -509,7 +509,7 @@ body a:hover, body a:active, body a:focus {
   display: block;
   padding: 3px 3px;
   font-size: 10px;
-  border-left: 2px solid #f0f0f0;
+  border-left: 2px solid #fafafa;
   line-height: 13px;
 }
 /* line 137, ../sass/main.scss */
@@ -522,8 +522,8 @@ body a:hover, body a:active, body a:focus {
 }
 /* line 138, ../sass/main.scss */
 #page-navigation ul li > ul li:hover > a {
-  color: #0772ac;
-  border-color: #0772ac;
+  color: #0b4e71;
+  border-color: #0b4e71;
   -webkit-transition: all, 0.1s, ease-in-out;
   -moz-transition: all, 0.1s, ease-in-out;
   -o-transition: all, 0.1s, ease-in-out;
@@ -531,7 +531,7 @@ body a:hover, body a:active, body a:focus {
 }
 /* line 140, ../sass/main.scss */
 #page-navigation ul li > ul li.active > a {
-  color: #0772ac;
+  color: #0b4e71;
 }
 /* line 141, ../sass/main.scss */
 #page-navigation ul ul {
@@ -567,7 +567,7 @@ body a:hover, body a:active, body a:focus {
   outline: none;
   border: none;
   box-shadow: none;
-  border-bottom: 1px solid #0772ac;
+  border-bottom: 1px solid #0b4e71;
 }
 /* line 151, ../sass/main.scss */
 #topactions #CreateTicketInQueue {
@@ -596,7 +596,7 @@ body a:hover, body a:active, body a:focus {
 /* line 161, ../sass/main.scss */
 #body {
   clear: both;
-  max-width: 960px;
+  /*max-width:960px; max-width:1100px;*/
   margin: 0 auto;
   padding: 1%;
 }
@@ -658,13 +658,12 @@ body a:hover, body a:active, body a:focus {
 }
 /* line 189, ../sass/main.scss */
 #body th {
-  color: #044162;
-  background: #e8e8e8;
-  border-radius: 0 0 3px 3px;
+  color: #041e2c;
+  background: #ededed;
+  border-bottom: 1px solid rgba(140, 140, 140, 0.2);
 }
 /* line 191, ../sass/main.scss */
 #body .titlebox {
-  padding: 3px 3px;
   margin-bottom: 10px;
   font-size: 14px;
 }
@@ -681,7 +680,7 @@ body a:hover, body a:active, body a:focus {
 }
 /* line 194, ../sass/main.scss */
 #body .titlebox .titlebox-title .left a {
-  color: #474747;
+  color: #4d4d4d;
 }
 /* line 194, ../sass/main.scss */
 #body .titlebox .titlebox-title .left a:hover {
@@ -703,7 +702,7 @@ body a:hover, body a:active, body a:focus {
 }
 /* line 202, ../sass/main.scss */
 #body .evenline {
-  background: #ededed;
+  background: whitesmoke;
 }
 
 /*-------------------------------------------------------------------------------------------------
@@ -718,125 +717,124 @@ body a:hover, body a:active, body a:focus {
   opacity: .2;
   text-transform: uppercase;
 }
-/* line 212, ../sass/main.scss */
-#comp-index .myrt {
-  /*end box container last child */
-}
 /* line 214, ../sass/main.scss */
-#comp-index .myrt .boxcontainer:first-child .titlebox-content th:first-child {
-  padding-left: 7px;
+#comp-index .myrt td, #comp-index .myrt th {
+  padding: 2px 4px;
+  overflow: hidden;
+  white-space: nowrap;
 }
 /* line 217, ../sass/main.scss */
-#comp-index .myrt .boxcontainer:first-child .titlebox-content td:nth-child(2) {
-  font-size: 14px;
-  width: 100px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+#comp-index .myrt .boxcontainer:first-child th:nth-child(1), #comp-index .myrt .boxcontainer:first-child td:nth-child(1) {
+  text-align: center;
+  width: 20px;
 }
-/* line 219, ../sass/main.scss */
-#comp-index .myrt .boxcontainer:first-child .titlebox-content td:nth-child(3) {
-  font-size: 12px;
-  white-space: nowrap;
-  overflow: hidden;
+/* line 223, ../sass/main.scss */
+#comp-index .myrt #TitleBox--_index_html------MTAgaGlnaGVzdCBwcmlvcml0eSB0aWNrZXRzIEkgb3du---0 td:nth-child(2),
+#comp-index .myrt #TitleBox--_index_html------MTAgbmV3ZXN0IHVub3duZWQgdGlja2V0cw__---0 td:nth-child(2),
+#comp-index .myrt #TitleBox--_index_html------Qm9va21hcmtlZCBUaWNrZXRz---0 td:nth-child(2) {
+  width: 50%;
 }
-/* line 221, ../sass/main.scss */
-#comp-index .myrt .boxcontainer:first-child .titlebox-content td:nth-child(4), #comp-index .myrt .boxcontainer:first-child .titlebox-content td:nth-child(5) {
-  font-size: 11px;
-  white-space: nowrap;
-  overflow: hidden;
+/* line 229, ../sass/main.scss */
+#comp-index .myrt #TitleBox--_index_html------MTAgaGlnaGVzdCBwcmlvcml0eSB0aWNrZXRzIEkgb3du---0 th:nth-child(5), #comp-index .myrt #TitleBox--_index_html------MTAgaGlnaGVzdCBwcmlvcml0eSB0aWNrZXRzIEkgb3du---0 th:nth-child(6),
+#comp-index .myrt #TitleBox--_index_html------MTAgaGlnaGVzdCBwcmlvcml0eSB0aWNrZXRzIEkgb3du---0 td:nth-child(3), #comp-index .myrt #TitleBox--_index_html------MTAgaGlnaGVzdCBwcmlvcml0eSB0aWNrZXRzIEkgb3du---0 td:nth-child(5), #comp-index .myrt #TitleBox--_index_html------MTAgaGlnaGVzdCBwcmlvcml0eSB0aWNrZXRzIEkgb3du---0 td:nth-child(6),
+#comp-index .myrt #TitleBox--_index_html------Qm9va21hcmtlZCBUaWNrZXRz---0 th:nth-child(5),
+#comp-index .myrt #TitleBox--_index_html------Qm9va21hcmtlZCBUaWNrZXRz---0 th:nth-child(6),
+#comp-index .myrt #TitleBox--_index_html------Qm9va21hcmtlZCBUaWNrZXRz---0 td:nth-child(3),
+#comp-index .myrt #TitleBox--_index_html------Qm9va21hcmtlZCBUaWNrZXRz---0 td:nth-child(5),
+#comp-index .myrt #TitleBox--_index_html------Qm9va21hcmtlZCBUaWNrZXRz---0 td:nth-child(6) {
+  text-align: center;
 }
-/* line 222, ../sass/main.scss */
-#comp-index .myrt .boxcontainer:first-child .titlebox-content td:nth-child(6) {
-  font-size: 11px;
+/* line 238, ../sass/main.scss */
+#comp-index .myrt #TitleBox--_index_html------MTAgbmV3ZXN0IHVub3duZWQgdGlja2V0cw__---0 td:nth-child(3) {
+  width: 20%;
+}
+/* line 240, ../sass/main.scss */
+#comp-index .myrt #TitleBox--_index_html------MTAgbmV3ZXN0IHVub3duZWQgdGlja2V0cw__---0 th:nth-child(4), #comp-index .myrt #TitleBox--_index_html------MTAgbmV3ZXN0IHVub3duZWQgdGlja2V0cw__---0 th:nth-child(5), #comp-index .myrt #TitleBox--_index_html------MTAgbmV3ZXN0IHVub3duZWQgdGlja2V0cw__---0 th:nth-child(6),
+#comp-index .myrt #TitleBox--_index_html------MTAgbmV3ZXN0IHVub3duZWQgdGlja2V0cw__---0 td:nth-child(4), #comp-index .myrt #TitleBox--_index_html------MTAgbmV3ZXN0IHVub3duZWQgdGlja2V0cw__---0 td:nth-child(5), #comp-index .myrt #TitleBox--_index_html------MTAgbmV3ZXN0IHVub3duZWQgdGlja2V0cw__---0 td:nth-child(6) {
+  text-align: center;
+}
+/* line 241, ../sass/main.scss */
+#comp-index .myrt #TitleBox--_index_html------MTAgbmV3ZXN0IHVub3duZWQgdGlja2V0cw__---0 td:nth-child(5) {
+  font-style: italic;
+}
+/* line 242, ../sass/main.scss */
+#comp-index .myrt #TitleBox--_index_html------MTAgbmV3ZXN0IHVub3duZWQgdGlja2V0cw__---0 td:nth-child(6) {
   font: 75% "Oswald", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
 }
-/* line 223, ../sass/main.scss */
-#comp-index .myrt .boxcontainer:first-child .titlebox-content td:nth-child(6) a {
-  color: #df202d;
+/* line 243, ../sass/main.scss */
+#comp-index .myrt #TitleBox--_index_html------MTAgbmV3ZXN0IHVub3duZWQgdGlja2V0cw__---0 td:nth-child(6) a {
+  color: #df202e;
 }
-/* line 223, ../sass/main.scss */
-#comp-index .myrt .boxcontainer:first-child .titlebox-content td:nth-child(6) a:hover {
-  color: #e54d57;
+/* line 243, ../sass/main.scss */
+#comp-index .myrt #TitleBox--_index_html------MTAgbmV3ZXN0IHVub3duZWQgdGlja2V0cw__---0 td:nth-child(6) a:hover {
+  color: #e54d58;
 }
-/* line 226, ../sass/main.scss */
-#comp-index .myrt .boxcontainer:first-child .quick-create {
+/* line 259, ../sass/main.scss */
+#comp-index .myrt #TitleBox--_index_html------UXVpY2sgc2VhcmNo---0 th:nth-child(2), #comp-index .myrt #TitleBox--_index_html------UXVpY2sgc2VhcmNo---0 th:nth-child(3), #comp-index .myrt #TitleBox--_index_html------UXVpY2sgc2VhcmNo---0 th:nth-child(4),
+#comp-index .myrt #TitleBox--_index_html------UXVpY2sgc2VhcmNo---0 td:nth-child(2), #comp-index .myrt #TitleBox--_index_html------UXVpY2sgc2VhcmNo---0 td:nth-child(3), #comp-index .myrt #TitleBox--_index_html------UXVpY2sgc2VhcmNo---0 td:nth-child(4) {
+  text-align: center;
+}
+/* line 267, ../sass/main.scss */
+#comp-index .myrt #TitleBox--_index_html------UmVmcmVzaA__---0 form {
+  padding: 2px;
+}
+/* line 268, ../sass/main.scss */
+#comp-index .myrt #TitleBox--_index_html------UmVmcmVzaA__---0 form select {
+  float: left;
+  width: 200px;
+}
+/* line 269, ../sass/main.scss */
+#comp-index .myrt #TitleBox--_index_html------UmVmcmVzaA__---0 form .submit {
+  float: right;
+}
+/* line 273, ../sass/main.scss */
+#comp-index .myrt .quick-create {
   width: 550px;
 }
-/* line 226, ../sass/main.scss */
-#comp-index .myrt .boxcontainer:first-child .quick-create .titlebox-content {
+/* line 273, ../sass/main.scss */
+#comp-index .myrt .quick-create .titlebox-content {
   padding: 2px 2px;
 }
-/* line 227, ../sass/main.scss */
-#comp-index .myrt .boxcontainer:first-child .quick-create form .label, #comp-index .myrt .boxcontainer:first-child .quick-create form .labeltop {
+/* line 274, ../sass/main.scss */
+#comp-index .myrt .quick-create form .label, #comp-index .myrt .quick-create form .labeltop {
   font-size: 14px;
 }
-/* line 228, ../sass/main.scss */
-#comp-index .myrt .boxcontainer:first-child .quick-create form .input-row .value:nth-child(2) {
+/* line 275, ../sass/main.scss */
+#comp-index .myrt .quick-create form .input-row .value:nth-child(2) {
   width: 220px;
 }
-/* line 229, ../sass/main.scss */
-#comp-index .myrt .boxcontainer:first-child .quick-create form tr .label:nth-child(3) {
+/* line 276, ../sass/main.scss */
+#comp-index .myrt .quick-create form tr .label:nth-child(3) {
   text-align: right;
   padding-left: 15px;
 }
-/* line 230, ../sass/main.scss */
-#comp-index .myrt .boxcontainer:first-child .quick-create form input {
+/* line 277, ../sass/main.scss */
+#comp-index .myrt .quick-create form input {
   width: 215px;
 }
-/* line 231, ../sass/main.scss */
-#comp-index .myrt .boxcontainer:first-child .quick-create form .select-queue {
+/* line 278, ../sass/main.scss */
+#comp-index .myrt .quick-create form .select-queue {
   width: 215px;
 }
-/* line 232, ../sass/main.scss */
-#comp-index .myrt .boxcontainer:first-child .quick-create form textarea {
+/* line 279, ../sass/main.scss */
+#comp-index .myrt .quick-create form textarea {
   min-width: 390px;
   max-width: 390px;
 }
-/* line 233, ../sass/main.scss */
-#comp-index .myrt .boxcontainer:first-child .quick-create form .submit {
+/* line 280, ../sass/main.scss */
+#comp-index .myrt .quick-create form .submit {
   text-align: center;
 }
-/* line 233, ../sass/main.scss */
-#comp-index .myrt .boxcontainer:first-child .quick-create form .button {
+/* line 280, ../sass/main.scss */
+#comp-index .myrt .quick-create form .button {
   width: 150px;
   margin-top: 5px;
   padding: 5px 55px;
 }
-/* line 241, ../sass/main.scss */
+/* line 286, ../sass/main.scss */
 #comp-index .myrt .boxcontainer:last-child {
-  width: 25%;
-}
-/* line 243, ../sass/main.scss */
-#comp-index .myrt .boxcontainer:last-child .titlebox-content th:nth-child(2), #comp-index .myrt .boxcontainer:last-child .titlebox-content th:nth-child(3), #comp-index .myrt .boxcontainer:last-child .titlebox-content th:nth-child(4) {
-  font-size: 11px;
-  text-align: center;
-  text-transform: lowercase;
-}
-/* line 245, ../sass/main.scss */
-#comp-index .myrt .boxcontainer:last-child .titlebox-content td:nth-child(2), #comp-index .myrt .boxcontainer:last-child .titlebox-content td:nth-child(3), #comp-index .myrt .boxcontainer:last-child .titlebox-content td:nth-child(4) {
-  font-size: 10px;
-  text-align: center;
-}
-/* line 247, ../sass/main.scss */
-#comp-index .myrt .boxcontainer:last-child .titlebox-content td:nth-child(1) {
-  font-size: 13px;
-  white-space: nowrap;
-  overflow: hidden;
-}
-/* line 251, ../sass/main.scss */
-#comp-index .myrt .boxcontainer:last-child .titlebox form {
-  padding: 2px;
-}
-/* line 251, ../sass/main.scss */
-#comp-index .myrt .boxcontainer:last-child .titlebox form .submit {
-  text-align: center;
-}
-/* line 252, ../sass/main.scss */
-#comp-index .myrt .boxcontainer:last-child .titlebox form .button {
-  margin-top: 5px;
-  padding: 2px 10px;
+  width: 30%;
 }
 
 /* end comp-index */
@@ -846,19 +844,19 @@ body a:hover, body a:active, body a:focus {
 /*-------------------------------------------------------------------------------------------------
  -start comp-Search-Simple  [FINISHED]
 -------------------------------------------------------------------------------------------------*/
-/* line 272, ../sass/main.scss */
+/* line 305, ../sass/main.scss */
 #comp-Search-Simple #body #SimpleSearchForm div {
   margin: 40px 0;
   padding-bottom: 50px;
 }
-/* line 273, ../sass/main.scss */
+/* line 306, ../sass/main.scss */
 #comp-Search-Simple #body #SimpleSearchForm input:first-child {
   width: 400px;
   height: 30px;
   font-size: 25px;
   line-height: 30px;
 }
-/* line 274, ../sass/main.scss */
+/* line 307, ../sass/main.scss */
 #comp-Search-Simple #body #SimpleSearchForm .button {
   display: table;
   margin-top: 10px;
@@ -871,47 +869,47 @@ body a:hover, body a:active, body a:focus {
 /*-------------------------------------------------------------------------------------------------
  -start comp-Search-Build [FINISHED]
 -------------------------------------------------------------------------------------------------*/
-/* line 288, ../sass/main.scss */
+/* line 321, ../sass/main.scss */
 #comp-Search-Build #body hr {
   border: 1px solid rgba(140, 140, 140, 0.2);
 }
-/* line 289, ../sass/main.scss */
+/* line 322, ../sass/main.scss */
 #comp-Search-Build #body #BuildQuery {
   position: relative;
   width: 900px;
 }
-/* line 290, ../sass/main.scss */
+/* line 323, ../sass/main.scss */
 #comp-Search-Build #body #BuildQuery table {
   width: 100%;
 }
-/* line 291, ../sass/main.scss */
+/* line 324, ../sass/main.scss */
 #comp-Search-Build #body #BuildQuery #pick-criteria {
   width: 55%;
 }
-/* line 292, ../sass/main.scss */
+/* line 325, ../sass/main.scss */
 #comp-Search-Build #body #BuildQuery #pick-criteria .radio {
   width: 20px !important;
 }
-/* line 293, ../sass/main.scss */
+/* line 326, ../sass/main.scss */
 #comp-Search-Build #body #BuildQuery #pick-criteria .label select {
   width: 160px;
   margin-right: 10px;
 }
-/* line 294, ../sass/main.scss */
+/* line 327, ../sass/main.scss */
 #comp-Search-Build #body #BuildQuery #pick-criteria .operator select {
   width: 100px;
   margin-right: 10px;
 }
-/* line 295, ../sass/main.scss */
+/* line 328, ../sass/main.scss */
 #comp-Search-Build #body #BuildQuery #pick-criteria .value select, #comp-Search-Build #body #BuildQuery #pick-criteria input {
   width: 180px;
 }
-/* line 297, ../sass/main.scss */
+/* line 330, ../sass/main.scss */
 #comp-Search-Build #body #BuildQuery .submit {
   float: left;
   margin-left: 10%;
 }
-/* line 299, ../sass/main.scss */
+/* line 332, ../sass/main.scss */
 #comp-Search-Build #body #BuildQuery #editquery {
   clear: both;
   position: absolute;
@@ -919,17 +917,17 @@ body a:hover, body a:active, body a:focus {
   right: 0;
   width: 45%;
 }
-/* line 300, ../sass/main.scss */
+/* line 333, ../sass/main.scss */
 #comp-Search-Build #body #BuildQuery #editquery b {
   text-transform: uppercase;
   font: 100% "Oswald", Helvetica, Arial, sans-serif;
   margin-left: 4px;
 }
-/* line 301, ../sass/main.scss */
+/* line 334, ../sass/main.scss */
 #comp-Search-Build #body #BuildQuery #editquery p {
   padding-top: 10px;
 }
-/* line 304, ../sass/main.scss */
+/* line 337, ../sass/main.scss */
 #comp-Search-Build #body #BuildQuery #editsearches {
   position: absolute;
   top: 330px;
@@ -937,58 +935,58 @@ body a:hover, body a:active, body a:focus {
   width: 45%;
   width: 45%;
 }
-/* line 305, ../sass/main.scss */
+/* line 338, ../sass/main.scss */
 #comp-Search-Build #body #BuildQuery #editsearches .titlebox-content {
   padding: 2px;
 }
-/* line 306, ../sass/main.scss */
+/* line 339, ../sass/main.scss */
 #comp-Search-Build #body #BuildQuery #editsearches .titlebox-content select, #comp-Search-Build #body #BuildQuery #editsearches .titlebox-content input text {
   width: 180px;
 }
-/* line 307, ../sass/main.scss */
+/* line 340, ../sass/main.scss */
 #comp-Search-Build #body #BuildQuery #editsearches .titlebox-content .button {
   display: table;
   float: left;
   margin: 10px 10px 10px 0;
 }
-/* line 309, ../sass/main.scss */
+/* line 342, ../sass/main.scss */
 #comp-Search-Build #body #BuildQuery #editsearches .titlebox-content .label {
   padding-right: 10px;
   clear: both;
 }
-/* line 310, ../sass/main.scss */
+/* line 343, ../sass/main.scss */
 #comp-Search-Build #body #BuildQuery #editsearches .titlebox-content hr {
   clear: both;
 }
-/* line 311, ../sass/main.scss */
+/* line 344, ../sass/main.scss */
 #comp-Search-Build #body #BuildQuery #editsearches .titlebox-content #SavedSearchOwner {
   margin-bottom: 10px;
 }
-/* line 312, ../sass/main.scss */
+/* line 345, ../sass/main.scss */
 #comp-Search-Build #body #BuildQuery #editsearches .titlebox-content #SavedSearchSave {
   float: right;
 }
-/* line 315, ../sass/main.scss */
+/* line 348, ../sass/main.scss */
 #comp-Search-Build #body #BuildQuery #editsearches #SavedSearchLoadSubmit {
   float: right;
   margin: 0 10px;
 }
-/* line 316, ../sass/main.scss */
+/* line 349, ../sass/main.scss */
 #comp-Search-Build #body #BuildQuery #editsearches optgroup {
   font-style: normal;
   font-weight: normal;
-  color: #0772ac;
+  color: #0b4e71;
 }
-/* line 318, ../sass/main.scss */
+/* line 351, ../sass/main.scss */
 #comp-Search-Build #body #BuildQuery #display-options {
   position: relative;
   top: 135px;
 }
-/* line 319, ../sass/main.scss */
+/* line 352, ../sass/main.scss */
 #comp-Search-Build #body #BuildQuery #display-options #columns center {
   margin-top: 14px;
 }
-/* line 321, ../sass/main.scss */
+/* line 354, ../sass/main.scss */
 #comp-Search-Build #body #BuildQuery #formatbuttons {
   margin: 150px 50%;
 }
@@ -999,31 +997,31 @@ body a:hover, body a:active, body a:focus {
 /*-------------------------------------------------------------------------------------------------
  -start comp-Prefs-Other // settings page   [FINISHED]
 -------------------------------------------------------------------------------------------------*/
-/* line 336, ../sass/main.scss */
+/* line 369, ../sass/main.scss */
 #comp-Prefs-Other #body form {
   line-height: 2;
 }
-/* line 337, ../sass/main.scss */
+/* line 370, ../sass/main.scss */
 #comp-Prefs-Other #body form .left {
-  color: #044162;
+  color: #041e2c;
 }
-/* line 339, ../sass/main.scss */
+/* line 372, ../sass/main.scss */
 #comp-Prefs-Other #body form .label {
   display: inline-block;
   width: 310px;
 }
-/* line 340, ../sass/main.scss */
+/* line 373, ../sass/main.scss */
 #comp-Prefs-Other #body form .hints {
   white-space: nowrap;
   font-style: italic;
   color: rgba(140, 140, 140, 0.2);
 }
-/* line 341, ../sass/main.scss */
+/* line 374, ../sass/main.scss */
 #comp-Prefs-Other #body form .hints:hover {
-  color: #2d2d2d;
+  color: #333333;
   cursor: default;
 }
-/* line 343, ../sass/main.scss */
+/* line 376, ../sass/main.scss */
 #comp-Prefs-Other #body form .button {
   margin: 10px 48% 0 47%;
 }
@@ -1034,130 +1032,130 @@ body a:hover, body a:active, body a:focus {
 /*-------------------------------------------------------------------------------------------------
  -start comp-Ticket-Display [HISTORY PAGE NIJE DOBAR]
 -------------------------------------------------------------------------------------------------*/
-/* line 358, ../sass/main.scss */
+/* line 391, ../sass/main.scss */
 #comp-Ticket-Display #body {
   /* end .boxcontainer:nth-child(2) */
 }
-/* line 358, ../sass/main.scss */
+/* line 391, ../sass/main.scss */
 #comp-Ticket-Display #body .label, #comp-Ticket-Display #body .labeltop {
   color: black;
   text-transform: uppercase;
   font-size: 13px;
 }
-/* line 359, ../sass/main.scss */
+/* line 392, ../sass/main.scss */
 #comp-Ticket-Display #body .boxcontainer:nth-child(1) {
   padding-right: 0.5em;
   width: 65%;
 }
-/* line 360, ../sass/main.scss */
+/* line 393, ../sass/main.scss */
 #comp-Ticket-Display #body .boxcontainer:nth-child(1) td:first-child {
   width: 125px;
 }
-/* line 361, ../sass/main.scss */
+/* line 394, ../sass/main.scss */
 #comp-Ticket-Display #body .boxcontainer:nth-child(1) tr {
   border-bottom: 1px solid rgba(140, 140, 140, 0.2);
 }
-/* line 362, ../sass/main.scss */
+/* line 395, ../sass/main.scss */
 #comp-Ticket-Display #body .boxcontainer:nth-child(1) .ticket-info-cfs td {
   padding: 0.2em;
 }
-/* line 366, ../sass/main.scss */
+/* line 399, ../sass/main.scss */
 #comp-Ticket-Display #body .boxcontainer:nth-child(2) tr {
   border-bottom: 1px solid rgba(140, 140, 140, 0.2);
 }
-/* line 368, ../sass/main.scss */
+/* line 401, ../sass/main.scss */
 #comp-Ticket-Display #body .boxcontainer:nth-child(2) .ticket-info-reminders table {
   position: relative;
   margin-left: 10px;
 }
-/* line 369, ../sass/main.scss */
+/* line 402, ../sass/main.scss */
 #comp-Ticket-Display #body .boxcontainer:nth-child(2) .ticket-info-reminders tr {
   border-bottom: none;
 }
-/* line 370, ../sass/main.scss */
+/* line 403, ../sass/main.scss */
 #comp-Ticket-Display #body .boxcontainer:nth-child(2) .ticket-info-reminders input {
   max-width: 200px;
 }
-/* line 371, ../sass/main.scss */
+/* line 404, ../sass/main.scss */
 #comp-Ticket-Display #body .boxcontainer:nth-child(2) .ticket-info-reminders .button {
   margin-right: 10px;
 }
-/* line 373, ../sass/main.scss */
+/* line 406, ../sass/main.scss */
 #comp-Ticket-Display #body .boxcontainer:nth-child(2) .ticket-info-links .label, #comp-Ticket-Display #body .boxcontainer:nth-child(2) .ticket-info-links .labeltop {
-  color: #0772ac;
+  color: #0b4e71;
 }
-/* line 377, ../sass/main.scss */
+/* line 410, ../sass/main.scss */
 #comp-Ticket-Display #body .history .right {
-  color: whitesmoke;
+  color: white;
 }
-/* line 379, ../sass/main.scss */
+/* line 412, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .odd {
   display: inline-block;
   width: 100%;
-  background: #fafafa;
+  background: white;
 }
-/* line 380, ../sass/main.scss */
+/* line 413, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .odd .description {
   text-transform: uppercase;
 }
-/* line 381, ../sass/main.scss */
+/* line 414, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .even {
   display: inline-block;
   width: 100%;
-  background: #fafafa;
+  background: white;
   margin-bottom: 3px;
 }
-/* line 382, ../sass/main.scss */
+/* line 415, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .even .description {
   text-transform: uppercase;
 }
-/* line 383, ../sass/main.scss */
+/* line 416, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .even .actions {
   float: right;
 }
-/* line 386, ../sass/main.scss */
+/* line 419, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .message-header-key {
   width: 80px;
   padding-left: 10px;
   text-transform: uppercase;
   color: black;
 }
-/* line 389, ../sass/main.scss */
+/* line 422, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .message-header-value {
-  color: #474747;
+  color: #4d4d4d;
 }
-/* line 390, ../sass/main.scss */
+/* line 423, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history table {
   margin: 5px 0 10px 0;
 }
-/* line 392, ../sass/main.scss */
+/* line 425, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .Correspond .date, #comp-Ticket-Display #body .history #ticket-history .Correspond .description, #comp-Ticket-Display #body .history #ticket-history .Create .date, #comp-Ticket-Display #body .history #ticket-history .Create .description, #comp-Ticket-Display #body .history #ticket-history .Comment .date, #comp-Ticket-Display #body .history #ticket-history .Comment .description {
-  color: #0772ac;
+  color: #0b4e71;
 }
-/* line 394, ../sass/main.scss */
+/* line 427, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .EmailRecord, #comp-Ticket-Display #body .history #ticket-history .CustomField, #comp-Ticket-Display #body .history #ticket-history .Set, #comp-Ticket-Display #body .history #ticket-history .AddLink, #comp-Ticket-Display #body .history #ticket-history .Status, #comp-Ticket-Display #body .history #ticket-history .other {
-  border: 1px solid #fafafa;
+  border: 1px solid white;
 }
-/* line 396, ../sass/main.scss */
+/* line 429, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .EmailRecord .metadata, #comp-Ticket-Display #body .history #ticket-history .CustomField .metadata, #comp-Ticket-Display #body .history #ticket-history .Set .metadata, #comp-Ticket-Display #body .history #ticket-history .AddLink .metadata, #comp-Ticket-Display #body .history #ticket-history .Status .metadata, #comp-Ticket-Display #body .history #ticket-history .other .metadata {
   height: 13px;
   line-height: 13px;
 }
-/* line 397, ../sass/main.scss */
+/* line 430, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .EmailRecord .description, #comp-Ticket-Display #body .history #ticket-history .CustomField .description, #comp-Ticket-Display #body .history #ticket-history .Set .description, #comp-Ticket-Display #body .history #ticket-history .AddLink .description, #comp-Ticket-Display #body .history #ticket-history .Status .description, #comp-Ticket-Display #body .history #ticket-history .other .description {
   font-size: 12px;
   /*color:lighten($titlebox-th,25%);*/
   text-transform: capitalize;
 }
-/* line 398, ../sass/main.scss */
+/* line 431, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .EmailRecord .actions a, #comp-Ticket-Display #body .history #ticket-history .CustomField .actions a, #comp-Ticket-Display #body .history #ticket-history .Set .actions a, #comp-Ticket-Display #body .history #ticket-history .AddLink .actions a, #comp-Ticket-Display #body .history #ticket-history .Status .actions a, #comp-Ticket-Display #body .history #ticket-history .other .actions a {
   opacity: 0.5;
 }
-/* line 398, ../sass/main.scss */
+/* line 431, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .EmailRecord .actions a:hover, #comp-Ticket-Display #body .history #ticket-history .CustomField .actions a:hover, #comp-Ticket-Display #body .history #ticket-history .Set .actions a:hover, #comp-Ticket-Display #body .history #ticket-history .AddLink .actions a:hover, #comp-Ticket-Display #body .history #ticket-history .Status .actions a:hover, #comp-Ticket-Display #body .history #ticket-history .other .actions a:hover {
   opacity: 1;
 }
-/* line 401, ../sass/main.scss */
+/* line 434, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .message-stanza {
   line-height: 1.3;
   padding: 5px;
@@ -1165,7 +1163,7 @@ body a:hover, body a:active, body a:focus {
   -moz-box-shadow: rgba(140, 140, 140, 0.2) 0px -1px 0px;
   box-shadow: rgba(140, 140, 140, 0.2) 0px -1px 0px;
 }
-/* line 403, ../sass/main.scss */
+/* line 436, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .downloadattachment {
   float: right;
   whitespace: nowrap;
@@ -1173,33 +1171,33 @@ body a:hover, body a:active, body a:focus {
   font-size: 12px;
   padding: 5px;
   border-radius: 3px 0 0 3px;
-  color: #0772ac;
+  color: #0b4e71;
   text-transform: lowercase;
 }
-/* line 405, ../sass/main.scss */
+/* line 438, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .downloadattachment .downloadcontenttype {
   float: right;
   text-transform: uppercase;
   font-size: 10px;
 }
-/* line 408, ../sass/main.scss */
+/* line 441, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .messagebody > img {
   width: 30%;
   margin: 10px;
   border-radius: 5px;
 }
-/* line 409, ../sass/main.scss */
+/* line 442, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .messageattachments p {
   font-size: 12px;
   font-style: italic;
   padding-left: 20px;
 }
-/* line 411, ../sass/main.scss */
+/* line 444, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .metadata {
   padding: 3px;
-  background: #f0f0f0;
+  background: #fafafa;
 }
-/* line 413, ../sass/main.scss */
+/* line 446, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .metadata .date {
   display: inline-block;
   width: 135px;
@@ -1207,43 +1205,43 @@ body a:hover, body a:active, body a:focus {
   font-size: 12px;
   text-transform: uppercase;
 }
-/* line 415, ../sass/main.scss */
+/* line 448, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .metadata .actions {
   float: right;
   text-transform: uppercase;
-  color: #f0f0f0;
+  color: #fafafa;
 }
-/* line 416, ../sass/main.scss */
+/* line 449, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .metadata .actions a {
-  color: #df202d;
+  color: #df202e;
 }
-/* line 417, ../sass/main.scss */
+/* line 450, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .metadata .actions a:hover {
-  color: #e54d57;
+  color: #e54d58;
 }
-/* line 423, ../sass/main.scss */
+/* line 456, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .message-stanza-folder {
-  color: #23acf6;
+  color: #148dce;
   cursor: pointer;
   font-size: 12px;
 }
-/* line 424, ../sass/main.scss */
+/* line 457, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .message-stanza.open {
-  color: #23acf6;
+  color: #148dce;
 }
-/* line 425, ../sass/main.scss */
+/* line 458, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .message-stanza-folder.open {
-  color: #0772ac;
+  color: #0b4e71;
 }
-/* line 426, ../sass/main.scss */
+/* line 459, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .message-stanza.closed {
   display: none;
 }
-/* line 427, ../sass/main.scss */
+/* line 460, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .message-stanza-folder:before, #comp-Ticket-Display #body .history #ticket-history .message-stanza-folder:after {
   content: " * ";
 }
-/* line 428, ../sass/main.scss */
+/* line 461, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .ticket-transaction .messagebody {
   font-size: 1em;
   word-wrap: break-word;
@@ -1255,48 +1253,48 @@ body a:hover, body a:active, body a:focus {
 /*-------------------------------------------------------------------------------------------------
  -start comp-Search-Results [FINISHED]
 -------------------------------------------------------------------------------------------------*/
-/* line 449, ../sass/main.scss */
+/* line 482, ../sass/main.scss */
 #comp-Search-Results #body table {
   width: 100%;
 }
-/* line 450, ../sass/main.scss */
+/* line 483, ../sass/main.scss */
 #comp-Search-Results #body .collection-as-table {
   background: none;
 }
-/* line 451, ../sass/main.scss */
+/* line 484, ../sass/main.scss */
 #comp-Search-Results #body th:nth-child(3), #comp-Search-Results #body th:nth-child(4), #comp-Search-Results #body th:nth-child(5), #comp-Search-Results #body th:nth-child(6) {
   text-align: center;
 }
-/* line 452, ../sass/main.scss */
+/* line 485, ../sass/main.scss */
 #comp-Search-Results #body tr:nth-child(1n) {
   font-size: 12px;
 }
-/* line 452, ../sass/main.scss */
+/* line 485, ../sass/main.scss */
 #comp-Search-Results #body tr:nth-child(1n) a {
   font-size: 14px;
 }
-/* line 453, ../sass/main.scss */
+/* line 486, ../sass/main.scss */
 #comp-Search-Results #body tr:nth-child(2n) {
   font-size: 11px;
   border-bottom: 1px solid rgba(140, 140, 140, 0.2);
   color: black;
 }
-/* line 454, ../sass/main.scss */
+/* line 487, ../sass/main.scss */
 #comp-Search-Results #body td:nth-child(2) {
   whitespace: nowrap;
   overflow: hidden;
 }
-/* line 455, ../sass/main.scss */
+/* line 488, ../sass/main.scss */
 #comp-Search-Results #body td:nth-child(3), #comp-Search-Results #body td:nth-child(5), #comp-Search-Results #body td:nth-child(6) {
   text-transform: lowercase;
   text-align: center;
   width: 80px;
 }
-/* line 456, ../sass/main.scss */
+/* line 489, ../sass/main.scss */
 #comp-Search-Results #body td:nth-child(4) {
   text-align: center;
 }
-/* line 458, ../sass/main.scss */
+/* line 491, ../sass/main.scss */
 #comp-Search-Results .refresh {
   display: none;
 }
@@ -1307,70 +1305,70 @@ body a:hover, body a:active, body a:focus {
 /*-------------------------------------------------------------------------------------------------
  -start comp-Ticket-Update  [FINISHED]
 -------------------------------------------------------------------------------------------------*/
-/* line 471, ../sass/main.scss */
+/* line 504, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-metadata {
   width: 50%;
 }
-/* line 473, ../sass/main.scss */
+/* line 506, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-metadata .label {
   width: 130px;
 }
-/* line 474, ../sass/main.scss */
+/* line 507, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-metadata select {
   width: 220px;
 }
-/* line 475, ../sass/main.scss */
+/* line 508, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-metadata input {
   width: 57px;
 }
-/* line 476, ../sass/main.scss */
+/* line 509, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-metadata tr:last-child select {
   width: 160px;
 }
-/* line 481, ../sass/main.scss */
+/* line 514, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-message .messagedetails .label {
   width: 130px;
 }
-/* line 482, ../sass/main.scss */
+/* line 515, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-message .messagedetails input {
   width: 400px;
 }
-/* line 484, ../sass/main.scss */
+/* line 517, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-message .messagedetails .messagebox-container .articles-select-article td, #comp-Ticket-Update #body #ticket-update-message .messagedetails .messagebox-container .articles-select-article input {
   width: 160px;
   float: left;
   overflow: hidden;
   whitespace: nowrap;
 }
-/* line 485, ../sass/main.scss */
+/* line 518, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-message .messagedetails .messagebox-container input[type="submit"] {
   margin-left: 20px;
   width: 50px;
 }
-/* line 488, ../sass/main.scss */
+/* line 521, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-message .messagedetails .messagebox-container #cke_UpdateContent {
   max-width: 600px;
   min-width: 600px;
   border: none;
 }
-/* line 489, ../sass/main.scss */
+/* line 522, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-message .messagedetails .messagebox-container #cke_UpdateContent td {
   width: 98%;
 }
-/* line 492, ../sass/main.scss */
+/* line 525, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-message .messagedetails input[type="submit"] {
   margin-left: 50px;
   width: 100px;
 }
-/* line 495, ../sass/main.scss */
+/* line 528, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-message #previewscrips {
   margin-top: 20px;
 }
-/* line 497, ../sass/main.scss */
+/* line 530, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-message #previewscrips li {
   margin-top: 10px;
 }
-/* line 500, ../sass/main.scss */
+/* line 533, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-message #SubmitTicket {
   margin: 30px 45%;
 }
