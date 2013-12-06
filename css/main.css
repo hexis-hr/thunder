@@ -688,7 +688,7 @@ body a:hover, body a:active, body a:focus {
 }
 /* line 195, ../sass/main.scss */
 #body .titlebox .titlebox-title .right {
-  float: right;
+  padding-left: 10px;
 }
 /* line 196, ../sass/main.scss */
 #body .titlebox .titlebox-title .right a {
