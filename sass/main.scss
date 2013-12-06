@@ -21,7 +21,7 @@ $content-gap:10px;
 /*-------------------------------------------------------------------------------------------------
  -Colors
 -------------------------------------------------------------------------------------------------*/
-  $body-bg: /*#1E1E1E*/#FFFFFF;  //body background
+  $body-bg: /*#1E1E1E*/#F5F6FA;  //body background
   $text-normal: /*#939393*/#333333;  //main text color
   $link-normal: /*#AC6C3D*/darken(#0E6492,7%);  //main link color
   $link-normal-hover: /*#535144*/darken($link-normal,60%);  //main link hover color
@@ -42,11 +42,11 @@ $content-gap:10px;
     &:hover { @include box-shadow(inset darken($button-bg,15%) 0px 0px 25px); color:#fff;
       @include transition(all, 0.25s, ease-in-out); } }
   @include inputs { background:lighten($body-bg,2%); color:$text-normal; border:none; 
-    @include box-shadow( (rgba(#000,.3)) -1px -1px 0px ); 
+    @include box-shadow( (rgba(#000,.3)) 0px -1px 0px); 
           font-family:'Roboto Condensed', Helvetica, Arial, sans-serif; 
     &:focus {outline:none; @include box-shadow($text-normal 0 0 2px); font:$font-alpha; } }
   select, .select-queue { text-transform:capitalize; }
-
+  option { box-shadow:none; }
   a[href], input[type='submit'], input[type='image'], label[for], select, button, .checkbox, .pointer 
     { cursor:pointer; }
 
@@ -158,7 +158,7 @@ $content-gap:10px;
 /*-------------------------------------------------------------------------------------------------
  -#body general settings
 -------------------------------------------------------------------------------------------------*/
-  #body { clear:both; /*max-width:960px; max-width:1100px;*/ margin:0 auto; padding: 1%;
+  #body { clear:both; margin:0 auto; padding: 1%;
 
     //Widget
       .titlebox .titlebox-title .widget a {
@@ -200,11 +200,11 @@ $content-gap:10px;
 
     //.oddline {} 
     .evenline { background:darken($body-bg,4%); }
-    //.oddline:hover, .evenline:hover { @include box-shadow(darken($body-bg,10%) 0 0 15px inset); }
+    .oddline:hover, .evenline:hover { background:darken($body-bg,10%); }
   } // #body
 
 /*-------------------------------------------------------------------------------------------------
- -start comp-index // home page
+ -start comp-index // home page  [FINISHED]
 -------------------------------------------------------------------------------------------------*/
   #comp-index {
     #page-edit { opacity:.2; text-transform:uppercase; }
@@ -214,80 +214,63 @@ $content-gap:10px;
       td, th { padding: 2px 4px; overflow:hidden; white-space:nowrap; }
      
      .boxcontainer:first-child {
-      th:nth-child(1), td:nth-child(1) { text-align:center; width:20px; }
+        th:nth-child(1), td:nth-child(1) { text-align:center; width:20px; }
+      }
+      
+        #TitleBox--_index_html------MTAgaGlnaGVzdCBwcmlvcml0eSB0aWNrZXRzIEkgb3du---0, // 10 highest priority
+        #TitleBox--_index_html------MTAgbmV3ZXN0IHVub3duZWQgdGlja2V0cw__---0, // newest unowned
+        #TitleBox--_index_html------Qm9va21hcmtlZCBUaWNrZXRz---0 {  // bookmarked tickets
+          td:nth-child(2) { width:50%; }
+        }
+        #TitleBox--_index_html------MTAgaGlnaGVzdCBwcmlvcml0eSB0aWNrZXRzIEkgb3du---0, // 10 highest priority
+        #TitleBox--_index_html------Qm9va21hcmtlZCBUaWNrZXRz---0 {  // bookmarked tickets
+          th:nth-child(5), th:nth-child(6),
+          td:nth-child(3), td:nth-child(5), td:nth-child(6) { text-align:center; }
+        }
+        // newest unowned tickets
+        #TitleBox--_index_html------MTAgbmV3ZXN0IHVub3duZWQgdGlja2V0cw__---0 { 
+          td:nth-child(3) { width:20%; }
+          th:nth-child(4),th:nth-child(5),th:nth-child(6),
+          td:nth-child(4),td:nth-child(5),td:nth-child(6) { text-align:center; }
+          td:nth-child(5) { font-style:italic; }
+          td:nth-child(6) { font:80% $font-beta; text-transform:uppercase;
+                    a { color:$extra-link; &:hover { color:$extra-link-hover; } } }
+        }
+        // quick create
+       .quick-create { width:550px;
+          form { td, th { text-align:left !important; }
+            .input-row .value:nth-child(2) { width:220px; }
+            tr .label:nth-child(3) { text-align:right !important; }
+            input, .select-queue { width:215px; }
+            textarea { min-width:390px; max-width:390px; }
+            .submit { text-align:center; } .button { width:150px; margin-top:5px; padding:5px 55px; }
+          } // end form
+        } // end quick create
+      
+
+
+       .boxcontainer:last-child { width: 30%; }
+        // my reminders
+        #TitleBox--_index_html--reminders----TXkgcmVtaW5kZXJz---0 {}
+
+        // quick search
+        #TitleBox--_index_html------UXVpY2sgc2VhcmNo---0 {
+          th:nth-child(2), th:nth-child(3), th:nth-child(4),
+          td:nth-child(2), td:nth-child(3), td:nth-child(4) { text-align:center; } 
+        }
         
-      }
-      #TitleBox--_index_html------MTAgaGlnaGVzdCBwcmlvcml0eSB0aWNrZXRzIEkgb3du---0, // 10 highest priority
-      #TitleBox--_index_html------MTAgbmV3ZXN0IHVub3duZWQgdGlja2V0cw__---0, // newest unowned
-      #TitleBox--_index_html------Qm9va21hcmtlZCBUaWNrZXRz---0 {  // bookmarked tickets
-        td:nth-child(2) { width:50%; }
-      }
+        // dashboards
+        #TitleBox--_index_html------RGFzaGJvYXJkcw__---0 {}
 
-      #TitleBox--_index_html------MTAgaGlnaGVzdCBwcmlvcml0eSB0aWNrZXRzIEkgb3du---0, // 10 highest priority
-      #TitleBox--_index_html------Qm9va21hcmtlZCBUaWNrZXRz---0 {  // bookmarked tickets
-        th:nth-child(5), th:nth-child(6),
-        td:nth-child(3), td:nth-child(5), td:nth-child(6) { text-align:center; }
-      }
-
-
-      // 10 highest priority tickets i have
-      #TitleBox--_index_html------MTAgaGlnaGVzdCBwcmlvcml0eSB0aWNrZXRzIEkgb3du---0 {} 
-      
-      // newest unowned tickets
-      #TitleBox--_index_html------MTAgbmV3ZXN0IHVub3duZWQgdGlja2V0cw__---0 { 
-        td:nth-child(3) { width:20%; }
-        th:nth-child(4),th:nth-child(5),th:nth-child(6),
-        td:nth-child(4),td:nth-child(5),td:nth-child(6) { text-align:center; }
-        td:nth-child(5) { font-style:italic; }
-        td:nth-child(6) { font:75% $font-beta; text-transform:uppercase;
-                  a { color:$extra-link; &:hover { color:$extra-link-hover; } } }
-      }
-
-      // bookmarked tickets
-      #TitleBox--_index_html------Qm9va21hcmtlZCBUaWNrZXRz---0 {  }
-
-      // quick create
-      #TitleBox--_index_html------UXVpY2sgdGlja2V0IGNyZWF0aW9u---0 { }
-      
-
-      // my reminders
-      #TitleBox--_index_html--reminders----TXkgcmVtaW5kZXJz---0 {}
-
-      // quick search
-      #TitleBox--_index_html------UXVpY2sgc2VhcmNo---0 {
-        th:nth-child(2), th:nth-child(3), th:nth-child(4),
-        td:nth-child(2), td:nth-child(3), td:nth-child(4) { text-align:center; } 
-      }
-      
-      // dashboards
-      #TitleBox--_index_html------RGFzaGJvYXJkcw__---0 {}
-
-      // refresh
-      #TitleBox--_index_html------UmVmcmVzaA__---0 {
-        form { padding: 2px;
-          select { float:left; width:200px; }
-          .submit { float:right; }
-        }
-      }
-
-            .quick-create { width:550px; .titlebox-content { padding:2px 2px; }
-              form { .label, .labeltop { font-size:14px; }
-                .input-row .value:nth-child(2) { width:220px; }
-                tr .label:nth-child(3) {text-align:right; padding-left:15px; }
-                input { width:215px; }
-                .select-queue { width:215px; }
-                textarea { min-width:390px; max-width:390px; }
-                .submit { text-align:center; } .button { width:150px; margin-top:5px; padding:5px 55px; }
-              } // end form
-            } // end quick create
-      
-       
-
-        .boxcontainer:last-child { width: 30%;
-            .titlebox-content { } 
+        // refresh
+        #TitleBox--_index_html------UmVmcmVzaA__---0 {
+          form { padding: 2px;
+            select { float:left; width:200px; }
+            .submit { float:right; }
+          }
         }
 
-    } /* end myrt */
+  } /* end myrt */
 
   } /* end comp-index */
 
@@ -318,10 +301,10 @@ $content-gap:10px;
  -start comp-Search-Build [FINISHED]
 -------------------------------------------------------------------------------------------------*/
   #comp-Search-Build {
-    #body {  hr { border:1px solid $def-border; }
+    #body {  hr { border:1px solid $def-border; } max-width:960px;
     #BuildQuery{ position:relative; width: 900px;
       table { width:100%; }
-      #pick-criteria { width:55%;
+      #pick-criteria { width:50%;
         .radio {width: 20px !important;}
         .label select { width:160px; margin-right:$content-gap; }
         .operator select { width:100px; margin-right:$content-gap; }
