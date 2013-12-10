@@ -144,7 +144,7 @@ input[type="tel"],
 input[type="time"],
 input[type="url"],
 textarea {
-  background: #fcfcfc;
+  background: #f9f9f9;
   color: #4c4c4c;
   border: none;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px -1px 0px;
@@ -667,11 +667,11 @@ body a:hover, body a:active, body a:focus {
 #body th {
   color: #4c4c4c;
   border-bottom: 1px solid rgba(140, 140, 140, 0.2);
-  background: #e7e7e7;
+  border-top: 1px solid rgba(140, 140, 140, 0.2);
+  background: #efefef;
   text-transform: lowercase;
   font-size: 12px;
   letter-spacing: 1px;
-  border-radius: 2px 2px 0 0;
 }
 /* line 207, ../sass/main.scss */
 #body .titlebox {
@@ -682,7 +682,7 @@ body a:hover, body a:active, body a:focus {
 #body .titlebox .titlebox-title {
   text-transform: lowercase;
   font-size: 16px;
-  padding: 2px 0 2px 17px;
+  padding: 2px 0 3px 17px;
   position: relative;
   z-index: 10;
 }
@@ -763,8 +763,7 @@ body a:hover, body a:active, body a:focus {
 }
 /* line 250, ../sass/main.scss */
 #comp-index .myrt #TitleBox--_index_html------MTAgbmV3ZXN0IHVub3duZWQgdGlja2V0cw__---0 td:nth-child(5) {
-  font-style: italic;
-  font-size: 12px;
+  font-size: 11px;
 }
 /* line 251, ../sass/main.scss */
 #comp-index .myrt #TitleBox--_index_html------MTAgbmV3ZXN0IHVub3duZWQgdGlja2V0cw__---0 td:nth-child(6) {
@@ -781,11 +780,11 @@ body a:hover, body a:active, body a:focus {
 }
 /* line 254, ../sass/main.scss */
 #comp-index .myrt #TitleBox--_index_html------MTAgbmV3ZXN0IHVub3duZWQgdGlja2V0cw__---0 td:nth-child(6):hover {
-  -moz-transform: scale(1.5);
-  -webkit-transform: scale(1.5);
-  -o-transform: scale(1.5);
-  -ms-transform: scale(1.5);
-  transform: scale(1.5);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 /* line 263, ../sass/main.scss */
 #comp-index .myrt .quick-create {
@@ -1050,8 +1049,8 @@ body a:hover, body a:active, body a:focus {
 }
 /* line 397, ../sass/main.scss */
 #comp-Ticket-Display #body .label, #comp-Ticket-Display #body .labeltop {
-  color: #191919;
-  text-transform: lowercase;
+  color: #666666;
+  text-transform: uppercase;
   font-size: 13px;
 }
 /* line 398, ../sass/main.scss */
@@ -1061,7 +1060,7 @@ body a:hover, body a:active, body a:focus {
 }
 /* line 399, ../sass/main.scss */
 #comp-Ticket-Display #body .boxcontainer:nth-child(1) td:first-child {
-  width: 105px;
+  width: 130px;
 }
 /* line 400, ../sass/main.scss */
 #comp-Ticket-Display #body .boxcontainer:nth-child(1) tr {
@@ -1126,19 +1125,11 @@ body a:hover, body a:active, body a:focus {
 #comp-Ticket-Display #body .history #ticket-history .even .description {
   text-transform: uppercase;
 }
-/* line 422, ../sass/main.scss */
-#comp-Ticket-Display #body .history #ticket-history .even .actions {
-  float: right;
-}
 /* line 425, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .message-header-key {
   width: 80px;
   padding-left: 10px;
   text-transform: uppercase;
-  color: #191919;
-}
-/* line 428, ../sass/main.scss */
-#comp-Ticket-Display #body .history #ticket-history .message-header-value {
   color: #666666;
 }
 /* line 429, ../sass/main.scss */
@@ -1146,33 +1137,51 @@ body a:hover, body a:active, body a:focus {
   margin: 5px 0 10px 0;
 }
 /* line 431, ../sass/main.scss */
-#comp-Ticket-Display #body .history #ticket-history .Correspond .date, #comp-Ticket-Display #body .history #ticket-history .Correspond .description, #comp-Ticket-Display #body .history #ticket-history .Create .date, #comp-Ticket-Display #body .history #ticket-history .Create .description, #comp-Ticket-Display #body .history #ticket-history .Comment .date, #comp-Ticket-Display #body .history #ticket-history .Comment .description {
+#comp-Ticket-Display #body .history #ticket-history .Correspond, #comp-Ticket-Display #body .history #ticket-history .Create, #comp-Ticket-Display #body .history #ticket-history .Comment {
+  margin: 5px 0;
+  -webkit-box-shadow: black 0px 0px 1px;
+  -moz-box-shadow: black 0px 0px 1px;
+  box-shadow: black 0px 0px 1px;
+}
+/* line 432, ../sass/main.scss */
+#comp-Ticket-Display #body .history #ticket-history .Correspond .metadata, #comp-Ticket-Display #body .history #ticket-history .Create .metadata, #comp-Ticket-Display #body .history #ticket-history .Comment .metadata {
+  line-height: 18px;
+  border-radius: 2px;
+  padding: 5px;
+  /*border-top:1px solid $def-border; */
+  border-bottom: 1px solid rgba(140, 140, 140, 0.2);
+}
+/* line 435, ../sass/main.scss */
+#comp-Ticket-Display #body .history #ticket-history .Correspond .metadata .date, #comp-Ticket-Display #body .history #ticket-history .Correspond .metadata .description, #comp-Ticket-Display #body .history #ticket-history .Create .metadata .date, #comp-Ticket-Display #body .history #ticket-history .Create .metadata .description, #comp-Ticket-Display #body .history #ticket-history .Comment .metadata .date, #comp-Ticket-Display #body .history #ticket-history .Comment .metadata .description {
   color: #f54a0a;
 }
-/* line 433, ../sass/main.scss */
+/* line 441, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .EmailRecord, #comp-Ticket-Display #body .history #ticket-history .CustomField, #comp-Ticket-Display #body .history #ticket-history .Set, #comp-Ticket-Display #body .history #ticket-history .AddLink, #comp-Ticket-Display #body .history #ticket-history .Status, #comp-Ticket-Display #body .history #ticket-history .other {
   border: 1px solid #f9f9f9;
 }
-/* line 435, ../sass/main.scss */
+/* line 443, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .EmailRecord .metadata, #comp-Ticket-Display #body .history #ticket-history .CustomField .metadata, #comp-Ticket-Display #body .history #ticket-history .Set .metadata, #comp-Ticket-Display #body .history #ticket-history .AddLink .metadata, #comp-Ticket-Display #body .history #ticket-history .Status .metadata, #comp-Ticket-Display #body .history #ticket-history .other .metadata {
-  height: 13px;
-  line-height: 13px;
+  line-height: 17px;
+  border-top: 1px solid rgba(153, 153, 153, 0.2);
 }
-/* line 436, ../sass/main.scss */
+/* line 444, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .EmailRecord .description, #comp-Ticket-Display #body .history #ticket-history .CustomField .description, #comp-Ticket-Display #body .history #ticket-history .Set .description, #comp-Ticket-Display #body .history #ticket-history .AddLink .description, #comp-Ticket-Display #body .history #ticket-history .Status .description, #comp-Ticket-Display #body .history #ticket-history .other .description {
   font-size: 12px;
-  /*color:lighten($titlebox-th,25%);*/
   text-transform: capitalize;
 }
-/* line 437, ../sass/main.scss */
+/* line 445, ../sass/main.scss */
+#comp-Ticket-Display #body .history #ticket-history .EmailRecord .actions, #comp-Ticket-Display #body .history #ticket-history .CustomField .actions, #comp-Ticket-Display #body .history #ticket-history .Set .actions, #comp-Ticket-Display #body .history #ticket-history .AddLink .actions, #comp-Ticket-Display #body .history #ticket-history .Status .actions, #comp-Ticket-Display #body .history #ticket-history .other .actions {
+  padding-right: 0 !important;
+}
+/* line 445, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .EmailRecord .actions a, #comp-Ticket-Display #body .history #ticket-history .CustomField .actions a, #comp-Ticket-Display #body .history #ticket-history .Set .actions a, #comp-Ticket-Display #body .history #ticket-history .AddLink .actions a, #comp-Ticket-Display #body .history #ticket-history .Status .actions a, #comp-Ticket-Display #body .history #ticket-history .other .actions a {
   opacity: 0.5;
 }
-/* line 437, ../sass/main.scss */
+/* line 445, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .EmailRecord .actions a:hover, #comp-Ticket-Display #body .history #ticket-history .CustomField .actions a:hover, #comp-Ticket-Display #body .history #ticket-history .Set .actions a:hover, #comp-Ticket-Display #body .history #ticket-history .AddLink .actions a:hover, #comp-Ticket-Display #body .history #ticket-history .Status .actions a:hover, #comp-Ticket-Display #body .history #ticket-history .other .actions a:hover {
   opacity: 1;
 }
-/* line 440, ../sass/main.scss */
+/* line 448, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .message-stanza {
   line-height: 1.35;
   padding: 5px;
@@ -1181,7 +1190,7 @@ body a:hover, body a:active, body a:focus {
   -moz-box-shadow: rgba(140, 140, 140, 0.2) 0px -1px 0px;
   box-shadow: rgba(140, 140, 140, 0.2) 0px -1px 0px;
 }
-/* line 444, ../sass/main.scss */
+/* line 452, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .downloadattachment {
   float: right;
   whitespace: nowrap;
@@ -1190,32 +1199,32 @@ body a:hover, body a:active, body a:focus {
   padding: 5px;
   border-radius: 3px 0 0 3px;
   color: #0772ac;
-  text-transform: lowercase;
+  text-transform: capitalize;
 }
-/* line 446, ../sass/main.scss */
+/* line 454, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .downloadattachment .downloadcontenttype {
   float: right;
-  text-transform: uppercase;
+  text-transform: lowercase;
   font-size: 10px;
 }
-/* line 449, ../sass/main.scss */
+/* line 456, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .messagebody > img {
   width: 30%;
   margin: 10px;
   border-radius: 5px;
 }
-/* line 450, ../sass/main.scss */
+/* line 457, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .messageattachments p {
   font-size: 12px;
   font-style: italic;
   padding-left: 20px;
 }
-/* line 452, ../sass/main.scss */
+/* line 459, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .metadata {
-  padding: 3px;
+  /*padding:3px;*/
   background: #efefef;
 }
-/* line 454, ../sass/main.scss */
+/* line 461, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .metadata .date {
   display: inline-block;
   width: 135px;
@@ -1223,43 +1232,45 @@ body a:hover, body a:active, body a:focus {
   font-size: 12px;
   text-transform: uppercase;
 }
-/* line 456, ../sass/main.scss */
+/* line 463, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .metadata .actions {
   float: right;
-  text-transform: uppercase;
   color: #efefef;
+  font: 100% "BebasNeue", Helvetica, Arial, sans-serif;
+  letter-spacing: 1px;
+  padding-right: 50px;
 }
-/* line 457, ../sass/main.scss */
+/* line 464, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .metadata .actions a {
   color: #ac3407;
 }
-/* line 458, ../sass/main.scss */
+/* line 465, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .metadata .actions a:hover {
   color: #dd4309;
 }
-/* line 464, ../sass/main.scss */
+/* line 476, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .message-stanza-folder {
   color: #f9936c;
   cursor: pointer;
   font-size: 12px;
 }
-/* line 465, ../sass/main.scss */
+/* line 477, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .message-stanza.open {
   color: #f9936c;
 }
-/* line 466, ../sass/main.scss */
+/* line 478, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .message-stanza-folder.open {
   color: #f54a0a;
 }
-/* line 467, ../sass/main.scss */
+/* line 479, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .message-stanza.closed {
   display: none;
 }
-/* line 468, ../sass/main.scss */
+/* line 480, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .message-stanza-folder:before, #comp-Ticket-Display #body .history #ticket-history .message-stanza-folder:after {
   content: " * ";
 }
-/* line 469, ../sass/main.scss */
+/* line 481, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .ticket-transaction .messagebody {
   font-size: 1em;
   word-wrap: break-word;
@@ -1271,48 +1282,48 @@ body a:hover, body a:active, body a:focus {
 /*-------------------------------------------------------------------------------------------------
  -start comp-Search-Results [FINISHED]
 -------------------------------------------------------------------------------------------------*/
-/* line 490, ../sass/main.scss */
+/* line 502, ../sass/main.scss */
 #comp-Search-Results #body table {
   width: 100%;
 }
-/* line 491, ../sass/main.scss */
+/* line 503, ../sass/main.scss */
 #comp-Search-Results #body .collection-as-table {
   background: none;
 }
-/* line 492, ../sass/main.scss */
+/* line 504, ../sass/main.scss */
 #comp-Search-Results #body th:nth-child(3), #comp-Search-Results #body th:nth-child(4), #comp-Search-Results #body th:nth-child(5), #comp-Search-Results #body th:nth-child(6) {
   text-align: center;
 }
-/* line 493, ../sass/main.scss */
+/* line 505, ../sass/main.scss */
 #comp-Search-Results #body tr:nth-child(1n) {
   font-size: 12px;
 }
-/* line 493, ../sass/main.scss */
+/* line 505, ../sass/main.scss */
 #comp-Search-Results #body tr:nth-child(1n) a {
   font-size: 14px;
 }
-/* line 494, ../sass/main.scss */
+/* line 506, ../sass/main.scss */
 #comp-Search-Results #body tr:nth-child(2n) {
   font-size: 11px;
   border-bottom: 1px solid rgba(140, 140, 140, 0.2);
   color: #03314a;
 }
-/* line 495, ../sass/main.scss */
+/* line 507, ../sass/main.scss */
 #comp-Search-Results #body td:nth-child(2) {
   whitespace: nowrap;
   overflow: hidden;
 }
-/* line 496, ../sass/main.scss */
+/* line 508, ../sass/main.scss */
 #comp-Search-Results #body td:nth-child(3), #comp-Search-Results #body td:nth-child(5), #comp-Search-Results #body td:nth-child(6) {
   text-transform: lowercase;
   text-align: center;
   width: 80px;
 }
-/* line 497, ../sass/main.scss */
+/* line 509, ../sass/main.scss */
 #comp-Search-Results #body td:nth-child(4) {
   text-align: center;
 }
-/* line 499, ../sass/main.scss */
+/* line 511, ../sass/main.scss */
 #comp-Search-Results .refresh {
   display: none;
 }
@@ -1323,70 +1334,70 @@ body a:hover, body a:active, body a:focus {
 /*-------------------------------------------------------------------------------------------------
  -start comp-Ticket-Update  [FINISHED]
 -------------------------------------------------------------------------------------------------*/
-/* line 512, ../sass/main.scss */
+/* line 524, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-metadata {
   width: 50%;
 }
-/* line 514, ../sass/main.scss */
+/* line 526, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-metadata .label {
   width: 130px;
 }
-/* line 515, ../sass/main.scss */
+/* line 527, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-metadata select {
   width: 220px;
 }
-/* line 516, ../sass/main.scss */
+/* line 528, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-metadata input {
   width: 57px;
 }
-/* line 517, ../sass/main.scss */
+/* line 529, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-metadata tr:last-child select {
   width: 160px;
 }
-/* line 522, ../sass/main.scss */
+/* line 534, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-message .messagedetails .label {
   width: 130px;
 }
-/* line 523, ../sass/main.scss */
+/* line 535, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-message .messagedetails input {
   width: 400px;
 }
-/* line 525, ../sass/main.scss */
+/* line 537, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-message .messagedetails .messagebox-container .articles-select-article td, #comp-Ticket-Update #body #ticket-update-message .messagedetails .messagebox-container .articles-select-article input {
   width: 160px;
   float: left;
   overflow: hidden;
   whitespace: nowrap;
 }
-/* line 526, ../sass/main.scss */
+/* line 538, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-message .messagedetails .messagebox-container input[type="submit"] {
   margin-left: 20px;
   width: 50px;
 }
-/* line 529, ../sass/main.scss */
+/* line 541, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-message .messagedetails .messagebox-container #cke_UpdateContent {
   max-width: 600px;
   min-width: 600px;
   border: none;
 }
-/* line 530, ../sass/main.scss */
+/* line 542, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-message .messagedetails .messagebox-container #cke_UpdateContent td {
   width: 98%;
 }
-/* line 533, ../sass/main.scss */
+/* line 545, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-message .messagedetails input[type="submit"] {
   margin-left: 50px;
   width: 100px;
 }
-/* line 536, ../sass/main.scss */
+/* line 548, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-message #previewscrips {
   margin-top: 20px;
 }
-/* line 538, ../sass/main.scss */
+/* line 550, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-message #previewscrips li {
   margin-top: 10px;
 }
-/* line 541, ../sass/main.scss */
+/* line 553, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-message #SubmitTicket {
   margin: 30px 45%;
 }
