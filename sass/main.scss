@@ -432,7 +432,7 @@ $content-gap:10px;
           .metadata { line-height:18px; border-radius:2px;
             padding:5px; /*border-top:1px solid $def-border; */border-bottom:1px solid $def-border;
       
-            .date, .description { color:lighten($button-bg,15%); } 
+            .date, .description { color:$button-bg; } 
           } 
       }
       
@@ -440,9 +440,11 @@ $content-gap:10px;
       //border for none message notifications
       .EmailRecord, .CustomField, .Set, .AddLink, .Status, .other { 
         border:1px solid lighten($body-bg,2%);
-        .metadata { line-height:17px; border-top:1px solid lighten($def-border,5%); }
-        .description { font-size:12px; text-transform:capitalize; } 
-        .actions { padding-right:0 !important; a { opacity:0.5; &:hover { opacity:1; } } }
+        .metadata { line-height:17px; border-top:1px solid lighten($def-border,5%); 
+          .date { padding:0 5px; }
+          .description { font-size:12px; text-transform:capitalize; } 
+          .actions { padding-right:0 !important; a { opacity:0.5; &:hover { opacity:1; } } }
+        }
       }
       //message background and content padding
       .message-stanza { line-height:1.35; padding:5px; letter-spacing:.3px;
@@ -457,8 +459,8 @@ $content-gap:10px;
       .messageattachments p { font-size: 12px; font-style: italic; padding-left: 20px; }
     
       .metadata {
-      /*padding:3px;*/ background:darken($body-bg,2%);
-      .date { display:inline-block; width:135px; margin:0 $content-gap; font-size:12px; 
+      background:darken($body-bg,2%);
+      .date { padding:0 $content-gap; font-size:12px; 
               text-transform:uppercase; }
         .actions { float:right; color:darken($body-bg,2%); font:100% $font-beta; letter-spacing:1px; padding-right:50px;
             a { color:$extra-link; 
@@ -466,18 +468,14 @@ $content-gap:10px;
             }
         }
 
-
-
-
-
       } // end metadata
 
     //quotes
-      .message-stanza-folder { color:lighten($button-bg,35%); cursor: pointer; font-size:12px; }
-      .message-stanza.open  { color:lighten($button-bg,35%); }
-      .message-stanza-folder.open { color:lighten($button-bg,15%); }
+      .message-stanza-folder { color:darken($link-normal,5%); cursor: pointer; font-size:12px; text-transform: lowercase; }
+      .message-stanza.open  { color:darken($link-normal,8%); }
+      .message-stanza-folder.open { color:darken($link-normal,8%); }
       .message-stanza.closed { display:none; }
-      .message-stanza-folder:before, .message-stanza-folder:after { content: " * "; }
+      .message-stanza-folder:before, .message-stanza-folder:after { content: " : "; }
       .ticket-transaction .messagebody { font-size: 1em; word-wrap: break-word; }
 
 

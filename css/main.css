@@ -1153,7 +1153,7 @@ body a:hover, body a:active, body a:focus {
 }
 /* line 435, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .Correspond .metadata .date, #comp-Ticket-Display #body .history #ticket-history .Correspond .metadata .description, #comp-Ticket-Display #body .history #ticket-history .Create .metadata .date, #comp-Ticket-Display #body .history #ticket-history .Create .metadata .description, #comp-Ticket-Display #body .history #ticket-history .Comment .metadata .date, #comp-Ticket-Display #body .history #ticket-history .Comment .metadata .description {
-  color: #f54a0a;
+  color: #ac3407;
 }
 /* line 441, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .EmailRecord, #comp-Ticket-Display #body .history #ticket-history .CustomField, #comp-Ticket-Display #body .history #ticket-history .Set, #comp-Ticket-Display #body .history #ticket-history .AddLink, #comp-Ticket-Display #body .history #ticket-history .Status, #comp-Ticket-Display #body .history #ticket-history .other {
@@ -1165,23 +1165,27 @@ body a:hover, body a:active, body a:focus {
   border-top: 1px solid rgba(153, 153, 153, 0.2);
 }
 /* line 444, ../sass/main.scss */
-#comp-Ticket-Display #body .history #ticket-history .EmailRecord .description, #comp-Ticket-Display #body .history #ticket-history .CustomField .description, #comp-Ticket-Display #body .history #ticket-history .Set .description, #comp-Ticket-Display #body .history #ticket-history .AddLink .description, #comp-Ticket-Display #body .history #ticket-history .Status .description, #comp-Ticket-Display #body .history #ticket-history .other .description {
+#comp-Ticket-Display #body .history #ticket-history .EmailRecord .metadata .date, #comp-Ticket-Display #body .history #ticket-history .CustomField .metadata .date, #comp-Ticket-Display #body .history #ticket-history .Set .metadata .date, #comp-Ticket-Display #body .history #ticket-history .AddLink .metadata .date, #comp-Ticket-Display #body .history #ticket-history .Status .metadata .date, #comp-Ticket-Display #body .history #ticket-history .other .metadata .date {
+  padding: 0 5px;
+}
+/* line 445, ../sass/main.scss */
+#comp-Ticket-Display #body .history #ticket-history .EmailRecord .metadata .description, #comp-Ticket-Display #body .history #ticket-history .CustomField .metadata .description, #comp-Ticket-Display #body .history #ticket-history .Set .metadata .description, #comp-Ticket-Display #body .history #ticket-history .AddLink .metadata .description, #comp-Ticket-Display #body .history #ticket-history .Status .metadata .description, #comp-Ticket-Display #body .history #ticket-history .other .metadata .description {
   font-size: 12px;
   text-transform: capitalize;
 }
-/* line 445, ../sass/main.scss */
-#comp-Ticket-Display #body .history #ticket-history .EmailRecord .actions, #comp-Ticket-Display #body .history #ticket-history .CustomField .actions, #comp-Ticket-Display #body .history #ticket-history .Set .actions, #comp-Ticket-Display #body .history #ticket-history .AddLink .actions, #comp-Ticket-Display #body .history #ticket-history .Status .actions, #comp-Ticket-Display #body .history #ticket-history .other .actions {
+/* line 446, ../sass/main.scss */
+#comp-Ticket-Display #body .history #ticket-history .EmailRecord .metadata .actions, #comp-Ticket-Display #body .history #ticket-history .CustomField .metadata .actions, #comp-Ticket-Display #body .history #ticket-history .Set .metadata .actions, #comp-Ticket-Display #body .history #ticket-history .AddLink .metadata .actions, #comp-Ticket-Display #body .history #ticket-history .Status .metadata .actions, #comp-Ticket-Display #body .history #ticket-history .other .metadata .actions {
   padding-right: 0 !important;
 }
-/* line 445, ../sass/main.scss */
-#comp-Ticket-Display #body .history #ticket-history .EmailRecord .actions a, #comp-Ticket-Display #body .history #ticket-history .CustomField .actions a, #comp-Ticket-Display #body .history #ticket-history .Set .actions a, #comp-Ticket-Display #body .history #ticket-history .AddLink .actions a, #comp-Ticket-Display #body .history #ticket-history .Status .actions a, #comp-Ticket-Display #body .history #ticket-history .other .actions a {
+/* line 446, ../sass/main.scss */
+#comp-Ticket-Display #body .history #ticket-history .EmailRecord .metadata .actions a, #comp-Ticket-Display #body .history #ticket-history .CustomField .metadata .actions a, #comp-Ticket-Display #body .history #ticket-history .Set .metadata .actions a, #comp-Ticket-Display #body .history #ticket-history .AddLink .metadata .actions a, #comp-Ticket-Display #body .history #ticket-history .Status .metadata .actions a, #comp-Ticket-Display #body .history #ticket-history .other .metadata .actions a {
   opacity: 0.5;
 }
-/* line 445, ../sass/main.scss */
-#comp-Ticket-Display #body .history #ticket-history .EmailRecord .actions a:hover, #comp-Ticket-Display #body .history #ticket-history .CustomField .actions a:hover, #comp-Ticket-Display #body .history #ticket-history .Set .actions a:hover, #comp-Ticket-Display #body .history #ticket-history .AddLink .actions a:hover, #comp-Ticket-Display #body .history #ticket-history .Status .actions a:hover, #comp-Ticket-Display #body .history #ticket-history .other .actions a:hover {
+/* line 446, ../sass/main.scss */
+#comp-Ticket-Display #body .history #ticket-history .EmailRecord .metadata .actions a:hover, #comp-Ticket-Display #body .history #ticket-history .CustomField .metadata .actions a:hover, #comp-Ticket-Display #body .history #ticket-history .Set .metadata .actions a:hover, #comp-Ticket-Display #body .history #ticket-history .AddLink .metadata .actions a:hover, #comp-Ticket-Display #body .history #ticket-history .Status .metadata .actions a:hover, #comp-Ticket-Display #body .history #ticket-history .other .metadata .actions a:hover {
   opacity: 1;
 }
-/* line 448, ../sass/main.scss */
+/* line 450, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .message-stanza {
   line-height: 1.35;
   padding: 5px;
@@ -1190,7 +1194,7 @@ body a:hover, body a:active, body a:focus {
   -moz-box-shadow: rgba(140, 140, 140, 0.2) 0px -1px 0px;
   box-shadow: rgba(140, 140, 140, 0.2) 0px -1px 0px;
 }
-/* line 452, ../sass/main.scss */
+/* line 454, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .downloadattachment {
   float: right;
   whitespace: nowrap;
@@ -1201,38 +1205,35 @@ body a:hover, body a:active, body a:focus {
   color: #0772ac;
   text-transform: capitalize;
 }
-/* line 454, ../sass/main.scss */
+/* line 456, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .downloadattachment .downloadcontenttype {
   float: right;
   text-transform: lowercase;
   font-size: 10px;
 }
-/* line 456, ../sass/main.scss */
+/* line 458, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .messagebody > img {
   width: 30%;
   margin: 10px;
   border-radius: 5px;
 }
-/* line 457, ../sass/main.scss */
+/* line 459, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .messageattachments p {
   font-size: 12px;
   font-style: italic;
   padding-left: 20px;
 }
-/* line 459, ../sass/main.scss */
+/* line 461, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .metadata {
-  /*padding:3px;*/
   background: #efefef;
 }
-/* line 461, ../sass/main.scss */
+/* line 463, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .metadata .date {
-  display: inline-block;
-  width: 135px;
-  margin: 0 10px;
+  padding: 0 10px;
   font-size: 12px;
   text-transform: uppercase;
 }
-/* line 463, ../sass/main.scss */
+/* line 465, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .metadata .actions {
   float: right;
   color: #efefef;
@@ -1240,37 +1241,38 @@ body a:hover, body a:active, body a:focus {
   letter-spacing: 1px;
   padding-right: 50px;
 }
-/* line 464, ../sass/main.scss */
+/* line 466, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .metadata .actions a {
   color: #ac3407;
 }
-/* line 465, ../sass/main.scss */
+/* line 467, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .metadata .actions a:hover {
   color: #dd4309;
 }
-/* line 476, ../sass/main.scss */
+/* line 474, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .message-stanza-folder {
-  color: #f9936c;
+  color: #066293;
   cursor: pointer;
   font-size: 12px;
+  text-transform: lowercase;
+}
+/* line 475, ../sass/main.scss */
+#comp-Ticket-Display #body .history #ticket-history .message-stanza.open {
+  color: #055885;
+}
+/* line 476, ../sass/main.scss */
+#comp-Ticket-Display #body .history #ticket-history .message-stanza-folder.open {
+  color: #055885;
 }
 /* line 477, ../sass/main.scss */
-#comp-Ticket-Display #body .history #ticket-history .message-stanza.open {
-  color: #f9936c;
-}
-/* line 478, ../sass/main.scss */
-#comp-Ticket-Display #body .history #ticket-history .message-stanza-folder.open {
-  color: #f54a0a;
-}
-/* line 479, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .message-stanza.closed {
   display: none;
 }
-/* line 480, ../sass/main.scss */
+/* line 478, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .message-stanza-folder:before, #comp-Ticket-Display #body .history #ticket-history .message-stanza-folder:after {
-  content: " * ";
+  content: " : ";
 }
-/* line 481, ../sass/main.scss */
+/* line 479, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .ticket-transaction .messagebody {
   font-size: 1em;
   word-wrap: break-word;
@@ -1282,48 +1284,48 @@ body a:hover, body a:active, body a:focus {
 /*-------------------------------------------------------------------------------------------------
  -start comp-Search-Results [FINISHED]
 -------------------------------------------------------------------------------------------------*/
-/* line 502, ../sass/main.scss */
+/* line 500, ../sass/main.scss */
 #comp-Search-Results #body table {
   width: 100%;
 }
-/* line 503, ../sass/main.scss */
+/* line 501, ../sass/main.scss */
 #comp-Search-Results #body .collection-as-table {
   background: none;
 }
-/* line 504, ../sass/main.scss */
+/* line 502, ../sass/main.scss */
 #comp-Search-Results #body th:nth-child(3), #comp-Search-Results #body th:nth-child(4), #comp-Search-Results #body th:nth-child(5), #comp-Search-Results #body th:nth-child(6) {
   text-align: center;
 }
-/* line 505, ../sass/main.scss */
+/* line 503, ../sass/main.scss */
 #comp-Search-Results #body tr:nth-child(1n) {
   font-size: 12px;
 }
-/* line 505, ../sass/main.scss */
+/* line 503, ../sass/main.scss */
 #comp-Search-Results #body tr:nth-child(1n) a {
   font-size: 14px;
 }
-/* line 506, ../sass/main.scss */
+/* line 504, ../sass/main.scss */
 #comp-Search-Results #body tr:nth-child(2n) {
   font-size: 11px;
   border-bottom: 1px solid rgba(140, 140, 140, 0.2);
   color: #03314a;
 }
-/* line 507, ../sass/main.scss */
+/* line 505, ../sass/main.scss */
 #comp-Search-Results #body td:nth-child(2) {
   whitespace: nowrap;
   overflow: hidden;
 }
-/* line 508, ../sass/main.scss */
+/* line 506, ../sass/main.scss */
 #comp-Search-Results #body td:nth-child(3), #comp-Search-Results #body td:nth-child(5), #comp-Search-Results #body td:nth-child(6) {
   text-transform: lowercase;
   text-align: center;
   width: 80px;
 }
-/* line 509, ../sass/main.scss */
+/* line 507, ../sass/main.scss */
 #comp-Search-Results #body td:nth-child(4) {
   text-align: center;
 }
-/* line 511, ../sass/main.scss */
+/* line 509, ../sass/main.scss */
 #comp-Search-Results .refresh {
   display: none;
 }
@@ -1334,70 +1336,70 @@ body a:hover, body a:active, body a:focus {
 /*-------------------------------------------------------------------------------------------------
  -start comp-Ticket-Update  [FINISHED]
 -------------------------------------------------------------------------------------------------*/
-/* line 524, ../sass/main.scss */
+/* line 522, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-metadata {
   width: 50%;
 }
-/* line 526, ../sass/main.scss */
+/* line 524, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-metadata .label {
   width: 130px;
 }
-/* line 527, ../sass/main.scss */
+/* line 525, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-metadata select {
   width: 220px;
 }
-/* line 528, ../sass/main.scss */
+/* line 526, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-metadata input {
   width: 57px;
 }
-/* line 529, ../sass/main.scss */
+/* line 527, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-metadata tr:last-child select {
   width: 160px;
 }
-/* line 534, ../sass/main.scss */
+/* line 532, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-message .messagedetails .label {
   width: 130px;
 }
-/* line 535, ../sass/main.scss */
+/* line 533, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-message .messagedetails input {
   width: 400px;
 }
-/* line 537, ../sass/main.scss */
+/* line 535, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-message .messagedetails .messagebox-container .articles-select-article td, #comp-Ticket-Update #body #ticket-update-message .messagedetails .messagebox-container .articles-select-article input {
   width: 160px;
   float: left;
   overflow: hidden;
   whitespace: nowrap;
 }
-/* line 538, ../sass/main.scss */
+/* line 536, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-message .messagedetails .messagebox-container input[type="submit"] {
   margin-left: 20px;
   width: 50px;
 }
-/* line 541, ../sass/main.scss */
+/* line 539, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-message .messagedetails .messagebox-container #cke_UpdateContent {
   max-width: 600px;
   min-width: 600px;
   border: none;
 }
-/* line 542, ../sass/main.scss */
+/* line 540, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-message .messagedetails .messagebox-container #cke_UpdateContent td {
   width: 98%;
 }
-/* line 545, ../sass/main.scss */
+/* line 543, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-message .messagedetails input[type="submit"] {
   margin-left: 50px;
   width: 100px;
 }
-/* line 548, ../sass/main.scss */
+/* line 546, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-message #previewscrips {
   margin-top: 20px;
 }
-/* line 550, ../sass/main.scss */
+/* line 548, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-message #previewscrips li {
   margin-top: 10px;
 }
-/* line 553, ../sass/main.scss */
+/* line 551, ../sass/main.scss */
 #comp-Ticket-Update #body #ticket-update-message #SubmitTicket {
   margin: 30px 45%;
 }
