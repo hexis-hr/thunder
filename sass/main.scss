@@ -440,7 +440,7 @@ $content-gap:10px;
     
       .metadata {
       padding:3px; background:darken($body-bg,2%);
-      .date { display:inline-block; width:135px; margin-left:$content-gap; font-size:12px; 
+      .date { display:inline-block; width:135px; margin:0 $content-gap; font-size:12px; 
               text-transform:uppercase; }
         .actions { float:right; text-transform:uppercase; color:darken($body-bg,2%);
             a { color:$extra-link;

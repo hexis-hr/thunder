@@ -1205,7 +1205,7 @@ body a:hover, body a:active, body a:focus {
 #comp-Ticket-Display #body .history #ticket-history .metadata .date {
   display: inline-block;
   width: 135px;
-  margin-left: 10px;
+  margin: 0 10px;
   font-size: 12px;
   text-transform: uppercase;
 }
