@@ -10,10 +10,10 @@ $content-gap:10px;
 /*-------------------------------------------------------------------------------------------------
  -Typography
 -------------------------------------------------------------------------------------------------*/
- // @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
-  // @import url(http://fonts.googleapis.com/css?family=Oswald); -umjesto njega Bebas
+ @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
+ @import url(http://fonts.googleapis.com/css?family=Oswald); 
 
-
+/*
 @include font-face("RobotoCondensed-Regular",
         font-files("RobotoCondensed-Regular-webfont.woff",
                    "RobotoCondensed-Regular-webfont.ttf"),
@@ -23,9 +23,9 @@ $content-gap:10px;
         font-files("BebasNeue-webfont.woff",
                    "BebasNeue-webfont.ttf"),
                    "BebasNeue-webfont.eot");
-
-  $font-alpha:  "RobotoCondensed-Regular", Helvetica, Arial, sans-serif; //main font
-  $font-beta:   "BebasNeue", Helvetica, Arial, sans-serif; //titles and headlines
+*/
+  $font-alpha:  "Roboto Condensed", Helvetica, Arial, sans-serif; //main font
+  $font-beta:   "Oswald", Helvetica, Arial, sans-serif; //titles and headlines
 
 /*-------------------------------------------------------------------------------------------------
  -Colors
