@@ -132,30 +132,35 @@ $content-gap:10px;
     }
     ul li > ul li > ul { top: 0px; left:100%; border:none; border-left:2px solid $link-normal; }
     
-    ul li > ul li:hover > ul {display:block; /*top: 0px; left: 100%;*/}
+    ul li > ul li:hover > ul { display:block; }
     ul ul {display: none;}
   }
 
   .sf-sub-indicator {display:none;}
 
   //START PAGE NAVIGATION
-  #page-navigation { position: absolute; right: 15px; top: 50px; 
-    ul { list-style: none; }
-    ul li { float:left; position: relative; z-index: 20; }
-    ul li a {display: block; padding: 0px 15px 0px 15px; font-size: 11px; line-height:33px; color: $text-normal; 
-      text-transform: uppercase; }
-    ul li:hover > a { color: $link-normal; @include transition(all, 0.3s, ease-in-out); }
-    ul li.active > a { color: $link-normal; }
+  #page-navigation { position: absolute; right: 15px; top: 57px; 
+    ul { list-style:none; }
+    ul li { float:left; position:relative; z-index:20; }
+    ul li a { display:block; padding:5px 15px 5px 15px; font-size:12px; color:$text-normal; }
+    ul li:hover > a { color:$link-normal; @include transition(all, 0.3s, ease-in-out); }
+    ul li.active > a { color:$link-normal; }
+
+    li > ul:before { content: ""; border-style:solid; border-width:6px 6px 6px 6px;
+    border-color:transparent transparent $link-normal transparent; width:0px; height:0px; 
+    position:absolute; right:20px; top:-14px;} 
   //sub menu
-    ul li > ul {position: absolute; right: 0px; top: 100%; padding-top: 7px; width: 100px; background:darken($body-bg,2%); }
-    ul li:hover > ul {display: block; }
-    ul li > ul li {padding: 3px 3px 3px; width: 95%; border-bottom: 1px solid rgba(173,173,173,.1); }
-    ul li > ul li a {display: block; padding: 3px 3px; font-size: 10px; border-left: 2px solid darken($body-bg,2%);
-     line-height:13px; }
-    ul li > ul li:hover {background: rgba(224,224,224, 0.1); @include transition(all, 0.3s, ease-in-out); } 
-    ul li > ul li:hover > a {color: $link-normal; border-color: $link-normal; 
-      @include transition(all, 0.1s, ease-in-out); }
-    ul li > ul li.active > a {color: $link-normal;}
+    ul li > ul { position:absolute; right:0%; top:100%; width:100px; background:$body-bg;
+      @include box-shadow(#000 0px 0px 2px); color:#fff; border-top:2px solid $link-normal;
+  border-radius:3px;
+    }
+    ul li:hover > ul { display:block; }
+    ul li > ul li { padding:3px; width: 95%; border-bottom:1px solid rgba(173,173,173,.1); }
+    ul li > ul li a { display:block; padding: 3px 3px; font-size:12px; border-left:2px solid $body-bg; }
+    ul li > ul li:hover { /*background:rgba($body-bg,.5);*/ @include transition(all, 0.3s ease-in-out); } 
+    ul li > ul li:hover > a { color:$link-normal; border-color:$link-normal; 
+      @include transition(all, 0.1s ease-in-out); }
+    ul li > ul li.active > a { color:$link-normal;}
     ul ul {display: none;}
   }
 
@@ -208,9 +213,9 @@ $content-gap:10px;
             background:darken($body-bg,2%); text-transform:lowercase; font-size:12px; letter-spacing:1px; }
       
     .titlebox { margin-bottom:$content-gap+15; font-size:14px;
-      .titlebox-title { text-transform:lowercase; font-size:16px;
+      .titlebox-title { text-transform:lowercase; font-size:16px; color:$button-bg;
         padding:2px 0 3px 17px; position: relative; z-index: 10; 
-        .left { a { color:$text-normal; } a:hover { text-decoration:underline; } }
+        .left { a { color:$button-bg; } a:hover { text-decoration:underline; } }
         .right { padding-left:$content-gap;
           a { font-size:10px; text-transform:lowercase; color:rgba(163,163,163,.5); 
           &:hover { color:$link-normal-hover;} } }
@@ -397,8 +402,8 @@ $content-gap:10px;
  -start comp-Ticket-Display [*2]
 -------------------------------------------------------------------------------------------------*/
   #comp-Ticket-Display {
-  #body { .label, .labeltop {color:lighten($text-normal,10%); text-transform:uppercase; font-size:13px; }
-    .boxcontainer:nth-child(1) {padding-right: 0.5em; width: 75%; 
+  #body { .label, .labeltop {color:darken($text-normal,15%); text-transform:uppercase; font-size:13px; }
+    .boxcontainer:nth-child(1) {padding-right: 0.5em; width: 75%; line-height:1.4;
       td:first-child { width:130px; }
       tr { border-bottom: 1px solid darken($body-bg,7%); }
       .ticket-info-cfs { td { padding: 0.2em; } }
@@ -410,6 +415,7 @@ $content-gap:10px;
         table { position:relative; margin-left:$content-gap;}
         tr { border-bottom:none; }
         input { max-width:200px; }
+        select { width:200px; }
         .button { margin-right:$content-gap; }
       }
       .ticket-info-links { .label, .labeltop { color: $link-normal; } }
@@ -425,15 +431,15 @@ $content-gap:10px;
         .actions {  }
       }
      
-      .message-header-key { width:80px; padding-left:$content-gap; text-transform:uppercase; 
-                              color:lighten($text-normal,10%);
+      .message-header-key { width:70px; padding-left:$content-gap; text-transform:uppercase; 
+                              color:darken($text-normal,15%);
       }
       .message-header-value { }
       table { margin:5px 0 $content-gap 0; }
       
       .Correspond, .Create, .Comment { margin:5px 0; @include box-shadow(#000 0px 0px 1px);
           .metadata { line-height:18px; border-radius:2px;
-            padding:5px; /*border-top:1px solid $def-border; */border-bottom:1px solid $def-border;
+            padding:5px; border-bottom:1px solid $def-border;
       
             .date, .description { color:$button-bg; } 
           } 
@@ -442,11 +448,11 @@ $content-gap:10px;
 
       //border for none message notifications
       .EmailRecord, .CustomField, .Set, .AddLink, .Status, .other { 
-        border:1px solid lighten($body-bg,2%);
+          color:darken($text-normal,15%); 
         .metadata { line-height:17px; border-top:1px solid lighten($def-border,5%); 
           .date { padding:0 5px; }
           .description { font-size:12px; text-transform:capitalize; } 
-          .actions { padding-right:0 !important; a { opacity:0.5; &:hover { opacity:1; } } }
+          .actions { line-height:16px; padding-right:0 !important; a { opacity:0.5; font-size:12px; &:hover { opacity:1; } } }
         }
       }
       //message background and content padding
@@ -455,8 +461,9 @@ $content-gap:10px;
       }
       //downloads settings
       .downloadattachment { float:right; whitespace:nowrap; overflow:hidden; font-size:12px; 
-              padding:5px; border-radius:3px 0 0 3px; color:$link-normal; text-transform:capitalize;
-          .downloadcontenttype { float:right; text-transform:lowercase; font-size:10px; }
+              padding:5px; margin:5px; color:$link-normal; text-transform:capitalize; border-radius:1px;
+      @include box-shadow(#000 0px 0px 2px);
+          .downloadcontenttype { float:right; text-transform:uppercase; font-size:10px; }
       }
       .messagebody > img { width:30%; margin:$content-gap; border-radius:5px; }
       .messageattachments p { font-size: 12px; font-style: italic; padding-left: 20px; }
@@ -465,8 +472,10 @@ $content-gap:10px;
       background:darken($body-bg,2%);
       .date { padding:0 $content-gap; font-size:12px; 
               text-transform:uppercase; }
-        .actions { float:right; color:darken($body-bg,2%); font:100% $font-beta; letter-spacing:1px; padding-right:50px;
-            a { color:$extra-link; 
+        .actions {  
+            float:right; color:darken($body-bg,2%); font:100% $font-beta;  
+            padding-right:50px; text-transform:uppercase; line-height:20px;
+            a { color:$extra-link;  
               &:hover { color:$extra-link-hover; }
             }
         }
