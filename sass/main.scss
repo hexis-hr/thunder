@@ -51,8 +51,9 @@ $content-gap:10px;
   }
   //Input, Select
   @include inputs { background:lighten($body-bg,2%); color:$text-normal; border:none; 
-    @include box-shadow( (rgba(#000,.3)) 0px -1px 0px); font:95% $font-alpha; 
-  &:focus {outline:none; @include box-shadow($text-normal 0 0 2px); } 
+    @include box-shadow( (rgba(#000,.3)) 0px 0px 1px); font:95% $font-alpha; 
+  &:hover {outline:none; @include box-shadow(darken($text-normal,10%) 0 0 1px); }
+  &:focus {outline:none; @include box-shadow($link-normal 0 0 2px); } 
   }
   select, .select-queue { text-transform:capitalize; }
   option { box-shadow:none; }
@@ -85,6 +86,8 @@ $content-gap:10px;
     &:hover, &:active, &:focus { text-decoration:none; color:$link-normal-hover; }
     }
   }
+
+  strong { color:darken($text-normal,15%); }
 
 /*-------------------------------------------------------------------------------------------------
  -Header + Main Navigation + page Navigation + Top Actions + Footer
@@ -159,9 +162,9 @@ $content-gap:10px;
   // TOP ACTIONS
   #topactions { clear: both; position: absolute; top: 17px; right: 20px; height: 50px;
     #simple-search { float:left; padding-right: 20px;}
-    #simple-search input { width: 300px; height: 23px; margin: 1px 5px; border: none; /*font: 100% $font-beta; */
+    #simple-search input { width: 300px; height: 23px; margin: 1px 5px; border: none;
       font-size: 15px; line-height: 23px; padding-left: 2px;
-      &:focus { outline:none; border:none; box-shadow: none; border-bottom:1px solid $link-normal; } }
+      &:focus { outline:none; border:none; } }
 
     #CreateTicketInQueue { float:right; padding-top:-5px;
         .button { padding:2px 10px; } } 
@@ -219,7 +222,7 @@ $content-gap:10px;
   } // #body
 
 /*-------------------------------------------------------------------------------------------------
- -start comp-index // home page  [FINISHED]
+ -start comp-index // home page  [*5]
 -------------------------------------------------------------------------------------------------*/
   #comp-index {
     #page-edit { opacity:.2; text-transform:uppercase; }
@@ -303,7 +306,7 @@ $content-gap:10px;
 
 
 /*-------------------------------------------------------------------------------------------------
- -start comp-Search-Simple  [FINISHED]
+ -start comp-Search-Simple  [*5]
 -------------------------------------------------------------------------------------------------*/
   #comp-Search-Simple {
     #body {
@@ -321,7 +324,7 @@ $content-gap:10px;
 
 
 /*-------------------------------------------------------------------------------------------------
- -start comp-Search-Build [FINISHED]
+ -start comp-Search-Build [*2]
 -------------------------------------------------------------------------------------------------*/
   #comp-Search-Build {
     #body {  hr { border:1px solid $def-border; } max-width:960px;
@@ -368,7 +371,7 @@ $content-gap:10px;
 
 
 /*-------------------------------------------------------------------------------------------------
- -start comp-Prefs-Other // settings page   [FINISHED]
+ -start comp-Prefs-Other // settings page   [*5]
 -------------------------------------------------------------------------------------------------*/
   #comp-Prefs-Other {
     #body {
@@ -376,7 +379,7 @@ $content-gap:10px;
       .left { color:$text-normal; }
       line-height: 2;
       .label { display:inline-block; width:310px; }
-      .hints { white-space:nowrap; font-style:italic; color:$def-border; 
+      .hints { white-space:nowrap; font-size:12px; color:lighten($text-normal,15%); 
         &:hover { color:$text-normal; cursor:default; }
       }
       .button { margin:$content-gap 48% 0 47%; }
@@ -391,7 +394,7 @@ $content-gap:10px;
 
 
 /*-------------------------------------------------------------------------------------------------
- -start comp-Ticket-Display [HISTORY PAGE NIJE DOBAR]
+ -start comp-Ticket-Display [*2]
 -------------------------------------------------------------------------------------------------*/
   #comp-Ticket-Display {
   #body { .label, .labeltop {color:lighten($text-normal,10%); text-transform:uppercase; font-size:13px; }
@@ -488,23 +491,27 @@ $content-gap:10px;
 } // end comp-Ticket-Display 
 
 /*-------------------------------------------------------------------------------------------------
- -end comp-Ticket-Display [HISTORY PAGE NIJE DOBAR]
+ -end comp-Ticket-Display
 -------------------------------------------------------------------------------------------------*/
 
 
 /*-------------------------------------------------------------------------------------------------
- -start comp-Search-Results [FINISHED]
+ -start comp-Search-Results [*4]
 -------------------------------------------------------------------------------------------------*/
   #comp-Search-Results {
     #body {
       table { width:100%; }
-      .collection-as-table { background:none; }
-      th:nth-child(3), th:nth-child(4), th:nth-child(5), th:nth-child(6) { text-align:center; }
-      tr:nth-child(1n) {font-size:12px;  a{ font-size:14px; } }
-      tr:nth-child(2n) { font-size:11px; border-bottom:1px solid $def-border; color:$link-normal-hover; }
-      td:nth-child(2) { whitespace:nowrap; overflow:hidden; }
+      .collection-as-table { background:none; & > th {background:darken($body-bg,2%); } }
+      th { border:none; a { color:$text-normal; &:hover { text-decoration:underline; } } }
+      tr:nth-child(1) th { border-top:1px solid $def-border; }
+      tr:nth-child(2) th { a {font-size:11px; } }
+      th:nth-child(1), th:nth-child(3), th:nth-child(4), th:nth-child(5), th:nth-child(6) { text-align:center; }
+      tr:nth-child(1n) {font-size:12px;  a { font-size:14px; } }
+      tr:nth-child(2n) { font-size:11px; border-bottom:1px solid $def-border; }
+      td:nth-child(1) { text-align:center; }
+      td:nth-child(2) { overflow:hidden; white-space:nowrap; }
       td:nth-child(3), td:nth-child(5), td:nth-child(6) { text-transform:lowercase; text-align:center; width:80px; }
-      td:nth-child(4) { text-align: center; }
+      td:nth-child(4) { text-align: center; overflow:hidden; white-space:nowrap; }
     } // end #body
   .refresh { display:none; }
   } //end comp search results
@@ -515,7 +522,7 @@ $content-gap:10px;
 
 
 /*-------------------------------------------------------------------------------------------------
- -start comp-Ticket-Update  [FINISHED]
+ -start comp-Ticket-Update  [*5]
 -------------------------------------------------------------------------------------------------*/
   #comp-Ticket-Update {
     #body {
@@ -558,4 +565,91 @@ $content-gap:10px;
 
 /*-------------------------------------------------------------------------------------------------
  -end comp-Ticket-Update
+-------------------------------------------------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------------------------------------------
+ -start comp-Ticket-Reminders comp-Ticket-ModifyDates [*5]
+-------------------------------------------------------------------------------------------------*/
+#comp-Ticket-Reminders, #comp-Ticket-ModifyDates {
+  .label { width:100px; text-transform:lowercase; }
+  select, #NewReminder-Subject, #NewReminder-Due { width:200px; }
+  .buttons { margin-left:100px; }
+}
+/*-------------------------------------------------------------------------------------------------
+ -end comp-Ticket-Reminders comp-Ticket-ModifyDates
+-------------------------------------------------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------------------------------------------
+ -start comp-Ticket-Modify  [*5]
+-------------------------------------------------------------------------------------------------*/
+#comp-Ticket-Modify { 
+  .label { width:150px; text-transform:lowercase; }
+  table input { width:50px; }
+  .subject input { width:200px; }
+  select { width:200px; 
+      &#TimeEstimated-TimeUnits,&#TimeWorked-TimeUnits,&#TimeLeft-TimeUnits{ width: 147px; } 
+  }
+  .edit-custom-fields { margin-top:50px;
+    .cflabel { margin-top:30px; .name { text-transform:lowercase; } .type { font-size:12px; color:lighten($text-normal,15%) } }
+    textarea { min-width:200px; max-width:500px; width:500px; }
+  }
+  .submit { text-align:center; 
+    .button { display:table; margin:$content-gap auto; }
+  }
+}
+/*-------------------------------------------------------------------------------------------------
+ -end comp-Ticket-Modify
+-------------------------------------------------------------------------------------------------*/
+
+h3 { font-size:15px; color:darken($text-normal,15%); margin-top:20px; margin-bottom:5px; }
+
+
+/*-------------------------------------------------------------------------------------------------
+ -start comp-Ticket-ModifyPeople  [*5]
+-------------------------------------------------------------------------------------------------*/
+#comp-Ticket-ModifyPeople { 
+  table { select { width:150px; }
+    td:first-child { 
+      br {margin:5px 0; }
+      table { width:50%; td { input {width:200px;} } 
+      }
+      input > name {width:150px;}
+     
+    }
+    td:last-child { vertical-align:top; select { margin-left:5px; } ul {margin-bottom:5px;}
+    } // td last child 
+  }
+  #TitleBox--_Ticket_ModifyPeople_html--ticket-info-squelch----TW9kaWZ5IHdobyByZWNlaXZlcyBtYWlsIGZvciB0aWNrZXQgIzMzNQ__---0 {
+    ul { margin-top:10px; padding-left:20px; }
+  }
+  .submit { text-align:center; 
+    .button { display:table; margin:$content-gap auto; }
+  }
+}
+/*-------------------------------------------------------------------------------------------------
+ -end comp-Ticket-ModifyPeople
+-------------------------------------------------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------------------------------------------
+ -start comp-Ticket-ModifyLinks
+-------------------------------------------------------------------------------------------------*/
+#comp-Ticket-ModifyLinks {
+  table {
+    td:first-child {vertical-align:top;}
+    td:last-child {vertical-align:top;
+      table { margin-top:10px; }
+    }
+  }
+  .submit { text-align:center; 
+    .button { display:table; margin:$content-gap auto; }
+  }
+}
+
+
+
+/*-------------------------------------------------------------------------------------------------
+ -end comp-Ticket-ModifyLinks
 -------------------------------------------------------------------------------------------------*/
