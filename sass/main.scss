@@ -463,7 +463,7 @@ $content-gap:10px;
       .downloadattachment { float:right; whitespace:nowrap; overflow:hidden; font-size:12px; 
               padding:5px; margin:5px; color:$link-normal; text-transform:capitalize; border-radius:1px;
       @include box-shadow(#000 0px 0px 2px);
-          .downloadcontenttype { float:right; text-transform:uppercase; font-size:10px; }
+          .downloadcontenttype { display:none; float:right; text-transform:uppercase; font-size:10px; }
       }
       .messagebody > img { width:30%; margin:$content-gap; border-radius:5px; }
       .messageattachments p { font-size: 12px; font-style: italic; padding-left: 20px; }

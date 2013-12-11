@@ -1260,6 +1260,7 @@ strong {
 }
 /* line 466, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .downloadattachment .downloadcontenttype {
+  display: none;
   float: right;
   text-transform: uppercase;
   font-size: 10px;
