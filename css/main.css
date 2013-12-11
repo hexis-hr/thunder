@@ -1271,12 +1271,6 @@ strong {
   margin: 10px;
   border-radius: 5px;
 }
-/* line 469, ../sass/main.scss */
-#comp-Ticket-Display #body .history #ticket-history .messageattachments p {
-  font-size: 12px;
-  font-style: italic;
-  padding-left: 20px;
-}
 /* line 471, ../sass/main.scss */
 #comp-Ticket-Display #body .history #ticket-history .metadata {
   background: #efefef;
