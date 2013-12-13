@@ -4,7 +4,7 @@
 
   @charset "UTF-8";
 
-
+/*TEST */
 $content-gap:10px;
 
 /*-------------------------------------------------------------------------------------------------
@@ -466,7 +466,12 @@ $content-gap:10px;
           .downloadcontenttype { display:none; float:right; text-transform:uppercase; font-size:10px; }
       }
       .messagebody > img { width:30%; margin:$content-gap; border-radius:5px; }
-      
+      .messageattachments { &.messageattachments { line-height:1;
+                      p { padding:0 20px; }
+                      table { padding:2px; }
+                      .message-header-key, .message-header-value {font-size:12px; }
+                      } 
+      }
     
       .metadata {
       background:darken($body-bg,2%);
