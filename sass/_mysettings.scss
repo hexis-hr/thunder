@@ -1,0 +1,53 @@
+/*-------------------------------------------------------------------------------------------------
+ -Global Settings
+-------------------------------------------------------------------------------------------------*/
+
+//Colors
+ $primary-color: #4c4c4c; //text
+ $secondary-color: #0772AC; //link
+ $alternative-color: #AC3407; //button
+ $alert-color: red; // extra
+ 
+ $bord: #e5e5e5;
+ $white: #f4f4f4;
+ $black: #0a0a0a;
+
+
+//Font weights
+ $light: 100;
+ $regular: 400;
+ $bold: 600;
+
+ b, strong { font-weight:$regular; color:$black; }
+
+//Body
+  $base-bg: $white;
+  $base-font-color: $primary-color;
+	$base-font-family: "Roboto Condensed", "Helvetica Neue", "Helvetica", Helvetica, sans-serif;
+  $base-font-size: 14px;
+	$base-font-weight: $regular;
+  $base-font-style: normal;
+
+//Fixed Font
+  $fixed-font-family: monospace;
+  $fixed-font-size: 85%;
+// $fixed-line-height: $base-line-height;
+
+//Headings
+  $header-font-family: "Oswald", "Helvetica Neue", "Helvetica", Helvetica, sans-serif;
+  $header-font-size: 16px;
+  $header-font-weight: $regular;
+  $header-font-style: normal;
+
+  
+
+
+
+
+
+
+/*-------------------------------------------------------------------------------------------------
+ -Specific Settings
+-------------------------------------------------------------------------------------------------*/
+
+.radio, input[type="radio"] {background:none !important; border:none !important; box-shadow:none !important; } 

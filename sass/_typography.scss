@@ -1,0 +1,17 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
+@import url(http://fonts.googleapis.com/css?family=Oswald); 
+
+/*
+@include font-face("RobotoCondensed-Regular",
+        font-files("RobotoCondensed-Regular-webfont.woff",
+                   "RobotoCondensed-Regular-webfont.ttf"),
+                   "RobotoCondensed-Regular-webfont.eot");
+
+@include font-face("BebasNeue",
+        font-files("BebasNeue-webfont.woff",
+                   "BebasNeue-webfont.ttf"),
+                   "BebasNeue-webfont.eot");
+*/
+
+$font-alpha: "Roboto Condensed", Helvetica, Arial, sans-serif;
+$font-beta: "Oswald", Helvetica, Arial, sans-serif;
