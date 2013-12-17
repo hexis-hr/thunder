@@ -282,7 +282,7 @@ $content-gap:10px;
   #comp-Prefs-Other {
       #body { select { width:250px; } .button { @include center-button; } }
       .titlebox { @include box-shadow($bord 0px -1px 0px); }
-      .left { color:$primary-color; }
+      .left { color:$black; }
       line-height: 1.8;
       .label { display:inline-block; width:310px; }
         .hints { font-size:12px; @include text-truncate; opacity:.4;
@@ -294,6 +294,41 @@ $content-gap:10px;
  -end comp-Prefs-Other [+]
 -------------------------------------------------------------------------------------------------*/
 
+
+/*-------------------------------------------------------------------------------------------------
+ -start comp-Ticket-Create [?]
+-------------------------------------------------------------------------------------------------*/
+  #comp-Ticket-Create { .label, .cflabel, .type, .comment { color:$black; }
+
+    #ticket-create-metadata {
+      float:right; width:48%;
+      textarea { width:100%; }
+      select { width:126px; }
+      .label, .cflabel, .type { width:150px; text-align:right; padding-right:5px; }
+      .type { font-size:12px; font-style:italic; }
+      td { padding:5px 0;}
+    }
+
+    #ticket-create-message { 
+      width:50%; float:left;
+      .label { width:100px; }
+      .comment { display:none; }
+      input[type="text"] { width:100%; }
+      #content { padding-top:15px; }
+    }
+
+    #cke_Content {background:none; border:none; }
+
+    #SubmitTicket .button { @include center-button; padding:10px 70px; }
+   
+
+
+    #ticket-create-message {  }
+  }
+
+/*-------------------------------------------------------------------------------------------------
+ -end comp-Ticket-Create [?]
+-------------------------------------------------------------------------------------------------*/
 
 
 /*-------------------------------------------------------------------------------------------------
