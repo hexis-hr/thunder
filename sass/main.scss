@@ -25,7 +25,7 @@ $content-gap:10px;
     background:$base-bg; color:$base-font-color; font-style:$base-font-style; line-height:1.4; }
   a { text-decoration:none; color:$secondary-color;
     &:visited { color:$secondary-color; }
-    &:hover, &:active, &:focus { color:darken($secondary-color,15%); }
+    &:hover, &:active, &:focus { color:darken($secondary-color,15%); @include transition(all, .1s, ease-in); }
   }
   
   //Date picker, FIXAT !!!
@@ -154,13 +154,16 @@ $content-gap:10px;
     background:darken($white,2%); color:$primary-color; text-transform:lowercase; letter-spacing:1px; }
   
   .titlebox { margin-bottom:20px; }
-  .titlebox-title { position: relative; z-index: 10; padding:0 0 5px 17px; text-transform:capitalize; 
-    font-size:$header-font-size; color:$black; font-weight:$light;}
-  .left { a { color:$black; } a:hover { text-decoration:underline; } }
+  .titlebox-title { position: relative; z-index: 10; padding:0 0 5px 17px; text-transform:lowercase; 
+    font-size:$header-font-size; color:$black; font-weight:$light;
+    
+  
+  
+  .left { text-shadow: 0px 0px 1px darken($white,20%); a { color:$black; } a:hover { border-color:$secondary-color; } }
   .right { padding-left:20px;
     a { text-transform:lowercase; color:rgba(163,163,163,.5); font-size:80%;
-    &:hover { color:$black;} } }
-  
+    &:hover { color:$black; } } }
+  }
   .oddline:hover, .evenline:hover { background:darken($white,7%); @include transition(all, 0.10s, Ease-In); }
 /*-------------------------------------------------------------------------------------------------
  -start comp-index // home page  [+]
@@ -299,31 +302,34 @@ $content-gap:10px;
  -start comp-Ticket-Create [?]
 -------------------------------------------------------------------------------------------------*/
   #comp-Ticket-Create { .label, .cflabel, .type, .comment { color:$black; }
-
     #ticket-create-metadata {
-      float:right; width:48%;
-      textarea { width:100%; }
+      float:left; min-width:40%; width:50%;
+      textarea { width:98%; }
       select { width:126px; }
-      .label, .cflabel, .type { width:150px; text-align:right; padding-right:5px; }
+      .label, .cflabel, .type { width:120px; text-align:right; padding-right:5px; }
       .type { font-size:12px; font-style:italic; }
       td { padding:5px 0;}
     }
 
     #ticket-create-message { 
-      width:50%; float:left;
+      min-width:40%; width:48%; float:right;
       .label { width:100px; }
       .comment { display:none; }
       input[type="text"] { width:100%; }
       #content { padding-top:15px; }
     }
 
-    #cke_Content {background:none; border:none; }
-
+    #cke_Content {background:none; border:none; 
+      &:focus { outline:none; @include box-shadow($secondary-color 0 0 3px);} }
+    #TitleBox--_Ticket_Create_html--messagedetails----Q3JlYXRlIGEgbmV3IHRpY2tldA__---0 {
+      .button {float:right;}
+      table tr:last-child { line-height:32px; }
+    }
+    
     #SubmitTicket .button { @include center-button; padding:10px 70px; }
    
-
-
-    #ticket-create-message {  }
+    #Ticket-Create-details { display:none; }
+      
   }
 
 /*-------------------------------------------------------------------------------------------------
